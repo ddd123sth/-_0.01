@@ -1,0 +1,5662 @@
+{
+ "generatedFrom": "官方客户端网络层实调 request2(\"gs.<iface>.<method>\", {参数}) 字面量",
+ "sourceFile": "_ref/game_src/scripts/src/assets/scripts/game.js",
+ "totalMethods": 704,
+ "note": "argKeys 为空数组表示官方以 {} 调用；<dynamic> 表示参数是变量，需回源码确认。",
+ "methods": {
+  "usr.lazySync": {
+   "iface": "usr",
+   "method": "lazySync",
+   "argKeys": [],
+   "callSites": 2
+  },
+  "index.createUsr": {
+   "iface": "index",
+   "method": "createUsr",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usr.heartTick": {
+   "iface": "usr",
+   "method": "heartTick",
+   "argKeys": [],
+   "callSites": 2
+  },
+  "oppt.getOppt": {
+   "iface": "oppt",
+   "method": "getOppt",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "oppt.getOppts": {
+   "iface": "oppt",
+   "method": "getOppts",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 2
+  },
+  "oppt.getDetailOppts": {
+   "iface": "oppt",
+   "method": "getDetailOppts",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "rwd.recv": {
+   "iface": "rwd",
+   "method": "recv",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "rwd.setCanRecv": {
+   "iface": "rwd",
+   "method": "setCanRecv",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "sign.sign": {
+   "iface": "sign",
+   "method": "sign",
+   "argKeys": [
+    "patchDay"
+   ],
+   "callSites": 1
+  },
+  "sign.sign_seven": {
+   "iface": "sign",
+   "method": "sign_seven",
+   "argKeys": [
+    "day"
+   ],
+   "callSites": 1
+  },
+  "sign.recvGradeRwd": {
+   "iface": "sign",
+   "method": "recvGradeRwd",
+   "argKeys": [
+    "gradeIdx"
+   ],
+   "callSites": 1
+  },
+  "usr.triggerEvent": {
+   "iface": "usr",
+   "method": "triggerEvent",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usr.chgName": {
+   "iface": "usr",
+   "method": "chgName",
+   "argKeys": [
+    "isFree",
+    "name"
+   ],
+   "callSites": 1
+  },
+  "usr.chgSign": {
+   "iface": "usr",
+   "method": "chgSign",
+   "argKeys": [
+    "sign"
+   ],
+   "callSites": 1
+  },
+  "usr.chgSex": {
+   "iface": "usr",
+   "method": "chgSex",
+   "argKeys": [
+    "sexId"
+   ],
+   "callSites": 1
+  },
+  "usr.chgIco": {
+   "iface": "usr",
+   "method": "chgIco",
+   "argKeys": [
+    "ico"
+   ],
+   "callSites": 2
+  },
+  "usr.chgFace": {
+   "iface": "usr",
+   "method": "chgFace",
+   "argKeys": [
+    "faceId"
+   ],
+   "callSites": 1
+  },
+  "usr.saveAuthInfo": {
+   "iface": "usr",
+   "method": "saveAuthInfo",
+   "argKeys": [
+    "authInfo"
+   ],
+   "callSites": 1
+  },
+  "usr.saveCustIco": {
+   "iface": "usr",
+   "method": "saveCustIco",
+   "argKeys": [
+    "ico64",
+    "icoMD5"
+   ],
+   "callSites": 1
+  },
+  "bag.use": {
+   "iface": "bag",
+   "method": "use",
+   "argKeys": [
+    "iid",
+    "num",
+    "useDstValue"
+   ],
+   "callSites": 1
+  },
+  "bag.combine": {
+   "iface": "bag",
+   "method": "combine",
+   "argKeys": [
+    "iid",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "bag.sell": {
+   "iface": "bag",
+   "method": "sell",
+   "argKeys": [
+    "iidMap"
+   ],
+   "callSites": 1
+  },
+  "usr.updateGuide": {
+   "iface": "usr",
+   "method": "updateGuide",
+   "argKeys": [
+    "guideId"
+   ],
+   "callSites": 1
+  },
+  "usr.updateUsrExt": {
+   "iface": "usr",
+   "method": "updateUsrExt",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usr.updateUsrSet": {
+   "iface": "usr",
+   "method": "updateUsrSet",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usr.upgrade": {
+   "iface": "usr",
+   "method": "upgrade",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usr.getSalary": {
+   "iface": "usr",
+   "method": "getSalary",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usr.worship": {
+   "iface": "usr",
+   "method": "worship",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "usrRed.delRed": {
+   "iface": "usrRed",
+   "method": "delRed",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usr.share": {
+   "iface": "usr",
+   "method": "share",
+   "argKeys": [
+    "ext",
+    "shareId"
+   ],
+   "callSites": 1
+  },
+  "usr.afterShare": {
+   "iface": "usr",
+   "method": "afterShare",
+   "argKeys": [
+    "ext",
+    "shareId"
+   ],
+   "callSites": 1
+  },
+  "usrSubscribePush.addSubscribeNum": {
+   "iface": "usrSubscribePush",
+   "method": "addSubscribeNum",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrSubscribePush.addSubscribeNumPermanent": {
+   "iface": "usrSubscribePush",
+   "method": "addSubscribeNumPermanent",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrSubscribePush.msgPushSetting": {
+   "iface": "usrSubscribePush",
+   "method": "msgPushSetting",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrSubscribePush.msgPushSettingGlobal": {
+   "iface": "usrSubscribePush",
+   "method": "msgPushSettingGlobal",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "icoFrame.activeIcoFrame": {
+   "iface": "icoFrame",
+   "method": "activeIcoFrame",
+   "argKeys": [
+    "frameId"
+   ],
+   "callSites": 1
+  },
+  "icoFrame.chgIcoFrame": {
+   "iface": "icoFrame",
+   "method": "chgIcoFrame",
+   "argKeys": [
+    "frameId"
+   ],
+   "callSites": 1
+  },
+  "title.activeTitle": {
+   "iface": "title",
+   "method": "activeTitle",
+   "argKeys": [
+    "titleId"
+   ],
+   "callSites": 1
+  },
+  "title.chgTitle": {
+   "iface": "title",
+   "method": "chgTitle",
+   "argKeys": [
+    "titleId"
+   ],
+   "callSites": 2
+  },
+  "bubble.activeBubble": {
+   "iface": "bubble",
+   "method": "activeBubble",
+   "argKeys": [
+    "bubbleId"
+   ],
+   "callSites": 1
+  },
+  "bubble.chgBubble": {
+   "iface": "bubble",
+   "method": "chgBubble",
+   "argKeys": [
+    "bubbleId"
+   ],
+   "callSites": 1
+  },
+  "usr.activeHead": {
+   "iface": "usr",
+   "method": "activeHead",
+   "argKeys": [
+    "headId"
+   ],
+   "callSites": 1
+  },
+  "act.recv": {
+   "iface": "act",
+   "method": "recv",
+   "argKeys": [
+    "batchId",
+    "taskId",
+    "taskIdx"
+   ],
+   "callSites": 1
+  },
+  "act.buy": {
+   "iface": "act",
+   "method": "buy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "shopIdx",
+    "shopItemId"
+   ],
+   "callSites": 1
+  },
+  "act.getRankAward": {
+   "iface": "act",
+   "method": "getRankAward",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "act.recvTLAward": {
+   "iface": "act",
+   "method": "recvTLAward",
+   "argKeys": [
+    "batchId",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "act.recvBoxes": {
+   "iface": "act",
+   "method": "recvBoxes",
+   "argKeys": [
+    "batchId",
+    "taskId",
+    "wayType"
+   ],
+   "callSites": 1
+  },
+  "act.refreshTask": {
+   "iface": "act",
+   "method": "refreshTask",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "act.giftBuy": {
+   "iface": "act",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "act.getOrderAward": {
+   "iface": "act",
+   "method": "getOrderAward",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "act.syncBatchInfo": {
+   "iface": "act",
+   "method": "syncBatchInfo",
+   "argKeys": [
+    "batchIdList"
+   ],
+   "callSites": 1
+  },
+  "actRchgRwd.enter": {
+   "iface": "actRchgRwd",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actRchgRwd.recv": {
+   "iface": "actRchgRwd",
+   "method": "recv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actOfficials.enter": {
+   "iface": "actOfficials",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actOfficials.buyItem": {
+   "iface": "actOfficials",
+   "method": "buyItem",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actOfficials.useItem": {
+   "iface": "actOfficials",
+   "method": "useItem",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actOfficials.recvGrpReachPrize": {
+   "iface": "actOfficials",
+   "method": "recvGrpReachPrize",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actRchgWheel.enter": {
+   "iface": "actRchgWheel",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actRchgWheel.getMyLog": {
+   "iface": "actRchgWheel",
+   "method": "getMyLog",
+   "argKeys": [
+    "batchId",
+    "index",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "actRchgWheel.startWheel": {
+   "iface": "actRchgWheel",
+   "method": "startWheel",
+   "argKeys": [
+    "batchId",
+    "drawNum"
+   ],
+   "callSites": 1
+  },
+  "fml.enter": {
+   "iface": "fml",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.create": {
+   "iface": "fml",
+   "method": "create",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.join": {
+   "iface": "fml",
+   "method": "join",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.handleApply": {
+   "iface": "fml",
+   "method": "handleApply",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.inv": {
+   "iface": "fml",
+   "method": "inv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.handleInv": {
+   "iface": "fml",
+   "method": "handleInv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.chgPos": {
+   "iface": "fml",
+   "method": "chgPos",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.bld": {
+   "iface": "fml",
+   "method": "bld",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.recvBox": {
+   "iface": "fml",
+   "method": "recvBox",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.kick": {
+   "iface": "fml",
+   "method": "kick",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.quit": {
+   "iface": "fml",
+   "method": "quit",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.setting": {
+   "iface": "fml",
+   "method": "setting",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.autoJoin": {
+   "iface": "fml",
+   "method": "autoJoin",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.search": {
+   "iface": "fml",
+   "method": "search",
+   "argKeys": [
+    "fid",
+    "withMb"
+   ],
+   "callSites": 1
+  },
+  "fml.getLog": {
+   "iface": "fml",
+   "method": "getLog",
+   "argKeys": [
+    "fid"
+   ],
+   "callSites": 1
+  },
+  "fml.dissolve": {
+   "iface": "fml",
+   "method": "dissolve",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fml.handleApplyAll": {
+   "iface": "fml",
+   "method": "handleApplyAll",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "frd.enter": {
+   "iface": "frd",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 2
+  },
+  "frd.getBlackList": {
+   "iface": "frd",
+   "method": "getBlackList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "frd.getApplyList": {
+   "iface": "frd",
+   "method": "getApplyList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "frd.getFriendList": {
+   "iface": "frd",
+   "method": "getFriendList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "frd.like": {
+   "iface": "frd",
+   "method": "like",
+   "argKeys": [
+    "uid"
+   ],
+   "callSites": 1
+  },
+  "frd.del": {
+   "iface": "frd",
+   "method": "del",
+   "argKeys": [
+    "uid"
+   ],
+   "callSites": 1
+  },
+  "frd.applyFrd": {
+   "iface": "frd",
+   "method": "applyFrd",
+   "argKeys": [
+    "uid"
+   ],
+   "callSites": 1
+  },
+  "frd.applyFrdBatch": {
+   "iface": "frd",
+   "method": "applyFrdBatch",
+   "argKeys": [
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "frd.handleApply": {
+   "iface": "frd",
+   "method": "handleApply",
+   "argKeys": [
+    "agree",
+    "uid"
+   ],
+   "callSites": 1
+  },
+  "frd.handleApplyBatch": {
+   "iface": "frd",
+   "method": "handleApplyBatch",
+   "argKeys": [
+    "agree",
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "frd.addBlack": {
+   "iface": "frd",
+   "method": "addBlack",
+   "argKeys": [
+    "uid"
+   ],
+   "callSites": 1
+  },
+  "frd.delBlack": {
+   "iface": "frd",
+   "method": "delBlack",
+   "argKeys": [
+    "uid"
+   ],
+   "callSites": 1
+  },
+  "frd.refreshRecList": {
+   "iface": "frd",
+   "method": "refreshRecList",
+   "argKeys": [
+    "isFree"
+   ],
+   "callSites": 1
+  },
+  "frd.setFrdRjt": {
+   "iface": "frd",
+   "method": "setFrdRjt",
+   "argKeys": [
+    "isRjtFrd"
+   ],
+   "callSites": 1
+  },
+  "im.enter": {
+   "iface": "im",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "im.send": {
+   "iface": "im",
+   "method": "send",
+   "argKeys": [
+    "cms",
+    "content",
+    "ext",
+    "roomId",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "im.read": {
+   "iface": "im",
+   "method": "read",
+   "argKeys": [
+    "msgId"
+   ],
+   "callSites": 1
+  },
+  "im.refuseStranger": {
+   "iface": "im",
+   "method": "refuseStranger",
+   "argKeys": [
+    "isRefuse"
+   ],
+   "callSites": 1
+  },
+  "im.delChatPri": {
+   "iface": "im",
+   "method": "delChatPri",
+   "argKeys": [
+    "toUid"
+   ],
+   "callSites": 1
+  },
+  "im.delChatPriRed": {
+   "iface": "im",
+   "method": "delChatPriRed",
+   "argKeys": [
+    "toUid"
+   ],
+   "callSites": 1
+  },
+  "im.getChannelId": {
+   "iface": "im",
+   "method": "getChannelId",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "im.changeChannel": {
+   "iface": "im",
+   "method": "changeChannel",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "im.getChannelMap": {
+   "iface": "im",
+   "method": "getChannelMap",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "im.changeChannelWithId": {
+   "iface": "im",
+   "method": "changeChannelWithId",
+   "argKeys": [
+    "channelId"
+   ],
+   "callSites": 1
+  },
+  "mail.read": {
+   "iface": "mail",
+   "method": "read",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "mail.oper": {
+   "iface": "mail",
+   "method": "oper",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "mail.pick": {
+   "iface": "mail",
+   "method": "pick",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "mail.del": {
+   "iface": "mail",
+   "method": "del",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "mail.getList": {
+   "iface": "mail",
+   "method": "getList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "mail.pickOneKey": {
+   "iface": "mail",
+   "method": "pickOneKey",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "mail.delOneKey": {
+   "iface": "mail",
+   "method": "delOneKey",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "rchgCard.recv": {
+   "iface": "rchgCard",
+   "method": "recv",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "rchgDay.enter": {
+   "iface": "rchgDay",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "rchgDay.receive": {
+   "iface": "rchgDay",
+   "method": "receive",
+   "argKeys": [
+    "index"
+   ],
+   "callSites": 1
+  },
+  "vip.recv": {
+   "iface": "vip",
+   "method": "recv",
+   "argKeys": [
+    "vip"
+   ],
+   "callSites": 1
+  },
+  "shop.buy": {
+   "iface": "shop",
+   "method": "buy",
+   "argKeys": [
+    "count",
+    "itemId",
+    "tempId"
+   ],
+   "callSites": 1
+  },
+  "shop.refresh": {
+   "iface": "shop",
+   "method": "refresh",
+   "argKeys": [
+    "tempId",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "shop.enter": {
+   "iface": "shop",
+   "method": "enter",
+   "argKeys": [
+    "tempId"
+   ],
+   "callSites": 2
+  },
+  "shop.sync": {
+   "iface": "shop",
+   "method": "sync",
+   "argKeys": [
+    "tempIds"
+   ],
+   "callSites": 1
+  },
+  "taskAch.recv": {
+   "iface": "taskAch",
+   "method": "recv",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "taskAch.recvOneKey": {
+   "iface": "taskAch",
+   "method": "recvOneKey",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "taskDly.enter": {
+   "iface": "taskDly",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "taskDly.recv": {
+   "iface": "taskDly",
+   "method": "recv",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "taskDly.recvBox": {
+   "iface": "taskDly",
+   "method": "recvBox",
+   "argKeys": [
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "taskInv.recv": {
+   "iface": "taskInv",
+   "method": "recv",
+   "argKeys": [
+    "id",
+    "isPro"
+   ],
+   "callSites": 1
+  },
+  "taskInv.recvOneKey": {
+   "iface": "taskInv",
+   "method": "recvOneKey",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "taskMain.recv": {
+   "iface": "taskMain",
+   "method": "recv",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "taskSys.recv": {
+   "iface": "taskSys",
+   "method": "recv",
+   "argKeys": [
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "taskSys.recvOneKey": {
+   "iface": "taskSys",
+   "method": "recvOneKey",
+   "argKeys": [
+    "classify",
+    "grpId"
+   ],
+   "callSites": 1
+  },
+  "taskSys.recvLvlRwd": {
+   "iface": "taskSys",
+   "method": "recvLvlRwd",
+   "argKeys": [
+    "classify",
+    "lvl"
+   ],
+   "callSites": 1
+  },
+  "taskSys.giftBuy": {
+   "iface": "taskSys",
+   "method": "giftBuy",
+   "argKeys": [
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "battlePass.recv": {
+   "iface": "battlePass",
+   "method": "recv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "battlePass.recvAll": {
+   "iface": "battlePass",
+   "method": "recvAll",
+   "argKeys": [
+    "bid"
+   ],
+   "callSites": 1
+  },
+  "battlePass.buyLvl": {
+   "iface": "battlePass",
+   "method": "buyLvl",
+   "argKeys": [
+    "bid",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "battlePass.taskDone": {
+   "iface": "battlePass",
+   "method": "taskDone",
+   "argKeys": [
+    "bid",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "zoo.readLog": {
+   "iface": "zoo",
+   "method": "readLog",
+   "argKeys": [
+    "petId"
+   ],
+   "callSites": 1
+  },
+  "rank.getRanks": {
+   "iface": "rank",
+   "method": "getRanks",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "redeem.getInfo": {
+   "iface": "redeem",
+   "method": "getInfo",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "redeem.useCode": {
+   "iface": "redeem",
+   "method": "useCode",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usr.updateVipService": {
+   "iface": "usr",
+   "method": "updateVipService",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usr.clearVipService": {
+   "iface": "usr",
+   "method": "clearVipService",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "thirdparty.applyToken": {
+   "iface": "thirdparty",
+   "method": "applyToken",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "boost.refresh": {
+   "iface": "boost",
+   "method": "refresh",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "boost.recvRwd": {
+   "iface": "boost",
+   "method": "recvRwd",
+   "argKeys": [
+    "boxId",
+    "idx",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "sys.informFml": {
+   "iface": "sys",
+   "method": "informFml",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "sys.informUsr": {
+   "iface": "sys",
+   "method": "informUsr",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "sys.informChat": {
+   "iface": "sys",
+   "method": "informChat",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "reputation.getLogs": {
+   "iface": "reputation",
+   "method": "getLogs",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "reputation.view": {
+   "iface": "reputation",
+   "method": "view",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "reputation.appeal": {
+   "iface": "reputation",
+   "method": "appeal",
+   "argKeys": [
+    "msIds",
+    "reason"
+   ],
+   "callSites": 1
+  },
+  "cheater.doCheat": {
+   "iface": "cheater",
+   "method": "doCheat",
+   "argKeys": [
+    "sl"
+   ],
+   "callSites": 1
+  },
+  "miniGame.startMiniGame": {
+   "iface": "miniGame",
+   "method": "startMiniGame",
+   "argKeys": [
+    "copyId",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "miniGame.endMiniGame": {
+   "iface": "miniGame",
+   "method": "endMiniGame",
+   "argKeys": [
+    "copyId",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "miniGame.enterMiniGame": {
+   "iface": "miniGame",
+   "method": "enterMiniGame",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "cultivate.cultivate": {
+   "iface": "cultivate",
+   "method": "cultivate",
+   "argKeys": [
+    "flowerId"
+   ],
+   "callSites": 1
+  },
+  "cultivate.recv": {
+   "iface": "cultivate",
+   "method": "recv",
+   "argKeys": [
+    "flowerId"
+   ],
+   "callSites": 1
+  },
+  "cultivate.upgrade": {
+   "iface": "cultivate",
+   "method": "upgrade",
+   "argKeys": [
+    "flowerId"
+   ],
+   "callSites": 1
+  },
+  "cultivate.clearCulCd": {
+   "iface": "cultivate",
+   "method": "clearCulCd",
+   "argKeys": [
+    "flowerId"
+   ],
+   "callSites": 1
+  },
+  "cultivate.reduceByHelp": {
+   "iface": "cultivate",
+   "method": "reduceByHelp",
+   "argKeys": [
+    "flowerId",
+    "helpUid"
+   ],
+   "callSites": 1
+  },
+  "cultivate.reduceByItem": {
+   "iface": "cultivate",
+   "method": "reduceByItem",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "cultivate.unlockSlot": {
+   "iface": "cultivate",
+   "method": "unlockSlot",
+   "argKeys": [
+    "flowerId",
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "cultivate.randomSkill": {
+   "iface": "cultivate",
+   "method": "randomSkill",
+   "argKeys": [
+    "flowerId",
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "cultivate.chooseSkill": {
+   "iface": "cultivate",
+   "method": "chooseSkill",
+   "argKeys": [
+    "chooseType",
+    "flowerId",
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.unlockLand": {
+   "iface": "usrLand",
+   "method": "unlockLand",
+   "argKeys": [
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.plant": {
+   "iface": "usrLand",
+   "method": "plant",
+   "argKeys": [
+    "flowerId",
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.plantOneKey": {
+   "iface": "usrLand",
+   "method": "plantOneKey",
+   "argKeys": [
+    "flowerId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.water": {
+   "iface": "usrLand",
+   "method": "water",
+   "argKeys": [
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.waterOneKey": {
+   "iface": "usrLand",
+   "method": "waterOneKey",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usrLand.refresh": {
+   "iface": "usrLand",
+   "method": "refresh",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usrLand.harvest": {
+   "iface": "usrLand",
+   "method": "harvest",
+   "argKeys": [
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.harvestOneKey": {
+   "iface": "usrLand",
+   "method": "harvestOneKey",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usrLand.clear": {
+   "iface": "usrLand",
+   "method": "clear",
+   "argKeys": [
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.clearOneKey": {
+   "iface": "usrLand",
+   "method": "clearOneKey",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usrLand.speedUp": {
+   "iface": "usrLand",
+   "method": "speedUp",
+   "argKeys": [
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "usrLand.speedUpOneKey": {
+   "iface": "usrLand",
+   "method": "speedUpOneKey",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usrLand.speedUpFree": {
+   "iface": "usrLand",
+   "method": "speedUpFree",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usrLand.plantBatch": {
+   "iface": "usrLand",
+   "method": "plantBatch",
+   "argKeys": [
+    "flowerId",
+    "landIds"
+   ],
+   "callSites": 1
+  },
+  "usrLand.waterBatch": {
+   "iface": "usrLand",
+   "method": "waterBatch",
+   "argKeys": [
+    "landIds"
+   ],
+   "callSites": 1
+  },
+  "usrLand.speedUpBatch": {
+   "iface": "usrLand",
+   "method": "speedUpBatch",
+   "argKeys": [
+    "landIds"
+   ],
+   "callSites": 1
+  },
+  "usrLand.clearBatch": {
+   "iface": "usrLand",
+   "method": "clearBatch",
+   "argKeys": [
+    "landIds"
+   ],
+   "callSites": 1
+  },
+  "collectRwd.recv": {
+   "iface": "collectRwd",
+   "method": "recv",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "collectRwd.recvArtCreateRwd": {
+   "iface": "collectRwd",
+   "method": "recvArtCreateRwd",
+   "argKeys": [
+    "flowerArtId"
+   ],
+   "callSites": 1
+  },
+  "collectRwd.recvArtCreateRwdByVase": {
+   "iface": "collectRwd",
+   "method": "recvArtCreateRwdByVase",
+   "argKeys": [
+    "flowerArtId"
+   ],
+   "callSites": 1
+  },
+  "benefitBox.draw": {
+   "iface": "benefitBox",
+   "method": "draw",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "homeRqst.showBird": {
+   "iface": "homeRqst",
+   "method": "showBird",
+   "argKeys": [
+    "time"
+   ],
+   "callSites": 1
+  },
+  "fmlRqst.showFml": {
+   "iface": "fmlRqst",
+   "method": "showFml",
+   "argKeys": [
+    "time"
+   ],
+   "callSites": 1
+  },
+  "fmlRaceRqst.showShip": {
+   "iface": "fmlRaceRqst",
+   "method": "showShip",
+   "argKeys": [
+    "time"
+   ],
+   "callSites": 1
+  },
+  "giveGift.getGiveUidList": {
+   "iface": "giveGift",
+   "method": "getGiveUidList",
+   "argKeys": [
+    "batchId",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "freeWater.recv": {
+   "iface": "freeWater",
+   "method": "recv",
+   "argKeys": [
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "roadGrow.recv": {
+   "iface": "roadGrow",
+   "method": "recv",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "roadGrow.recvBox": {
+   "iface": "roadGrow",
+   "method": "recvBox",
+   "argKeys": [
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "reserve.checkRwd": {
+   "iface": "reserve",
+   "method": "checkRwd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "secPwd.setPwd": {
+   "iface": "secPwd",
+   "method": "setPwd",
+   "argKeys": [
+    "answer",
+    "answer2",
+    "pwd",
+    "question",
+    "question2"
+   ],
+   "callSites": 1
+  },
+  "secPwd.checkPwd": {
+   "iface": "secPwd",
+   "method": "checkPwd",
+   "argKeys": [
+    "pwd"
+   ],
+   "callSites": 1
+  },
+  "secPwd.changePwd": {
+   "iface": "secPwd",
+   "method": "changePwd",
+   "argKeys": [
+    "newPwd",
+    "oldPwd"
+   ],
+   "callSites": 1
+  },
+  "secPwd.getQuestion": {
+   "iface": "secPwd",
+   "method": "getQuestion",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "secPwd.resetPwd": {
+   "iface": "secPwd",
+   "method": "resetPwd",
+   "argKeys": [
+    "answer",
+    "newPwd",
+    "selectIdx"
+   ],
+   "callSites": 1
+  },
+  "secPwd.closeSecPwd": {
+   "iface": "secPwd",
+   "method": "closeSecPwd",
+   "argKeys": [
+    "pwd"
+   ],
+   "callSites": 1
+  },
+  "secPwd.firstUse": {
+   "iface": "secPwd",
+   "method": "firstUse",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderFlower.enter": {
+   "iface": "orderFlower",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderFlower.finishOrder": {
+   "iface": "orderFlower",
+   "method": "finishOrder",
+   "argKeys": [
+    "boxId"
+   ],
+   "callSites": 1
+  },
+  "orderFlower.finishSatinOrder": {
+   "iface": "orderFlower",
+   "method": "finishSatinOrder",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderFlower.finishDecorateOrder": {
+   "iface": "orderFlower",
+   "method": "finishDecorateOrder",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderFlower.recvOrderRwd": {
+   "iface": "orderFlower",
+   "method": "recvOrderRwd",
+   "argKeys": [
+    "target"
+   ],
+   "callSites": 1
+  },
+  "orderFlower.ressuieOrderRwd": {
+   "iface": "orderFlower",
+   "method": "ressuieOrderRwd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderTeam.takeOrder": {
+   "iface": "orderTeam",
+   "method": "takeOrder",
+   "argKeys": [
+    "isAgree",
+    "isCost"
+   ],
+   "callSites": 1
+  },
+  "orderTeam.submitOrder": {
+   "iface": "orderTeam",
+   "method": "submitOrder",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderTeam.refreshOrder": {
+   "iface": "orderTeam",
+   "method": "refreshOrder",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderTeam.recvRwd": {
+   "iface": "orderTeam",
+   "method": "recvRwd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderTeam.storeOrder": {
+   "iface": "orderTeam",
+   "method": "storeOrder",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderTeam.takeStoredOrder": {
+   "iface": "orderTeam",
+   "method": "takeStoredOrder",
+   "argKeys": [
+    "npcId"
+   ],
+   "callSites": 1
+  },
+  "orderPalace.enter": {
+   "iface": "orderPalace",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderPalace.finishOrder": {
+   "iface": "orderPalace",
+   "method": "finishOrder",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderPalace.refreshOrder": {
+   "iface": "orderPalace",
+   "method": "refreshOrder",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderPalace.getOrderRcdList": {
+   "iface": "orderPalace",
+   "method": "getOrderRcdList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "orderCustomer.genOrder": {
+   "iface": "orderCustomer",
+   "method": "genOrder",
+   "argKeys": [
+    "guestNpcIdList"
+   ],
+   "callSites": 1
+  },
+  "orderCustomer.finishOrder": {
+   "iface": "orderCustomer",
+   "method": "finishOrder",
+   "argKeys": [
+    "npcId"
+   ],
+   "callSites": 1
+  },
+  "orderCustomer.rejectOrder": {
+   "iface": "orderCustomer",
+   "method": "rejectOrder",
+   "argKeys": [
+    "npcId"
+   ],
+   "callSites": 1
+  },
+  "flowerRack.sell": {
+   "iface": "flowerRack",
+   "method": "sell",
+   "argKeys": [
+    "iid",
+    "num",
+    "rackId"
+   ],
+   "callSites": 1
+  },
+  "flowerRack.cancelSell": {
+   "iface": "flowerRack",
+   "method": "cancelSell",
+   "argKeys": [
+    "rackId"
+   ],
+   "callSites": 1
+  },
+  "flowerRack.recvSellMoney": {
+   "iface": "flowerRack",
+   "method": "recvSellMoney",
+   "argKeys": [
+    "rackId"
+   ],
+   "callSites": 1
+  },
+  "flowerRack.unlockStand": {
+   "iface": "flowerRack",
+   "method": "unlockStand",
+   "argKeys": [
+    "standId"
+   ],
+   "callSites": 1
+  },
+  "flowerRack.recvOneKey": {
+   "iface": "flowerRack",
+   "method": "recvOneKey",
+   "argKeys": [
+    "standId"
+   ],
+   "callSites": 1
+  },
+  "flowerRack.recvAll": {
+   "iface": "flowerRack",
+   "method": "recvAll",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "flowerRack.sellOneKey": {
+   "iface": "flowerRack",
+   "method": "sellOneKey",
+   "argKeys": [
+    "sellMap"
+   ],
+   "callSites": 1
+  },
+  "pearlPlace.hire": {
+   "iface": "pearlPlace",
+   "method": "hire",
+   "argKeys": [
+    "dstUid",
+    "placeId"
+   ],
+   "callSites": 1
+  },
+  "pearlPlace.recv": {
+   "iface": "pearlPlace",
+   "method": "recv",
+   "argKeys": [
+    "placeId"
+   ],
+   "callSites": 1
+  },
+  "pearlPlace.unlockPlace": {
+   "iface": "pearlPlace",
+   "method": "unlockPlace",
+   "argKeys": [
+    "placeId"
+   ],
+   "callSites": 1
+  },
+  "pearlPlace.recvOneKey": {
+   "iface": "pearlPlace",
+   "method": "recvOneKey",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "pearl.setProtectState": {
+   "iface": "pearl",
+   "method": "setProtectState",
+   "argKeys": [
+    "protectState"
+   ],
+   "callSites": 1
+  },
+  "pearl.draw": {
+   "iface": "pearl",
+   "method": "draw",
+   "argKeys": [
+    "count"
+   ],
+   "callSites": 1
+  },
+  "pearl.recvDailyFree": {
+   "iface": "pearl",
+   "method": "recvDailyFree",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "pearl.refresh": {
+   "iface": "pearl",
+   "method": "refresh",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "pearl.getMyHireLog": {
+   "iface": "pearl",
+   "method": "getMyHireLog",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "pearl.getHireMyLog": {
+   "iface": "pearl",
+   "method": "getHireMyLog",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "pearl.getHireStateByUids": {
+   "iface": "pearl",
+   "method": "getHireStateByUids",
+   "argKeys": [
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "pearl.getRecommendList": {
+   "iface": "pearl",
+   "method": "getRecommendList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "frdExt.follow": {
+   "iface": "frdExt",
+   "method": "follow",
+   "argKeys": [
+    "frdUid"
+   ],
+   "callSites": 1
+  },
+  "frdExt.cancelFollow": {
+   "iface": "frdExt",
+   "method": "cancelFollow",
+   "argKeys": [
+    "frdUid"
+   ],
+   "callSites": 1
+  },
+  "frdExt.buyStealCnt": {
+   "iface": "frdExt",
+   "method": "buyStealCnt",
+   "argKeys": [
+    "buyCnt",
+    "frdUid"
+   ],
+   "callSites": 1
+  },
+  "frdExt.getFrdOtherInfoByUids": {
+   "iface": "frdExt",
+   "method": "getFrdOtherInfoByUids",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "frdExt.searchUser": {
+   "iface": "frdExt",
+   "method": "searchUser",
+   "argKeys": [
+    "keyword"
+   ],
+   "callSites": 1
+  },
+  "frdHome.getFrdHomeInfo": {
+   "iface": "frdHome",
+   "method": "getFrdHomeInfo",
+   "argKeys": [
+    "frdUid"
+   ],
+   "callSites": 1
+  },
+  "frdShare.enter": {
+   "iface": "frdShare",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "frdShare.recvSelfRwd": {
+   "iface": "frdShare",
+   "method": "recvSelfRwd",
+   "argKeys": [
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "frdShare.recvShareRwd": {
+   "iface": "frdShare",
+   "method": "recvShareRwd",
+   "argKeys": [
+    "idx",
+    "inviterUid",
+    "weekId"
+   ],
+   "callSites": 1
+  },
+  "frdShare.recvBoxRwd": {
+   "iface": "frdShare",
+   "method": "recvBoxRwd",
+   "argKeys": [
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "frdNote.setNote": {
+   "iface": "frdNote",
+   "method": "setNote",
+   "argKeys": [
+    "frdUid",
+    "note"
+   ],
+   "callSites": 1
+  },
+  "fml.clearQuitTime": {
+   "iface": "fml",
+   "method": "clearQuitTime",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.upgradeFml": {
+   "iface": "fml",
+   "method": "upgradeFml",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.getRecFmlList": {
+   "iface": "fml",
+   "method": "getRecFmlList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.openFmlRaceBox": {
+   "iface": "fml",
+   "method": "openFmlRaceBox",
+   "argKeys": [
+    "isAll"
+   ],
+   "callSites": 1
+  },
+  "fml.getHonor": {
+   "iface": "fml",
+   "method": "getHonor",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.getTitleLogList": {
+   "iface": "fml",
+   "method": "getTitleLogList",
+   "argKeys": [
+    "titleId"
+   ],
+   "callSites": 1
+  },
+  "fml.unbindUnionGroup": {
+   "iface": "fml",
+   "method": "unbindUnionGroup",
+   "argKeys": [
+    "fmlId"
+   ],
+   "callSites": 1
+  },
+  "fml.getDecorateList": {
+   "iface": "fml",
+   "method": "getDecorateList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.chgDecorate": {
+   "iface": "fml",
+   "method": "chgDecorate",
+   "argKeys": [
+    "decorateId"
+   ],
+   "callSites": 1
+  },
+  "fml.chgTitle": {
+   "iface": "fml",
+   "method": "chgTitle",
+   "argKeys": [
+    "titleId"
+   ],
+   "callSites": 2
+  },
+  "fml.refreshTitle": {
+   "iface": "fml",
+   "method": "refreshTitle",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlLand.unlock": {
+   "iface": "fmlLand",
+   "method": "unlock",
+   "argKeys": [
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "fmlLand.upgrade": {
+   "iface": "fmlLand",
+   "method": "upgrade",
+   "argKeys": [
+    "landId"
+   ],
+   "callSites": 1
+  },
+  "fmlLand.plant": {
+   "iface": "fmlLand",
+   "method": "plant",
+   "argKeys": [
+    "flwId",
+    "landIds"
+   ],
+   "callSites": 1
+  },
+  "fmlLand.harvest": {
+   "iface": "fmlLand",
+   "method": "harvest",
+   "argKeys": [
+    "landIds"
+   ],
+   "callSites": 1
+  },
+  "fmlLand.harvestAll": {
+   "iface": "fmlLand",
+   "method": "harvestAll",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlFlowerShow.getShowInfo": {
+   "iface": "fmlFlowerShow",
+   "method": "getShowInfo",
+   "argKeys": [
+    "targetUid"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShow.unlockSlot": {
+   "iface": "fmlFlowerShow",
+   "method": "unlockSlot",
+   "argKeys": [
+    "index"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShow.saveShow": {
+   "iface": "fmlFlowerShow",
+   "method": "saveShow",
+   "argKeys": [
+    "showFlowers"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShow.setVisitType": {
+   "iface": "fmlFlowerShow",
+   "method": "setVisitType",
+   "argKeys": [
+    "visitType"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShow.switchMap": {
+   "iface": "fmlFlowerShow",
+   "method": "switchMap",
+   "argKeys": [
+    "mapId"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShow.likeOther": {
+   "iface": "fmlFlowerShow",
+   "method": "likeOther",
+   "argKeys": [
+    "targetUid"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShow.cancelLikeOther": {
+   "iface": "fmlFlowerShow",
+   "method": "cancelLikeOther",
+   "argKeys": [
+    "targetUid"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShow.getLikeOtherRecord": {
+   "iface": "fmlFlowerShow",
+   "method": "getLikeOtherRecord",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlFlowerShow.getLikeOtherRecord5Limit": {
+   "iface": "fmlFlowerShow",
+   "method": "getLikeOtherRecord5Limit",
+   "argKeys": [
+    "uid"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShare.unlock": {
+   "iface": "fmlFlowerShare",
+   "method": "unlock",
+   "argKeys": [
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShare.share": {
+   "iface": "fmlFlowerShare",
+   "method": "share",
+   "argKeys": [
+    "flowerId",
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShare.getFmlOtherShareList": {
+   "iface": "fmlFlowerShare",
+   "method": "getFmlOtherShareList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlFlowerShare.take": {
+   "iface": "fmlFlowerShare",
+   "method": "take",
+   "argKeys": [
+    "dstUid",
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShare.addTakeCnt": {
+   "iface": "fmlFlowerShare",
+   "method": "addTakeCnt",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlFlowerShare.recvRwd": {
+   "iface": "fmlFlowerShare",
+   "method": "recvRwd",
+   "argKeys": [
+    "slotIds"
+   ],
+   "callSites": 1
+  },
+  "fmlFlowerShare.refresh": {
+   "iface": "fmlFlowerShare",
+   "method": "refresh",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlFlowerShare.getShareLogList": {
+   "iface": "fmlFlowerShare",
+   "method": "getShareLogList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.enter": {
+   "iface": "fmlRace",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.getGroupFmlRaceRcdList": {
+   "iface": "fmlRace",
+   "method": "getGroupFmlRaceRcdList",
+   "argKeys": [
+    "batchId",
+    "groupId",
+    "isRefresh"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.refreshFmlRaceBatch": {
+   "iface": "fmlRace",
+   "method": "refreshFmlRaceBatch",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.getFmlRaceHistRcdList": {
+   "iface": "fmlRace",
+   "method": "getFmlRaceHistRcdList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.getTaskList": {
+   "iface": "fmlRace",
+   "method": "getTaskList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.takeTask": {
+   "iface": "fmlRace",
+   "method": "takeTask",
+   "argKeys": [
+    "taskMsId"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.finishTask": {
+   "iface": "fmlRace",
+   "method": "finishTask",
+   "argKeys": [
+    "taskMsId"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.delTask": {
+   "iface": "fmlRace",
+   "method": "delTask",
+   "argKeys": [
+    "taskMsId"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.giveUpTask": {
+   "iface": "fmlRace",
+   "method": "giveUpTask",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.refreshTask": {
+   "iface": "fmlRace",
+   "method": "refreshTask",
+   "argKeys": [
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.upgradeTask": {
+   "iface": "fmlRace",
+   "method": "upgradeTask",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.buyTaskNum": {
+   "iface": "fmlRace",
+   "method": "buyTaskNum",
+   "argKeys": [
+    "num"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.getFmlRaceEndDisplayData": {
+   "iface": "fmlRace",
+   "method": "getFmlRaceEndDisplayData",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.getFmlRaceUsrRankList": {
+   "iface": "fmlRace",
+   "method": "getFmlRaceUsrRankList",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.getTaskLogList": {
+   "iface": "fmlRace",
+   "method": "getTaskLogList",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "fmlRace.refreshFmlRaceBox": {
+   "iface": "fmlRace",
+   "method": "refreshFmlRaceBox",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.getFmlRaceTaskScore": {
+   "iface": "fmlRace",
+   "method": "getFmlRaceTaskScore",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlRace.getNewMbScoreRank": {
+   "iface": "fmlRace",
+   "method": "getNewMbScoreRank",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlForest.collectEnergy": {
+   "iface": "fmlForest",
+   "method": "collectEnergy",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "fmlForest.refresh": {
+   "iface": "fmlForest",
+   "method": "refresh",
+   "argKeys": [
+    "isAutoCollect"
+   ],
+   "callSites": 1
+  },
+  "fmlForest.enter": {
+   "iface": "fmlForest",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlForest.getLogList": {
+   "iface": "fmlForest",
+   "method": "getLogList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlForest.getWeekStat": {
+   "iface": "fmlForest",
+   "method": "getWeekStat",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlForest.getWeekCollect": {
+   "iface": "fmlForest",
+   "method": "getWeekCollect",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlForest.getTreeList": {
+   "iface": "fmlForest",
+   "method": "getTreeList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fmlForest.applyPlant": {
+   "iface": "fmlForest",
+   "method": "applyPlant",
+   "argKeys": [
+    "treeId"
+   ],
+   "callSites": 1
+  },
+  "fmlForest.getCertDetail": {
+   "iface": "fmlForest",
+   "method": "getCertDetail",
+   "argKeys": [
+    "treeCodeList"
+   ],
+   "callSites": 1
+  },
+  "fmlForest.getCertDetailByFid": {
+   "iface": "fmlForest",
+   "method": "getCertDetailByFid",
+   "argKeys": [
+    "fid"
+   ],
+   "callSites": 1
+  },
+  "fml.upgradeRaceBoat": {
+   "iface": "fml",
+   "method": "upgradeRaceBoat",
+   "argKeys": [
+    "boatId"
+   ],
+   "callSites": 1
+  },
+  "fml.equipRaceBoat": {
+   "iface": "fml",
+   "method": "equipRaceBoat",
+   "argKeys": [
+    "boatId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "fml.unloadRaceBoat": {
+   "iface": "fml",
+   "method": "unloadRaceBoat",
+   "argKeys": [
+    "boatId"
+   ],
+   "callSites": 1
+  },
+  "fml.refreshRaceBoat": {
+   "iface": "fml",
+   "method": "refreshRaceBoat",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "fml.buyRaceBoat": {
+   "iface": "fml",
+   "method": "buyRaceBoat",
+   "argKeys": [
+    "boatId"
+   ],
+   "callSites": 1
+  },
+  "flowerArt.makeFlowerArt": {
+   "iface": "flowerArt",
+   "method": "makeFlowerArt",
+   "argKeys": [
+    "flowersIds",
+    "num",
+    "vaseId"
+   ],
+   "callSites": 1
+  },
+  "frdSteal.getFrdStealRcdList": {
+   "iface": "frdSteal",
+   "method": "getFrdStealRcdList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "frdSteal.steal": {
+   "iface": "frdSteal",
+   "method": "steal",
+   "argKeys": [
+    "frdUid",
+    "landId",
+    "stealElves"
+   ],
+   "callSites": 1
+  },
+  "frdSteal.getStealStateByUids": {
+   "iface": "frdSteal",
+   "method": "getStealStateByUids",
+   "argKeys": [
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "frdSteal.stealOneKey": {
+   "iface": "frdSteal",
+   "method": "stealOneKey",
+   "argKeys": [
+    "frdUid"
+   ],
+   "callSites": 1
+  },
+  "shopGiftbag.enter": {
+   "iface": "shopGiftbag",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopGiftbag.buy": {
+   "iface": "shopGiftbag",
+   "method": "buy",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "shopCultivate.enter": {
+   "iface": "shopCultivate",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopCultivate.refresh": {
+   "iface": "shopCultivate",
+   "method": "refresh",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopCultivate.buy": {
+   "iface": "shopCultivate",
+   "method": "buy",
+   "argKeys": [
+    "shopId"
+   ],
+   "callSites": 1
+  },
+  "shopCultivate.buyOneKey": {
+   "iface": "shopCultivate",
+   "method": "buyOneKey",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopFmlUsr.unlockSlot": {
+   "iface": "shopFmlUsr",
+   "method": "unlockSlot",
+   "argKeys": [
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "shopFmlUsr.enter": {
+   "iface": "shopFmlUsr",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopFmlUsr.refresh": {
+   "iface": "shopFmlUsr",
+   "method": "refresh",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopFmlUsr.buy": {
+   "iface": "shopFmlUsr",
+   "method": "buy",
+   "argKeys": [
+    "count",
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "shopFmlUsr.buyAll": {
+   "iface": "shopFmlUsr",
+   "method": "buyAll",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopFmlUsr.buildShop": {
+   "iface": "shopFmlUsr",
+   "method": "buildShop",
+   "argKeys": [
+    "skillId"
+   ],
+   "callSites": 1
+  },
+  "shopFmlRace.buy": {
+   "iface": "shopFmlRace",
+   "method": "buy",
+   "argKeys": [
+    "isAll"
+   ],
+   "callSites": 1
+  },
+  "shopFlowerElves.enter": {
+   "iface": "shopFlowerElves",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "shopFlowerElves.buy": {
+   "iface": "shopFlowerElves",
+   "method": "buy",
+   "argKeys": [
+    "num",
+    "shopId"
+   ],
+   "callSites": 1
+  },
+  "taskWeek.recv": {
+   "iface": "taskWeek",
+   "method": "recv",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.enter": {
+   "iface": "flowerMarket",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "flowerMarket.unlockShelf": {
+   "iface": "flowerMarket",
+   "method": "unlockShelf",
+   "argKeys": [
+    "shelfId"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.buyPutCount": {
+   "iface": "flowerMarket",
+   "method": "buyPutCount",
+   "argKeys": [
+    "count"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.putFlower": {
+   "iface": "flowerMarket",
+   "method": "putFlower",
+   "argKeys": [
+    "count",
+    "flowerId",
+    "password",
+    "priceIdx",
+    "shelfId"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.putFlowerBatch": {
+   "iface": "flowerMarket",
+   "method": "putFlowerBatch",
+   "argKeys": [
+    "count",
+    "flowerId",
+    "password",
+    "priceIdx",
+    "shelfIds"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.takeDownFlower": {
+   "iface": "flowerMarket",
+   "method": "takeDownFlower",
+   "argKeys": [
+    "shelfId"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.buyFlower": {
+   "iface": "flowerMarket",
+   "method": "buyFlower",
+   "argKeys": [
+    "flower",
+    "password",
+    "sellerUid",
+    "shelfId"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.checkPassword": {
+   "iface": "flowerMarket",
+   "method": "checkPassword",
+   "argKeys": [
+    "password",
+    "sellerUid",
+    "shelfId"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.harvestIncome": {
+   "iface": "flowerMarket",
+   "method": "harvestIncome",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "flowerMarket.getFriendList": {
+   "iface": "flowerMarket",
+   "method": "getFriendList",
+   "argKeys": [
+    "specificFriendIds"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.getTradeRecords": {
+   "iface": "flowerMarket",
+   "method": "getTradeRecords",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "flowerMarket.getFriend": {
+   "iface": "flowerMarket",
+   "method": "getFriend",
+   "argKeys": [
+    "frdUid"
+   ],
+   "callSites": 1
+  },
+  "flowerMarket.setMsg": {
+   "iface": "flowerMarket",
+   "method": "setMsg",
+   "argKeys": [
+    "msg"
+   ],
+   "callSites": 1
+  },
+  "fashion.equip": {
+   "iface": "fashion",
+   "method": "equip",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "fashion.read": {
+   "iface": "fashion",
+   "method": "read",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "PlantRqst.zhtc": {
+   "iface": "PlantRqst",
+   "method": "zhtc",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "ReapPopup.shjm": {
+   "iface": "ReapPopup",
+   "method": "shjm",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "waterRqst.djst": {
+   "iface": "waterRqst",
+   "method": "djst",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "customerOrderRqst.dkgkck": {
+   "iface": "customerOrderRqst",
+   "method": "dkgkck",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "flowerOrderRqst.showR": {
+   "iface": "flowerOrderRqst",
+   "method": "showR",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "teamOrderPopup.showT": {
+   "iface": "teamOrderPopup",
+   "method": "showT",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "redeemCodeShow.djdk": {
+   "iface": "redeemCodeShow",
+   "method": "djdk",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "fmlTaskEnter.showtcrw": {
+   "iface": "fmlTaskEnter",
+   "method": "showtcrw",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "benefitBox.enterBox": {
+   "iface": "benefitBox",
+   "method": "enterBox",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "preventScams.enterPs": {
+   "iface": "preventScams",
+   "method": "enterPs",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "pet.enterPet1": {
+   "iface": "pet",
+   "method": "enterPet1",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "pet.enterPet2": {
+   "iface": "pet",
+   "method": "enterPet2",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "pet.enterPet3": {
+   "iface": "pet",
+   "method": "enterPet3",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "dailyTask.enterTask": {
+   "iface": "dailyTask",
+   "method": "enterTask",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "sign.enterSign": {
+   "iface": "sign",
+   "method": "enterSign",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "shopFreeGift.enterShop": {
+   "iface": "shopFreeGift",
+   "method": "enterShop",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "flowerPass.enterFlowerPass": {
+   "iface": "flowerPass",
+   "method": "enterFlowerPass",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesPass.enterFlowerElvesPass": {
+   "iface": "flowerElvesPass",
+   "method": "enterFlowerElvesPass",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "pearlPlace.enterPearlPlaceHire": {
+   "iface": "pearlPlace",
+   "method": "enterPearlPlaceHire",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "pearlPlace.enterPearlPlaceRecv": {
+   "iface": "pearlPlace",
+   "method": "enterPearlPlaceRecv",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "shopCultivate.enterShopCultivate": {
+   "iface": "shopCultivate",
+   "method": "enterShopCultivate",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "frdSteal.enterFrdSteal": {
+   "iface": "frdSteal",
+   "method": "enterFrdSteal",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "frdSteal.enterAddFrdSteal": {
+   "iface": "frdSteal",
+   "method": "enterAddFrdSteal",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "cultivate.enterCultivate": {
+   "iface": "cultivate",
+   "method": "enterCultivate",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "fmlBld.enterFmlBld": {
+   "iface": "fmlBld",
+   "method": "enterFmlBld",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "usrVerInfo.refresh": {
+   "iface": "usrVerInfo",
+   "method": "refresh",
+   "argKeys": [
+    "point"
+   ],
+   "callSites": 1
+  },
+  "usr.activeCard": {
+   "iface": "usr",
+   "method": "activeCard",
+   "argKeys": [
+    "cardId"
+   ],
+   "callSites": 1
+  },
+  "usr.chgCard": {
+   "iface": "usr",
+   "method": "chgCard",
+   "argKeys": [
+    "cardId"
+   ],
+   "callSites": 1
+  },
+  "usr.activeMedal": {
+   "iface": "usr",
+   "method": "activeMedal",
+   "argKeys": [
+    "medalId"
+   ],
+   "callSites": 1
+  },
+  "fml.getMedalRwd": {
+   "iface": "fml",
+   "method": "getMedalRwd",
+   "argKeys": [
+    "medalId"
+   ],
+   "callSites": 1
+  },
+  "usr.refreshMedal": {
+   "iface": "usr",
+   "method": "refreshMedal",
+   "argKeys": [
+    "medalId"
+   ],
+   "callSites": 1
+  },
+  "usr.recvSignRwd": {
+   "iface": "usr",
+   "method": "recvSignRwd",
+   "argKeys": [
+    "medalId"
+   ],
+   "callSites": 1
+  },
+  "usr.setMedalShow": {
+   "iface": "usr",
+   "method": "setMedalShow",
+   "argKeys": [
+    "medalIds"
+   ],
+   "callSites": 1
+  },
+  "usr.changeInfoBg": {
+   "iface": "usr",
+   "method": "changeInfoBg",
+   "argKeys": [
+    "bgId"
+   ],
+   "callSites": 1
+  },
+  "storyMain.enter": {
+   "iface": "storyMain",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "storyMain.unlock": {
+   "iface": "storyMain",
+   "method": "unlock",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "waterwheel.enter": {
+   "iface": "waterwheel",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "waterwheel.recv": {
+   "iface": "waterwheel",
+   "method": "recv",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "waterwheel.skip": {
+   "iface": "waterwheel",
+   "method": "skip",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "misc.buyMonthCard": {
+   "iface": "misc",
+   "method": "buyMonthCard",
+   "argKeys": [
+    "num"
+   ],
+   "callSites": 1
+  },
+  "misc.sellFlower": {
+   "iface": "misc",
+   "method": "sellFlower",
+   "argKeys": [
+    "flowerId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "misc.recvMsgPushRwd": {
+   "iface": "misc",
+   "method": "recvMsgPushRwd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "misc.getAdvanceWashItem": {
+   "iface": "misc",
+   "method": "getAdvanceWashItem",
+   "argKeys": [
+    "itemId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "misc.reportCheckBw": {
+   "iface": "misc",
+   "method": "reportCheckBw",
+   "argKeys": [
+    "dstUid"
+   ],
+   "callSites": 1
+  },
+  "misc.getPersonalCode": {
+   "iface": "misc",
+   "method": "getPersonalCode",
+   "argKeys": [
+    "isRefresh",
+    "targetUid"
+   ],
+   "callSites": 1
+  },
+  "misc.getFmlCode": {
+   "iface": "misc",
+   "method": "getFmlCode",
+   "argKeys": [
+    "fid",
+    "isRefresh"
+   ],
+   "callSites": 1
+  },
+  "draw.draw": {
+   "iface": "draw",
+   "method": "draw",
+   "argKeys": [
+    "num"
+   ],
+   "callSites": 1
+  },
+  "draw.testDrawVirtual": {
+   "iface": "draw",
+   "method": "testDrawVirtual",
+   "argKeys": [
+    "flowerId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "monthFlower.enter": {
+   "iface": "monthFlower",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "monthFlower.buy": {
+   "iface": "monthFlower",
+   "method": "buy",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "peddler.enter": {
+   "iface": "peddler",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "peddler.invest": {
+   "iface": "peddler",
+   "method": "invest",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "peddler.investAccount": {
+   "iface": "peddler",
+   "method": "investAccount",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "callFriend.enter": {
+   "iface": "callFriend",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "callFriend.recv": {
+   "iface": "callFriend",
+   "method": "recv",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "callFriend.useCode": {
+   "iface": "callFriend",
+   "method": "useCode",
+   "argKeys": [
+    "code"
+   ],
+   "callSites": 1
+  },
+  "randomEvent.enter": {
+   "iface": "randomEvent",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "randomEvent.doAffair": {
+   "iface": "randomEvent",
+   "method": "doAffair",
+   "argKeys": [
+    "eventId"
+   ],
+   "callSites": 1
+  },
+  "flowerGift.recvBox": {
+   "iface": "flowerGift",
+   "method": "recvBox",
+   "argKeys": [
+    "idx",
+    "pageId"
+   ],
+   "callSites": 1
+  },
+  "channelRwd.recvFstSidebarRwd": {
+   "iface": "channelRwd",
+   "method": "recvFstSidebarRwd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "channelRwd.recvFstDesktopRwd": {
+   "iface": "channelRwd",
+   "method": "recvFstDesktopRwd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "channelRwd.recvDailyDesktopRwd": {
+   "iface": "channelRwd",
+   "method": "recvDailyDesktopRwd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "channelRwd.recvLoginRwd": {
+   "iface": "channelRwd",
+   "method": "recvLoginRwd",
+   "argKeys": [
+    "day"
+   ],
+   "callSites": 1
+  },
+  "ttMoneyTask.refresh": {
+   "iface": "ttMoneyTask",
+   "method": "refresh",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "ttMoneyTask.genGldOrder": {
+   "iface": "ttMoneyTask",
+   "method": "genGldOrder",
+   "argKeys": [
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "ttMoneyTask.recv": {
+   "iface": "ttMoneyTask",
+   "method": "recv",
+   "argKeys": [
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "verify.refreshVerification": {
+   "iface": "verify",
+   "method": "refreshVerification",
+   "argKeys": [
+    "isManual",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "verify.checkVerification": {
+   "iface": "verify",
+   "method": "checkVerification",
+   "argKeys": [
+    "code",
+    "requestId",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesBook.upgrade": {
+   "iface": "flowerElvesBook",
+   "method": "upgrade",
+   "argKeys": [
+    "bookId"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesBookDraw.refresh": {
+   "iface": "flowerElvesBookDraw",
+   "method": "refresh",
+   "argKeys": [
+    "periodId"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesBookDraw.draw": {
+   "iface": "flowerElvesBookDraw",
+   "method": "draw",
+   "argKeys": [
+    "gridPos",
+    "periodId"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesPlace.dispatch": {
+   "iface": "flowerElvesPlace",
+   "method": "dispatch",
+   "argKeys": [
+    "elvesId",
+    "elvesNum",
+    "iid",
+    "placeId"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesPlace.recv": {
+   "iface": "flowerElvesPlace",
+   "method": "recv",
+   "argKeys": [
+    "placeId"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesPlace.speedUp": {
+   "iface": "flowerElvesPlace",
+   "method": "speedUp",
+   "argKeys": [
+    "placeId"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesPlace.unlock": {
+   "iface": "flowerElvesPlace",
+   "method": "unlock",
+   "argKeys": [
+    "placeId"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesPlace.recvAllReward": {
+   "iface": "flowerElvesPlace",
+   "method": "recvAllReward",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "flowerElvesAid.reqAid": {
+   "iface": "flowerElvesAid",
+   "method": "reqAid",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "flowerElvesAid.helpFrd": {
+   "iface": "flowerElvesAid",
+   "method": "helpFrd",
+   "argKeys": [
+    "dstUid"
+   ],
+   "callSites": 1
+  },
+  "flowerElvesAid.recvAidEff": {
+   "iface": "flowerElvesAid",
+   "method": "recvAidEff",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "flowerElves.checkConvert": {
+   "iface": "flowerElves",
+   "method": "checkConvert",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "photo.enter": {
+   "iface": "photo",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "photo.enterRoom": {
+   "iface": "photo",
+   "method": "enterRoom",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.rejectInvite": {
+   "iface": "photo",
+   "method": "rejectInvite",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.getFriendList": {
+   "iface": "photo",
+   "method": "getFriendList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "photo.invite": {
+   "iface": "photo",
+   "method": "invite",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.saveRoomUsr": {
+   "iface": "photo",
+   "method": "saveRoomUsr",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.saveRoomPro": {
+   "iface": "photo",
+   "method": "saveRoomPro",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.pushBase64": {
+   "iface": "photo",
+   "method": "pushBase64",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.finishRoom": {
+   "iface": "photo",
+   "method": "finishRoom",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.saveRoomPhoto": {
+   "iface": "photo",
+   "method": "saveRoomPhoto",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.savePhoto": {
+   "iface": "photo",
+   "method": "savePhoto",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.transmitRoom": {
+   "iface": "photo",
+   "method": "transmitRoom",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.reclaimRoom": {
+   "iface": "photo",
+   "method": "reclaimRoom",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.closeRoom": {
+   "iface": "photo",
+   "method": "closeRoom",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.getInviteList": {
+   "iface": "photo",
+   "method": "getInviteList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "photo.inviteDeal": {
+   "iface": "photo",
+   "method": "inviteDeal",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.readInvite": {
+   "iface": "photo",
+   "method": "readInvite",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.getPhotoList": {
+   "iface": "photo",
+   "method": "getPhotoList",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "photo.setPhotoStatus": {
+   "iface": "photo",
+   "method": "setPhotoStatus",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.readPhoto": {
+   "iface": "photo",
+   "method": "readPhoto",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.setRefuseInvite": {
+   "iface": "photo",
+   "method": "setRefuseInvite",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.buyTicket": {
+   "iface": "photo",
+   "method": "buyTicket",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.reshoot": {
+   "iface": "photo",
+   "method": "reshoot",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.getBase64": {
+   "iface": "photo",
+   "method": "getBase64",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.checkInvite": {
+   "iface": "photo",
+   "method": "checkInvite",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.delRoomUsr": {
+   "iface": "photo",
+   "method": "delRoomUsr",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.readRoomMsg": {
+   "iface": "photo",
+   "method": "readRoomMsg",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.takePhoto": {
+   "iface": "photo",
+   "method": "takePhoto",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "photo.buy": {
+   "iface": "photo",
+   "method": "buy",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "act.getOneOrderAward": {
+   "iface": "act",
+   "method": "getOneOrderAward",
+   "argKeys": [
+    "batchId",
+    "id",
+    "lvl"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.enter": {
+   "iface": "actCabinet",
+   "method": "enter",
+   "argKeys": [
+    "batchId",
+    "isInPage"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.gameStart": {
+   "iface": "actCabinet",
+   "method": "gameStart",
+   "argKeys": [
+    "batchId",
+    "gameTimes"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.gameSync": {
+   "iface": "actCabinet",
+   "method": "gameSync",
+   "argKeys": [
+    "batchId",
+    "cMaps",
+    "gameTimes",
+    "putInfo",
+    "sltInfo"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.useItem": {
+   "iface": "actCabinet",
+   "method": "useItem",
+   "argKeys": [
+    "batchId",
+    "cMaps",
+    "gameTimes",
+    "operationType",
+    "sltInfo"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.gameOver": {
+   "iface": "actCabinet",
+   "method": "gameOver",
+   "argKeys": [
+    "batchId",
+    "gameTimes"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.giftBuy": {
+   "iface": "actCabinet",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.openBox": {
+   "iface": "actCabinet",
+   "method": "openBox",
+   "argKeys": [
+    "batchId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.switchModle": {
+   "iface": "actCabinet",
+   "method": "switchModle",
+   "argKeys": [
+    "batchId",
+    "gameTimes",
+    "newGameTimes"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.rise": {
+   "iface": "actCabinet",
+   "method": "rise",
+   "argKeys": [
+    "batchId",
+    "gameTimes"
+   ],
+   "callSites": 1
+  },
+  "actCabinet.timeOutRise": {
+   "iface": "actCabinet",
+   "method": "timeOutRise",
+   "argKeys": [
+    "batchId",
+    "gameTimes"
+   ],
+   "callSites": 1
+  },
+  "act.getStat": {
+   "iface": "act",
+   "method": "getStat",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actHoney.recv": {
+   "iface": "actHoney",
+   "method": "recv",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actHoney.resetGiftCd": {
+   "iface": "actHoney",
+   "method": "resetGiftCd",
+   "argKeys": [
+    "batchId",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actHoney.giftBuy": {
+   "iface": "actHoney",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actFlowerBattle.enter": {
+   "iface": "actFlowerBattle",
+   "method": "enter",
+   "argKeys": [
+    "batchId",
+    "isCrossDay",
+    "isRefresh"
+   ],
+   "callSites": 1
+  },
+  "actFlowerBattle.chooseFlowerArt": {
+   "iface": "actFlowerBattle",
+   "method": "chooseFlowerArt",
+   "argKeys": [
+    "batchId",
+    "flowerArtId"
+   ],
+   "callSites": 1
+  },
+  "actFlowerBattle.like": {
+   "iface": "actFlowerBattle",
+   "method": "like",
+   "argKeys": [
+    "batchId",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "actFlowerBattle.recvBoxesPrize": {
+   "iface": "actFlowerBattle",
+   "method": "recvBoxesPrize",
+   "argKeys": [
+    "batchId",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "actFlowerBattle.giftBuy": {
+   "iface": "actFlowerBattle",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actFlowerBattle.getGiftBuyRecords": {
+   "iface": "actFlowerBattle",
+   "method": "getGiftBuyRecords",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actFlowerBattle.setIsAnonymous": {
+   "iface": "actFlowerBattle",
+   "method": "setIsAnonymous",
+   "argKeys": [
+    "batchId",
+    "isAnonymous"
+   ],
+   "callSites": 1
+  },
+  "actDraw.draw": {
+   "iface": "actDraw",
+   "method": "draw",
+   "argKeys": [
+    "batchId",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "actDraw.flowerElvesBookDraw": {
+   "iface": "actDraw",
+   "method": "flowerElvesBookDraw",
+   "argKeys": [
+    "batchId",
+    "gridPos"
+   ],
+   "callSites": 1
+  },
+  "actDraw.flowerElvesBookRefresh": {
+   "iface": "actDraw",
+   "method": "flowerElvesBookRefresh",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDraw.unlockDrawRecall": {
+   "iface": "actDraw",
+   "method": "unlockDrawRecall",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDraw.unlockFeBookDrawRecall": {
+   "iface": "actDraw",
+   "method": "unlockFeBookDrawRecall",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicNote.giftBuy": {
+   "iface": "actCyclicNote",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicNote.recv": {
+   "iface": "actCyclicNote",
+   "method": "recv",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actCyclicNote.resetGiftCd": {
+   "iface": "actCyclicNote",
+   "method": "resetGiftCd",
+   "argKeys": [
+    "batchId",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicNote.reRandomTask": {
+   "iface": "actCyclicNote",
+   "method": "reRandomTask",
+   "argKeys": [
+    "batchId",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicNote.recvTaskRwd": {
+   "iface": "actCyclicNote",
+   "method": "recvTaskRwd",
+   "argKeys": [
+    "batchId",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicNote.directRecvTaskRwd": {
+   "iface": "actCyclicNote",
+   "method": "directRecvTaskRwd",
+   "argKeys": [
+    "batchId",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicNote.unlockTaskSlot": {
+   "iface": "actCyclicNote",
+   "method": "unlockTaskSlot",
+   "argKeys": [
+    "batchId",
+    "slotId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicStory.giftBuy": {
+   "iface": "actCyclicStory",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicStory.recv": {
+   "iface": "actCyclicStory",
+   "method": "recv",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actCyclicStory.resetGiftCd": {
+   "iface": "actCyclicStory",
+   "method": "resetGiftCd",
+   "argKeys": [
+    "batchId",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicStory.reRandomOrder": {
+   "iface": "actCyclicStory",
+   "method": "reRandomOrder",
+   "argKeys": [
+    "batchId",
+    "orderIdx"
+   ],
+   "callSites": 1
+  },
+  "actCyclicStory.recvOrderRwd": {
+   "iface": "actCyclicStory",
+   "method": "recvOrderRwd",
+   "argKeys": [
+    "batchId",
+    "orderIdx"
+   ],
+   "callSites": 1
+  },
+  "actCyclicStory.removeOrderCd": {
+   "iface": "actCyclicStory",
+   "method": "removeOrderCd",
+   "argKeys": [
+    "batchId",
+    "orderIdx"
+   ],
+   "callSites": 1
+  },
+  "actCyclicVase.giftBuy": {
+   "iface": "actCyclicVase",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actCyclicVase.recv": {
+   "iface": "actCyclicVase",
+   "method": "recv",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actCyclicVase.resetGiftCd": {
+   "iface": "actCyclicVase",
+   "method": "resetGiftCd",
+   "argKeys": [
+    "batchId",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actDrawGift.giftBuy": {
+   "iface": "actDrawGift",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actElim.enter": {
+   "iface": "actElim",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actElim.move": {
+   "iface": "actElim",
+   "method": "move",
+   "argKeys": [
+    "batchId",
+    "colAfter",
+    "colBefore",
+    "model",
+    "rowAfter",
+    "rowBefore"
+   ],
+   "callSites": 1
+  },
+  "actElim.useItem1": {
+   "iface": "actElim",
+   "method": "useItem1",
+   "argKeys": [
+    "batchId",
+    "model"
+   ],
+   "callSites": 1
+  },
+  "actElim.useItem2": {
+   "iface": "actElim",
+   "method": "useItem2",
+   "argKeys": [
+    "batchId",
+    "col",
+    "model",
+    "row"
+   ],
+   "callSites": 1
+  },
+  "actElim.giftBuy": {
+   "iface": "actElim",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actElim.refreshMap": {
+   "iface": "actElim",
+   "method": "refreshMap",
+   "argKeys": [
+    "batchId",
+    "model"
+   ],
+   "callSites": 1
+  },
+  "actElim.openBox": {
+   "iface": "actElim",
+   "method": "openBox",
+   "argKeys": [
+    "batchId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "actPaper.enter": {
+   "iface": "actPaper",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actPaper.recvTaskPrize": {
+   "iface": "actPaper",
+   "method": "recvTaskPrize",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actPaper.recv": {
+   "iface": "actPaper",
+   "method": "recv",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actPaper.recvGamePrize": {
+   "iface": "actPaper",
+   "method": "recvGamePrize",
+   "argKeys": [
+    "batchId",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "actDrawDragon.draw": {
+   "iface": "actDrawDragon",
+   "method": "draw",
+   "argKeys": [
+    "batchId",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "actDrawDragon.giftBuy": {
+   "iface": "actDrawDragon",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actDrawDragon.recv": {
+   "iface": "actDrawDragon",
+   "method": "recv",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actDrawChristmas.enter": {
+   "iface": "actDrawChristmas",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDrawChristmas.draw": {
+   "iface": "actDrawChristmas",
+   "method": "draw",
+   "argKeys": [
+    "batchId",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "actDrawChristmas.giftBuy": {
+   "iface": "actDrawChristmas",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actGame2048.enter": {
+   "iface": "actGame2048",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actGame2048.move": {
+   "iface": "actGame2048",
+   "method": "move",
+   "argKeys": [
+    "batchId",
+    "dir",
+    "map",
+    "model"
+   ],
+   "callSites": 1
+  },
+  "actGame2048.useEliminate": {
+   "iface": "actGame2048",
+   "method": "useEliminate",
+   "argKeys": [
+    "batchId",
+    "cells",
+    "map"
+   ],
+   "callSites": 1
+  },
+  "actGame2048.useChange": {
+   "iface": "actGame2048",
+   "method": "useChange",
+   "argKeys": [
+    "batchId",
+    "cells",
+    "map"
+   ],
+   "callSites": 1
+  },
+  "actGame2048.restart": {
+   "iface": "actGame2048",
+   "method": "restart",
+   "argKeys": [
+    "batchId",
+    "map"
+   ],
+   "callSites": 1
+  },
+  "actGame2048.giftBuy": {
+   "iface": "actGame2048",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actGame2048.openBox": {
+   "iface": "actGame2048",
+   "method": "openBox",
+   "argKeys": [
+    "batchId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "act.refreshDailyGift": {
+   "iface": "act",
+   "method": "refreshDailyGift",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDessert.enter": {
+   "iface": "actDessert",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDessert.gameStart": {
+   "iface": "actDessert",
+   "method": "gameStart",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDessert.gameSync": {
+   "iface": "actDessert",
+   "method": "gameSync",
+   "argKeys": [
+    "args",
+    "batchId",
+    "gameType"
+   ],
+   "callSites": 1
+  },
+  "actDessert.gameOver": {
+   "iface": "actDessert",
+   "method": "gameOver",
+   "argKeys": [
+    "batchId",
+    "gameType"
+   ],
+   "callSites": 1
+  },
+  "actDessert.giftBuy": {
+   "iface": "actDessert",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actDessert.openBox": {
+   "iface": "actDessert",
+   "method": "openBox",
+   "argKeys": [
+    "batchId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "actSpool.enter": {
+   "iface": "actSpool",
+   "method": "enter",
+   "argKeys": [
+    "batchId",
+    "isInPage"
+   ],
+   "callSites": 1
+  },
+  "actSpool.gameStart": {
+   "iface": "actSpool",
+   "method": "gameStart",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actSpool.gameSync": {
+   "iface": "actSpool",
+   "method": "gameSync",
+   "argKeys": [
+    "args",
+    "batchId",
+    "gameType"
+   ],
+   "callSites": 1
+  },
+  "actSpool.gameOver": {
+   "iface": "actSpool",
+   "method": "gameOver",
+   "argKeys": [
+    "batchId",
+    "gameType"
+   ],
+   "callSites": 1
+  },
+  "actSpool.giftBuy": {
+   "iface": "actSpool",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actSpool.openBox": {
+   "iface": "actSpool",
+   "method": "openBox",
+   "argKeys": [
+    "batchId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "actSpool.rise": {
+   "iface": "actSpool",
+   "method": "rise",
+   "argKeys": [
+    "batchId",
+    "gameType"
+   ],
+   "callSites": 1
+  },
+  "actSpool.setGuideStatus": {
+   "iface": "actSpool",
+   "method": "setGuideStatus",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actVipTimeShop.giftBuy": {
+   "iface": "actVipTimeShop",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.enter": {
+   "iface": "actMerge2",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.saveGuide": {
+   "iface": "actMerge2",
+   "method": "saveGuide",
+   "argKeys": [
+    "batchId",
+    "guideId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.switchMode": {
+   "iface": "actMerge2",
+   "method": "switchMode",
+   "argKeys": [
+    "batchId",
+    "modeType"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.move": {
+   "iface": "actMerge2",
+   "method": "move",
+   "argKeys": [
+    "batchId",
+    "oRc",
+    "tRc"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.useItem": {
+   "iface": "actMerge2",
+   "method": "useItem",
+   "argKeys": [
+    "batchId",
+    "rc"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.splitItem": {
+   "iface": "actMerge2",
+   "method": "splitItem",
+   "argKeys": [
+    "batchId",
+    "sRc",
+    "tRc"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.putOutTemp": {
+   "iface": "actMerge2",
+   "method": "putOutTemp",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.unlockWarehouse": {
+   "iface": "actMerge2",
+   "method": "unlockWarehouse",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.putInWarehouse": {
+   "iface": "actMerge2",
+   "method": "putInWarehouse",
+   "argKeys": [
+    "batchId",
+    "cell"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.putOutWarehouse": {
+   "iface": "actMerge2",
+   "method": "putOutWarehouse",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.sellItem": {
+   "iface": "actMerge2",
+   "method": "sellItem",
+   "argKeys": [
+    "batchId",
+    "rc"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.recvOrder": {
+   "iface": "actMerge2",
+   "method": "recvOrder",
+   "argKeys": [
+    "batchId",
+    "orderId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.refreshOrder": {
+   "iface": "actMerge2",
+   "method": "refreshOrder",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.recvProgress": {
+   "iface": "actMerge2",
+   "method": "recvProgress",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actMerge2.openBox": {
+   "iface": "actMerge2",
+   "method": "openBox",
+   "argKeys": [
+    "batchId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "actZFBForest.browseWeb": {
+   "iface": "actZFBForest",
+   "method": "browseWeb",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actZFBForest.browseWeb2": {
+   "iface": "actZFBForest",
+   "method": "browseWeb2",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actZFBBbFarm.enter": {
+   "iface": "actZFBBbFarm",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actZFBBbFarm.browseWeb": {
+   "iface": "actZFBBbFarm",
+   "method": "browseWeb",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actSpringTotRchg.recvTLAward": {
+   "iface": "actSpringTotRchg",
+   "method": "recvTLAward",
+   "argKeys": [
+    "batchId",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "actFmlRedEnvelope.enter": {
+   "iface": "actFmlRedEnvelope",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actFmlRedEnvelope.list": {
+   "iface": "actFmlRedEnvelope",
+   "method": "list",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actFmlRedEnvelope.send": {
+   "iface": "actFmlRedEnvelope",
+   "method": "send",
+   "argKeys": [
+    "batchId",
+    "count",
+    "itemId",
+    "msg"
+   ],
+   "callSites": 1
+  },
+  "actFmlRedEnvelope.pick": {
+   "iface": "actFmlRedEnvelope",
+   "method": "pick",
+   "argKeys": [
+    "batchId",
+    "id"
+   ],
+   "callSites": 1
+  },
+  "actFmlRedEnvelope.getRecord": {
+   "iface": "actFmlRedEnvelope",
+   "method": "getRecord",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actFmlRedEnvelope.getDetail": {
+   "iface": "actFmlRedEnvelope",
+   "method": "getDetail",
+   "argKeys": [
+    "batchId",
+    "id"
+   ],
+   "callSites": 1
+  },
+  "actCallBack.actCallBackEnter": {
+   "iface": "actCallBack",
+   "method": "actCallBackEnter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actCallBack.actCallBackBind": {
+   "iface": "actCallBack",
+   "method": "actCallBackBind",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actCallBack.actCallBackRecv": {
+   "iface": "actCallBack",
+   "method": "actCallBackRecv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actDrawZb.enter": {
+   "iface": "actDrawZb",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDrawZb.draw": {
+   "iface": "actDrawZb",
+   "method": "draw",
+   "argKeys": [
+    "batchId",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "actDrawZb.giftBuy": {
+   "iface": "actDrawZb",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actDrawSprSkin.enter": {
+   "iface": "actDrawSprSkin",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actDrawSprSkin.draw": {
+   "iface": "actDrawSprSkin",
+   "method": "draw",
+   "argKeys": [
+    "batchId",
+    "count"
+   ],
+   "callSites": 1
+  },
+  "actDrawSprSkin.giftBuy": {
+   "iface": "actDrawSprSkin",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 1
+  },
+  "actIPDmdGift.giftBuy": {
+   "iface": "actIPDmdGift",
+   "method": "giftBuy",
+   "argKeys": [
+    "batchId",
+    "count",
+    "giftId"
+   ],
+   "callSites": 2
+  },
+  "actIPFlowerGuard.openBox": {
+   "iface": "actIPFlowerGuard",
+   "method": "openBox",
+   "argKeys": [
+    "batchId",
+    "boxId"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.refreshTaskData": {
+   "iface": "actCardCollect",
+   "method": "refreshTaskData",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.openCardPack": {
+   "iface": "actCardCollect",
+   "method": "openCardPack",
+   "argKeys": [
+    "cardPackId",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.recvCardAlbumReward": {
+   "iface": "actCardCollect",
+   "method": "recvCardAlbumReward",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.nextRound": {
+   "iface": "actCardCollect",
+   "method": "nextRound",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.deckShopExchange": {
+   "iface": "actCardCollect",
+   "method": "deckShopExchange",
+   "argKeys": [
+    "batchId",
+    "costStar"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.recvTaskReward": {
+   "iface": "actCardCollect",
+   "method": "recvTaskReward",
+   "argKeys": [
+    "batchId",
+    "taskId",
+    "taskIdx"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.recvBoxReward": {
+   "iface": "actCardCollect",
+   "method": "recvBoxReward",
+   "argKeys": [
+    "batchId",
+    "boxId"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.recvCollectReward": {
+   "iface": "actCardCollect",
+   "method": "recvCollectReward",
+   "argKeys": [
+    "batchId",
+    "idx"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.useSelectedCard": {
+   "iface": "actCardCollect",
+   "method": "useSelectedCard",
+   "argKeys": [
+    "cardId"
+   ],
+   "callSites": 1
+  },
+  "actCardCollect.checkLuckyCardSend": {
+   "iface": "actCardCollect",
+   "method": "checkLuckyCardSend",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "annivMemoir.enter": {
+   "iface": "annivMemoir",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "annivMemoir.read": {
+   "iface": "annivMemoir",
+   "method": "read",
+   "argKeys": [
+    "page"
+   ],
+   "callSites": 1
+  },
+  "annivMemoir.readEnd": {
+   "iface": "annivMemoir",
+   "method": "readEnd",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "annivMemoir.recv": {
+   "iface": "annivMemoir",
+   "method": "recv",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "actAnniv26Letter.actEnter": {
+   "iface": "actAnniv26Letter",
+   "method": "actEnter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "actAnniv26TotRchg.recvTLAward": {
+   "iface": "actAnniv26TotRchg",
+   "method": "recvTLAward",
+   "argKeys": [
+    "batchId",
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "actSpace.beginQuestion": {
+   "iface": "actSpace",
+   "method": "beginQuestion",
+   "argKeys": [
+    "batchId",
+    "day"
+   ],
+   "callSites": 1
+  },
+  "actSpace.answerQuestion": {
+   "iface": "actSpace",
+   "method": "answerQuestion",
+   "argKeys": [
+    "batchId",
+    "day",
+    "optionId",
+    "questionId"
+   ],
+   "callSites": 1
+  },
+  "actStarFml.getLvlTopList": {
+   "iface": "actStarFml",
+   "method": "getLvlTopList",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actStarFml.setRwdInfo": {
+   "iface": "actStarFml",
+   "method": "setRwdInfo",
+   "argKeys": [
+    "batchId",
+    "phone",
+    "weChat"
+   ],
+   "callSites": 1
+  },
+  "actStarryGarden.enter": {
+   "iface": "actStarryGarden",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "actStarryGarden.dianzan": {
+   "iface": "actStarryGarden",
+   "method": "dianzan",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "timeItem.chooseItem": {
+   "iface": "timeItem",
+   "method": "chooseItem",
+   "argKeys": [
+    "itemId",
+    "msId"
+   ],
+   "callSites": 1
+  },
+  "bestie.enter": {
+   "iface": "bestie",
+   "method": "enter",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "bestie.getFrdBestieCntMap": {
+   "iface": "bestie",
+   "method": "getFrdBestieCntMap",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "bestie.apply": {
+   "iface": "bestie",
+   "method": "apply",
+   "argKeys": [
+    "targetUid"
+   ],
+   "callSites": 1
+  },
+  "bestie.checkApply": {
+   "iface": "bestie",
+   "method": "checkApply",
+   "argKeys": [
+    "targetUid"
+   ],
+   "callSites": 1
+  },
+  "bestie.handleApply": {
+   "iface": "bestie",
+   "method": "handleApply",
+   "argKeys": [
+    "accept",
+    "applyUid"
+   ],
+   "callSites": 1
+  },
+  "bestie.dissolve": {
+   "iface": "bestie",
+   "method": "dissolve",
+   "argKeys": [
+    "bestieUid"
+   ],
+   "callSites": 1
+  },
+  "bestie.immediateDissolve": {
+   "iface": "bestie",
+   "method": "immediateDissolve",
+   "argKeys": [
+    "bestieUid"
+   ],
+   "callSites": 1
+  },
+  "bestie.cancelDissolve": {
+   "iface": "bestie",
+   "method": "cancelDissolve",
+   "argKeys": [
+    "bestieUid"
+   ],
+   "callSites": 1
+  },
+  "bestie.unlockSlot": {
+   "iface": "bestie",
+   "method": "unlockSlot",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "bestie.setSceneSkin": {
+   "iface": "bestie",
+   "method": "setSceneSkin",
+   "argKeys": [
+    "bestieUid",
+    "skinId"
+   ],
+   "callSites": 1
+  },
+  "tokenInfo.getToken": {
+   "iface": "tokenInfo",
+   "method": "getToken",
+   "argKeys": [
+    "param",
+    "type"
+   ],
+   "callSites": 1
+  },
+  "rchgSum.recv": {
+   "iface": "rchgSum",
+   "method": "recv",
+   "argKeys": [
+    "id"
+   ],
+   "callSites": 1
+  },
+  "rchgOrderToMoney.convertMoney": {
+   "iface": "rchgOrderToMoney",
+   "method": "convertMoney",
+   "argKeys": [
+    "orderNo"
+   ],
+   "callSites": 1
+  },
+  "signType.enter": {
+   "iface": "signType",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "signType.sign": {
+   "iface": "signType",
+   "method": "sign",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "signType.recv": {
+   "iface": "signType",
+   "method": "recv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.updateTtSubscribe": {
+   "iface": "usrExtra",
+   "method": "updateTtSubscribe",
+   "argKeys": [
+    "status"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.recvTtFansRwd": {
+   "iface": "usrExtra",
+   "method": "recvTtFansRwd",
+   "argKeys": [
+    "rewardId",
+    "termId"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.reportUsr": {
+   "iface": "usrExtra",
+   "method": "reportUsr",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.updateAntiFraudQAStatus": {
+   "iface": "usrExtra",
+   "method": "updateAntiFraudQAStatus",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.recvAntiFraudQARwd": {
+   "iface": "usrExtra",
+   "method": "recvAntiFraudQARwd",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.setMsPwd": {
+   "iface": "usrExtra",
+   "method": "setMsPwd",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.shareMsg": {
+   "iface": "usrExtra",
+   "method": "shareMsg",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.syncAddress": {
+   "iface": "usrExtra",
+   "method": "syncAddress",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "usrExtra.setShowAddress": {
+   "iface": "usrExtra",
+   "method": "setShowAddress",
+   "argKeys": [
+    "showAddress"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.recvWbFansRwd": {
+   "iface": "usrExtra",
+   "method": "recvWbFansRwd",
+   "argKeys": [
+    "rewardId",
+    "termId"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.updateTaskMap": {
+   "iface": "usrExtra",
+   "method": "updateTaskMap",
+   "argKeys": [
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "usrExtra.recvVersionUpdateRwd": {
+   "iface": "usrExtra",
+   "method": "recvVersionUpdateRwd",
+   "argKeys": [
+    "version"
+   ],
+   "callSites": 1
+  },
+  "gameClub.enter": {
+   "iface": "gameClub",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "gameClub.enterClub": {
+   "iface": "gameClub",
+   "method": "enterClub",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "gameClub.recvTaskRwd": {
+   "iface": "gameClub",
+   "method": "recvTaskRwd",
+   "argKeys": [
+    "taskId"
+   ],
+   "callSites": 1
+  },
+  "decorate.build": {
+   "iface": "decorate",
+   "method": "build",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "decorate.buildSuccess": {
+   "iface": "decorate",
+   "method": "buildSuccess",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "decorate.clearBuildCd": {
+   "iface": "decorate",
+   "method": "clearBuildCd",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "decorate.recv": {
+   "iface": "decorate",
+   "method": "recv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "decorate.updateReadLvlList": {
+   "iface": "decorate",
+   "method": "updateReadLvlList",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "decorate.equip": {
+   "iface": "decorate",
+   "method": "equip",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "decorate.changeMode": {
+   "iface": "decorate",
+   "method": "changeMode",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "valentines.bind": {
+   "iface": "valentines",
+   "method": "bind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "valentines.apply": {
+   "iface": "valentines",
+   "method": "apply",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "valentines.reject": {
+   "iface": "valentines",
+   "method": "reject",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "valentines.recv": {
+   "iface": "valentines",
+   "method": "recv",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "valentines.unBind": {
+   "iface": "valentines",
+   "method": "unBind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "valentines.frdStates": {
+   "iface": "valentines",
+   "method": "frdStates",
+   "argKeys": [
+    "batchId",
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "valentines.enter": {
+   "iface": "valentines",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "whiteValentine.bind": {
+   "iface": "whiteValentine",
+   "method": "bind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteValentine.apply": {
+   "iface": "whiteValentine",
+   "method": "apply",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteValentine.reject": {
+   "iface": "whiteValentine",
+   "method": "reject",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteValentine.recv": {
+   "iface": "whiteValentine",
+   "method": "recv",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "whiteValentine.unBind": {
+   "iface": "whiteValentine",
+   "method": "unBind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteValentine.frdStates": {
+   "iface": "whiteValentine",
+   "method": "frdStates",
+   "argKeys": [
+    "batchId",
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "whiteValentine.enter": {
+   "iface": "whiteValentine",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "whiteDay26.bind": {
+   "iface": "whiteDay26",
+   "method": "bind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteDay26.apply": {
+   "iface": "whiteDay26",
+   "method": "apply",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteDay26.reject": {
+   "iface": "whiteDay26",
+   "method": "reject",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteDay26.recv": {
+   "iface": "whiteDay26",
+   "method": "recv",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "whiteDay26.unBind": {
+   "iface": "whiteDay26",
+   "method": "unBind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "whiteDay26.frdStates": {
+   "iface": "whiteDay26",
+   "method": "frdStates",
+   "argKeys": [
+    "batchId",
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "whiteDay26.enter": {
+   "iface": "whiteDay26",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "girlsDay.bind": {
+   "iface": "girlsDay",
+   "method": "bind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "girlsDay.apply": {
+   "iface": "girlsDay",
+   "method": "apply",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "girlsDay.reject": {
+   "iface": "girlsDay",
+   "method": "reject",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "girlsDay.recv": {
+   "iface": "girlsDay",
+   "method": "recv",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "girlsDay.unBind": {
+   "iface": "girlsDay",
+   "method": "unBind",
+   "argKeys": [
+    "batchId",
+    "dUid"
+   ],
+   "callSites": 1
+  },
+  "girlsDay.frdStates": {
+   "iface": "girlsDay",
+   "method": "frdStates",
+   "argKeys": [
+    "batchId",
+    "uids"
+   ],
+   "callSites": 1
+  },
+  "girlsDay.enter": {
+   "iface": "girlsDay",
+   "method": "enter",
+   "argKeys": [
+    "batchId"
+   ],
+   "callSites": 1
+  },
+  "playerBack.playerBackPassEnter": {
+   "iface": "playerBack",
+   "method": "playerBackPassEnter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "playerBack.playerBackPassRecv": {
+   "iface": "playerBack",
+   "method": "playerBackPassRecv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "playerBack.playerBackPassRecvOneKey": {
+   "iface": "playerBack",
+   "method": "playerBackPassRecvOneKey",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "playerBack.playerBackPassTaskDone": {
+   "iface": "playerBack",
+   "method": "playerBackPassTaskDone",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "playerBack.updateGuildIds": {
+   "iface": "playerBack",
+   "method": "updateGuildIds",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "playerBack.signEnter": {
+   "iface": "playerBack",
+   "method": "signEnter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "playerBack.sign": {
+   "iface": "playerBack",
+   "method": "sign",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "playerBack.signRecv": {
+   "iface": "playerBack",
+   "method": "signRecv",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "celebrity.getInfoByType": {
+   "iface": "celebrity",
+   "method": "getInfoByType",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "celebrity.getAllTypes": {
+   "iface": "celebrity",
+   "method": "getAllTypes",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "celebrity.getAllTypesInfo": {
+   "iface": "celebrity",
+   "method": "getAllTypesInfo",
+   "argKeys": [],
+   "callSites": 1
+  },
+  "celebrity.likeCelebrity": {
+   "iface": "celebrity",
+   "method": "likeCelebrity",
+   "argKeys": [
+    "type"
+   ],
+   "callSites": 1
+  },
+  "forum.enter": {
+   "iface": "forum",
+   "method": "enter",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "forum.getTaskRwd": {
+   "iface": "forum",
+   "method": "getTaskRwd",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "title.setTitleShow": {
+   "iface": "title",
+   "method": "setTitleShow",
+   "argKeys": [
+    "titleIds"
+   ],
+   "callSites": 1
+  },
+  "usr.updateSoftGuide": {
+   "iface": "usr",
+   "method": "updateSoftGuide",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "bag.recycle": {
+   "iface": "bag",
+   "method": "recycle",
+   "argKeys": [
+    "iid",
+    "num"
+   ],
+   "callSites": 1
+  },
+  "zooDecorate.read": {
+   "iface": "zooDecorate",
+   "method": "read",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.initZoo": {
+   "iface": "zoo",
+   "method": "initZoo",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.enterZoo": {
+   "iface": "zoo",
+   "method": "enterZoo",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.setUpSleepTime": {
+   "iface": "zoo",
+   "method": "setUpSleepTime",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.visitZoo": {
+   "iface": "zoo",
+   "method": "visitZoo",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.feedOtherPet": {
+   "iface": "zoo",
+   "method": "feedOtherPet",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.strokePet": {
+   "iface": "zoo",
+   "method": "strokePet",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.changePetName": {
+   "iface": "zoo",
+   "method": "changePetName",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.feedPets": {
+   "iface": "zoo",
+   "method": "feedPets",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.addFoodstuff": {
+   "iface": "zoo",
+   "method": "addFoodstuff",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.usePetItem": {
+   "iface": "zoo",
+   "method": "usePetItem",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.calNaturalAtt": {
+   "iface": "zoo",
+   "method": "calNaturalAtt",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.refreshPetStatus": {
+   "iface": "zoo",
+   "method": "refreshPetStatus",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.getGuideEventRwd": {
+   "iface": "zoo",
+   "method": "getGuideEventRwd",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.findPet": {
+   "iface": "zoo",
+   "method": "findPet",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.handBeOverdueEvent": {
+   "iface": "zoo",
+   "method": "handBeOverdueEvent",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.handleEvent": {
+   "iface": "zoo",
+   "method": "handleEvent",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.findPetByUsrBack": {
+   "iface": "zoo",
+   "method": "findPetByUsrBack",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.recvSouvenirRwd": {
+   "iface": "zoo",
+   "method": "recvSouvenirRwd",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "zoo.readSouvenir": {
+   "iface": "zoo",
+   "method": "readSouvenir",
+   "argKeys": [
+    "<dynamic>"
+   ],
+   "callSites": 1
+  },
+  "misc.syncItemHide": {
+   "iface": "misc",
+   "method": "syncItemHide",
+   "argKeys": [
+    "itemIds",
+    "version"
+   ],
+   "callSites": 1
+  }
+ }
+}

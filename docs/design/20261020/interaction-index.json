@@ -1,0 +1,852 @@
+{
+  "kind": "design-prototype-only",
+  "pages": 7,
+  "panels": [
+    {
+      "id": "plant-detail",
+      "title": "自动种花",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 9
+    },
+    {
+      "id": "plant-mode",
+      "title": "种植模式",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "plant-flowers",
+      "title": "指定花朵",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "plant-qualities",
+      "title": "指定品质",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "plant-groups",
+      "title": "种植分组",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "plant-blacklist",
+      "title": "种植黑名单",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "plant-target",
+      "title": "种植数量",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "harvest-detail",
+      "title": "自动收花",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "water-detail",
+      "title": "自动浇水",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "resident-detail",
+      "title": "居民订单",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "satin-detail",
+      "title": "绸缎订单",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "decorate-detail",
+      "title": "建材订单",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "customer-detail",
+      "title": "顾客订单",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "customer-art-link",
+      "title": "顾客订单与花艺",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "palace-detail",
+      "title": "宫廷订单",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "team-detail",
+      "title": "组团订单",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 8
+    },
+    {
+      "id": "daily-detail",
+      "title": "日常任务奖励",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "daily-status",
+      "title": "日常奖励状态",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "daily-protection",
+      "title": "领取保护",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "orders-state-help",
+      "title": "订单状态说明",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "art-detail",
+      "title": "花艺制作",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 9
+    },
+    {
+      "id": "art-arts",
+      "title": "指定花艺",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "art-target",
+      "title": "成品目标库存",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "art-replenish",
+      "title": "自动补货",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "art-album",
+      "title": "首做图鉴奖励",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "art-share",
+      "title": "首做分享奖励",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "art-status",
+      "title": "花艺现场状态",
+      "group": "自动化",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "register",
+      "title": "注册无尽夏",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "auth-help",
+      "title": "登录帮助",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "auth-login-loading",
+      "title": "正在登录",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "auth-register-loading",
+      "title": "正在注册",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "auth-register-success",
+      "title": "注册成功",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "auth-login-success",
+      "title": "欢迎回园",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "auth-error",
+      "title": "暂时无法登录",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "auth-cloud-missing",
+      "title": "云服务尚未配置",
+      "group": "登录",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "add-account",
+      "title": "添加游戏号",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "add-account-verifying",
+      "title": "正在核对游戏身份",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "add-account-success",
+      "title": "游戏号已添加",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "add-account-partial",
+      "title": "已添加，部分状态未读到",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "add-account-unverified",
+      "title": "已保存，未完成登录核对",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "add-account-error",
+      "title": "这次没登进去",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "account-more",
+      "title": "游戏号管理",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 7
+    },
+    {
+      "id": "account-settings-guide",
+      "title": "当前游戏号设置",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "choose-account",
+      "title": "选择游戏号",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "account-start",
+      "title": "开始照料花园",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "account-stop",
+      "title": "停止当前任务",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "account-starting",
+      "title": "正在启动",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "account-stopping",
+      "title": "正在停止",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "account-stopped",
+      "title": "任务已停止",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "account-action-unknown",
+      "title": "结果暂时无法确认",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "account-runtime",
+      "title": "账号运行状态",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 8
+    },
+    {
+      "id": "account-protection",
+      "title": "本机资料与执行保护",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "remove-account",
+      "title": "移除这个游戏号？",
+      "group": "账号",
+      "kind": "confirm",
+      "fields": 2
+    },
+    {
+      "id": "remove-account-busy",
+      "title": "正在移除…",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "remove-account-success",
+      "title": "已从这台手机移除",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "remove-account-error",
+      "title": "这个号没能移除",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "accounts-empty",
+      "title": "先添加一个游戏号",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "accounts-unreadable",
+      "title": "暂时无法读取游戏号",
+      "group": "账号",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "unsaved-settings",
+      "title": "设置还没有保存",
+      "group": "通用提示",
+      "kind": "confirm",
+      "fields": 1
+    },
+    {
+      "id": "license",
+      "title": "软件授权",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "license-valid",
+      "title": "软件授权有效",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "license-unactivated",
+      "title": "尚未取得运行授权",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "license-expired",
+      "title": "离线宽限已到期",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "license-disabled",
+      "title": "软件账号已停用",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "license-offline",
+      "title": "暂时离线，授权仍有效",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "license-unverified",
+      "title": "授权期限待核实",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "license-checking",
+      "title": "正在核对授权…",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "license-error",
+      "title": "授权核对未完成",
+      "group": "授权状态",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "password",
+      "title": "修改软件账号密码",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "password-busy",
+      "title": "正在修改密码…",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "password-success",
+      "title": "密码已修改",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "password-error",
+      "title": "密码没有改成",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "logout",
+      "title": "退出软件账号？",
+      "group": "我的",
+      "kind": "confirm",
+      "fields": 2
+    },
+    {
+      "id": "logout-busy",
+      "title": "正在退出…",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "logout-error",
+      "title": "退出尚未完成",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "sync",
+      "title": "日志同步",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 8
+    },
+    {
+      "id": "sync-empty",
+      "title": "没有待传日志",
+      "group": "日志同步",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "sync-warning",
+      "title": "待传日志接近配额",
+      "group": "日志同步",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "sync-busy",
+      "title": "正在上传运行记录…",
+      "group": "日志同步",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "sync-success",
+      "title": "本次日志已送出",
+      "group": "日志同步",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "sync-error",
+      "title": "日志暂时未能送出",
+      "group": "日志同步",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "data-ownership",
+      "title": "本机资料归属",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "data-ownership-busy",
+      "title": "正在确认归属…",
+      "group": "资料归属",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "data-ownership-success",
+      "title": "本机资料归属已确认",
+      "group": "资料归属",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "data-ownership-empty",
+      "title": "没有待确认的历史资料",
+      "group": "资料归属",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "data-ownership-error",
+      "title": "归属尚未确认",
+      "group": "资料归属",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "service",
+      "title": "手机运行服务",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 12
+    },
+    {
+      "id": "service-loading",
+      "title": "正在读取手机状态",
+      "group": "本机运行",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "service-disconnected",
+      "title": "手机服务未连接",
+      "group": "本机运行",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "service-unread",
+      "title": "部分设备状态未读取",
+      "group": "本机运行",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "battery",
+      "title": "允许 App 在后台运行",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "background-settings",
+      "title": "前往手机系统设置",
+      "group": "本机运行",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "background-settings-error",
+      "title": "设置页面未能打开",
+      "group": "本机运行",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "network",
+      "title": "统一网络出口",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "network-clear",
+      "title": "改用本机网络",
+      "group": "网络出口",
+      "kind": "confirm",
+      "fields": 1
+    },
+    {
+      "id": "network-loading",
+      "title": "正在应用网络出口…",
+      "group": "网络出口",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "network-proxy",
+      "title": "统一出口已应用",
+      "group": "网络出口",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "network-direct",
+      "title": "已改用本机网络",
+      "group": "网络出口",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "network-error",
+      "title": "出口设置未保存",
+      "group": "网络出口",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "network-unread",
+      "title": "出口设置暂时未读取",
+      "group": "网络出口",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "log-filters",
+      "title": "筛选运行日志",
+      "group": "日志",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "log-categories",
+      "title": "日志分类",
+      "group": "日志",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "logs-device",
+      "title": "本机 / 添加记录",
+      "group": "日志",
+      "kind": "sheet",
+      "fields": 3
+    },
+    {
+      "id": "logs-account",
+      "title": "当前游戏号日志",
+      "group": "日志",
+      "kind": "sheet",
+      "fields": 4
+    },
+    {
+      "id": "log-detail",
+      "title": "运行记录",
+      "group": "日志",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "logs-loading",
+      "title": "正在读取运行日志…",
+      "group": "日志状态",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "logs-empty",
+      "title": "还没有记录",
+      "group": "日志状态",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "logs-filter-empty",
+      "title": "这个筛选下没有记录",
+      "group": "日志状态",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "logs-error",
+      "title": "运行日志暂时无法读取",
+      "group": "日志状态",
+      "kind": "sheet",
+      "fields": 2
+    },
+    {
+      "id": "logs-pagination",
+      "title": "日志翻页",
+      "group": "日志状态",
+      "kind": "sheet",
+      "fields": 5
+    },
+    {
+      "id": "help",
+      "title": "使用说明",
+      "group": "我的",
+      "kind": "sheet",
+      "fields": 6
+    },
+    {
+      "id": "unsaved-changes",
+      "title": "还有未保存的设置",
+      "group": "确认与反馈",
+      "kind": "dialog",
+      "fields": 1
+    },
+    {
+      "id": "save-pending",
+      "title": "正在保存设置",
+      "group": "确认与反馈",
+      "fields": 1
+    },
+    {
+      "id": "save-success",
+      "title": "设置已保存",
+      "group": "确认与反馈",
+      "kind": "dialog",
+      "fields": 1
+    },
+    {
+      "id": "save-error",
+      "title": "设置暂未保存",
+      "group": "确认与反馈",
+      "kind": "dialog",
+      "fields": 1
+    },
+    {
+      "id": "start-unsaved",
+      "title": "先保存，再开始",
+      "group": "确认与反馈",
+      "kind": "dialog",
+      "fields": 1
+    },
+    {
+      "id": "picker-flowers",
+      "title": "花种多选目录",
+      "group": "目录选择",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "picker-search-empty",
+      "title": "目录搜索为空",
+      "group": "目录选择",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "picker-blacklist",
+      "title": "黑名单选择",
+      "group": "目录选择",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "picker-arts",
+      "title": "花艺配方选择",
+      "group": "目录选择",
+      "kind": "sheet",
+      "fields": 1
+    },
+    {
+      "id": "register-validation",
+      "title": "注册表单校验",
+      "group": "校验反馈",
+      "kind": "sheet",
+      "fields": 2
+    }
+  ]
+}

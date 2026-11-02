@@ -1,0 +1,34 @@
+{
+  "note": "本目录（deploy/）与 tools/wujinxia-deploy.mjs、tools/wujinxia-backup.mjs 均为本项目独立编写；下列参考文件只在 2026-10-19 只读查看，用于了解别人的部署流程如何组织，没有复制任何代码行、脚本、服务名、目录、端口或站点配置进本仓。",
+  "isolation": {
+    "rule": "本项目部署与备份不调用原网页版脚本，不覆盖或重启原站服务、站点配置、数据库与备份，不共用其目录、端口、密钥或数据。",
+    "copiedCodeLines": 0,
+    "sharedRuntimeState": false
+  },
+  "references": [
+    {
+      "originalPath": "D:/AI/AiCode/我的花园世界/tools/backup-db.mjs",
+      "scopeRead": "整份只读（84 行）",
+      "date": "2026-10-19",
+      "whatWasLearned": "SQLite 在线快照用 VACUUM INTO 而非复制活库文件；快照出来必须再跑 PRAGMA integrity_check 并与现库逐表行数对账才算成功；备份文件名日期与时刻要取同一个钟表（全本地时间），避免 UTC 日期配本地时刻。",
+      "copiedLines": 0,
+      "implementedAs": "tools/wujinxia-backup.mjs 的 createSnapshot()/localStamp()（本项目独立实现，另加 AES-256-GCM 加密、传输与恢复校验）"
+    },
+    {
+      "originalPath": "D:/AI/AiCode/我的花园世界/tools/deploy-node.mjs",
+      "scopeRead": "整份只读（202 行）",
+      "date": "2026-10-19",
+      "whatWasLearned": "发布流程的形状：确认闸 → 打包 → 上传 → 远端校验和比对 → 换件 → 重启 → 自证 → 失败给回滚件路径；两个 Windows 坑：不能把几百个文件路径拼进 tar 命令行（只喂顶层条目、用相对路径），Git Bash 的 tar 会把 D:\\ 里的冒号当成远程主机。",
+      "copiedLines": 0,
+      "implementedAs": "tools/wujinxia-deploy.mjs（本项目独立实现：内容校验与凭据闸、零依赖 ustar 打包、独立用户/目录/服务名产物、默认 dry-run、releases+current 软链回滚、禁词闸）"
+    },
+    {
+      "originalPath": "D:/AI/AiCode/我的花园世界/docs/DEPLOY.md",
+      "scopeRead": "章节标题与备份/发布段落浏览",
+      "date": "2026-10-19",
+      "whatWasLearned": "对方把「定时备份、保留份数、恢复演练」当部署要求写进文档；本项目另写 deploy/README.md，不复用其文档、站点配置或服务名。",
+      "copiedLines": 0,
+      "implementedAs": "deploy/README.md"
+    }
+  ]
+}

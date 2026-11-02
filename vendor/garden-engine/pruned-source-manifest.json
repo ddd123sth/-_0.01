@@ -1,0 +1,912 @@
+{
+  "format": "pruned-vendor-source/v1",
+  "meaning": "Path and SHA-256 inventory only; removed implementation bytes are not archived.",
+  "sourceProject": "我的花园世界",
+  "sourceCommit": "518834935ac91d83945a1fad552edf16eacebea4",
+  "prunedAt": "2026-10-25T12:29:37Z",
+  "retainedSourceFiles": [
+    "server/src/game/android-auth.js",
+    "server/src/game/android-login-context.js",
+    "server/src/game/client-profile.js",
+    "server/src/game/client.js",
+    "server/src/game/flower-art-catalog.js",
+    "server/src/game/human-pacing.js",
+    "server/src/game/login-error-codes.js",
+    "server/src/game/net-race.js",
+    "server/src/game/official-cfg.js",
+    "server/src/game/runtime-paths.js",
+    "server/src/game/v5-official-fields.js",
+    "server/src/schema.js"
+  ],
+  "retainedDataRoot": "server/data/ (kept unchanged for current protocol and catalog tools)",
+  "removedFiles": [
+    {
+      "path": "android-order-art-overlay.json",
+      "sha256": "86224984c5004b82f45140d62c02a996fb81481a6d04776eca28f6f1ef07f6cb"
+    },
+    {
+      "path": "android-overlays.json",
+      "sha256": "ca7aa0681afe4a4293858f439a98000dc54ad0416ca9a3147506b052f2d8606f"
+    },
+    {
+      "path": "server/src/admin-security.js",
+      "sha256": "2f373d652dada819aebf749bf89a3f71531d50e2214efeeb3efd59188da22568"
+    },
+    {
+      "path": "server/src/api-admin.js",
+      "sha256": "475aedacd25cf78ea1ba5b990a8713dbf8c84562b773eeb1e95c26e64a08b536"
+    },
+    {
+      "path": "server/src/api-guild-flowers.js",
+      "sha256": "3f2e9d51bd2d436ad488f2746fe076398088a94b984fccd4ffe177d283f2e574"
+    },
+    {
+      "path": "server/src/api-nodes.js",
+      "sha256": "7ab31ac9eb618caa31d89081de8182809dcfee9d838557a86a20d2753b8f9d3b"
+    },
+    {
+      "path": "server/src/api-public-demo.js",
+      "sha256": "3f91e37adb14e8b9da102eb950c57d47b74621930d4aa6ca9b5d178da14361fc"
+    },
+    {
+      "path": "server/src/api-user.js",
+      "sha256": "588045a416c93b1c3fda7663e8c615412ec398b63d26cd49cd27f5aa14bedb54"
+    },
+    {
+      "path": "server/src/auth-routes.js",
+      "sha256": "dd792696f323d84d4912b0d1649058016a0e8f02f0edfe718dee64016cfc4571"
+    },
+    {
+      "path": "server/src/auth.js",
+      "sha256": "d7f420008d2a7b6e371f67664ba528e3f608bac02c51d2d4eaed954a2e632dbc"
+    },
+    {
+      "path": "server/src/billing-charge.js",
+      "sha256": "11d5e258906bd63ee44d59e186db56c5599c3fa339becc9e2f63200dd5ea283b"
+    },
+    {
+      "path": "server/src/billing.js",
+      "sha256": "06c4e8db4df2245dadd8541237f1cea22ceda1fa2233732d5fcde5ee67e41352"
+    },
+    {
+      "path": "server/src/crash-guard.js",
+      "sha256": "e7ff2fdf6543421bc567c2199c80e6917c5de6f171537abdc4e49ed9e8ffebd6"
+    },
+    {
+      "path": "server/src/credentials.js",
+      "sha256": "1dce21da5b65231313b81629ff34c10fed0e93a91cd9cc2f9f0cca031878657f"
+    },
+    {
+      "path": "server/src/db.js",
+      "sha256": "3f9c01143cc76c1d3c444a6213aaa5869e82d3eb25fbbaa3045063b3d22e2d73"
+    },
+    {
+      "path": "server/src/dto.js",
+      "sha256": "302f836cbddea67e4d15e0acd89427c74aae7bdfc71f3ba3b0f6dacdd4127e28"
+    },
+    {
+      "path": "server/src/event-log.js",
+      "sha256": "cc8d5796c226a32bbcd11ff2878e909924fa50ea21c195b4de2057c89e0b1449"
+    },
+    {
+      "path": "server/src/frontend-version.js",
+      "sha256": "f46e9c8f3a36b32bd45cb44942061b36d3ffa72aaf2cd0186b9a63e9cc6c1c9d"
+    },
+    {
+      "path": "server/src/game/account-capability-view.js",
+      "sha256": "e7f97b9ab49eebabbdbebf93d80a69e00fdeb42630800fc966ce915bb134267d"
+    },
+    {
+      "path": "server/src/game/account-config-history-schema.js",
+      "sha256": "6cd56dcaf65eeadbf9a238c66f3df49d5adbec941c3f6b335ffb3944145dc651"
+    },
+    {
+      "path": "server/src/game/account-config-history.js",
+      "sha256": "9dc67cc749bf69f00962a64cd0af326eab13fe5940d7eff6c0cf7c1a4b1e6dd2"
+    },
+    {
+      "path": "server/src/game/account-run-state.js",
+      "sha256": "658be297e2bd3f3e50b5786694aaaef8623e6fabcc44eaebe32bee9de38672ec"
+    },
+    {
+      "path": "server/src/game/account-status-note.js",
+      "sha256": "2edb431db1a5cfbf53479680764f201a47fd8164d4e208884c1d59250b637855"
+    },
+    {
+      "path": "server/src/game/account-verify.js",
+      "sha256": "10e826f0a512d820e35fb03f8274dc9613d9e8631874051f641e50855a1b542d"
+    },
+    {
+      "path": "server/src/game/account-write-block.js",
+      "sha256": "8883d80ec2d85994b8cc6f0aa07e5efdbd8c1f8d863d6252648cc7437683275f"
+    },
+    {
+      "path": "server/src/game/account-write-gate.js",
+      "sha256": "8497419033f454f2f0507d36d227488b5624b181646d48cded586d1f4f28300a"
+    },
+    {
+      "path": "server/src/game/activity-cycle.js",
+      "sha256": "958a5e8d28a048b008fc850f9529a19bea28ac1b34fbb21e3c61664d9f85a0e5"
+    },
+    {
+      "path": "server/src/game/ad-token-issuer.js",
+      "sha256": "616a68f522939719c97390fdaefb4b097a0a45439f1c20f19cc9cb735b75138d"
+    },
+    {
+      "path": "server/src/game/android-launcher.js",
+      "sha256": "4f5e6de5675bf2b3d3415e17d3231dc784dc24fbf829a5d02f76bfdc4dc635fd"
+    },
+    {
+      "path": "server/src/game/anti-fraud-cycle.js",
+      "sha256": "e713e080e69c91fd794b49874e22d2d537bb16ac60eb99d9409f142bf3c049a6"
+    },
+    {
+      "path": "server/src/game/beat-candidates.js",
+      "sha256": "ede3a0fbffbb628a52cb98b4419cf1846d74d0d17c85104e2e99cdb1b22059f4"
+    },
+    {
+      "path": "server/src/game/beat-determinism.js",
+      "sha256": "fdca62c19d8827d1652af3667fd35f3e792c238dcec94e1195dfa5a4c502d4fc"
+    },
+    {
+      "path": "server/src/game/beat-fact-providers.js",
+      "sha256": "9f1f1863bac576ef1cff8095e2c3cbcc2a222f15060da60abc0f36b2bc2233cd"
+    },
+    {
+      "path": "server/src/game/capabilities.js",
+      "sha256": "1c1068510e1f066961d01fd4ba3ecfaee32c6489bfdc00058d06e6dbf5c8351f"
+    },
+    {
+      "path": "server/src/game/capability-deps.js",
+      "sha256": "5cdd762ad75e647ce2d0d425d6e3d39575edd899bd5a5b0b0169117834504806"
+    },
+    {
+      "path": "server/src/game/capture.js",
+      "sha256": "47ef922b0309302685ba06af594b3b7a4b1f139e1632b008944bffcdb62d22f4"
+    },
+    {
+      "path": "server/src/game/captured-rpcs.js",
+      "sha256": "efdcf9d78ba7f8edb445081ec22448162c26878dd21844fa4650a45b8190ed8a"
+    },
+    {
+      "path": "server/src/game/chrome-world.js",
+      "sha256": "06952ecac70e9134b65cbeb8a842451a55fc29a738653604122688274b6af347"
+    },
+    {
+      "path": "server/src/game/config-gap-subject.js",
+      "sha256": "246a02ef48bbe43bdb860679d20cfae41123bcee610aa9f1cd1f120a41b8ca8a"
+    },
+    {
+      "path": "server/src/game/config-share.js",
+      "sha256": "1ea3cfb48205cccd1b4e8f5e8bc48e560aad87b156a449725a7e25ac04039a65"
+    },
+    {
+      "path": "server/src/game/cultivate-cycle.js",
+      "sha256": "d920c35dc79d21610082ee95d820756c93a0e123bb1aa8876a3ab9476eedf15e"
+    },
+    {
+      "path": "server/src/game/cultivate-shop-cycle.js",
+      "sha256": "520f50ebb0ed1a10d55caf15101cf85d7fd3eaca3d762b488046263e2e8cf026"
+    },
+    {
+      "path": "server/src/game/customer-copy.js",
+      "sha256": "4f68d90fc99bb25447488d91ce19499d2cac0b16aaffbccedd10cbfa63cb49a2"
+    },
+    {
+      "path": "server/src/game/customer-display.js",
+      "sha256": "c304c18edd8218fd6b7f043b93bcbd0f5fce39a17df7e71a2046c1039c4eb11f"
+    },
+    {
+      "path": "server/src/game/customer-gen-replan-proof.js",
+      "sha256": "9d3afafd9bc1541a1047eaa793c91dcd82b41530a1f158150de5a1ffe15bea61"
+    },
+    {
+      "path": "server/src/game/customer-gen-replan.js",
+      "sha256": "6a310ddcdee84bcdd90788fdaaf3d79dd81989f04846359218a7fbb62a0c818f"
+    },
+    {
+      "path": "server/src/game/customer-log-view.js",
+      "sha256": "ba54480814371a01955b1247b4bf1e39795cb88e2782b2899bfbcd28f988e39d"
+    },
+    {
+      "path": "server/src/game/customer-plan-dto.js",
+      "sha256": "30e66a1ee0d838c4c1ddd4447f88b6b690e72f1cb6a7887c8c32934c2e7a413e"
+    },
+    {
+      "path": "server/src/game/customer-resources.js",
+      "sha256": "24bca8b16c488730792a18f674817b03c8fb4c5cee1df1e4103a16a81754db0f"
+    },
+    {
+      "path": "server/src/game/cycle-planner.js",
+      "sha256": "2d37712885a07757fe0787016a6eaf795258caee0fff89b10eb5866672e0c4b8"
+    },
+    {
+      "path": "server/src/game/cycle-trace.js",
+      "sha256": "67c83bcc263893a7e21409fe4f440dea4ae9311ce37d3286f479e10e97c7f642"
+    },
+    {
+      "path": "server/src/game/daily-task-catalog.js",
+      "sha256": "4dea349bbc682f4992a38de78be63448d8f77554144f9fa05d3e55e27775e734"
+    },
+    {
+      "path": "server/src/game/daily-task-executor.js",
+      "sha256": "b3366493a70cd5c12c5ea8e6aacd2545f16b65d0e1830e405eacc1896b4f0490"
+    },
+    {
+      "path": "server/src/game/daily-task-runner.js",
+      "sha256": "de8b53a1e1df997bd33957979c6e1f0c9315f190d49739e848f4677edcf0d279"
+    },
+    {
+      "path": "server/src/game/day-boundary.js",
+      "sha256": "d7e0b033fa075156bbb2e9807190284883c42e48eecfbad7abb7cff63b00314d"
+    },
+    {
+      "path": "server/src/game/direct-buy-cycle.js",
+      "sha256": "e24daf1364f836bac8d65a74fdab7e34be9531d68214428fae39bf889f560561"
+    },
+    {
+      "path": "server/src/game/double-coin-cycle.js",
+      "sha256": "d91353ca3528d2c8729818ec4653d1e94817d52ff3b1bbdf5f4119a4b9fc0a0f"
+    },
+    {
+      "path": "server/src/game/ds-decode.js",
+      "sha256": "9d8cd436e385018db9623432447329eeddac0c494dbe456394d80bb6b92e012b"
+    },
+    {
+      "path": "server/src/game/ds-modules.js",
+      "sha256": "eaf4254370b4077d38e59ab021285fdd84bbde06be09af8e3048a82b172d05e4"
+    },
+    {
+      "path": "server/src/game/egress-risk.js",
+      "sha256": "5ce5a746ce9c417dc1351a5a54e3d91ff23a8229f39e640e53b2eb49b80c9243"
+    },
+    {
+      "path": "server/src/game/egress-selfheal.js",
+      "sha256": "606888f215db38414adcf289f4eff69f61ee65a17bb27b8c0a2d204ea3d0a7c4"
+    },
+    {
+      "path": "server/src/game/feature-availability-runtime.js",
+      "sha256": "68b6dfc4f3e3adba1c1a23110c6e6fb71b3c2510d20b7c72cec252f66d74ab72"
+    },
+    {
+      "path": "server/src/game/feature-availability-schema.js",
+      "sha256": "b68c2b08f3f567daa4def764846bbadb43cbf39f8a8ae903f5ee3368535b1a3a"
+    },
+    {
+      "path": "server/src/game/feature-availability.js",
+      "sha256": "d17358b4764159f278748ae782fb6218eb878f9fbe8b515b1a0c3a7c946378d6"
+    },
+    {
+      "path": "server/src/game/feature-context.js",
+      "sha256": "3a4e46f5ab478fff2338845fd3581747784c87029a53fd2de3453ecbe1e0328d"
+    },
+    {
+      "path": "server/src/game/feature-event-journal.js",
+      "sha256": "d93f5fa45050f4fccfc99b788039595aa088a92051abd3aa835cf0e01cbe0d85"
+    },
+    {
+      "path": "server/src/game/feature-registry.js",
+      "sha256": "a1648c6d146ea33d6d060616ef789facaeb74956832df10849d9a6f29dc35b9f"
+    },
+    {
+      "path": "server/src/game/feature-wakes.js",
+      "sha256": "38313b3da0a825328a97c3e87ca2deec90d7c360e807bdd1890ee8df9acd7060"
+    },
+    {
+      "path": "server/src/game/flower-art-cycle.js",
+      "sha256": "7abc494c4452b2ac9cd1c3654c17d3e4bb7846ec1729b8a02ccf31511e23e148"
+    },
+    {
+      "path": "server/src/game/flower-art-inventory-basis.js",
+      "sha256": "0ea22a55787a10a2bc7f5800956f6b9e928ec10e0cbd72ccb9467b8182791053"
+    },
+    {
+      "path": "server/src/game/flower-art-target-binding.js",
+      "sha256": "a3ca6549121ba0c27ff4dbf57d1e5929c9028d0c17d7315205c9c6b9486b0898"
+    },
+    {
+      "path": "server/src/game/flower-elves-cycle.js",
+      "sha256": "b3d31366dceaff2a944335449eb16e058b982628d4fcabca11bef22078602d74"
+    },
+    {
+      "path": "server/src/game/flower-lvl.js",
+      "sha256": "80804eda895ec784f12ae3ca3a6c408e5138d68256f7ea402381d4d8e88133a7"
+    },
+    {
+      "path": "server/src/game/flower-market-cycle.js",
+      "sha256": "1d7a8442e528f55404a4e5d86bbd3a71141370cc7cbb896c0dd748b4b73bf922"
+    },
+    {
+      "path": "server/src/game/flower-pass-cycle.js",
+      "sha256": "b196187b2086a938dc0be4d5ff369a80d1b43a0bc87d379365463280ac725388"
+    },
+    {
+      "path": "server/src/game/flower-rack-cycle.js",
+      "sha256": "4c582cf32d7354123dcae28ac9c7e44c943aa6950c1a952acb377585ac879422"
+    },
+    {
+      "path": "server/src/game/flower-shop-cycle.js",
+      "sha256": "7800b291a3fad22631fe440411c142688b54f469f54a64e038ec0eb62deeae2f"
+    },
+    {
+      "path": "server/src/game/flower-top-list.js",
+      "sha256": "48fd1edf18c02ad7b618818f59961ca5b8b7d7f2c2ef17aa1891045005220c02"
+    },
+    {
+      "path": "server/src/game/forest-cycle.js",
+      "sha256": "619b04c97039968cea62e25db2f2ad5c3b5366f729b622e8048d41d163313222"
+    },
+    {
+      "path": "server/src/game/forest-task-catalog.js",
+      "sha256": "55655e0432cf03bca67d14da26c2ac068dbe5065de812c87cf0a153ebbe9d9cc"
+    },
+    {
+      "path": "server/src/game/friend-steal-cycle.js",
+      "sha256": "88a30318dae29e30ed750e6056f5b6f6b3f3634281ce43dd0738b110c166457c"
+    },
+    {
+      "path": "server/src/game/giftbag-ad-cycle.js",
+      "sha256": "17d83f3fd06968693007c1797914ab8cdec9f56edc6ae47ff2eec5aabfa747be"
+    },
+    {
+      "path": "server/src/game/gs-iface.js",
+      "sha256": "d97d0b773e0deddf074efde3b8ec9262a1616c75f3eeb573257da65fb073b67d"
+    },
+    {
+      "path": "server/src/game/guide-progress.js",
+      "sha256": "247f8329dca47933c247c04cc9cc22f3b04a8356a157f82351349ad8708e710f"
+    },
+    {
+      "path": "server/src/game/guild-build-cycle.js",
+      "sha256": "8ab0e2d1ea1f930b3079310d510745755176ba23e2fdea966b42d2b1f98c97af"
+    },
+    {
+      "path": "server/src/game/guild-flower-catalog.js",
+      "sha256": "56a858aa27e5f2ca7b6bf0f45069cf41497f5c7dd6085eda067b2e8c386301d8"
+    },
+    {
+      "path": "server/src/game/guild-flower-stats.js",
+      "sha256": "cf0608974673cfe3a91b6e133a5ea22ba97177d324023e4313313d1f554e2000"
+    },
+    {
+      "path": "server/src/game/guild-land-cycle.js",
+      "sha256": "19511abbf350c1d0ac295e713f63371f4d811004c35ef3ebf865382851ff2a5b"
+    },
+    {
+      "path": "server/src/game/guild-plant-choice.js",
+      "sha256": "b436c007efc9bab5f98f8461a9dee5127e81a3daefc5f267963d007a168e9018"
+    },
+    {
+      "path": "server/src/game/guild-race-cycle.js",
+      "sha256": "a67dff50548128bce0148f4518aa5d965d31405dc14ee3d59000175c9be998bd"
+    },
+    {
+      "path": "server/src/game/guild-race-refresh.js",
+      "sha256": "9c82de14119d7a2dfd22805e160da3805ac99c1866cbc25006612dab8d47c7d7"
+    },
+    {
+      "path": "server/src/game/guild-race-relay.js",
+      "sha256": "5e9e9e437025e51a2f0ac85301cf168c18453b749e4c26dfb65139eaab26bafe"
+    },
+    {
+      "path": "server/src/game/guild-share-cycle.js",
+      "sha256": "f7f324ded69fe923307b1b658bd2834de6d23c9f1ffc107eeff591fe7479b6cb"
+    },
+    {
+      "path": "server/src/game/guild-shop-cycle.js",
+      "sha256": "361cc4e7ca007701c7a10db1cfca38db24444742d92878a43ea998ac8298279c"
+    },
+    {
+      "path": "server/src/game/guild-show-like-cycle.js",
+      "sha256": "0abe5b4f8655ee1ed82e92d6c3682b0b2b704ae0f8e9ea1fdd2462644bea3dc7"
+    },
+    {
+      "path": "server/src/game/guild-task-catalog.js",
+      "sha256": "dca09ec1a0a991a917077a9be8b00dc7cd9311af2e45ea73e9e29cb78796f05c"
+    },
+    {
+      "path": "server/src/game/gw-codec.js",
+      "sha256": "4658eb96eb104d80feef515aebadd537df86b5c348e58b244b8d0e2b3c779643"
+    },
+    {
+      "path": "server/src/game/harvest-operation-plan.js",
+      "sha256": "7fbc97a3df5ca4d13d07c27b58044365e0e40b11828feaf5923984946b181ce6"
+    },
+    {
+      "path": "server/src/game/hold-ledger.js",
+      "sha256": "cbd4067ceab505cae221e09e67029c313261363ac146d9e80925f0103bf2f47a"
+    },
+    {
+      "path": "server/src/game/iface-limit.js",
+      "sha256": "a8606aadba5ecf188f9aecf9dd26b03a84fe817c49a2616151708611b9e05106"
+    },
+    {
+      "path": "server/src/game/item-cost-pair.js",
+      "sha256": "6e905acb692d351fade9ded5aa00ac2c428a524551852d55611749eed44d0997"
+    },
+    {
+      "path": "server/src/game/item-ids.js",
+      "sha256": "840dbc50e97761eabf1d4ed18da9cecf41f2d609920af0af28b323adebacf12d"
+    },
+    {
+      "path": "server/src/game/land-executor.js",
+      "sha256": "40dbfc7987de52fa4bfd67ba3a8ced6da4978c899cbe1da951c1d43aab0b388c"
+    },
+    {
+      "path": "server/src/game/land-frozen-seats.js",
+      "sha256": "86253af153d660189291f46b6834c0b98fc3dc9a09269ef9cd865dcc6f63e028"
+    },
+    {
+      "path": "server/src/game/land-layout-source.js",
+      "sha256": "10005a8d6b034a3d3fb45a3a8a7e35b432c4a7e01f64820fdd3207a90614b061"
+    },
+    {
+      "path": "server/src/game/land-ripeness.js",
+      "sha256": "6355f277cd7cf70fb4ad8b7ed113e8fa91844e143415afda49ca0b3bcacfa06e"
+    },
+    {
+      "path": "server/src/game/land-speedup-executor.js",
+      "sha256": "dc7d17c38a34827ee990dd2d3a26cd0598951d21a559b3123a277e0d41f81d84"
+    },
+    {
+      "path": "server/src/game/land-unlock-cycle.js",
+      "sha256": "b862b1e8b50044600830fb7e123f601e91720c7452ddc66779772d97896736fc"
+    },
+    {
+      "path": "server/src/game/land-water-wake-notifier.js",
+      "sha256": "aed83c197c295e70cb6725b3e0230f0943d6ff7f86f836714da64670c275c449"
+    },
+    {
+      "path": "server/src/game/launcher.js",
+      "sha256": "db499341e3629fb7c89d235b9dea2805334f6e9150d09972c70b3bcaf6e0294d"
+    },
+    {
+      "path": "server/src/game/log-contract.js",
+      "sha256": "f42ad2937a461d7a513c475c80fed8bbe96a75a890a4ac44b0d800e8e192ff54"
+    },
+    {
+      "path": "server/src/game/main-task-catalog.js",
+      "sha256": "76073792d6017eb8d54f4c94e150766747fa44fb2b84e1110f68f9050cb4de44"
+    },
+    {
+      "path": "server/src/game/main-task-cycle.js",
+      "sha256": "c6b2bd4f0cdddd36ece1c7867d178d3aebcd84840e8e6ba47d530789b7d182f3"
+    },
+    {
+      "path": "server/src/game/main-task-plan.js",
+      "sha256": "d65347b702e495747f9937a96a416f5344921fa1739d8d716027b961b75c2810"
+    },
+    {
+      "path": "server/src/game/maintenance-window.js",
+      "sha256": "04c7a9f886417947e33a7a9813fe3c6c5a3f7cef184b5f6db11519ed3c06a915"
+    },
+    {
+      "path": "server/src/game/minute-window.js",
+      "sha256": "cee5f454a08b96701fcdd595a08aae2d5dcf164626d022a8518fecd91c1c67ea"
+    },
+    {
+      "path": "server/src/game/module-gate.js",
+      "sha256": "6e9e1202b4f8d4ddb52db1c910acc098f94088f371a3f5e36cb2ddbbd2055e51"
+    },
+    {
+      "path": "server/src/game/network-error-zh.js",
+      "sha256": "90490a78c2efbde7b5f127fc86c890a1335814da43dc2e7b664c5c4a7ebc62d5"
+    },
+    {
+      "path": "server/src/game/node-lease-context.js",
+      "sha256": "b048c15714effa8f60ae8dcdb798ffb08af8663416dbd9a43c0fb5abe00c08f4"
+    },
+    {
+      "path": "server/src/game/node-report.js",
+      "sha256": "4750fd4d0cfd7ad7e7eca613d42130f49af112e6c034c52282ec36811a41623c"
+    },
+    {
+      "path": "server/src/game/node-world.js",
+      "sha256": "1773bd56596622b1f73735dac91e2a3d4e5d51162d5bd6abcafb3fe0685868ae"
+    },
+    {
+      "path": "server/src/game/observed-capture.js",
+      "sha256": "efff581d54633b4ed479746b9641534f3dbfe900ba44fbc4d93b86fbdcd28720"
+    },
+    {
+      "path": "server/src/game/open-registry.js",
+      "sha256": "2864c87e5c2e17ecdfb2de335674614ed0c9839efb6bf6025a08adfa037e8ba0"
+    },
+    {
+      "path": "server/src/game/order-art-backfill.js",
+      "sha256": "3a8a8b19acac6c47dd324305de06a43cd244b6968e55064bf3170bc92c0129e4"
+    },
+    {
+      "path": "server/src/game/order-daily-limit.js",
+      "sha256": "7587d752a690b40fbb3d92b06770b4a8192d74333abacf88e9239fb90a1c03f1"
+    },
+    {
+      "path": "server/src/game/order-delivery-proof.js",
+      "sha256": "573ccb2241459771c90983c97ffed3489c9aed234e37e812ed85ad9a7fe2b7df"
+    },
+    {
+      "path": "server/src/game/order-param-resolver.js",
+      "sha256": "18d9b52652b5fc0b8e16aebebcea92d207333980501a4b5e7890b658423dce75"
+    },
+    {
+      "path": "server/src/game/order-progress.js",
+      "sha256": "672f3dba30920d6e3c6c0857afe72ffc6892e68eb70ec12ee65c87a6f3a53570"
+    },
+    {
+      "path": "server/src/game/order-reward-cycle.js",
+      "sha256": "e4c536e649af9f4af1444365ff208240beda9cb2260516965e00666b584682ae"
+    },
+    {
+      "path": "server/src/game/order-shortfall-zh.js",
+      "sha256": "aa36e4484bcc4ca1a13b4238cd34e0324e8484eaa028af8b6362b8d49d8897ce"
+    },
+    {
+      "path": "server/src/game/order-task-catalog.js",
+      "sha256": "072735274a5d4eaba096e25200ec73a59acf2bb28e0ad2fe513c53f4cc141fa2"
+    },
+    {
+      "path": "server/src/game/order-team-cycle.js",
+      "sha256": "4d4a8ffece23410b453d7a2d9457409793694085638a885766487fc5e6a38855"
+    },
+    {
+      "path": "server/src/game/order-verdict.js",
+      "sha256": "95e046cdbe92a26d3d9a013de3d3319544be93953551aa91796d854f418fad53"
+    },
+    {
+      "path": "server/src/game/other-sync.js",
+      "sha256": "b63037f71b5556663977a4e9b7db448aa05f5ee1991d46cb32bdb22965f473bd"
+    },
+    {
+      "path": "server/src/game/pearl-cycle.js",
+      "sha256": "8713d3a6ff294bc4193044fd43bec6de3760779ab2b5c83d59e9043c4f981589"
+    },
+    {
+      "path": "server/src/game/peddler-cycle.js",
+      "sha256": "c119e9e46461c5056247f2a016ad1a28ebb127a1ac17eb26689b260e173bf61e"
+    },
+    {
+      "path": "server/src/game/plan-chinese.js",
+      "sha256": "cd2dc10cc7a5d4fd84f99ca740ac4f86e09d6c986ca30f1d3ece846d182237b9"
+    },
+    {
+      "path": "server/src/game/plant-demand.js",
+      "sha256": "a690949486a9fd07749c65e6c022e2897670fa267b07b50bac212bca5ea6ff3d"
+    },
+    {
+      "path": "server/src/game/plant-executor.js",
+      "sha256": "e2b109daaf2d34318b534a990738cfe8d2f9c4b94bbb11bf5061adb17ed0d271"
+    },
+    {
+      "path": "server/src/game/plant-frozen-seat.js",
+      "sha256": "acbe095c7baa42aeea8dad63a6aaafd5a03d0a0f3dbe58e52be602d4cdf57e6c"
+    },
+    {
+      "path": "server/src/game/plant-group-cycle.js",
+      "sha256": "b8fc60ff29e809e46ef9e79611ed352d9db2db3b3cf7b3924bee966d88777f77"
+    },
+    {
+      "path": "server/src/game/plant-group-migration.js",
+      "sha256": "d9fb1bd327992418e0d906a03b5bcfe26b61aa04da82aad8b1c6e04c32dd823b"
+    },
+    {
+      "path": "server/src/game/plant-group-store.js",
+      "sha256": "bfadcb08ecf3ad59254e7667af1c17ccf7f490fff20e61412c657cc52cdbd1ab"
+    },
+    {
+      "path": "server/src/game/plant-layout-evidence.js",
+      "sha256": "3b83a3097aaea6212d7e7e54c04b7d86c1e7b2071406735d35cf54c6bb4dfeb0"
+    },
+    {
+      "path": "server/src/game/plant-turnover-state.js",
+      "sha256": "f48461c6e3ee6b73a52dfd2eb6218508afa35850d531cfef5c54d34e4e6d86c2"
+    },
+    {
+      "path": "server/src/game/plant-turnover-store.js",
+      "sha256": "49114c525e31f84465542ac7e60da3717fae8f947f7dff3f4f515be26dfd917a"
+    },
+    {
+      "path": "server/src/game/probe-budget.js",
+      "sha256": "6e218201284a48951386bfbc4f252c56258ab914930680ea29795931ffef74ef"
+    },
+    {
+      "path": "server/src/game/race-capacity.js",
+      "sha256": "ac5033b2a4fbc133ce2ca97d45d59008112ca5e26011036c077983812267c77e"
+    },
+    {
+      "path": "server/src/game/race-goal-map.js",
+      "sha256": "8df2a0db3c1bdce9d9ccb4d19b1cef86c9bf67bde3d30341c29bcc696e969442"
+    },
+    {
+      "path": "server/src/game/race-window.js",
+      "sha256": "8661802211332bcac80a2674579b3e75124fed1b148a7fab6e8fbff198e8538e"
+    },
+    {
+      "path": "server/src/game/rack-task-catalog.js",
+      "sha256": "e1d8cbe426d9d53761866284600e8038e8a84bfa039cedb6108b16fb6552813a"
+    },
+    {
+      "path": "server/src/game/random-event-cycle.js",
+      "sha256": "05bea8ed475f9ad368c8ddef00c8743c4d96763d46b54f81b1ec7b1cddacfdd3"
+    },
+    {
+      "path": "server/src/game/real-adapter.js",
+      "sha256": "383807adb181147c9e99cbf026ebd713783dd616ea397bfb4d0e0a37d5b008f0"
+    },
+    {
+      "path": "server/src/game/real-harvest-runner.js",
+      "sha256": "dad7b4310a1a7adde6fefa770844f9b5d61f971eb7bc056280fe2874db4d66f6"
+    },
+    {
+      "path": "server/src/game/real-land-cycle.js",
+      "sha256": "ac15a1055c3c50e08ebd606c654da85efd1758474e45f12620f96b693606f4fd"
+    },
+    {
+      "path": "server/src/game/real-method-safety.js",
+      "sha256": "9167d6cc3f371ac228d8ec9b2201694bbb8591629de3fd3c71cccaddd706d09c"
+    },
+    {
+      "path": "server/src/game/real-order-cycle.js",
+      "sha256": "4c84b812fef7b60ab1967a073de390eb5e475d72f65b53e2fc9511278c674482"
+    },
+    {
+      "path": "server/src/game/real-validation-flow.js",
+      "sha256": "53227325f4ef8b3d95ba76a28249965870d7808f95324ac26a34dc23d0c292f8"
+    },
+    {
+      "path": "server/src/game/real-worker-policy.js",
+      "sha256": "40f22f4bd40c643089567b2097295b7459f4f14bc00a20c44d396fd060921555"
+    },
+    {
+      "path": "server/src/game/reason-zh.js",
+      "sha256": "e56d0432edbc1d87b387d955e9a32e756498330a2e87ce377bed2e7d54d9bb44"
+    },
+    {
+      "path": "server/src/game/redeem-code-cycle.js",
+      "sha256": "579d9b30f28bdbbec6806e1a9e209edf36c769ee4c7ea2afefb1340c71437dd0"
+    },
+    {
+      "path": "server/src/game/redeem-codes.js",
+      "sha256": "7605684206a8228895f88a5a10b69171408c40c86e27b7feb22d9f77e725f6b6"
+    },
+    {
+      "path": "server/src/game/reservation-ledger.js",
+      "sha256": "820809878f0d18b5786f813af80ea3331a9b5bb4684ece6267e221514f73fbe1"
+    },
+    {
+      "path": "server/src/game/response-gain.js",
+      "sha256": "cc8623fbc8da041b98f9c6459fb9dde44b17d4ec0a6f51c9e84c7b7401eaaa9c"
+    },
+    {
+      "path": "server/src/game/response-summary.js",
+      "sha256": "cafdc8c966a37f479632b54c354ede4fc9081c26e7ebfdfd792c1890e0c24b55"
+    },
+    {
+      "path": "server/src/game/road-grow-cycle.js",
+      "sha256": "a86b6c392db3821ea7a4148dd79eee1bacfcb50dd7b41e836bdfac2ffa08ad45"
+    },
+    {
+      "path": "server/src/game/rpc-payload-binding.js",
+      "sha256": "be649a7aefeea90788cc42df58ab46ccf4c1756d72136fdcd54f3333ddcced2d"
+    },
+    {
+      "path": "server/src/game/rs-envelope.js",
+      "sha256": "40a40417b4a8bf76c8a98215c7ae159e7e3e0b8be3d86920c727c8bea5fa64cd"
+    },
+    {
+      "path": "server/src/game/run-priority.js",
+      "sha256": "ab28b4dc491bafd515afd3076042e2064cff1afd23ed545ddada36bde91530eb"
+    },
+    {
+      "path": "server/src/game/run-recovery.js",
+      "sha256": "1a49d8979e64302f369cb3829fbc52a60818329012ce51c960eb9925a4dea40f"
+    },
+    {
+      "path": "server/src/game/sdk-keepalive.js",
+      "sha256": "397db2a914661de208c0fcbb62db0bb17b6e28cfb294c65cf346e3381a3c069f"
+    },
+    {
+      "path": "server/src/game/section-isolation.js",
+      "sha256": "3da08c9328bd8b20f202c513f72b31bea4b696b82f1971d569ec4f898de7df6f"
+    },
+    {
+      "path": "server/src/game/server-msg.js",
+      "sha256": "585d5767b82cf983a3f0cbf9e91972ecbb3a2e7758f16ee1a5e49a49f83d2679"
+    },
+    {
+      "path": "server/src/game/session-snapshot.js",
+      "sha256": "2599ba327d98c7a59a6be835145122ef53c6609c52ee3ca6d40e4adb9fcd9e54"
+    },
+    {
+      "path": "server/src/game/share-family-guard.js",
+      "sha256": "6d73425ad86ef13c940ff0b3035493b9a25fe4da90b9907b7523a8c752e7788d"
+    },
+    {
+      "path": "server/src/game/shop-task-catalog.js",
+      "sha256": "2ed9b8be7558bf9a8c2b996b5895c4e6d199da7d19cd0253d38640e68faa7cd6"
+    },
+    {
+      "path": "server/src/game/story-main-cycle.js",
+      "sha256": "2f045793b08bcf73f19d375dc2f5a339f7bc04b770d92b890784a0d848305efb"
+    },
+    {
+      "path": "server/src/game/sync-decode.js",
+      "sha256": "b64a4fb77e5183ddb760bf4bfa765debdb23c200862bf63c7848e8f703752c50"
+    },
+    {
+      "path": "server/src/game/sync-evidence.js",
+      "sha256": "57ae839b10f50752d8cc0e2b37094ff85c1c886d5e32bd740a18e9480015126b"
+    },
+    {
+      "path": "server/src/game/sync-mirror.js",
+      "sha256": "a01f72084cf5e22515301589d8be2c5ea61428988e79b879d3125e069c23e710"
+    },
+    {
+      "path": "server/src/game/sync-probe.js",
+      "sha256": "5e65832b34445d1385ad3f98e71d7aa33eb516a070f2d2e0a2d21349f1bc3442"
+    },
+    {
+      "path": "server/src/game/task-ach-cycle.js",
+      "sha256": "a9314765f78e1c3177eed3373462a5e4521686205e5cb44859abf18e999887c0"
+    },
+    {
+      "path": "server/src/game/task-view.js",
+      "sha256": "bfb94c39ca7224a05fb943df462862c22bd38016102819c16ee78d55801e920a"
+    },
+    {
+      "path": "server/src/game/tls-fingerprint.js",
+      "sha256": "3408922cb28a06bbf6e71ff60c77c99fb93c1afb8c7b4d0beffd442cad678e3a"
+    },
+    {
+      "path": "server/src/game/tls-mitm.js",
+      "sha256": "10b12df6dfa15b621d5c994b3fc7cc28fb2e673823f5786da8bf54fcf330c8a7"
+    },
+    {
+      "path": "server/src/game/usr-flows.js",
+      "sha256": "a7e1222a6bb75ed27d01950b98555f1a886b257f62b3dfabf69b74673225bb85"
+    },
+    {
+      "path": "server/src/game/usr-resources.js",
+      "sha256": "10b24e987702afd34f75e475c7a5e1947d44a701c7964d7f7194db967e681737"
+    },
+    {
+      "path": "server/src/game/vase-album-cycle.js",
+      "sha256": "ad6118ca11d294fe57ef241828b206283fb8b12dabeb555311010fc66f092986"
+    },
+    {
+      "path": "server/src/game/wake-set.js",
+      "sha256": "2a4d53ffcf9424d16200b10f733bff2a1d8f42ef58204e6b067868f01ab72077"
+    },
+    {
+      "path": "server/src/game/water-availability-service.js",
+      "sha256": "7504c3c6fe338f0c9b208b49cbae856b0898c8bd3138100bef2ddb694d703f87"
+    },
+    {
+      "path": "server/src/game/water-executor.js",
+      "sha256": "8a10a00ff427cc1c3f89b07edcb9f3545a1c75b3269d163c8d59babc31ecde85"
+    },
+    {
+      "path": "server/src/game/water-operation-plan.js",
+      "sha256": "9bdc8886f7a7dc808c8b46a750b325dc76892955ff28a30b3bff0ffda69dd8ac"
+    },
+    {
+      "path": "server/src/game/water-scope-availability.js",
+      "sha256": "781b7440f7578c7dd72dc9f65e7b0c8da6b9825cbdbe50ac528ee7bd49cfa127"
+    },
+    {
+      "path": "server/src/game/water-supply-cycle.js",
+      "sha256": "0998a9d6bea013c5ff8c8b7721813db7974625b46fcce0f2100491343181a008"
+    },
+    {
+      "path": "server/src/game/weekly-box-cycle.js",
+      "sha256": "4cf039f17b411f4c16563d79b0632919df875d803beaf61619cd03fb3dc7fc30"
+    },
+    {
+      "path": "server/src/game/windows-proxy.js",
+      "sha256": "570c1ff899f37dc51fea9eb0ea72132e4bbc91e9c196a503b80f3afeaac4e1b2"
+    },
+    {
+      "path": "server/src/game/world-keepalive.js",
+      "sha256": "6575f5ee5e4aee06067d62f3f65d630b47bcdae730ea5e188bce4d48c7d8f625"
+    },
+    {
+      "path": "server/src/game/world-reconnect.js",
+      "sha256": "0e8351092e0c603605aa128b13c2d320c07d04548fe80aecdb202702fad09f9e"
+    },
+    {
+      "path": "server/src/game/write-arbitration.js",
+      "sha256": "25260523e27aaa8f4e42f5cb4f329d60e6fefa733160c9483bbc0383c78e1467"
+    },
+    {
+      "path": "server/src/game/write-intent-ledger.js",
+      "sha256": "e57b5d4baeed27633364096ad861ae37248cf55928610bfabe363ac4601d04f2"
+    },
+    {
+      "path": "server/src/game/write-reconcile.js",
+      "sha256": "e7693e58ff1e03027f8fff9d23ae77145e5444b97d6328925db0054a67f808d7"
+    },
+    {
+      "path": "server/src/game/write-target-members.js",
+      "sha256": "dd584a09d36d774297202cebc2e519c77b287fff1e714f23a42461266ea28c9c"
+    },
+    {
+      "path": "server/src/game/ws.js",
+      "sha256": "b14fdf475f50f0dc51578d0cc5df3f88662ca760d3b6a57fa664c95677875125"
+    },
+    {
+      "path": "server/src/game/zoo-game-2048.js",
+      "sha256": "b2023ff584c376e4df2b4bcecab1fc11db3926841664ec995d327ab21248a14f"
+    },
+    {
+      "path": "server/src/game/zoo-pet-care-cycle.js",
+      "sha256": "98c1d0a0cee4337374082059240a7b9263d089f1880cf00824a9b86e0ed7f8ad"
+    },
+    {
+      "path": "server/src/game/zoo-souvenir-cycle.js",
+      "sha256": "1c6e9d9ba4a63ee2c7cd8c7f9260c4998e7f9c4e50201b2a86d665b2109eb1f3"
+    },
+    {
+      "path": "server/src/gamedata.js",
+      "sha256": "eb1d5d6a609a9663dd2a80b2aa0c4447b2313cbdfb4ca84f64ae814a2ccd4d07"
+    },
+    {
+      "path": "server/src/manual-actions.js",
+      "sha256": "d045c0306a13399e1a53207f3038fe4b507c8b3aa0011f02d8cd96dca378174f"
+    },
+    {
+      "path": "server/src/node-digest.js",
+      "sha256": "92fbba05e607155482cbfec0610f17efbda6fe6ad43f4781b2db60f82b9b859e"
+    },
+    {
+      "path": "server/src/node-sync.js",
+      "sha256": "7bc1741d8894aa5e10d3cdc1a71002fbd5853f5afe3ac02b437c449def65c24a"
+    },
+    {
+      "path": "server/src/nodes.js",
+      "sha256": "4a6b2150751fc9d0b7032a9e26da70026251fba577d037cf3de863230d19d267"
+    },
+    {
+      "path": "server/src/password.js",
+      "sha256": "4ef5f9d76e80908901d41249e35b10da52bc1e4a805fdbd9067830c91b3dbb5f"
+    },
+    {
+      "path": "server/src/proxy-pool.js",
+      "sha256": "998b485b5c951d7e915b770f259e0c106141f5ab4e1a68fe3c6212cd84773fa0"
+    },
+    {
+      "path": "server/src/real-coordination.js",
+      "sha256": "9b86a60169548f0595e61ced7ca67ab81b7ce7331f553126527e5abd956ef281"
+    },
+    {
+      "path": "server/src/request-journal.js",
+      "sha256": "bdc9bd1948a18e8610950a3c794bc7188eba1a68ba0d0a0f924e1fe490e4c9a1"
+    },
+    {
+      "path": "server/src/security-guard.js",
+      "sha256": "bb5e3d25c1db81818a98c4117731a872368bb61362abbd1e66067deb63cc02a9"
+    },
+    {
+      "path": "server/src/seed.js",
+      "sha256": "efe9b7ff5f2800e2d0b3d3659babb8c5c2553b74779a2e9d734fb16d9267b394"
+    },
+    {
+      "path": "server/src/service-shutdown.js",
+      "sha256": "225d97138b352e42be70a494a96d3bb8cdedca1fa696f89903ba5770a81be5c7"
+    },
+    {
+      "path": "server/src/session.js",
+      "sha256": "a96650852a8f616d839b8a21bb352d66f1e472cee204fba983ec10ff243d7a66"
+    },
+    {
+      "path": "server/src/util.js",
+      "sha256": "8f6148eb7f222d67e5902fe59ad8e07ff6220ee1e21bfb22373e9bce052e20bc"
+    },
+    {
+      "path": "server/src/worker-lifecycle.js",
+      "sha256": "00bc72e5365e4572e84b82e2424a49c30e4e5c8d69ca2f6a5235eb88ceb0dde2"
+    },
+    {
+      "path": "server/src/worker.js",
+      "sha256": "66cc824103be3a781f665ef130a9200a6e30924e8d878b857d071564da9321e0"
+    }
+  ]
+}

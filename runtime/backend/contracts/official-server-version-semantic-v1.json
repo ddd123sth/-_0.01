@@ -1,0 +1,102 @@
+{
+  "schema": "official-server-version-semantic/v1",
+  "referenceGameVersion": "480.0.46",
+  "referenceGameSha256": "bf21efb47a54dca0ab5e249062da828d2ec8981388977ebfc1524c75236c9845",
+  "referenceMoVersion": "f7ef4",
+  "referenceMoSha256": "1cde77350e5472509f695090546ed311d3b0b65618ba681653daa99f0691cf3b",
+  "coreContractId": "sha256:b8408fbf8e391070a892b8a7c724803b96d75350fd6011713f3cac05b5c53293",
+  "contractProtocolVersion": "480.0.0",
+  "rangeEncoding": "decoded JavaScript UTF-8 bytes, zero-based half-open ranges",
+  "blocks": [
+    {
+      "module": "game",
+      "name": "IOther-schema",
+      "start": 47102,
+      "end": 47252,
+      "byteLength": 150,
+      "sha256": "926f8e2ecccfd71d9b38e011ffc92221a55cc836941a6e71dd59459056f1400f",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklPdGhlciIse3ZlcjowLHRva2VuOjEsaXNOZXdBY2M6MixtczozLG1zX3N0bzo0LGRhdGFFbnY6NSxkc3Q6Nix1dGM6NyxtaWRuaWdodDo4LGVyckNvZGU6OSwkcGF0Y2hMaXN0OiIxMDpJUGF0Y2hDZmdbXSIsdHpJbmZvOjExfSks"
+    },
+    {
+      "module": "game",
+      "name": "HelperCtrl-server-version",
+      "start": 240835,
+      "end": 241128,
+      "byteLength": 293,
+      "sha256": "561bbff3dd9abcb4dc15c2547988b207928e4387825ca0d976a36e539869ae6a",
+      "base64": "X3N5bmNPdGhlcih0LGUpe2lmKCF0KXJldHVybjtjb25zdCByPXRoaXMscz1yLmdNZ3I7dC5tc19zdG8mJihtby5EQVRFLl9fc3RhbmRhcmRUaW1lem9uZU9mZnNldE1zPXQubXNfc3RvKSx0LmRzdCYmbW8uREFURS5zZXRTdGFuZGFyZERTVCh0LmRzdCksdC5tcyYmKHIuX2lzSGVhcnRUaW1lU3luY0lmYWNlKGUpP3IuX3N5bmNIZWFydFRpbWUodCk6ci5fc3luY1RpbWVIYXJkKHQpKSx0LnZlciYmKHIudmVyc2lvbj10LnZlciksdC50b2tlbiYmcy5nc01nci5uZXQmJihzLmdzTWdyLm5ldC50b2tlbj10LnRva2VuKX0="
+    },
+    {
+      "module": "game",
+      "name": "server-version-ui-consumer",
+      "start": 2911360,
+      "end": 2911866,
+      "byteLength": 506,
+      "sha256": "9960973865819fbe4a3b483548347b9e21fa008b122952df3d7fe677e79bf494",
+      "base64": "bGV0IG09ZS5oZWxwZXJDdHJsLnZlcnNpb24sZj0hZS51c3JDdHJsLmdldEV4dEZWYWwoIm1zZ1B1c2hSd2QiKTt0Ll9pc1N1YnNjcmliZSYmKGY9ITEpO2xldCBUPWUuRC5tX2NfbXNnUHVzaCgpLiRyZXdhcmQsYj1tby5SRUQubWdyLmdldCgic2V0dGluZyIpLHk9YiYmYi5pc1JlZCgic2V0dGluZy5pb3NXaWRnZXQiKSxDPWUuc2RrLmlzRW5hYmxlZCgibGVnYWxEb2NEbGciKTt0LnNldERhdGFPbmx5KHtfdmVyc2lvbjptby5QUk9KLnZlcnNpb258fCIwLjAuMSIsX2lpZDpUWzBdLF9jb3VudDpUWzFdLF9zaG93U3Vic2NyaWJlUndkOmYsX211c2ljT3BlbjplLmF1ZGlvTWdyLmdldE9wZW5BdWRpbygpLF9lZmZlY3RPcGVuOmUuYXVkaW9NZ3IuZ2V0T3BlbkVmZmVjdCgpLF92aWJyYXRlT3BlbjpvLF9zYXZlUG93ZXJPcGVuOmEsX3Nob3dTYXZlUG93ZXI6cixfZGVsQWNjOmksX3Nob3dPdGhlckF1ZDpfLF9zdWJzY3JpYmU6cyxfcmVkZWVtQ29kZTpuLF9lbnY6dyxfdmVyc2lvbl9zdnI6bSw="
+    },
+    {
+      "module": "game",
+      "name": "login-client-version-field",
+      "start": 255416,
+      "end": 255460,
+      "byteLength": 44,
+      "sha256": "844fce9ae28dbd0336ace71190064419c0e3635068ce35c7c05622c3bf4aa2f9",
+      "base64": "bW8uUFJPSi52ZXJzaW9uJiYoZC52ZXJzaW9uPW1vLlBST0oudmVyc2lvbik="
+    },
+    {
+      "module": "mo",
+      "name": "codec-IOther-schema",
+      "start": 175373,
+      "end": 175735,
+      "byteLength": 362,
+      "sha256": "5692af3c6de740a855c686952388dc5fed44663a03c82e4ef566caca27033214",
+      "base64": "dC5zZXRTaW5nbGU9ZnVuY3Rpb24obixyLGkpe2NvbnN0IHM9dC5fa2V5TWFwW25dPXQuX2tleU1hcFtuXXx8e307aWYocil7bGV0IGU9bnVsbDtpZih0LmdlbktleVdoZW5TZXRTaW5nbGVFbmFibGVkKXtjb25zdCB0PW4uc3BsaXQoIi4iKTtlPWdsb2JhbFRoaXM7Zm9yKGxldCBuPTAscj10Lmxlbmd0aDtuPHI7bisrKXtjb25zdCBpPXRbbl07bj09ci0xJiYoZT1lLkRTX0tFWT1lLkRTX0tFWXx8e30pLGU9ZVtpXT1lW2ldfHx7fX19Zm9yKGNvbnN0IHQgaW4gcil7Y29uc3Qgbj1yW3RdO3NbdF09bixlJiYoZVt0XT10KX19ZS5PQkoubWVyZ2UocyxyKSx0Ll9maW5hbEtleU1hcFtuXT1udWxsLGkmJih0Ll9leHRlbmRzTWFwW25dPWkpfSw="
+    },
+    {
+      "module": "mo",
+      "name": "codec-encode",
+      "start": 175831,
+      "end": 176558,
+      "byteLength": 727,
+      "sha256": "95186a22a800c35ff877ee288f971998f5c69baa7b77210c02e495b406bc7303",
+      "base64": "dC5lbkNvZGU9ZnVuY3Rpb24gaShsLHUsYSxjKXtpZighdSlyZXR1cm4gbDtpZighbClyZXR1cm4gbDtpZihsIGluc3RhbmNlb2YgQXJyYXkpe2xldCBlPVtdO2ZvcihsZXQgdD0wLG49bC5sZW5ndGg7dDxuO3QrKyllW3RdPWkobFt0XSx1LGEsYyk7cmV0dXJuIGV9aWYoIklOdW1NYXAiPT11KXJldHVybiBsO2lmKCF0LmRzTWFwRGlzYWJsZWQmJnUubWF0Y2godC5EU01BUF9FWFApKXtpZihsIGluc3RhbmNlb2YgRGF0ZSlyZXR1cm4gbnVsbDtpZigib2JqZWN0Ij09dHlwZW9mIGwpe2xldCBlPXt9LHQ9dS5yZXBsYWNlKG4sIiIpLnJlcGxhY2UociwiIikudHJpbSgpO3Q9byh0LGMpO2Zvcihjb25zdCBuIGluIGwpZVtuXT1pKGxbbl0sdCxhKTtyZXR1cm4gZX1yZXR1cm4gbnVsbH1pZigieyI9PXVbMF0mJiJ9Ij09dVt1Lmxlbmd0aC0xXSlyZXR1cm4gbDtpZigib2JqZWN0Ij09dHlwZW9mIGwpe2lmKCJEYXRlIj09dSlyZXR1cm4gZS5EQVRFLmdldFRpbWUoZS5EQVRFLmRhdGUobCkpO2xldCBuPXModSkscj17fSxvPXQuX2lnbm9yZU1hcFt1XTtmb3IobGV0IGUgaW4gbil7aWYobyYmb1tlXSljb250aW51ZTtsZXQgdD1uW2VdLHM9YT9lOnQubWluaUtleSx1PXQuZnVsbERzTmFtZSxjPWxbZV07dm9pZCAwIT09YyYmKHJbc109bnVsbD09Yz9jOnU/aShjLHUsYSx0Lm5zKTpjKX1yZXR1cm4gcn1yZXR1cm4iRGF0ZSI9PXU/ZS5EQVRFLmdldFRpbWUoZS5EQVRFLmRhdGUobCkpOmx9LA=="
+    },
+    {
+      "module": "mo",
+      "name": "codec-decode",
+      "start": 176558,
+      "end": 177351,
+      "byteLength": 793,
+      "sha256": "3633a0a84489e422bdb2c9c5ba2736c690c1039b957f361ebc6918d42ac3da97",
+      "base64": "dC5kZUNvZGU9ZnVuY3Rpb24gaShsLHUsYSxjKXtpZighdSlyZXR1cm4gbDtpZighbClyZXR1cm4gbDtpZihsIGluc3RhbmNlb2YgRGF0ZSlyZXR1cm4gbDtpZihsIGluc3RhbmNlb2YgQXJyYXkpe2xldCBlPVtdO2ZvcihsZXQgdD0wLG49bC5sZW5ndGg7dDxuO3QrKyllW3RdPWkobFt0XSx1LGEsYyk7cmV0dXJuIGV9bGV0IGY9dHlwZW9mIGw7aWYoIXQuZHNNYXBEaXNhYmxlZCYmdS5tYXRjaCh0LkRTTUFQX0VYUCkpe2lmKGwgaW5zdGFuY2VvZiBEYXRlKXJldHVybiBudWxsO2lmKCJvYmplY3QiPT1mKXtsZXQgZT17fSx0PXUucmVwbGFjZShuLCIiKS5yZXBsYWNlKHIsIiIpLnRyaW0oKTt0PW8odCxjKTtmb3IoY29uc3QgbiBpbiBsKWVbbl09aShsW25dLHQsYSk7cmV0dXJuIGV9cmV0dXJuIG51bGx9aWYoIklOdW1NYXAiPT11KXJldHVybiBsO2lmKCJ7Ij09dVswXSYmIn0iPT11W3UubGVuZ3RoLTFdKXJldHVybiBsO2lmKCJvYmplY3QiPT1mKXtsZXQgZT1zKHUpLG49e30scj10Ll9pZ25vcmVNYXBbdV07Zm9yKGxldCB0IGluIGUpe2lmKHImJnJbdF0pY29udGludWU7bGV0IHM9ZVt0XSxvPWE/dDpzLm1pbmlLZXksdT1zLmZ1bGxEc05hbWUsYz1sW29dO3ZvaWQgMCE9PWMmJihuW3RdPW51bGw9PWM/Yzp1P2koYyx1LGEscy5ucyk6Yyl9cmV0dXJuIG59cmV0dXJuIkRhdGUiPT11P2UuREFURS5kYXRlKGwpOnQucGFyc2VEYXRlRW5hYmxlZCYmInN0cmluZyI9PWYmJmwubWF0Y2goL15cZFxkXGRcZC1cZFxkLVxkXGRUXGRcZDpcZFxkOlxkXGQuXGRcZFxkWiQvKT9lLkRBVEUuZGF0ZShsKTpsfQ=="
+    },
+    {
+      "module": "mo",
+      "name": "codec-wash-response",
+      "start": 209199,
+      "end": 209493,
+      "byteLength": 294,
+      "sha256": "88609ad43abc916efeb2c079eb2af96ab15d6d32ad4f50780b9cadafe4eca79c",
+      "base64": "X3dhc2hSc3AodCxuKXtpZih0LmhlYWRlcil7Y29uc3QgZT10LmhlYWRlcixuPXQuYm9keTtyZXR1cm57ZXJyTXNnOmUubWMsdmFsdWU6bixkc05hbWU6ZS5zbiwkbXNnJDpuLiRtc2ckfX1sZXQgcj10LGk9ci5tLHM9ci52LG89ci5kLGw9bnVsbCx1PW51bGw7cmV0dXJuIG51bGwhPXMmJm8mJihsPWUuQ1JZUFRPLmRlQ2hhckNvZGUobykscz1lLkRTLmRlQ29kZShzLGwsISFyLmYpKSxzJiYodT1zLiRtc2ckKSx7ZXJyTXNnOmksdmFsdWU6cyxkc05hbWU6bCwkbXNnJDp1LHJlY2VpdmVkTXM6ci5yLHJzcE1zOnIudH19"
+    },
+    {
+      "module": "mo",
+      "name": "codec-request-mode",
+      "start": 211511,
+      "end": 212062,
+      "byteLength": 551,
+      "sha256": "b7e71d8aa04ec1b346ef66f30bf8e45d8f628727c2f3ae41ddca24b0ab8d2691",
+      "base64": "X2dldFBrZyhlKXtpZih0aGlzLm5ldCYmdGhpcy5uZXQubmV3TW9kZSlyZXR1cm4gdGhpcy5fZ2V0UGtnX25ld01vZGUoZSk7Y29uc3QgdD10aGlzLmlmYWNlLG49dC5pbmRleE9mKCIuIik7cmV0dXJue3I6dC5zdWJzdHJpbmcoMCxuKSxwOnRoaXMuX2dldEdhbWVQYXJhbSgpLGs6ZX19X2dldFBrZ19uZXdNb2RlKHQpe2NvbnN0IG49dGhpcy5pZmFjZSxyPXRoaXMubmV0P3RoaXMubmV0LnRva2VuOm51bGw7bGV0IGk9dGhpcy5hcmd8fHt9LHM9aS4kZmlsZU1hcDtpZighdGhpcy5fZmlsZU1hcERpc2FibGVkJiYhZS5PQkouaXNFbXB0eShzKSl7bGV0IGU9e307Zm9yKGxldCB0IGluIGkpIiRmaWxlTWFwIiE9dCYmKGVbdF09aVt0XSk7aT1lfWNvbnN0IG89e2k6bix0OiJyZXF1ZXN0IixtOmUuREFURS5ub3coKSxsOnRoaXMubGFuZyxlOjEsdGs6cn07ZS5QUk9KLnpvbmUmJihvLno9ZS5QUk9KLnpvbmUpLHQmJihvLms9dCk7Y29uc3QgbD17aDpvLGI6aX07cmV0dXJuIHRoaXMuX2ZpbGVNYXBEaXNhYmxlZHx8ZS5PQkouaXNFbXB0eShzKXx8KGwuJGZpbGVNYXA9cyksbH0="
+    },
+    {
+      "module": "mo",
+      "name": "codec-get-game-param",
+      "start": 212090,
+      "end": 212959,
+      "byteLength": 869,
+      "sha256": "f88f754b88c8e5c77abbf6374a3e669328a9107f389c727d1bf4eefbcd0b30b1",
+      "base64": "X2dldEdhbWVQYXJhbSgpe2xldCB0PXt9LHI9dGhpcy5pZmFjZSxpPXIuaW5kZXhPZigiLiIpLHM9ci5zdWJzdHJpbmcoaSsxKSxvPXRoaXMubmV0P3RoaXMubmV0LnRva2VuOm51bGwsbD10aGlzLmFyZ3x8e30sdT1sLiRpZmFjZSxhPWwuJHRva2VuT3B0O2NvbnN0IGM9bC4kcGxhaW50ZXh0O2RlbGV0ZSBsLiRpZmFjZSxkZWxldGUgbC4kdG9rZW5PcHQsZGVsZXRlIGwuJHBsYWludGV4dDtsZXQgZj1sLiRmaWxlTWFwO2lmKCF0aGlzLl9maWxlTWFwRGlzYWJsZWQmJiFlLk9CSi5pc0VtcHR5KGYpKXtsZXQgZT17fTtmb3IobGV0IHQgaW4gbCkiJGZpbGVNYXAiIT10JiYoZVt0XT1sW3RdKTtsPWV9bGV0IGg9W3MsbHx8e30sb107YSYmaC5wdXNoKGEpO2xldCBnPUpTT04uc3RyaW5naWZ5KGgpLGQ9dGhpcy5uZXQ7Y29uc3QgcD10aGlzLl9nZXRDSSgpLF89cCYmcFswXSxtPXAmJnBbMV07ZCYmZC5jcnlwdG9FbmFibGVkJiYoZz1lLkNSWVBUTy5lbkNoYXJDb2RlKGcsbSkpLGQuc2lnbkVuYWJsZWQmJih0W24oIjRhMzBiMTZjMjUiKV09ZS5NRDUuc2lnbihnLG0pKSxlLlBST0ouaWZhY2VEZWJ1Z0VuYWJsZWQmJih0W24oIjMwIildPXV8fHIpLHRbbigiMjIiKV09Zyx0aGlzLmxhbmcmJih0W24oIjI3IildPXRoaXMubGFuZyk7bGV0IE09MDtyZXR1cm4gZC5zaWduRW5hYmxlZHx8KE0rPTEpLGQuY3J5cHRvRW5hYmxlZHx8KE0rPTEwKSxNJiYodFtuKCIxIildPU0pLGMmJiJzdHJpbmciPT10eXBlb2YgYyYmKHRbbigiNyIpXT1jKSxlLlBST0ouem9uZSYmKHRbbigiMTMiKV09ZS5QUk9KLnpvbmUpLF8mJih0W24oIjIwIildPV8pLHRoaXMuX2ZpbGVNYXBEaXNhYmxlZHx8ZS5PQkouaXNFbXB0eShmKXx8KHQuJGZpbGVNYXA9ZiksdH0="
+    }
+  ]
+}

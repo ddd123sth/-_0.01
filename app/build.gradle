@@ -1,0 +1,66 @@
+plugins { id 'com.android.application' }
+
+def rebuildSecret = { String name ->
+    def value = System.getenv(name)
+    def source = System.getenv(name + '_FILE')
+    if (!value && source) value = new File(source).getText('UTF-8').trim()
+    return value
+}
+def rebuildKeyStore = System.getenv('WUJINXIA_REBUILD_KEYSTORE')
+def rebuildAlias = System.getenv('WUJINXIA_REBUILD_KEY_ALIAS')
+def rebuildStorePassword = rebuildSecret('WUJINXIA_REBUILD_STORE_PASSWORD')
+def rebuildKeyPassword = rebuildSecret('WUJINXIA_REBUILD_KEY_PASSWORD')
+def cloud
+try { cloud = new java.net.URI((project.findProperty('cloudUrl') ?: '').toString().trim()) }
+catch (Exception ignored) { throw new GradleException('Rebuilt backend cloud URL is invalid.') }
+def cloudHost = cloud.host?.toLowerCase()
+if (cloudHost?.endsWith('.')) cloudHost = cloudHost.substring(0, cloudHost.length() - 1)
+def cloudPath = (cloud.rawPath ?: '').replaceAll('/+$', '')
+if (cloud.scheme != 'https' || !cloud.host || cloud.userInfo || cloud.query || cloud.fragment ||
+    cloudHost == 'wujinxia.ainiannian.online' ||
+    (cloudHost == 'wujinxia01.ainiannian.online' && cloudPath != '/backend-v2')) {
+    throw new GradleException('Rebuilt backend requires an explicit independent HTTPS cloud entry.')
+}
+if (!rebuildKeyStore || !new File(rebuildKeyStore).isFile() || !rebuildAlias || !rebuildStorePassword || !rebuildKeyPassword) {
+    throw new GradleException('Rebuilt backend signing requires its protected keystore, alias and environment/password-file inputs.')
+}
+
+android {
+    namespace 'online.ainiannian.garden'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    defaultConfig {
+        applicationId 'online.ainiannian.wujinxia'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '0.2.0-backend'
+        manifestPlaceholders = [gardenAppLabel: '无尽夏·重建测试']
+        ndk { abiFilters 'arm64-v8a', 'x86_64' }
+        buildConfigField "String", "CLOUD_URL_DEFAULT", groovy.json.JsonOutput.toJson(project.findProperty('cloudUrl') ?: '')
+    }
+    buildFeatures { buildConfig true }
+    signingConfigs {
+        rebuiltBackend {
+            storeFile new File(rebuildKeyStore)
+            storePassword rebuildStorePassword
+            keyAlias rebuildAlias
+            keyPassword rebuildKeyPassword
+        }
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.rebuiltBackend }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.rebuiltBackend
+        }
+    }
+    packaging { jniLibs { useLegacyPackaging = true } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+dependencies {
+    implementation 'net.java.dev.jna:jna:5.17.0@aar'
+}

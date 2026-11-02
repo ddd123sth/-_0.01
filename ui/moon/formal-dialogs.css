@@ -1,0 +1,182 @@
+/* Only the formal presentation adapter is affected. Values below are copied from the frozen
+   prototype details.css + identity.css (identity=moon), overriding the old .dialog compatibility
+   selectors; business selectors, IDs, form validation and actions stay in formal-dialogs.js. */
+body[data-identity] #dialog-host .formal-dialog-scrim{
+  position:absolute;inset:0;z-index:15;display:flex;align-items:flex-end;
+  padding:0;background:#3c416e38;backdrop-filter:blur(3px)
+}
+body[data-identity] #dialog-host .formal-dialog-scrim.confirm-scrim{align-items:center;padding:22px}
+body[data-identity] #dialog-host .formal-dialog.dialog{
+  display:flex;flex-direction:column;flex:none;width:100%;max-width:none;margin:0;
+  min-width:0;padding:12px 0 0;max-height:calc(100% - 35px);overflow:hidden;
+  background:#fff;color:var(--ink);border:1px solid #fff;border-radius:32px 32px 0 0;
+  box-shadow:0 -10px 40px #4f558519;line-height:21px
+}
+body[data-identity] #dialog-host .formal-dialog.dialog.confirm-dialog{padding-top:20px;border-radius:30px;max-height:calc(100% - 20px)}
+body[data-identity] #dialog-host .formal-dialog.dialog .sheet-handle{flex-shrink:0;margin:0 auto 12px;width:32px;height:4px;background:var(--edge);border-radius:4px}
+body[data-identity] #dialog-host .formal-dialog.dialog.confirm-dialog .sheet-handle{display:none}
+body[data-identity] #dialog-host .formal-dialog.dialog .sheet-header{
+  display:flex;align-items:center;justify-content:space-between;flex-shrink:0;
+  padding:2px 20px 0;margin:0 0 8px;gap:12px
+}
+body[data-identity] #dialog-host .formal-dialog.dialog .sheet-header h2{margin:0;font-size:22px;font-weight:600;line-height:1.5;color:var(--ink);letter-spacing:normal}
+/* styles.dialog.css re-roots the legacy icon-button under #dialog-host and adds a border. Its ID
+   specificity beats the prototype's border-free button reset unless the formal scope owns it. */
+body[data-identity] #dialog-host .formal-dialog.dialog .sheet-header .icon-button{width:38px;height:38px;min-height:38px;padding:1px 6px;border:0;background:var(--soft);color:var(--muted);border-radius:13px}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-subtitle{flex-shrink:0;padding:0 21px 13px;margin:0;font-size:12px;line-height:1.85;color:var(--muted)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-scroll.dialog-body{
+  flex:0 1 auto;display:block;min-height:0;padding:0 20px 14px;overflow-y:auto;
+  overscroll-behavior:contain;scrollbar-width:thin
+}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-footer{flex-shrink:0;padding:12px 20px 19px;margin:0;border-top:1px solid var(--line);background:#fff}
+body[data-identity] #dialog-host .formal-dialog.dialog.confirm-dialog .panel-footer{border-radius:0 0 26px 26px}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-actions{display:flex;gap:10px;margin:0;padding:0;border:0;background:none}
+body[data-identity] #dialog-host .formal-dialog.dialog.confirm-dialog .panel-actions{flex-direction:column-reverse}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-actions button{
+  flex:1;min-width:0;min-height:46px;padding:0 15px;font-size:13px;line-height:17px;border:0;border-radius:13px
+}
+/* The legacy #dialog-host button { color:inherit } beats the prototype .primary selector despite
+   loading earlier. Own both semantic colors here, using identity.css's final moon action tokens. */
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-actions button.primary{padding:1px 6px;background:var(--button);color:#fff;border:0;font-weight:500;letter-spacing:.5px;box-shadow:0 4px 12px #7b88c21b}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-actions button.secondary{background:var(--soft);color:var(--accent);border:1px solid var(--edge);font-weight:400;letter-spacing:normal;box-shadow:none}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-footer .preview-label{margin:9px 0 0;line-height:12px}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-actions button.danger-primary{background:var(--danger)!important;color:#fff!important}
+body[data-identity] #dialog-host .formal-dialog.dialog button:disabled{opacity:.55}
+body[data-identity] #dialog-host .formal-dialog.dialog button:focus-visible,
+body[data-identity] #dialog-host .formal-dialog.dialog input:focus-visible,
+body[data-identity] #dialog-host .formal-dialog.dialog select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+body[data-identity] #dialog-host .formal-dialog.dialog .field-block{display:block;border:0;padding:0;margin:0 0 15px}
+body[data-identity] #dialog-host .formal-dialog.dialog .field-caption{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 7px}
+body[data-identity] #dialog-host .formal-dialog.dialog .field-caption label{display:block;margin:0;padding:0;font-size:13px;font-weight:600;line-height:17px;color:var(--ink)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-input{
+  display:block;box-sizing:border-box;width:100%;min-width:0;min-height:46px;height:auto;margin:0;padding:11px 13px;
+  border:1px solid var(--edge);border-radius:13px;outline-offset:2px;
+  background:#fafbff;color:var(--ink);font-family:inherit;font-size:14px;line-height:19px
+}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-input::placeholder{color:#a8aec2}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-input:disabled{color:var(--muted);background:var(--soft)}
+body[data-identity] #dialog-host .formal-dialog.dialog .password-control{position:relative;display:block;width:100%}
+body[data-identity] #dialog-host .formal-dialog.dialog .password-control .panel-input{padding-right:48px}
+body[data-identity] #dialog-host .formal-dialog.dialog .password-control .icon-button{position:absolute;right:1px;top:1px;min-height:44px;width:44px;height:44px;margin:0;padding:1px 6px;border:0;background:transparent;color:var(--muted);border-radius:14px}
+body[data-identity] #dialog-host .formal-dialog.dialog .field-description{margin:7px 0 0;padding:0;font-size:12px;line-height:1.8;color:var(--muted)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-note{margin:12px 0;padding:12px 14px;font-size:12px;line-height:1.85;border-radius:14px}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-note>strong{display:block;font-size:12px;font-weight:600;line-height:1.85;margin:0 0 4px}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-status{display:flex;gap:11px;align-items:flex-start;margin:9px 0 15px;padding:15px;border-radius:17px}
+/* The frozen status h3 keeps the browser heading's bold (700), not the adapter's old 600. */
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-status h3{margin:0;font-size:15px;font-weight:700;line-height:1.5;color:var(--ink)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-status p{margin:5px 0 0;font-size:12px;line-height:1.85;color:var(--muted)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-status .panel-eyebrow{font-size:12px;line-height:1.85;letter-spacing:1px;margin:5px 0 3px}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-status>.icon{flex:none;width:25px;height:25px;margin-top:1px}
+/* Frozen details.css leaves this role at normal. Restore that inheritance boundary from
+   the adapter sheet's 21px line box; actual platform font metrics remain visible. */
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-link{min-height:49px;width:100%;margin:0;padding:11px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;justify-content:space-between;text-align:left;box-shadow:none;font-size:13px;line-height:normal}
+body[data-identity] #dialog-host .formal-dialog.dialog .formal-links{display:block;margin:0;padding:0;border:0;background:none}
+body[data-identity] #dialog-host .formal-dialog.dialog .formal-group{margin:0 0 15px;padding:0;border:0;background:none;box-shadow:none;border-radius:0}
+body[data-identity] #dialog-host .formal-dialog.dialog .formal-group .card-head{padding:0;margin:0;background:none;border:0}
+body[data-identity] #dialog-host .formal-dialog.dialog .formal-group-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:0}
+body[data-identity] #dialog-host .formal-dialog.dialog .formal-group-heading .panel-heading{margin:0;font-size:14px;line-height:21px}
+body[data-identity] #dialog-host .formal-dialog.dialog .formal-group-heading .count{font-size:10px;color:var(--muted)}
+body[data-identity] #dialog-host .formal-dialog.dialog .formal-group .body-copy{margin:0 0 12px;font-size:12px;line-height:1.85;color:var(--muted)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-toggle{display:flex;align-items:center;gap:14px;margin:0;padding:14px 0;border-bottom:1px solid var(--line)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-toggle .field-copy{flex:1;min-width:0}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-toggle h3{margin:0;font-size:14px;line-height:21px;color:var(--ink)}
+body[data-identity] #dialog-host .formal-dialog.dialog .panel-toggle p{margin:4px 0 0;font-size:12px;line-height:1.8;color:var(--muted)}
+body[data-identity] #dialog-host .formal-dialog.dialog .field-error{margin:6px 0 0;padding:0;border:0;border-radius:0;background:none;font-size:11px;line-height:1.7;color:var(--danger)}
+body[data-identity] #dialog-host .formal-dialog.dialog [hidden]{display:none!important}
+/* The scrim moves above the IME; the authored top budget and actual safe top are alternatives. */
+html.native-shell body[data-identity] #dialog-host .formal-dialog.dialog:not(.confirm-dialog),
+html.native-shell body.keyboard-open[data-identity] #dialog-host .formal-dialog.dialog:not(.confirm-dialog){
+  max-height:calc(100% - max(35px, calc(var(--host-safe-top) + 1px)));
+  padding-bottom:max(0px, calc(var(--host-safe-bottom) - var(--host-ime-bottom)))
+}
+html.native-shell body[data-identity] #dialog-host .formal-dialog.dialog.confirm-dialog,
+html.native-shell body.keyboard-open[data-identity] #dialog-host .formal-dialog.dialog.confirm-dialog{
+  max-height:calc(100% - 20px);padding-bottom:0
+}
+/* Compact account settings only; the main settings pages keep their existing styles. */
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .sheet-header .panel-eyebrow{display:none}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .panel-subtitle{font-size:12px;line-height:1.7;padding-bottom:12px}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .field-block{margin:0;padding:14px 0;border-bottom:1px solid var(--line)}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .compact-field-row{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:14px}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .compact-field-row select{width:auto;max-width:58%;min-height:38px;padding:7px 9px;font-size:13px}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .field-block:has(>.input-with-unit){display:grid;grid-template-columns:minmax(0,1fr) 125px;align-items:center;gap:0 10px}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .field-block:has(>.input-with-unit) .field-caption{margin:0}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .field-block:has(>.input-with-unit) .field-description{grid-column:1/-1}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .required-mark{display:none}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .panel-choices{display:flex;flex-wrap:wrap;gap:7px}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .panel-choices .panel-choice{flex:0 1 auto;min-height:38px;padding:8px 10px}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .field-description{font-size:11px;line-height:1.7;margin-top:6px}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .panel-toggle{padding:14px 0;border-bottom:1px solid var(--line)}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .panel-note{font-size:12px;padding:8px 0;background:none;border:0}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .compact-picker .compact-field-row{flex-wrap:nowrap}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .compact-picker-label{white-space:nowrap;flex:0 0 auto}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact="true"] .compact-picker .picker-trigger{flex:0 1 58%;width:auto;min-width:0;margin:0;min-height:38px;padding:8px 10px;justify-content:space-between;gap:8px;white-space:nowrap}
+
+/* All config numbers use the same label/control row, with or without a unit. */
+body[data-identity] #dialog-host .moon-dialog .numeric-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,170px);align-items:center;gap:10px}
+body[data-identity] #dialog-host .moon-dialog .numeric-row .field-caption{margin:0;min-width:0}
+body[data-identity] #dialog-host .moon-dialog .numeric-row .field-caption label{font-size:13px;line-height:1.6}
+body[data-identity] #dialog-host .moon-dialog .number-control{display:flex;align-items:center;justify-content:flex-end;gap:5px;min-width:0}
+body[data-identity] #dialog-host .moon-dialog .number-stepper{display:grid;grid-template-columns:36px minmax(0,1fr) 36px;align-items:center;width:150px;max-width:100%;height:42px;border:1px solid var(--line);border-radius:12px;background:var(--soft);overflow:hidden}
+body[data-identity] #dialog-host .moon-dialog .number-stepper:focus-within{border-color:var(--primary);box-shadow:0 0 0 2px color-mix(in srgb,var(--primary) 12%,transparent)}
+body[data-identity] #dialog-host .moon-dialog[data-settings-compact] .number-stepper input.panel-input[type="number"]{width:100%;min-width:0;height:40px;min-height:40px;margin:0;padding:0 2px;border:0;border-radius:0;outline:none;box-shadow:none;background:transparent;text-align:center;font-size:14px;appearance:textfield}
+body[data-identity] #dialog-host .moon-dialog .number-stepper input::-webkit-inner-spin-button,
+body[data-identity] #dialog-host .moon-dialog .number-stepper input::-webkit-outer-spin-button{appearance:none;margin:0}
+body[data-identity] #dialog-host .moon-dialog .number-step{width:36px;min-width:0;height:40px;min-height:40px;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:var(--primary);font-size:21px;line-height:1}
+body[data-identity] #dialog-host .moon-dialog .number-step:active{background:color-mix(in srgb,var(--primary) 12%,transparent)}
+body[data-identity] #dialog-host .moon-dialog .number-step:disabled{opacity:.3}
+body[data-identity] #dialog-host .moon-dialog .number-unit{font-size:11px;line-height:16px;white-space:nowrap;color:var(--muted)}
+
+/* Anchored floating menus stay out of form layout and above the scroll clip. */
+body[data-identity] #dialog-host .moon-dialog .settings-select{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:42px}
+body[data-identity] #dialog-host .moon-dialog .settings-select-label{font-size:13px;line-height:1.6;flex:0 0 auto}
+body[data-identity] #dialog-host .moon-dialog .settings-select-value{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0;max-width:66%;min-height:40px;padding:9px 11px;border:1px solid var(--line);border-radius:12px;background:var(--soft);font-size:12px;line-height:18px}
+body[data-identity] #dialog-host .moon-dialog .settings-select-value>.icon{width:15px;height:15px}
+body[data-identity] #dialog-host .moon-dialog .settings-select-value[aria-expanded="true"]>.icon{transform:rotate(180deg)}
+body[data-identity] #dialog-host .settings-select-options{display:none;position:fixed;inset:auto;z-index:50;gap:3px;margin:0;padding:6px;border:1px solid var(--line);border-radius:13px;background:#fff;box-shadow:0 8px 28px #41355326;max-height:280px;overflow-y:auto;overscroll-behavior:contain;box-sizing:border-box}
+body[data-identity] #dialog-host .settings-select-options:popover-open{display:grid}
+body[data-identity] #dialog-host .settings-select-options.is-floating{display:grid}
+body[data-identity] #dialog-host .settings-select-options::backdrop{background:transparent}
+body[data-identity] #dialog-host .settings-select-options .panel-choice{display:flex;align-items:flex-start;gap:9px;min-height:40px;margin:0;padding:9px;border:1px solid transparent;border-radius:8px;background:transparent}
+body[data-identity] #dialog-host .settings-select-options .panel-choice:has(input:checked){background:var(--soft)}
+body[data-identity] #dialog-host .settings-select-options input{flex:0 0 auto;width:16px;height:16px;min-height:0;margin:1px 0 0;padding:0;accent-color:var(--primary)}
+body[data-identity] #dialog-host .settings-select-options .option-copy{min-width:0}
+body[data-identity] #dialog-host .settings-select-options .option-copy strong{display:block;font-size:12px;line-height:18px;font-weight:400}
+body[data-identity] #dialog-host .settings-select-options .option-copy small{display:block;margin-top:3px;font-size:10px;line-height:16px;color:var(--muted)}
+
+/* Search, filters and selection stay outside the scrolling result list. */
+body[data-identity] #dialog-host .moon-dialog.catalog-picker{display:flex;flex-direction:column;height:calc(100% - 35px);overflow:hidden}
+body[data-identity] #dialog-host .catalog-picker .picker-controls{flex:0 0 auto;padding:0 20px 10px;border-bottom:1px solid var(--line);background:#fff}
+body[data-identity] #dialog-host .catalog-picker .picker-results{flex:1 1 auto;min-height:0;padding:0 20px 12px;overflow-y:auto;overscroll-behavior:contain;outline:none}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-controls .picker-toolbar{margin:0;gap:8px}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-controls input.panel-input[type="search"]{height:40px;min-height:40px;padding:8px 11px;font-size:12px;border-radius:12px}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-controls button{font-size:11px;line-height:16px;min-height:30px;padding:5px 8px;border-radius:9px;border:1px solid transparent;background:transparent;color:var(--muted)}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-controls .picker-toolbar button{min-height:40px;background:var(--soft);color:var(--primary);white-space:nowrap}
+body[data-identity] #dialog-host .catalog-picker .picker-quality-filters{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-quality-filters button{display:flex;align-items:center;gap:4px;border-color:var(--line);padding:5px 7px}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-controls button[aria-pressed="true"]{background:var(--soft);color:var(--primary);border-color:var(--primary)}
+body[data-identity] #dialog-host .catalog-picker .picker-view-tabs{display:flex;align-items:center;gap:5px;margin:7px 0}
+body[data-identity] #dialog-host .catalog-picker .picker-view-tabs>span{margin-left:auto;font-size:10px;line-height:16px;color:var(--muted)}
+body[data-identity] #dialog-host .catalog-picker .picker-selected-summary{padding:7px 9px;border-radius:12px;background:var(--soft)}
+body[data-identity] #dialog-host .catalog-picker .picker-selected-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+body[data-identity] #dialog-host .catalog-picker .picker-selected-heading strong{font-size:11px;line-height:18px;font-weight:500}
+body[data-identity] #dialog-host .catalog-picker .picker-selected-summary>p{margin:2px 0 0;font-size:10px;line-height:17px;color:var(--muted)}
+body[data-identity] #dialog-host .catalog-picker .picker-selected-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:3px}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-controls .picker-selected-chip{display:flex;align-items:center;gap:5px;max-width:100%;min-height:27px;padding:3px 6px;border-color:var(--line);background:#fff;color:var(--ink)}
+body[data-identity] #dialog-host .catalog-picker .picker-selected-chip>span:not(.quality-dot){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body[data-identity] #dialog-host .catalog-picker .picker-selected-chip>.icon{width:12px;height:12px;color:var(--muted)}
+body[data-identity] #dialog-host .moon-dialog.catalog-picker .picker-controls .picker-selected-more{min-height:24px;padding:2px 0;color:var(--primary)}
+body[data-identity] #dialog-host .catalog-picker [data-quality="1"]{--quality-color:#7d877e}
+body[data-identity] #dialog-host .catalog-picker [data-quality="2"]{--quality-color:#55806a}
+body[data-identity] #dialog-host .catalog-picker [data-quality="3"]{--quality-color:#5a80ac}
+body[data-identity] #dialog-host .catalog-picker [data-quality="4"]{--quality-color:#9370b0}
+body[data-identity] #dialog-host .catalog-picker [data-quality="5"]{--quality-color:#a67b3c}
+body[data-identity] #dialog-host .catalog-picker .quality-dot{display:inline-block;width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:var(--quality-color,var(--muted))}
+body[data-identity] #dialog-host .catalog-picker .catalogue-row{padding:10px 6px}
+body[data-identity] #dialog-host .catalog-picker .catalogue-row.is-selected{background:var(--soft);border-radius:12px}
+body[data-identity] #dialog-host .catalog-picker .catalogue-row>.feature-icon{flex:0 0 34px;color:var(--quality-color,var(--primary));background:color-mix(in srgb,var(--quality-color,var(--primary)) 9%,#fff)}
+body[data-identity] #dialog-host .catalog-picker .catalogue-row>.catalogue-copy{flex:1;min-width:0}
+body[data-identity] #dialog-host .catalog-picker .catalogue-row>.catalogue-selected-mark{flex:0 0 18px;color:var(--primary)}
+body[data-identity] #dialog-host .catalog-picker .catalogue-selected-mark>.icon{width:18px;height:18px}
+body[data-identity] #dialog-host .catalog-picker .catalogue-quality{display:inline-block;color:var(--quality-color,var(--muted));font-size:10px;line-height:18px}
+body[data-identity] #dialog-host .moon-dialog .picker-selection-summary{margin:6px 0 0;font-size:11px;line-height:18px;color:var(--muted);overflow-wrap:anywhere}

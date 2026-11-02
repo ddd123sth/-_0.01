@@ -1,0 +1,14 @@
+# Preserve source and resource bytes on every checkout (catalog hashes depend on them).
+* -text
+# These JSON files are verified by SHA-256 over their raw bytes at runtime.
+# Prevent checkout/commit newline conversion from invalidating those contracts.
+/runtime/backend/catalogs/official-land-480.0.27/*.json -text
+/runtime/backend/catalogs/official-land-480.0.46/*.json -text
+/runtime/backend/catalogs/official-customer-480.0.27/*.json -text
+/runtime/backend/catalogs/official-customer-480.0.46/*.json -text
+/runtime/backend/contracts/*.json -text
+/runtime/backend/features/order-flower/level-thresholds-480.0.27.json -text
+/runtime/backend/features/order-flower/static/*.json -text
+/runtime/backend/features/order-flower/static/source-480.0.46.json whitespace=cr-at-eol
+/runtime/backend/compat/catalog.json -text
+/runtime/backend/registry/inventory.json -text

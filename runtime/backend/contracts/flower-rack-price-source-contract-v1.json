@@ -1,0 +1,119 @@
+{
+  "schema": "flower-rack-price-source-extension/v1",
+  "sourceVersion": "480.0.46",
+  "sourceSha256": "bf21efb47a54dca0ab5e249062da828d2ec8981388977ebfc1524c75236c9845",
+  "blocks": [
+    {
+      "name": "cal-sprice-formula",
+      "start": 8103,
+      "end": 8153,
+      "byteLength": 50,
+      "sha256": "e1688a18385e5f86f8ca9393f3d6742763ceee10b66315209d6b33a86934fe96",
+      "base64": "Xy5jYWxTUHJpY2U9ZnVuY3Rpb24oYSl7cmV0dXJuIE1hdGgucm91bmQoYSoyLjMpfTs="
+    },
+    {
+      "name": "rack-price-formula",
+      "start": 8949,
+      "end": 9038,
+      "byteLength": 89,
+      "sha256": "d5ff0f104c3faee5f1159fddabeaf7e51f2a456f98eca4f279f0bdb0ba36b91f",
+      "base64": "Xy5jYWxPcmRlckZsb3dlclJhY2tHb2xkPWZ1bmN0aW9uKGEsYixjKXtyZXR1cm4gTWF0aC5tYXgoTWF0aC5yb3VuZCgyLjMqKGEqYikvKDErYykpLDEpfTs="
+    },
+    {
+      "name": "rack-price-consumer",
+      "start": 442763,
+      "end": 443147,
+      "byteLength": 384,
+      "sha256": "350f4bea0070ca05756e300cebb4400eda39521553e154b85ffd7636e87e77ff",
+      "base64": "Y2FsU1ByaWNlKGUpe2NvbnN0IHI9dC5ELmNfZmxvd2VyQXJ0KGUpO2lmKCFyKXJldHVybltdO2xldCBzPXIuc1ByaWNlP21vLk9CSi5jbG9uZTIoci5zUHJpY2UpOltdLG89MCxpPTAsYT10LlVULmdldEdsZEFkZCgpO2ZvcihsZXQgZT0wO2U8ci5mbG93ZXJzLmxlbmd0aDtlKyspe2NvbnN0IHM9ci5mbG93ZXJzW2VdLGw9dC5ELmNfZmxvd2VyKHMpO2lmKGwpe2xldCBlPXQuVVQuZ2V0Rmxvd2VyQWR2YW5jZVNraWxsRXh0KHMpLHI9bC5nbGQ7bys9cixlWzFdJiYoaSs9dC5jX2Zvcm11bGEuY2FsT3JkZXJGbG93ZXJSYWNrR29sZChyLGVbMV0sYSkpfX1yZXR1cm4gcyYmcy5sZW5ndGg/aT4wJiYoc1sxXSs9aSk6cz1bMTEsdC5jX2Zvcm11bGEuY2FsU1ByaWNlKG8pK2ldLHN9"
+    },
+    {
+      "name": "advance-skill-consumer",
+      "start": 686784,
+      "end": 687388,
+      "byteLength": 604,
+      "sha256": "7d4832ae4d00a1943871747348a3d6e455ece503c53010491d9bf5e6ab318a1c",
+      "base64": "ZS5nZXRGbG93ZXJBZHZhbmNlU2tpbGxFeHQ9ZnVuY3Rpb24oZSl7bGV0IHI9e30scz10LmdldEdNZ3IoKTtpZighc3x8IXMuY3VsdGl2YXRlTWdyKXJldHVybiByO2xldCBvPXMuY3VsdGl2YXRlTWdyLmdldE1iKGUpO2lmKCFvKXJldHVybiByO2xldCBpPW8uZ2V0U2xvdE1hcCgpO2lmKCFpfHxtby5PQkouaXNFbXB0eShpKSlyZXR1cm4gcjtsZXQgYT17fTtmb3IobGV0IGUgaW4gaSlpZihpW2VdJiZpW2VdLnNraWxsSWQpe2xldCByPXQuRC5jX2Zsb3dlckFkdmFuY2VTa2lsbChpW2VdLnNraWxsSWQpO2lmKCFyfHwhci5za2lsbFR5cGUpY29udGludWU7bGV0IHM9ci5za2lsbFR5cGUsbz1yLnZhbHVlVHlwZTthW3NdfHwoYVtzXT1bbywwXSksYVtzXVsxXSs9dC5VVC5nZXRGbG93ZXJBZHZhbmNlU2tpbGxWYWx1ZUJ5Q2ZnKE51bWJlcihlKSxyKX1mb3IobGV0IHQgaW4gYSl7bGV0IGU9YVt0XTsyPT1lWzBdP3JbdF09ZVsxXS8xZTQ6clt0XT1lWzFdfXJldHVybiByfSxlLmdldEZsb3dlckFkdmFuY2VTa2lsbFZhbHVlQnlDZmc9ZnVuY3Rpb24odCxlKXtsZXQgcj0wO3JldHVybiBlJiYocj0xPT10P2UudmFsdWUxOjI9PXQ/ZS52YWx1ZTI6ZS52YWx1ZTMpLHJ9LA=="
+    },
+    {
+      "name": "advance-slot-default",
+      "start": 399751,
+      "end": 399855,
+      "byteLength": 104,
+      "sha256": "6ac48ce6262f24ce41b30ab8dd63b3df65b7f2625bf9b63fca29a7f54802a97f",
+      "base64": "Z2V0U2xvdE1hcCgpe3ZhciB0O3JldHVybiBtby5PQkouY2xvbmUyKChudWxsPT09KHQ9dGhpcy5kYXRhKXx8dm9pZCAwPT09dD92b2lkIDA6dC5hZHZhbmNlU2xvdE1hcCl8fHt9KX0="
+    },
+    {
+      "name": "gold-add-consumer",
+      "start": 381348,
+      "end": 381691,
+      "byteLength": 343,
+      "sha256": "0e87e8f21d20cd38a88156789bced031e4a733aefb64b1c36108fa00b3e0bf7c",
+      "base64": "ZS5pc0FkQ2FyZD1mdW5jdGlvbigpe2xldCBlPXQuZ2V0R01ncigpO3JldHVybiEhZSYmZS5yY2hnQ2FyZE1nci5pc1ZhbGlkKDYpfSxlLmlzTm9ibGU9ZnVuY3Rpb24oKXtsZXQgZT10LmdldEdNZ3IoKTtyZXR1cm4hIWUmJmUucmNoZ0NhcmRNZ3IuaXNWYWxpZCgxKX0sZS5nZXRHbGRBZGQ9ZnVuY3Rpb24oKXtsZXQgZT0wLHI9dC5VVC5pc0FkQ2FyZCgpO2lmKCFyKXtsZXQgZT10LmdldEdNZ3IoKTtpZihlKXtsZXQgdD1lLnZpZGVvRG91YmxlQ3RybDtyPXQmJnQuaXNFeGlzdCgpfX1pZihyKXtsZXQgcj10LkQubV9jX2dhbWVDZmcoKSx7JHZpZGVvR2xkQWRkOnN9PXI7ZSs9cy8xZTR9cmV0dXJuIGV9LA=="
+    },
+    {
+      "name": "rchg-total-schema",
+      "start": 48580,
+      "end": 48813,
+      "byteLength": 233,
+      "sha256": "e266a43d1fbf5d9282102ddaa27da8780a9ebecc9511dee71ea4299023de7f6a",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklSY2hnVG90Iix7cmlkczowLGhpc3RSaWRzOjEscmNoZ0xpc3Q6IjI6SVJjaGdbXSIscmVzZXQ6MyxvcmRlck5vOjQsY2FyZE1hcDoiNTp7W3R5cGU6c3RyaW5nXTpJUmNoZ0NhcmR9IixleHRNYXA6IjY6e1t0eXBlOm51bWJlcl06SVJjaGdFeHR9IixkYXlzOiI3OklSY2hnRGF5Iix2aXBSd2RzOjgsZnJUaW1lOiI5OkRhdGUiLGZyUndkOjEwLGxyVGltZToiMTE6RGF0ZSJ9KSw="
+    },
+    {
+      "name": "rchg-card-schema",
+      "start": 31878,
+      "end": 32050,
+      "byteLength": 172,
+      "sha256": "f83a2d5e74cbe58028ebd56e949ba05ebc297fa63db596e3f85ffab4dbaf4d35",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklSY2hnQ2FyZCIse3VpZDowLHR5cGU6MSxpc01haW46MixyZWNlaXZlTGlzdDoiMzpJUmNoZ0NhcmRSZWN2W10iLHJlY2VpdmVUaW1lOiI0OkRhdGUiLGludmFsaWRUaW1lOiI1OkRhdGUiLGNUaW1lOiI2OkRhdGUiLGV4cGlyZTo3LHJlZnVuZERlZHVjdE1zOjEwMX0pLA=="
+    },
+    {
+      "name": "rchg-card-validity",
+      "start": 337945,
+      "end": 338062,
+      "byteLength": 117,
+      "sha256": "2178cb9e87df4c2a7be115dd39fb872d489bb7c0f1c82f20bf2328d2f86bcb98",
+      "base64": "aXNWYWxpZCgpe2NvbnN0IHQ9dGhpcy5kYXRhLmludmFsaWRUaW1lO3JldHVybiEhdGhpcy5kYXRhLmlzTWFpbnx8dCYmbW8uREFURS5pc0FmdGVyKG1vLkRBVEUuZGF0ZSh0KSxtby5EQVRFLmRhdGUoKSl9"
+    },
+    {
+      "name": "video-validity",
+      "start": 472094,
+      "end": 472196,
+      "byteLength": 102,
+      "sha256": "d65502fc880f11846968a3473bae31b092ea1e49c103deacc5720bd93045a0cb",
+      "base64": "aXNFeGlzdCgpe2NvbnN0IHQ9dGhpcy5kO3JldHVybiEoIXR8fCF0LmVUaW1lKSYmbW8uREFURS5pc0FmdGVyKG1vLkRBVEUuZGF0ZSh0LmVUaW1lKSxtby5EQVRFLmRhdGUoKSl9"
+    },
+    {
+      "name": "video-total-schema",
+      "start": 98192,
+      "end": 98290,
+      "byteLength": 98,
+      "sha256": "e016a323c0914583ffa259a3af8231e8bb901b519f92586c56f309b4caba4d26",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklWaWRlb0RvdWJsZSIse3VpZDowLHZpZGVvQ250OjEsZVRpbWU6IjI6RGF0ZSIsdVRpbWU6IjM6RGF0ZSIsY1RpbWU6IjQ6RGF0ZSJ9KSw="
+    },
+    {
+      "name": "cultivate-total-schema",
+      "start": 115969,
+      "end": 116090,
+      "byteLength": 121,
+      "sha256": "6fa215ecbc87698aa83ed415a0b10be09ce9cc983d2c9994ef8cfb425d54130d",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklDdWx0aXZhdGVUb3QiLHtjdWx0aXZhdGVNYXA6IjA6e1tmbG93ZXJJZDpudW1iZXJdOklDdWx0aXZhdGV9IixoZWxwTG9nTGlzdDoiMTpJQ3VsdGl2YXRlSGVscExvZ1tdIn0pLA=="
+    },
+    {
+      "name": "cultivate-member-schema",
+      "start": 95079,
+      "end": 95308,
+      "byteLength": 229,
+      "sha256": "f4307cd1cf439b2581ff0ff55347952ef54734ee264c45ea40eb0292a2e5585d",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklDdWx0aXZhdGUiLHt1aWQ6MCxmbG93ZXJJZDoxLGx2bDoyLGN1bFRpbWU6IjM6RGF0ZSIsc3RhdHVzOjQsdVRpbWU6IjU6RGF0ZSIsY1RpbWU6IjY6RGF0ZSIsaXNSZWN2U2hhcmVSd2Q6Nyxpc1JlZHVjZTo4LHJlZHVjZUJ5SGVscENudDo5LGlzVXNlSXRlbToxMCxhZHZhbmNlU2xvdE1hcDoiMTE6e1tzbG90SWQ6bnVtYmVyXTpJRmxvd2VyQWR2YW5jZVNsb3R9In0pLA=="
+    },
+    {
+      "name": "advance-slot-schema",
+      "start": 124947,
+      "end": 125087,
+      "byteLength": 140,
+      "sha256": "caf1d1c690e865e4d52bcc4d02e3cd7feae0d32081cbd6c3fc7f1adc4de06c4a",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklGbG93ZXJBZHZhbmNlU2xvdCIse3Nsb3RJZDowLHNraWxsSWQ6MSxwZW5kaW5nU2tpbGxJZDoyLGJkQ250OjMsYmRTa2lsbElkczo0LGJkQ250TWFwOiI1Ontbc2tpbGxJZDogbnVtYmVyXTogbnVtYmVyfSJ9KSw="
+    }
+  ]
+}

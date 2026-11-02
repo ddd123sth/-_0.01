@@ -1,0 +1,16 @@
+{
+  "name": "garden-android-local",
+  "version": "0.2.0",
+  "private": true,
+  "description": "无尽夏 Android App、设备端后端与独立云服务",
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "build": "node tools/build-local.mjs",
+    "setup": "node tools/build-local.mjs --setup-only",
+    "start": "node tools/start-cloud-local.mjs",
+    "pretest": "node tools/build-android.mjs --stage-only --cloud-url=https://wujinxia01.ainiannian.online/backend-v2",
+    "test": "node --test tests/*.mjs",
+    "check:payload": "node tools/build-android.mjs --stage-only --cloud-url=https://wujinxia01.ainiannian.online/backend-v2 && node --test tests/android-payload.mjs"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "manifestVersion": 1,
+  "catalogId": "official-public/customer-480.0.46",
+  "purpose": "Public current official c_flowerArt table for version-bound customer/necessary-art rules; static metadata only and no runtime/RPC authorization",
+  "sourceVersion": {
+    "gameVersion": "480.0.46",
+    "worldProtocolVersion": "480.0.0",
+    "gameModuleVersion": "b453d",
+    "moModuleVersion": "f7ef4",
+    "resourceBundleVersion": "603c3",
+    "nativeCatalogVersion": "ab27c",
+    "normalPackageHopVersionObserved": true,
+    "currentServerCatalogProven": false
+  },
+  "sourceIndex": {
+    "url": "https://hygncdn.babigame.cn/index/index-gn-mix-480.0.46.json",
+    "status": 200,
+    "bytes": 8616,
+    "sha256": "69253ccdb52ef4f215a414fc6c0c09b1b32c3c449f1a1feb64c93948f1429448",
+    "genericIndexUrl": "https://hygncdn.babigame.cn/index/index-480.0.46.json",
+    "genericIndexSha256": "d7c10bf45a0481e7c67bf2102fba51faa3172fdb54504dbbe1557768478151ff",
+    "bothSelectSameGameMoAndResources": true,
+    "embeddedResourceKeyValueIncluded": false
+  },
+  "businessCodeSource": {
+    "url": "https://hygncdn.babigame.cn/src/assets/scripts/frameworks/game/bin/game.b453d.jsc",
+    "decodedSha256": "bf21efb47a54dca0ab5e249062da828d2ec8981388977ebfc1524c75236c9845",
+    "applicationCodeExecuted": false
+  },
+  "catalogSource": {
+    "url": "https://hygncdn.babigame.cn/assets/resources/native/35/35fc3381-34dc-5c64-ba90-e06c2c6133a8.ab27c.text",
+    "status": 200,
+    "bytes": 4993384,
+    "sha256": "caf088cd9a70430b149aa270217d9aa46729bbb34e2799e974ec5cae63e61250",
+    "bundleConfigUrl": "https://hygncdn.babigame.cn/assets/resources/config.603c3.json",
+    "logicalResourcePath": "mo/zh/data/g-data",
+    "nativeVersion": "ab27c"
+  },
+  "tableDecoderSource": {
+    "url": "https://hygncdn.babigame.cn/src/assets/scripts/frameworks/mo/bin/mo.f7ef4.jsc",
+    "decodedSha256": "1cde77350e5472509f695090546ed311d3b0b65618ba681653daa99f0691cf3b",
+    "decoderHelperPath": ".runtime/backend-rebuild/official-jsc-static/decode_tables.py",
+    "decoderHelperSha256": "bcdeee48664017cd80d6bcae617852e9f5319a667cbed3131b9e1de4229ac259",
+    "columnTransformC": "absent",
+    "decoderMode": "Independent static table translation of aliases, numeric shifts, defaults and implicit row id; no application code executed",
+    "jscSha256": "142a049aaf0ec42540c11b64adbe4219abc526cbbb6db0a2ffcc1e0a1e23f47d",
+    "receiptPath": ".runtime/validation/official-public-480.0.46-mo-20261026-01/results.json",
+    "sameBytesAs480.0.27": true,
+    "sameBytesAs480.0.27Proof": "The public 480.0.46 mo.f7ef4.jsc GET and the previously pinned 480.0.27 module use the same URL token and SHA-256; decoded helper/table translation retained."
+  },
+  "tables": {
+    "c_flowerArt": {
+      "file": "c_flowerArt.json",
+      "rows": 1592,
+      "positiveRows": 1591,
+      "bytes": 242102,
+      "sha256": "9b75a8ed53b6e7d481bf6d57847b70a275ee4a2af5b7753d27ec972f36555d03",
+      "metadataRowMinus1Included": true,
+      "columnTransformCAbsent": true,
+      "omittedRows": [],
+      "omittedFields": []
+    }
+  },
+  "compatibilityTo480.0.27": {
+    "baselineTableSha256": "636220908e677377ee4902a38a7ab6adb66540f86902199e99141eaff3de66da",
+    "sourceComparison": {
+      "oldRows": 1592,
+      "newRows": 1592,
+      "differentRows": 29,
+      "changedFieldCounts": {
+        "isBlockPic": 2,
+        "anchorY": 27
+      },
+      "changedFieldIds": {
+        "isBlockPic": [
+          311701,
+          312601
+        ],
+        "anchorY": [
+          313101,
+          313102,
+          313103,
+          313104,
+          313105,
+          313106,
+          313107,
+          313108,
+          313109,
+          313110,
+          313111,
+          313112,
+          313113,
+          313114,
+          313115,
+          313116,
+          313117,
+          313118,
+          313119,
+          313120,
+          313121,
+          313122,
+          313123,
+          313124,
+          313125,
+          313126,
+          313127
+        ]
+      },
+      "claimedVisualOnlyFields": [
+        "anchorY",
+        "isBlockPic"
+      ],
+      "consumedFields": [
+        "$cPrice",
+        "cPrice",
+        "flowers",
+        "id",
+        "vase"
+      ],
+      "consumedFieldDifferences": 0,
+      "consumerSourceRefs": [
+        "runtime/backend/features/customer/catalog.mjs:ordinary-item/rewardPolicy",
+        "runtime/backend/features/art/catalog.mjs:recipe"
+      ]
+    },
+    "businessRuleReuse": "not authorized by this table alone; each active domain contract is profile-gated"
+  },
+  "safety": {
+    "accountFieldsIncluded": false,
+    "credentialOrTokenIncluded": false,
+    "sourceBusinessCodeBundled": false,
+    "fullTablePreserved": true
+  }
+}

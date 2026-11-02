@@ -1,0 +1,13 @@
+Mode: built-in image_gen.imagegen (not CLI)
+Reference image: ui/brand/logo-endless-summer.webp
+Reference role: style and palette only. User icon remains unchanged; this is a supporting garden illustration, not a logo.
+Generated source: C:/Users/admin/.codex/generated_images/01a15859-19ba-7a90-87cf-115126865bdd/exec-2504e7a9-036f-4637-8e33-f9db75004502.png
+
+Use case: illustration-story.
+Asset type: supporting decorative panorama for a Chinese botanical gardening mobile app, landscape 3:2 composition, no UI and no text.
+Input image 1 is a STYLE AND COLOR REFERENCE ONLY: the existing user-owned Endless Summer hydrangea icon. Do not edit, redraw, reproduce or include this icon or its Chinese lettering; it remains used separately and unchanged in the app.
+Primary request: create an exquisite rain-washed hydrangea garden footpath just as the sun returns after a summer shower. Large blue, periwinkle and pale lilac hydrangea flower heads with delicate fine contour lines and luminous translucent watercolor petals frame the far right and lower corners. A small pearl-white garden bench and a closed translucent pale blue garden umbrella resting beside it appear subtly at the right edge. Fine crystal droplets on leaves, a few drifting lavender petals, a soft warm sun ray through cool mist.
+Composition: horizontal 3:2, approximately 60 percent of the left and upper central area is very pale pearl-white mist with almost no detail, usable negative space for an app title. The winding pale stone path curves toward the distant right and fades into white. Botanical detail concentrated on the bottom and right, airy balanced asymmetric composition. No dark outlines or thick cartoon shapes.
+Style/medium: match the reference's polished airy watercolor fantasy botanical illustration, translucent cool petals with silver-blue fine linework, pearl highlights and a few tiny four-point twinkles. Delicate refined hand-painted appearance, not photorealistic, no 3D.
+Color palette: pearl white dominant, rain-mist ice blue, soft periwinkle, pale iris lavender, tiny restrained mint leaf accents. Gentle natural clarity after rain, peaceful summer garden.
+Constraints: NO text, NO logo, NO lettering, NO watermark, NO people. Do not reproduce the reference icon as a graphic. No neon, no orange, no monochrome grey, no dark night background, no generic green dashboard gradients, no industrial elements. The result is a new companion illustration, not a replacement logo.

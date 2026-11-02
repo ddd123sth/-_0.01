@@ -1,0 +1,25 @@
+[Unit]
+Description=WuJinXia rebuilt Android independent cloud
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=wujinxia-backend-cloud
+Group=wujinxia-backend-cloud
+WorkingDirectory=/opt/wujinxia-backend-cloud/current
+EnvironmentFile=/etc/wujinxia-backend-cloud/env
+ExecStart=/usr/bin/node cloud/server.mjs
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/wujinxia-backend-cloud
+LimitNOFILE=4096
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target

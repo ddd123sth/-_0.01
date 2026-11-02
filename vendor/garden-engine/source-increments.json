@@ -1,0 +1,282 @@
+{
+  "note": "按 K00/K03 的择块迁入清单。sourceCommit=5188349 仍是整仓快照的原始来源，本文件只登记这一批增量，不表示全仓已对平。",
+  "recordedAt": "2026-10-20 22:51:09 +0800",
+  "referenceHead": "0be2c908e0f8e68c5e2121baead5ab75a94cb138",
+  "referencePathKind": "只读源码；本仓独立维护，构建与运行不访问参考目录",
+  "entries": [
+    {
+      "workPackage": "K08",
+      "sourcePath": "real-harvest-runner.js",
+      "targetPath": "vendor/garden-engine/server/src/game/real-harvest-runner.js",
+      "sourceLfSha256": "ddef67c8b6488f31e1828ebdbf155e6a86e13cca5bf8e14769d6a4737dca6b5f",
+      "targetLfSha256AfterEdit": "e3b7682eb0644b44c4622aa574186827c5be3c6902f908e9cac35470ef1e8404",
+      "migrated": [
+        "_cycle 开场在任何发写之前调 bindLegacyFlowerArtTargets({subjectRef:adapter.subjectRef,inventoryBasis:adapter.flowerArtInventoryBasis})，bound>0 时打一行中文说明（旧制作结果仍待核对）"
+      ],
+      "androidRetained": "本仓 reconcileOutstanding 的 debtRuleOptions.dailyPeriodRef 保留；只读对账顺序未动",
+      "diffLines": "2 处增改",
+      "recordedAt": "2026-10-21 08:08:21 +0800"
+    },
+    {
+      "workPackage": "K08",
+      "sourcePath": "real-adapter.js",
+      "targetPath": "vendor/garden-engine/server/src/game/real-adapter.js",
+      "sourceLfSha256": "011eec255bbf999142bc7ac6b7470a54e9991a3a0ec38a8d62a248a274dfc5f6",
+      "targetLfSha256AfterEdit": "1f67edddbd78a71f0656011a2d733c5ed5f00898b09469ce5e907cf4f45d28ec",
+      "migrated": [
+        "登录就绪处按参考站原样抓 flowerArtInventoryBasis=captureFlowerArtInventoryBasis({subjectRef,loginState:launcher.world.loginState,observedAtMs:startedAt})",
+        "runWrite 在 method 为 orderCustomer.genOrder 时递 currentStateReplan 钩子→issueCustomerGenReplanProof",
+        "captureWriteTargetEligibility 恢复参考站形状：取 sendOwnerOf 的当期代际、逐条签 replanProof 再问判据"
+      ],
+      "androidRetained": "本仓 _assertOfficialSessionOpen、pacer／breaker、中文日志与只读核状态入口未动；ledger 导入顺带补上本仓已有但未引入的 sendOwnerOf",
+      "diffLines": "5 处增改",
+      "recordedAt": "2026-10-21 08:08:21 +0800"
+    },
+    {
+      "workPackage": "K08",
+      "sourcePath": "account-write-gate.js",
+      "targetPath": "vendor/garden-engine/server/src/game/account-write-gate.js",
+      "sourceLfSha256": "117268f891f6412401f7d6ed54df81965deca1288639866a13240fa826136ce6",
+      "targetLfSha256AfterEdit": "e3102aa42105ba69bd3915f95e18abd0c15e8f74ac78be9d54bbbf3afeb9c77a",
+      "migrated": [
+        "runWrite 选项补 currentStateReplan；新增 replanProofFor(owner)：有资源占用／钩子缺失／返回 promise／抛错一律回 null＝照旧挡",
+        "ledger.openOperation 递 replanProof:replanProofFor(owner)；RpcPermit.unsettledAtSend 递 checkOperationTargetsAtSend(operation,{replanProof:replanProofFor(this.assertSendEligible())})",
+        "发送前取证段补 replanAtPreparation→captureFacts 兜底（没有 captureBefore 的喊单这一族也留一份同刻凭证）"
+      ],
+      "androidRetained": "本仓闸的中文文案、指标计数、station 记账与第202件 fencePin 未动",
+      "diffLines": "4 处增改，共 13 增 2 删",
+      "recordedAt": "2026-10-21 08:08:21 +0800"
+    },
+    {
+      "workPackage": "K08",
+      "sourcePath": "write-target-members.js",
+      "targetPath": "vendor/garden-engine/server/src/game/write-target-members.js",
+      "sourceLfSha256": "acd659de4d65553a07d62f568b538a3771086b426f8584945bff2732a325a622",
+      "targetLfSha256AfterEdit": "c93003109f1f2315417140a14b9cd318e0c1ffd9931a6312bafea1d4b22d68ef",
+      "migrated": [
+        "conflictWithUnsettledTargetFacts 恢复参考站那两支判据：① customerGenDebtAllowsReplan(operation,row,replanProof) 命中即 continue；② 花艺一族在 flower_art_inventory_isolated!==true 时判 unsettled-target-conflict（bindingState=inventory-not-rebased）",
+        "options 恢复 replanProof 形参；导入补 customer-gen-replan-proof.js"
+      ],
+      "androidRetained": "本仓 membersMatchMethod 的花艺分支与 H07 distinctOfficialRef（订单／日常按官方期次与对象身份区分）全部保留；两支参考站判据排在 H07 之前，非花艺一族行为不变",
+      "diffLines": "5 增 2 删（判据两支＋形参与导入各一处）",
+      "recordedAt": "2026-10-21 08:08:21 +0800"
+    },
+    {
+      "workPackage": "K08",
+      "sourcePath": "write-intent-ledger.js",
+      "targetPath": "vendor/garden-engine/server/src/game/write-intent-ledger.js",
+      "sourceLfSha256": "cfd2fecdef8b38059c192ed7bd2630ec3f8a199326feed846d461b8f36619680",
+      "targetLfSha256AfterEdit": "fba58fc6267f8eb3bb28d9b4f0401cf21da4c4a14ef1f3aa8d37cdfb72985edd",
+      "migrated": [
+        "flowerArtInventoryIsolationRecorded(row) 整块迁入：无未释放资源占用＋传输已终结＋账上有 legacy-art-target:<args> 那条 AUTHORITATIVE_READBACK，且证书的 subjectRef／来源 index.login／观测时刻晚于终结时刻／64 位整包指纹齐",
+        "bindLegacyFlowerArtTargets({subjectRef,inventoryBasis}) 整块迁入：只还原可证的原配方目标，旧 status／evidence／holds 一字不动，条件更新＋回读对平不符当场撤回",
+        "captureUnsettledTargetFacts 的 SELECT 补 unreleased_hold_count 子查询，并在冻结前给花艺那一行挂派生字段 flower_art_inventory_isolated",
+        "targetConflictInTransaction／checkUnsettledTargets／checkOperationTargetsAtSend／openOperation 各加 replanProof 形参并往下递；openOperation 先冻结出带 ownerEpoch／connectionEpoch 的 current，写位让渡 basis 增加 CUSTOMER_CURRENT_STATE_REPLAN 一档",
+        "导入补 TARGET_BINDING_VERSION／targetMembersFingerprint／FLOWER_ART_MAKE_METHOD／flowerArtRecipeByFingerprint／isFlowerArtInventoryBasis／customerGenDebtAllowsReplan"
+      ],
+      "androidRetained": "本仓 captureUnsettledTargetFacts 仍走安卓自己那一份解除逻辑（DEBT_CONCLUSIONS.TARGET_SUPERSEDED＋supersededOperationSet，H07／第206件·D 已在真号验过），不改成参考站的 targetDebtClearedByConclusion；SLOT_RELEASE_BASIS 保留本仓多出的 STATE_REFRESH 一档",
+      "diffLines": "未新增 DDL 列：参考站 db.js 现读没有 flower_art_inventory_isolated，它是捕获时现算的派生字段；照起手清单第 a 条加一列会造出没人写的假字段，故按参考站口径实现，并把这一判断记在案",
+      "recordedAt": "2026-10-21 08:08:21 +0800"
+    },
+    {
+      "workPackage": "K03",
+      "sourcePath": "server/src/game/sync-mirror.js",
+      "sourceLfSha256": "857cec9d4eb8801aefeab2c44d2e5dcd3db2caaf6a8249239fce03f93c77222a",
+      "targetPath": "vendor/garden-engine/server/src/game/sync-mirror.js",
+      "targetLfSha256AfterEdit": "70a70e25cf16a2b2556f1a4cfd0196f7ce1acf008d98f24d22ab8ec7308e382c",
+      "migrated": [
+        "MB_MAP_FIELDS 增登记 [\"IShareTot\", {\"map\"}] 与 [\"IUsrTot\", {\"cntMap\"}]（成员行浅合并，稀疏回带保留未下发成员）",
+        "absorbSyncBlock 的 ctx.fullBaseline（sourceMethod 为 index.login / gs.index.login）",
+        "mergeNode 内 cntMap 登录基线整张替换分支 replaceCountBaseline"
+      ],
+      "androidRetained": "安卓自己的校准钟、逐功能持久醒点、近组先醒与 gate 事后 OFFICIAL_ANSWER 未改动；本仓没有参考的 tools/scan-mb-maps.mjs 与 tests/sync-mirror.mjs 扫描闸",
+      "diffLines": "17 增 2 删（sync-mirror.js）"
+    },
+    {
+      "workPackage": "K03",
+      "sourcePath": "server/src/game/ds-modules.js",
+      "sourceLfSha256": "411d9e2d4fdd50b7af29a91cebd49bff4a7c385f106c0bf9bb1e769cb63943b3",
+      "targetPath": "vendor/garden-engine/server/src/game/ds-modules.js",
+      "targetLfSha256AfterEdit": "20645047866513715dd6d9237942245d04349a8761aa39717809a18a38b4cab7",
+      "migrated": [
+        "$usrTot.cntMap 注释改为成员表已登记的真实语义，并说明旧「不登记」理由在安卓侧不成立"
+      ],
+      "androidRetained": "本仓 ds-modules 的其他键表与官方反解注释原样保留，未整文件覆盖",
+      "diffLines": "7 增 4 删（ds-modules.js）"
+    },
+    {
+      "workPackage": "K01",
+      "sourcePath": "server/src/game/real-adapter.js",
+      "sourceLfSha256": "011eec255bbf999142bc7ac6b7470a54e9991a3a0ec38a8d62a248a274dfc5f6",
+      "targetPath": "vendor/garden-engine/server/src/game/real-adapter.js",
+      "targetLfSha256AfterEdit": "9083ae2d5fe46ae71ea02c6a747cb46451a3da06b8c9848b45c1de0f7830c30a",
+      "migrated": [
+        "_officialSessionError 字段＋_assertOfficialSessionOpen(method)（本地拒发、不嫁接上一笔回执、writeBlocked/notSentProof=official-session-restricted-before-send）；_assertReady 与 call() 入口先核这把锁；会话就绪时清空；运行中收到 worldMsgRiskVerdictOf 的账号级结论时锁会话＋abort＋stopHeartbeat"
+      ],
+      "androidRetained": "安卓保留自己那套 pacer.recordOutcome／breaker 与中文日志；这一发仍按原路径上抛，不提前 return，所以熔断与节奏账不被跳过（与参考站该处直接 throw 的差别已在差异里记清）",
+      "recordedAt": "2026-10-20 21:07:28 +0800"
+    },
+    {
+      "workPackage": "K02",
+      "sourcePath": "server/src/game/ws.js",
+      "sourceLfSha256": "aae1291aedd64f731ca06ad6a00a0b2b78ebd227dc8fc54bc029a708d6bb8d2a",
+      "targetPath": "vendor/garden-engine/server/src/game/ws.js",
+      "targetLfSha256AfterEdit": "17f1ca8b908ed75da7c61b667375a441d5169d6299b50acc2c5049cb136975b3",
+      "migrated": [
+        "pending 条目带 rpcPermit；匹配原 k 且信封可读时最早调用 recordOfficialAnswer（method/wireK/到达时刻/dsName/rejected＋可识别的数字码与文案键）"
+      ],
+      "androidRetained": "不吞响应：记录失败也只留一行工程日志，原 resolve/reject 结果不变",
+      "recordedAt": "2026-10-20 21:07:28 +0800"
+    },
+    {
+      "workPackage": "K02",
+      "sourcePath": "server/src/game/account-write-gate.js",
+      "sourceLfSha256": "117268f891f6412401f7d6ed54df81965deca1288639866a13240fa826136ce6",
+      "targetPath": "vendor/garden-engine/server/src/game/account-write-gate.js",
+      "targetLfSha256AfterEdit": "15a4e44a2bba8d96a583bcf5311b884257a25fd7b2be8b930b9e8486409f8df6",
+      "migrated": [
+        "凭证类 recordOfficialAnswer(answer)：核 kind/consumed/wireK/method/rejected/receivedAtMs 后，把 operationId、permitId、owner/connection 代际、参数指纹与原答复一起追加进既有 write_evidence_events 的 OFFICIAL_ANSWER 链，sourceKey 沿用 official-answer:<permitId>"
+      ],
+      "androidRetained": "复用安卓已有的事后回复事件同一 kind 与同一 sourceKey，不新建第二套会互相覆盖的账",
+      "recordedAt": "2026-10-20 21:07:28 +0800"
+    },
+    {
+      "workPackage": "K02",
+      "sourcePath": "server/src/game/write-reconcile.js",
+      "sourceLfSha256": "7ab6ca413d5fa5320413e28f39430537f47964fe72b49585b073a48e54da59c6",
+      "targetPath": "vendor/garden-engine/server/src/game/write-reconcile.js",
+      "targetLfSha256AfterEdit": "afcb112a600fa3bef5e9749c18708f0b3d70d91cc08e6f0c7f1d3110871e91bc",
+      "migrated": [
+        "boundPreparedOfDebt（14 格身份逐项相等＋连接代际显式 null 才可空）；beforeSnapshotOfDebt 改为优先吃本发不可变发送前册、绑定不对不回退兼容视图；originalHarvestGainVerdict 以「本发发送前地况＋匹配原发的官方回复事件＋核验失败事件里的本发鲜花进账」三事同立才核清收花；收花判定入口先走这一路"
+      ],
+      "androidRetained": "本仓 real-land-cycle.js 已生产 answerEcho（读不到给 null 不给 0），读者有真实生产者；appendEvidenceEvent 对重复 sourceKey 返回 duplicate-source-key 且首写生效，薄证据覆盖不了完整绑定",
+      "recordedAt": "2026-10-20 21:22:49 +0800"
+    },
+    {
+      "workPackage": "K02",
+      "sourcePath": "server/src/game/write-intent-ledger.js",
+      "sourceLfSha256": "cfd2fecdef8b38059c192ed7bd2630ec3f8a199326feed846d461b8f36619680",
+      "targetPath": "vendor/garden-engine/server/src/game/write-intent-ledger.js",
+      "targetLfSha256AfterEdit": "e6dff72e50eda882fb9619244ede5578c402fe8b0f6cbeb19a348b575b140194",
+      "migrated": [
+        "recordedDebtConclusionOf：状态＋专用原因码＋非空依据＋收口时刻＋证据内 conclusion/basis 五者对平才算真结论；targetDebtClearedByConclusion 改为只问它"
+      ],
+      "androidRetained": "旧写法两处偏差已修：单看档位名单过松（别处同名值也算核清），只认 TARGET_SUPERSEDED 过紧（官方拒绝与已证业务永远解不开）。原账、holds、resolved_basis 与未知历史一律不动",
+      "recordedAt": "2026-10-20 21:22:49 +0800"
+    },
+    {
+      "workPackage": "K05",
+      "sourcePath": "server/src/game/run-recovery.js",
+      "sourceLfSha256": "a76d39117f33eac8c56c36b0eb79084fd7081ff9c5ee13ac220a2ddaef2cdb8f",
+      "targetPath": "vendor/garden-engine/server/src/game/run-recovery.js",
+      "targetLfSha256AfterEdit": "f26d538909fa2f915846365edf27b799d728e14801a0fca6bdbce8219c111971",
+      "migrated": [
+        "classifyRealRunFailure 的 day-rollover 档：只认 codeOf(error)===\"REAL_DAY_ROLLOVER_RELOGIN\" 且 !error.cause（被包装/官方裁决/停止请求不许借换日跳过原策略）",
+        "planRealRunRecovery 的 day-rollover 早退出：action=requeue、attempt 原样、delayMs=0、resumeAtMs=nowMs，不占异常复工次数也不叠加异常随机等待"
+      ],
+      "androidRetained": "本仓把该早退出排在「面板里异常自动复工已关闭 ⇒ fail」之后，与参考站顺序不同：面板那句话承诺关了就不登，这里不反悔；次数上限同样仍然约束换日。runtime/recovery.mjs 的复工门槛同步放行 day-rollover 档",
+      "recordedAt": "2026-10-20 21:34:01 +0800"
+    },
+    {
+      "workPackage": "K09",
+      "sourcePath": "server/src/game/order-daily-limit.js",
+      "sourceLfSha256": "75e9ab15e2a97d092beb85fb97720dfcaee660fb895e03de080a2bd7772c18bb",
+      "targetLfSha256AfterEdit": "75e9ab15e2a97d092beb85fb97720dfcaee660fb895e03de080a2bd7772c18bb",
+      "targetPath": "vendor/garden-engine/server/src/game/order-daily-limit.js",
+      "migrated": [
+        "order-daily-limit.js 逐字迁入（md5 与参考来源对平 fb181816…，CRLF 保持）：四族当日上限唯一出处，今日数吃官方上限真正读的 $usrTot.cntMap（居民105/绸缎109−1/建材116−1/顾客107＋在板单数），上限取 c_orderFlower.$dailyMax/$dailyMax2/$dailyMax3 与 c_orderCustomerNpc.$npcMaxDay（现读 1200/120/120/350）和配置上限的小者，顾客不复活历史 dailyLimit；整表没下发≠0、成员缺席才算官方 0；不存「今天已停」锁",
+        "real-order-cycle.js：本拍现算 dailyLimitState 并按族在排程前摘掉到额那一族（报缺/拒单/上报不再为它刷）；customer 整族不摘，只按 generation 停喊客，板上挂单照交",
+        "order-param-resolver.js：applyDailyLimits 优先认这份现读（ORDER_OFFICIAL_DAILY_LIMIT_REACHED / DAILY_LIMIT_REACHED 分开说），并在 resolveOrderPlan 的白名单 opts 里转发 dailyLimitState，不让它成为没人读的死通道",
+        "orders 观察口新增 daily 一格（今日已做／生效上限／官方上限／配置上限／到额／读到了吗／计数成员／偏置／重新可算／读不到的原因，顾客另给喊客档）：K09 那份现读至此才有面板与取证读者，不再只出一句日志"
+      ],
+      "wiredTargets": [
+        {
+          "path": "vendor/garden-engine/server/src/game/real-order-cycle.js",
+          "lfSha256AfterEdit": "ae84c2561cc424fddb7fb95950b0e7ed82122df2d7fc8f1b89d51772969b8452"
+        },
+        {
+          "path": "vendor/garden-engine/server/src/game/order-param-resolver.js",
+          "lfSha256AfterEdit": "bae4522be0665443748f4d9da8527297a57c657938e3add38a613007c1cb51c4"
+        }
+      ],
+      "androidRetained": "喊客档按本仓既有口径在“读不到”时放行（customerGenReached 只在现读到确已用满时才停），与参考站 readable===false 即 fail-closed 不同：官服自己会拒并留下真实回包，比官方更保守把主线卡死同样算缺陷。模块 124 的换日刀三档（today/stale-day/unreadable）作为回落路径原样保留，两把尺不互换不冒充",
+      "notWiredYet": "wake-set.js 的 order-daily-limit-reset 叫醒键、real-harvest-runner.js 的 _runnableOrderGroups/休眠过滤、以及面板可见的逐族日额提示（本轮只落 [order] 调试句子）尚未接；到额那族当前靠每拍重算自然恢复，不设持久锁",
+      "recordedAt": "2026-10-20 22:36:12 +0800"
+    },
+    {
+      "workPackage": "K06",
+      "sourcePath": "server/src/game/flower-rack-cycle.js + server/src/game/order-param-resolver.js（参考生产基线同两处写法）",
+      "sourceLfSha256": "参考侧对应函数语义逐字比对后取值，本仓按自家历史句子改写，非整文件回灌",
+      "targetPath": "vendor/garden-engine/server/src/game/flower-rack-cycle.js ; vendor/garden-engine/server/src/game/order-param-resolver.js",
+      "targetLfSha256AfterEdit": "076a2565b936ae76a27657b35f746366bd8f8ccfcea643949c130c6081825d09 ; c3aec0aac6af2ac1d1b0284ffa31ecff33b6753f6e9b96257b27cb761c57a07a",
+      "migrated": [
+        "artIncomingLedgerView 的 counts 改吃同一本 bagDeltas 净账（含制作/下架入包与上架/顾客交付出包），entries 只作出处不再当可用量",
+        "artBridgeBagView 合并端由「只加正增量」改为 Math.max(0, have + extra)，让出包方向真能压下去",
+        "顾客订单规划器补同批占用账 allocated/availableBag，只有进 actions 的那单才占用现货（判料改吃 availableBag）"
+      ],
+      "androidRetained": "readBagCounts 继续**不**自动叠 mirror.flows（本仓注释：叠了会把同一笔进账算两遍），因此桥账仍是订单侧唯一会话内增量叠加，本次不构成双计；居民/绸缎/建材的 K09 现读账本与模块 124 换日刀回落路径原样保留",
+      "recordedAt": "2026-10-20 22:44:04 +0800"
+    },
+    {
+      "workPackage": "K07",
+      "sourcePath": "server/src/game/real-order-cycle.js + server/src/game/real-harvest-runner.js（参考生产基线同两处写法）",
+      "sourceLfSha256": "参考侧 _finishOrderArtHandoff／run() 首格清 wants 逐字取用；主线切断为本仓入口传 null（参考站仍传 mainTaskArt）",
+      "targetPath": "vendor/garden-engine/server/src/game/real-order-cycle.js ; vendor/garden-engine/server/src/game/real-harvest-runner.js",
+      "targetLfSha256AfterEdit": "62d4ad993c4118a70af89293ce68c165c669caf3e3a6a15492a7d76ba79d46cb ; 5054a33cf627c989f96615eb73d5e727ed9a192421a0dd50bda3d6249f853d8c",
+      "migrated": [
+        "run() 第一格 this.lastOrderArtWants = null：这一拍还没报过需求，镜像读失败（no-mirror 早退）不许把上一拍的单交给花艺",
+        "_finishOrderArtHandoff(result, wants) 及两个正常返回出口（空跑与收尾）全部交接剩余需求：按引擎动作 verified/consumed＋完整订单身份 orderActionKey 退掉已交/已拒/跨轮认回的那笔，不拿账本 confirmed 字串筛 actions，不按 npc 格相同误删后来的新单",
+        "结果里落 orderArtWants 与 artHandoff[剩余报量]，让交接量有真实读者"
+      ],
+      "androidRetained": "跑器入口把 mainTaskArt 钉成 null（用户口径：切断安卓范围外主线兜底制作；关 schema/限 scope 挡不住同方法越界用途，闸落在用途格）。resolveMainTaskArtRing 的只读解释仍由 plant-demand.js 消费，导入已从跑器清掉。verified 后排接力醒点 _orderArtHandoffAtMs 为安卓既有实现，保留",
+      "notWiredYet": "K07 第3条：captureBefore（artId＋真实配方与花瓶＋items＋source）与 withMakeResponse 逐笔回复凭据、respGain/afterBag 足以确认就不补读的那段（参考 real... 2843-2960 区，依赖 verifyArtMakeWrite/readResponseGain/withResponseFlow/bagMovedCount——四个依赖本仓都已存在），下一条工单迁",
+      "recordedAt": "2026-10-20 22:51:09 +0800"
+    },
+    {
+      "workPackage": "K07-3",
+      "sourcePath": "server/src/game/flower-rack-cycle.js（captureBefore 整块与 runMakeVerification 头部逐字取自参考）",
+      "sourceLfSha256": "同文件参考侧对应区块（captureBefore 2843-2868、核验头部 2877-2905）逐字迁移，注释按本仓句子改写",
+      "targetPath": "vendor/garden-engine/server/src/game/flower-rack-cycle.js",
+      "targetLfSha256AfterEdit": "de36f53b623be8d682c59e1f46c48632b3c242c0176d5b2acfc1705b0a643c20",
+      "migrated": [
+        "captureBefore：发送准备段同步现读并持久化这一发的配方(vaseId/flowersIds/num)与逐件 absolute/effective/spentAtSend，任一读数不合法就返回 null，不补造旧发证据；随 world.call 的 captureBefore 递进写闸（适配器那一条转发早已有，本轮未加第二份）",
+        "runMakeVerification 改为先认这一发自己回的官方进账（respGain→responseVerified），已充分就不再发 lazySync 追读；追读镜像那段包进 try/catch，读风一吹不再能把已回带的确证退成未确认",
+        "verifyWrite 四条出口统一走 withMakeResponse（withResponseFlow 落这一发的回复流水＋artId/num），核验自己抛错转 business_unverified／verify-failed 并保住已收到的回复事实，错误在调用点以 callError ??= makeVerifyError 照原路走会话失效与复工判定"
+      ],
+      "androidRetained": "证书转发不需要新增：real-adapter.js:1478 早有条件展开 ...(typeof options.captureBefore === \"function\" ? { captureBefore } : {})，本轮一度在同对象再加同名键（后写覆盖前写）读回后撤销；ART_MAKE_FRESH_TARGETS 两份回带与首做只认服务器制作记录前后现读这两条安卓既有口径不动",
+      "recordedAt": "2026-10-20 23:48:22 +0800"
+    },
+    {
+      "file": "customer-gen-replan.js",
+      "origin": "70e8 工作树 我的花园世界/server/src/game（HEAD 0be2c908e0f8e68c5e2121baead5ab75a94cb138）",
+      "takenAt": "2026-10-21T00:18:30+08:00",
+      "copyVerify": "cp 后两侧 md5 前缀一致（d1321ef7），node --check 通过",
+      "purpose": "K08 旧喊客专用恢复：按本次可信当前板面＋官方当日剩额重新规划，用全新 operation，不回放旧请求",
+      "status": "已复制入本仓，尚无安卓侧消费者；接线与实服验证未完成"
+    },
+    {
+      "file": "customer-gen-replan-proof.js",
+      "origin": "70e8 工作树 我的花园世界/server/src/game（HEAD 0be2c908e0f8e68c5e2121baead5ab75a94cb138）",
+      "takenAt": "2026-10-21T00:18:30+08:00",
+      "copyVerify": "cp 后两侧 md5 前缀一致（3665a916），node --check 通过",
+      "purpose": "K08 伴随件：重新规划的凭据封印（原发关联与凭据判据）",
+      "status": "已复制入本仓，尚无安卓侧消费者；接线与实服验证未完成"
+    },
+    {
+      "file": "flower-art-target-binding.js",
+      "origin": "70e8 工作树 我的花园世界/server/src/game（HEAD 0be2c908e0f8e68c5e2121baead5ab75a94cb138）",
+      "takenAt": "2026-10-21T00:18:30+08:00",
+      "copyVerify": "cp 后两侧 md5 前缀一致（766df397），node --check 通过",
+      "purpose": "K08 花艺目标绑定：按原发 RPC 参数关联作品与原配方唯一反查（flowerArt.makeFlowerArt）",
+      "status": "已复制入本仓，尚无安卓侧消费者；接线与实服验证未完成"
+    },
+    {
+      "file": "flower-art-inventory-basis.js",
+      "origin": "70e8 工作树 我的花园世界/server/src/game（HEAD 0be2c908e0f8e68c5e2121baead5ab75a94cb138）",
+      "takenAt": "2026-10-21T00:18:30+08:00",
+      "copyVerify": "cp 后两侧 md5 前缀一致（a71aa277），node --check 通过",
+      "purpose": "K08 库存证书：抓当前完整背包作认账来路，subjectRef 校验防止跨号误用",
+      "status": "已复制入本仓，尚无安卓侧消费者；接线与实服验证未完成"
+    }
+  ]
+}

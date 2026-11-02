@@ -1,0 +1,23 @@
+{
+  "version": "official-butler-order-accounting/480.0.27/v1",
+  "gameVersion": "480.0.27",
+  "protocolVersion": "480.0.0",
+  "gameDecodedSha256": "fc9970989021e4266301d2a167ae8e827ef71a124ad9d7f23cb922095a22aa69",
+  "sourceDataSha256": "3b880790bc950d06cda0a2da4aa4234b447d0bd8d0429701a1a8ab78d12dec92",
+  "fullButlerTableRows": 6,
+  "fullButlerTableSha256": "5f341a71d9fc0c91ddab74dd7cdd030bd00cbe18cdb368f0c95a8a13eed4d8fd",
+  "selectedRow": -1,
+  "selectedFields": ["$maxFlowerOrder"],
+  "maxFlowerOrder": [70, 40, 40],
+  "omittedFields": "All non-order metadata and other rows; no hire/purchase action is implemented",
+  "applicationCodeExecuted": false,
+  "runtimeReadsReferenceDirectory": false,
+  "ranges": {
+    "sharedStockRules": {"range": [394300, 398000], "sha256": "4ad8469cd494fb886dba12e619b81db236335c0a96d32dc53c4b0a34a7af000f"},
+    "clientStockAccounting": {"range": [2482380, 2486800], "sha256": "f808138dc852d74da16941b19e145c0720fc549d5169db838ca168136f2ff7c1"},
+    "actualHire": {"range": [1341920, 1342320], "sha256": "1138936d50cf0d975e088b8c50d26c2f20d87f70eb0d363cf6a59f886ed99f5a"},
+    "settingDS": {"range": [110692, 110928], "sha256": "c8f9a2117b1a1a4268998de330cfdcb2c88fae1860ece5145e3687fa422f1759"},
+    "ordinaryStillRequiresFlowers": {"range": [2335300, 2336080], "sha256": "3613fe684a09c122bb57fc53fe2e56c745b2d2635741556551bf9c51a638eb23"},
+    "storedBypassesOnlyCooldown": {"range": [2330200, 2332350], "sha256": "72559abf18b83dcb97703c8c18cfc0bdb674df2cd882198b4cc07a60dabf7aae"}
+  }
+}

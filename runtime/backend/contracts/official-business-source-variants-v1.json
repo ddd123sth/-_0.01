@@ -1,0 +1,17 @@
+{
+  "schema": "official-business-source-variants/v1",
+  "variants": [
+    {
+      "actionId": "order.butler-stock",
+      "blockName": "butler-client-stock-accounting",
+      "baselineSha256": "f808138dc852d74da16941b19e145c0720fc549d5169db838ca168136f2ff7c1",
+      "sourceVersion": "490.0.5",
+      "gameSha256": "92826eebf09ee5357cae00da7d676256aaf5aa0f0f7b3ec9d2f4c321e2bcba37",
+      "moSha256": "1cde77350e5472509f695090546ed311d3b0b65618ba681653daa99f0691cf3b",
+      "byteStart": 2492926,
+      "byteEnd": 2497320,
+      "sha256": "64b1e3eac6d24464e582d424bb35cd9080acbd91bd5fcc77d44ac2ad933260a6",
+      "audit": "Same six stock functions except satin/decorate D(): clamp accrued nonnegative stock to R(type)=min(per-type capacity, max(official daily limit - official client today count, 0)); resident round-robin unchanged."
+    }
+  ]
+}

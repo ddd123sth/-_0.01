@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5fd">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'">
+  <title>无尽夏</title>
+  <link rel="stylesheet" href="styles.scoped.css">
+  <link rel="stylesheet" href="theme-moon.scoped.css">
+  <!-- 弹层仍由正式层生成，而上面两份在 body[data-moon] 下整体不生效。
+       这两份把组件选择器重挂到 body[data-moon] #dialog-host 下，只服务弹层。
+       顺序在 moon.css 之前，月色自己的弹层几何仍优先。 -->
+  <link rel="stylesheet" href="styles.dialog.css">
+  <link rel="stylesheet" href="theme-moon.dialog.css">
+  <link rel="stylesheet" href="moon/moon.css">
+  <link rel="stylesheet" href="moon/metrics.css">
+  <link rel="stylesheet" href="moon/formal-dialogs.css">
+  <link rel="stylesheet" href="moon/feedback.css">
+  <script src="app.js" defer></script>
+  <script type="module" src="moon/boot.js" defer></script>
+</head>
+<body class="layout-loading" data-layout="loading" data-identity="moon">
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><img src="brand/logo-endless-summer.webp" alt=""></span><div><strong>无尽夏</strong></div></div>
+      <button id="connection" class="connection" type="button" data-action="refresh" aria-label="刷新手机运行服务状态">正在连接手机运行服务…</button>
+    </header>
+    <div id="moon-chrome"></div>
+    <main id="main" class="main" tabindex="-1" aria-live="polite"></main>
+    <div id="moon-dock"></div>
+    <nav id="navigation" class="tabbar" aria-label="主导航"></nav>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <div id="dialog-host"></div>
+</body>
+</html>

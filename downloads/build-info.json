@@ -1,0 +1,22 @@
+{
+  "sourceBaseCommit": "0cebb739544d2a0ed84dfdc84ba608e82923a1a4",
+  "buildId": "7ccd633e62810d2c",
+  "applicationId": "online.ainiannian.wujinxia",
+  "cloudUrl": "https://wujinxia01.ainiannian.online/backend-v2",
+  "apkSha256": "63091e6c5ec66ea192fa7cd4fc7b07e55fc221c3aeedddb62c80a472fb5cdf9f",
+  "apkBytes": 53975577,
+  "abis": [
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "minAndroidApi": 26,
+  "engineFilesVerified": 414,
+  "verification": {
+    "gradleBuild": "passed",
+    "engineManifest": "414/414 matched",
+    "payloadTests": "6/6 passed",
+    "localCloudHealth": 200,
+    "localAdminPage": 200,
+    "fullBusinessAcceptance": "partial; pre-existing pending items remain"
+  }
+}

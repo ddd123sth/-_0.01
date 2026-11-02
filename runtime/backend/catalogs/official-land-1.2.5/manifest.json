@@ -1,0 +1,882 @@
+{
+  "manifestVersion": 1,
+  "preparedAt": "2026-10-24T06:38:55.739733+08:00",
+  "purpose": "G2 official APK static catalog preparation; not current-server authority or runtime registration",
+  "releaseState": "G1 unsigned; G2 not executing; ignored preparation data only; no Android runtime import added",
+  "sourceVersion": {
+    "androidPackage": "cn.lbwdhysj.gf",
+    "androidVersionName": "1.2.5",
+    "androidVersionCode": 25,
+    "packagedIndexVersion": "271.0.23",
+    "cocosEngine": "3.8.6",
+    "ccbVersion": "3.0.11",
+    "catalogNativeVersion": "4646d",
+    "currentDeviceHotUpdateProven": false,
+    "currentServerCatalogProven": false,
+    "wholeOSOCFileEquivalenceProven": false
+  },
+  "sourceApk": {
+    "path": "D:/AI/AiCode/我的花园世界/_ref/android_apk/garden-world-1.2.5.apk",
+    "bytes": 1705535474,
+    "sha256": "d4f874fa40a02941cb1bd5584f6635304b087a81487b9bff295a68072f36fe39",
+    "manifestEntrySha256": "9d70e2dc22ebfc39fd6035d27b830bdd85a52fedd44d281b39fa7e5cfeddfda7"
+  },
+  "catalogSource": {
+    "apkEntry": "assets/data/assets/resources/native/35/35fc3381-34dc-5c64-ba90-e06c2c6133a8.4646d.text",
+    "bytes": 3307086,
+    "sha256": "c3b3e9e0982c42ee01ebacf2bd4dd595695656690f678bd8588c4fbe913e1fdb",
+    "bundleConfigEntries": [
+      "assets/data/assets/resources/config.a510b.json",
+      "assets/data/assets/resources/config.e5a3c.json"
+    ],
+    "bundleConfigSha256": "e1d961009e4f6dcb3c9b99742b39b369513df3e83268066dac0631cf97c89fa1",
+    "pathIndex": 2448,
+    "logicalResourcePath": "mo/zh/data/g-data",
+    "expandedUuid": "35fc3381-34dc-5c64-ba90-e06c2c6133a8"
+  },
+  "businessCodeSource": {
+    "apkEntry": "assets/data/src/assets/scripts/frameworks/game/bin/game.f1aa4.jsc",
+    "jscSha256": "28cd523f0e3b60f952f2f4afe632e14ce8cc93dc4d08c85282c9a9fdd5a01d67",
+    "decodedSha256": "9e23318c357956cdb6c084bc22258186f8e021356f79d5a5b8fbefb0d9ea8738",
+    "decodedByteOffsets": {
+      "getNum": 135193,
+      "effectiveWaterInitPredicate": 135510,
+      "waterFinalLimit": 136965,
+      "usrBagAbsolutePatch": 212803,
+      "usrTotMerge": 212995,
+      "cultivateSyncAndMemberSelection": 325243,
+      "landSync": 326118,
+      "landMemberReplacement": 326247
+    }
+  },
+  "tableDecoderSource": {
+    "apkEntry": "assets/data/src/assets/scripts/frameworks/mo/bin/mo.16711.jsc",
+    "jscSha256": "cc44a5bd51f97f5e22e322d01c90eb9f4f8f7c878b06fc0a6f8246145a75179f",
+    "decodedSha256": "255d7d04fecf3201b46dcf4c3a61905bb07bfd6b45e51f5d909c9a7d6f2af0c6",
+    "auditedByteRange": [
+      148900,
+      153100
+    ],
+    "semantics": [
+      "name and alias metadata decoding",
+      "per-field numeric shift",
+      "chunk defaults",
+      "official implicit primary key"
+    ],
+    "columnTransformC": "absent in all five selected source tables; decoder rejects if present"
+  },
+  "receipts": [
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/inputs.receipt.json",
+      "bytes": 4442,
+      "sha256": "051d56273b50ecc48225519449c5af59d8edf54b37d4217c9178a8dfd0fb6460"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/index-selection.json",
+      "bytes": 7553,
+      "sha256": "f4ac033e288525836ba9cbae5986d4e494f5839321da600ba4ddaeee504a6c76"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/game.f1aa4.decoded.js.receipt.json",
+      "bytes": 688,
+      "sha256": "25bd52a31d040a197818bdc55559f98ef43b6eeba53c76f4ff1ff6c05875e3f1"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/mo.16711.decoded.js.receipt.json",
+      "bytes": 681,
+      "sha256": "4071bed0514b1ea0bae3ef1511dc9061b646177d592eed7cb200ead640759b8b"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/tables.receipt.json",
+      "bytes": 885,
+      "sha256": "d8a47be45c268defaab2acf08dd23a572d53e04455eb2de6465ac05bf1ee5cc2"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/ds-schema-comparison.json",
+      "bytes": 4851,
+      "sha256": "8b6a44657db50b0826a99fdc26f14573987d2a6516b09badbc5f0893af539a3e"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/critical-table-comparison.json",
+      "bytes": 1269,
+      "sha256": "85b98e2750141505d6b9c0650fa2791829bd6c4dac0db2d2e23b8d11ca5d695a"
+    }
+  ],
+  "preparationTools": [
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/extract_inputs.py",
+      "bytes": 2044,
+      "sha256": "6381d56315c33f0ace76149f345a1b33de83a176aed040f5a75f6bcac8e549f8"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/decode_asset.py",
+      "bytes": 3191,
+      "sha256": "e629943bf720009dec84ac01dd99a20f6c1c2117672e9a2df1d30048ef17d7ce"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/decode_tables.py",
+      "bytes": 3393,
+      "sha256": "bcdeee48664017cd80d6bcae617852e9f5319a667cbed3131b9e1de4229ac259"
+    },
+    {
+      "path": ".runtime/backend-rebuild/official-jsc-static/prepare_g2_catalog.py",
+      "bytes": 9384,
+      "sha256": "8e3945beebc9280eb332c31e73ca19d5aef2c5e10c0b52e154beb9775f975016"
+    }
+  ],
+  "contentAudit": {
+    "publicDecryptionKeyValuesIncluded": false,
+    "programFilesIncluded": false,
+    "accountOrCredentialColumnsIncluded": false,
+    "remoteUrlCandidateCount": 0,
+    "executableCodeCandidateCount": 0,
+    "staticFieldManualReviewCompleted": true,
+    "cItemProxyMeaning": "all 1520 values are decimal item-reference strings, not network proxy addresses",
+    "cItemInitsMeaning": "static initial resource pairs only; no account instance data",
+    "rowsOrFieldsPruned": false
+  },
+  "waterItem7": {
+    "id": 7,
+    "reset": [
+      [
+        65
+      ]
+    ],
+    "restore": [
+      [
+        1,
+        120000
+      ]
+    ],
+    "limitPresent": false,
+    "semantics": "65 is restoration target; independent positive itemExt limit is the hard cap; single-row reset is not daily reset"
+  },
+  "tables": [
+    {
+      "table": "c_item",
+      "file": "c_item.json",
+      "sourceDecodedFile": "c_item.apk-4646d.json",
+      "bytes": 1705217,
+      "sha256": "541c27195da8071b03cae7c127c7512292655d0b001b6515602451dc14d4809c",
+      "recordCountIncludingMetadata": 4255,
+      "businessRecordCount": 4254,
+      "metadataRowIds": [
+        "-1"
+      ],
+      "primaryKey": {
+        "mapKey": "decimal-string-id",
+        "rowField": "id",
+        "rowFieldMatchesMapKey": true
+      },
+      "declaredFields": [
+        "$inits",
+        "bType",
+        "change",
+        "cls",
+        "color",
+        "costs",
+        "dbIcon",
+        "desc",
+        "desc2",
+        "flyRegionType",
+        "getWayIcon",
+        "getWayPram",
+        "getWayText",
+        "getWays",
+        "icon",
+        "id",
+        "isAutoUse",
+        "isBiIgnore",
+        "items",
+        "jumpTo",
+        "limit",
+        "merges",
+        "mergesTo",
+        "name",
+        "name1",
+        "ownNumHide",
+        "passTerm",
+        "proxy",
+        "reset",
+        "restore",
+        "sTime",
+        "sType",
+        "sells",
+        "sname",
+        "sort",
+        "sp",
+        "transItems",
+        "type",
+        "useType"
+      ],
+      "declaredFieldCount": 39,
+      "observedFields": [
+        "$inits",
+        "bType",
+        "change",
+        "cls",
+        "color",
+        "dbIcon",
+        "desc",
+        "desc2",
+        "flyRegionType",
+        "getWayIcon",
+        "getWayPram",
+        "getWayText",
+        "getWays",
+        "icon",
+        "id",
+        "isAutoUse",
+        "isBiIgnore",
+        "items",
+        "jumpTo",
+        "name",
+        "name1",
+        "ownNumHide",
+        "proxy",
+        "reset",
+        "restore",
+        "sTime",
+        "sType",
+        "sname",
+        "sort",
+        "sp",
+        "type",
+        "useType"
+      ],
+      "observedFieldCount": 32,
+      "fieldTypesAndPresenceCount": {
+        "$inits": {
+          "list": 1
+        },
+        "bType": {
+          "int": 2518
+        },
+        "change": {
+          "list": 6
+        },
+        "cls": {
+          "int": 73
+        },
+        "color": {
+          "int": 4252
+        },
+        "dbIcon": {
+          "str": 75
+        },
+        "desc": {
+          "str": 3847
+        },
+        "desc2": {
+          "str": 8
+        },
+        "flyRegionType": {
+          "int": 2391
+        },
+        "getWayIcon": {
+          "list": 3286
+        },
+        "getWayPram": {
+          "str": 373
+        },
+        "getWayText": {
+          "str": 3507
+        },
+        "getWays": {
+          "list": 3260
+        },
+        "icon": {
+          "str": 4252
+        },
+        "id": {
+          "int": 4255
+        },
+        "isAutoUse": {
+          "int": 2
+        },
+        "isBiIgnore": {
+          "str": 1773,
+          "int": 2099
+        },
+        "items": {
+          "list": 15
+        },
+        "jumpTo": {
+          "int": 39
+        },
+        "name": {
+          "str": 4214
+        },
+        "name1": {
+          "str": 4192
+        },
+        "ownNumHide": {
+          "int": 414
+        },
+        "proxy": {
+          "str": 1520
+        },
+        "reset": {
+          "list": 1
+        },
+        "restore": {
+          "list": 1
+        },
+        "sTime": {
+          "int": 7
+        },
+        "sType": {
+          "int": 1927
+        },
+        "sname": {
+          "str": 4248
+        },
+        "sort": {
+          "int": 2745
+        },
+        "sp": {
+          "str": 3
+        },
+        "type": {
+          "int": 4252
+        },
+        "useType": {
+          "int": 15
+        }
+      },
+      "numberLeaves": 32164,
+      "minimumNumber": -1,
+      "maximumNumber": 25040009,
+      "allNumbersFiniteAndWithinJsSafeIntegerMagnitude": true,
+      "stringLeaves": 28012,
+      "sourceReplacementCharacterLeaves": 0,
+      "pruning": {
+        "rowsRemoved": 0,
+        "fieldsRemoved": [],
+        "reason": "audited static game catalog values; no remote URL, executable-code or account-credential fields found"
+      },
+      "preservation": "byte-identical copy of complete audited decoded table; no defaults added beyond official implicit row id"
+    },
+    {
+      "table": "c_farmLand",
+      "file": "c_farmLand.json",
+      "sourceDecodedFile": "c_farmLand.apk-4646d.json",
+      "bytes": 4307,
+      "sha256": "fdae8edc9d22b071987de1aba21ee8ebab46cbcadbe68a1ff31ef0198da8d098",
+      "recordCountIncludingMetadata": 65,
+      "businessRecordCount": 64,
+      "metadataRowIds": [
+        "-1"
+      ],
+      "primaryKey": {
+        "mapKey": "decimal-string-id",
+        "rowField": "id",
+        "rowFieldMatchesMapKey": true
+      },
+      "declaredFields": [
+        "$initLand",
+        "$landMax",
+        "cost",
+        "id",
+        "lockImg",
+        "openLvl",
+        "unlockImg",
+        "wasteland"
+      ],
+      "declaredFieldCount": 8,
+      "observedFields": [
+        "$initLand",
+        "$landMax",
+        "cost",
+        "id",
+        "openLvl",
+        "wasteland"
+      ],
+      "observedFieldCount": 6,
+      "fieldTypesAndPresenceCount": {
+        "$initLand": {
+          "list": 1
+        },
+        "$landMax": {
+          "int": 1
+        },
+        "cost": {
+          "list": 60
+        },
+        "id": {
+          "int": 65
+        },
+        "openLvl": {
+          "int": 64
+        },
+        "wasteland": {
+          "list": 64
+        }
+      },
+      "numberLeaves": 382,
+      "minimumNumber": -1,
+      "maximumNumber": 500000,
+      "allNumbersFiniteAndWithinJsSafeIntegerMagnitude": true,
+      "stringLeaves": 0,
+      "sourceReplacementCharacterLeaves": 0,
+      "pruning": {
+        "rowsRemoved": 0,
+        "fieldsRemoved": [],
+        "reason": "audited static game catalog values; no remote URL, executable-code or account-credential fields found"
+      },
+      "preservation": "byte-identical copy of complete audited decoded table; no defaults added beyond official implicit row id"
+    },
+    {
+      "table": "c_flower",
+      "file": "c_flower.json",
+      "sourceDecodedFile": "c_flower.apk-4646d.json",
+      "bytes": 184279,
+      "sha256": "300583a24ccf3aa29f41742ea6dd658972145cb5a42518e57edb1bdcd9928ab2",
+      "recordCountIncludingMetadata": 416,
+      "businessRecordCount": 415,
+      "metadataRowIds": [
+        "-1"
+      ],
+      "primaryKey": {
+        "mapKey": "decimal-string-id",
+        "rowField": "id",
+        "rowFieldMatchesMapKey": true
+      },
+      "declaredFields": [
+        "$culMinusItem",
+        "$growItem",
+        "$sellGld",
+        "$sellMax",
+        "$sellNum",
+        "$sharingCulMax",
+        "$sharingCulMinusNum",
+        "$sharingCulTime",
+        "achExpAdd",
+        "backGround",
+        "colorType",
+        "coordinate",
+        "coordinate2",
+        "coordinate3",
+        "coordinate4",
+        "coordinate5",
+        "coordinate6",
+        "culCost",
+        "culTime",
+        "effect",
+        "eliteId",
+        "elvesFlower",
+        "exp",
+        "flowerAlbumLand",
+        "genusType",
+        "gld",
+        "icon",
+        "id",
+        "isBlock",
+        "isHide",
+        "isZooEvent",
+        "logo",
+        "mapflower",
+        "mapflowerLand",
+        "ratio",
+        "reward",
+        "seasonType",
+        "seedId",
+        "sellRange",
+        "shareRwd",
+        "sort",
+        "spId",
+        "sunType",
+        "vaseCfg",
+        "viceFlower"
+      ],
+      "declaredFieldCount": 45,
+      "observedFields": [
+        "$culMinusItem",
+        "$growItem",
+        "$sellGld",
+        "$sellMax",
+        "$sellNum",
+        "$sharingCulMax",
+        "$sharingCulMinusNum",
+        "$sharingCulTime",
+        "achExpAdd",
+        "backGround",
+        "colorType",
+        "coordinate",
+        "coordinate2",
+        "coordinate3",
+        "coordinate4",
+        "coordinate5",
+        "coordinate6",
+        "culCost",
+        "culTime",
+        "effect",
+        "eliteId",
+        "elvesFlower",
+        "exp",
+        "flowerAlbumLand",
+        "genusType",
+        "gld",
+        "icon",
+        "id",
+        "isBlock",
+        "isHide",
+        "isZooEvent",
+        "logo",
+        "mapflower",
+        "mapflowerLand",
+        "ratio",
+        "reward",
+        "seasonType",
+        "seedId",
+        "sellRange",
+        "shareRwd",
+        "sort",
+        "spId",
+        "sunType",
+        "vaseCfg",
+        "viceFlower"
+      ],
+      "observedFieldCount": 45,
+      "fieldTypesAndPresenceCount": {
+        "$culMinusItem": {
+          "list": 1
+        },
+        "$growItem": {
+          "int": 1
+        },
+        "$sellGld": {
+          "int": 1
+        },
+        "$sellMax": {
+          "int": 1
+        },
+        "$sellNum": {
+          "int": 1
+        },
+        "$sharingCulMax": {
+          "int": 1
+        },
+        "$sharingCulMinusNum": {
+          "int": 1
+        },
+        "$sharingCulTime": {
+          "int": 1
+        },
+        "achExpAdd": {
+          "int": 415
+        },
+        "backGround": {
+          "str": 27
+        },
+        "colorType": {
+          "list": 415
+        },
+        "coordinate": {
+          "list": 1
+        },
+        "coordinate2": {
+          "list": 32
+        },
+        "coordinate3": {
+          "list": 14
+        },
+        "coordinate4": {
+          "list": 8
+        },
+        "coordinate5": {
+          "list": 4
+        },
+        "coordinate6": {
+          "list": 4
+        },
+        "culCost": {
+          "list": 415
+        },
+        "culTime": {
+          "int": 415
+        },
+        "effect": {
+          "int": 40
+        },
+        "eliteId": {
+          "int": 415
+        },
+        "elvesFlower": {
+          "list": 9
+        },
+        "exp": {
+          "int": 415
+        },
+        "flowerAlbumLand": {
+          "str": 207
+        },
+        "genusType": {
+          "int": 415
+        },
+        "gld": {
+          "int": 415
+        },
+        "icon": {
+          "int": 375
+        },
+        "id": {
+          "int": 416
+        },
+        "isBlock": {
+          "int": 2
+        },
+        "isHide": {
+          "str": 12,
+          "int": 184
+        },
+        "isZooEvent": {
+          "int": 269
+        },
+        "logo": {
+          "list": 9
+        },
+        "mapflower": {
+          "list": 415
+        },
+        "mapflowerLand": {
+          "str": 214
+        },
+        "ratio": {
+          "str": 1
+        },
+        "reward": {
+          "list": 415
+        },
+        "seasonType": {
+          "list": 415
+        },
+        "seedId": {
+          "int": 415
+        },
+        "sellRange": {
+          "list": 415
+        },
+        "shareRwd": {
+          "list": 415
+        },
+        "sort": {
+          "int": 415
+        },
+        "spId": {
+          "list": 40
+        },
+        "sunType": {
+          "list": 415
+        },
+        "vaseCfg": {
+          "list": 415
+        },
+        "viceFlower": {
+          "list": 9
+        }
+      },
+      "numberLeaves": 15654,
+      "minimumNumber": -155,
+      "maximumNumber": 110108,
+      "allNumbersFiniteAndWithinJsSafeIntegerMagnitude": true,
+      "stringLeaves": 1795,
+      "sourceReplacementCharacterLeaves": 0,
+      "pruning": {
+        "rowsRemoved": 0,
+        "fieldsRemoved": [],
+        "reason": "audited static game catalog values; no remote URL, executable-code or account-credential fields found"
+      },
+      "preservation": "byte-identical copy of complete audited decoded table; no defaults added beyond official implicit row id"
+    },
+    {
+      "table": "c_flowerLvl",
+      "file": "c_flowerLvl.json",
+      "sourceDecodedFile": "c_flowerLvl.apk-4646d.json",
+      "bytes": 943463,
+      "sha256": "80042075968780084d34fd54fea3cdd168adc77c307f71d394cc3203bf3d40ca",
+      "recordCountIncludingMetadata": 5849,
+      "businessRecordCount": 5848,
+      "metadataRowIds": [
+        "-1"
+      ],
+      "primaryKey": {
+        "mapKey": "decimal-string-id",
+        "rowField": "id",
+        "rowFieldMatchesMapKey": true
+      },
+      "declaredFields": [
+        "$lvlMax",
+        "cd",
+        "cropGets",
+        "fLvl",
+        "frequencys",
+        "gldCost",
+        "harvestExp",
+        "id",
+        "left",
+        "lvlUpCost",
+        "seedGets",
+        "seedWgt"
+      ],
+      "declaredFieldCount": 12,
+      "observedFields": [
+        "$lvlMax",
+        "cd",
+        "cropGets",
+        "fLvl",
+        "frequencys",
+        "gldCost",
+        "harvestExp",
+        "id",
+        "left",
+        "lvlUpCost",
+        "seedGets",
+        "seedWgt"
+      ],
+      "observedFieldCount": 12,
+      "fieldTypesAndPresenceCount": {
+        "$lvlMax": {
+          "int": 1
+        },
+        "cd": {
+          "int": 5848
+        },
+        "cropGets": {
+          "int": 5700
+        },
+        "fLvl": {
+          "int": 5700
+        },
+        "frequencys": {
+          "int": 5700
+        },
+        "gldCost": {
+          "int": 5848
+        },
+        "harvestExp": {
+          "int": 5700
+        },
+        "id": {
+          "int": 5849
+        },
+        "left": {
+          "int": 5700
+        },
+        "lvlUpCost": {
+          "list": 5415
+        },
+        "seedGets": {
+          "int": 5700
+        },
+        "seedWgt": {
+          "int": 5700
+        }
+      },
+      "numberLeaves": 68276,
+      "minimumNumber": -1,
+      "maximumNumber": 2336220,
+      "allNumbersFiniteAndWithinJsSafeIntegerMagnitude": true,
+      "stringLeaves": 0,
+      "sourceReplacementCharacterLeaves": 0,
+      "pruning": {
+        "rowsRemoved": 0,
+        "fieldsRemoved": [],
+        "reason": "audited static game catalog values; no remote URL, executable-code or account-credential fields found"
+      },
+      "preservation": "byte-identical copy of complete audited decoded table; no defaults added beyond official implicit row id"
+    },
+    {
+      "table": "c_flowerLvlCfg",
+      "file": "c_flowerLvlCfg.json",
+      "sourceDecodedFile": "c_flowerLvlCfg.apk-4646d.json",
+      "bytes": 2653,
+      "sha256": "88247f9e34b887fdd474f68a58f124dbe5b6bd28fd43a9b2489f70bc94bfa290",
+      "recordCountIncludingMetadata": 20,
+      "businessRecordCount": 20,
+      "metadataRowIds": [],
+      "primaryKey": {
+        "mapKey": "decimal-string-id",
+        "rowField": "id",
+        "rowFieldMatchesMapKey": true
+      },
+      "declaredFields": [
+        "cd",
+        "cropGets",
+        "frequencys",
+        "gldCost",
+        "harvestExp",
+        "id",
+        "left",
+        "lvlUpCost",
+        "seedGets",
+        "seedWgt"
+      ],
+      "declaredFieldCount": 10,
+      "observedFields": [
+        "cd",
+        "cropGets",
+        "frequencys",
+        "gldCost",
+        "harvestExp",
+        "id",
+        "left",
+        "lvlUpCost",
+        "seedGets",
+        "seedWgt"
+      ],
+      "observedFieldCount": 10,
+      "fieldTypesAndPresenceCount": {
+        "cd": {
+          "int": 20
+        },
+        "cropGets": {
+          "int": 20
+        },
+        "frequencys": {
+          "int": 20
+        },
+        "gldCost": {
+          "int": 19
+        },
+        "harvestExp": {
+          "int": 20
+        },
+        "id": {
+          "int": 20
+        },
+        "left": {
+          "int": 20
+        },
+        "lvlUpCost": {
+          "int": 19
+        },
+        "seedGets": {
+          "int": 20
+        },
+        "seedWgt": {
+          "int": 20
+        }
+      },
+      "numberLeaves": 198,
+      "minimumNumber": 1,
+      "maximumNumber": 75000,
+      "allNumbersFiniteAndWithinJsSafeIntegerMagnitude": true,
+      "stringLeaves": 0,
+      "sourceReplacementCharacterLeaves": 0,
+      "pruning": {
+        "rowsRemoved": 0,
+        "fieldsRemoved": [],
+        "reason": "audited static game catalog values; no remote URL, executable-code or account-credential fields found"
+      },
+      "preservation": "byte-identical copy of complete audited decoded table; no defaults added beyond official implicit row id"
+    }
+  ],
+  "adoptionRules": [
+    "keep all five tables and metadata rows together with this manifest",
+    "validate table file hashes before any later adoption",
+    "do not union current UI 588 flowers into this APK 415-flower version",
+    "current catalog and hot-update identity still require separate evidence",
+    "no production planner, normalizer, cycle or transport was adopted"
+  ]
+}

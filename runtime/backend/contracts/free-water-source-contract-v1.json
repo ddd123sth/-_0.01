@@ -1,0 +1,111 @@
+{
+  "schema": "free-water-source-extension/v1",
+  "sourceVersion": "480.0.46",
+  "sourceSha256": "bf21efb47a54dca0ab5e249062da828d2ec8981388977ebfc1524c75236c9845",
+  "blocks": [
+    {
+      "name": "free-water-interface",
+      "start": 98097,
+      "end": 98191,
+      "byteLength": 94,
+      "sha256": "d7637a6b2b2074d27021895f40bf45d22a8d9d3293c184f6fba7fc2e00a4e327",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklGcmVlV2F0ZXIiLHt1aWQ6MCxyZWN2SWR4OjEsclRpbWU6IjI6RGF0ZSIsdVRpbWU6IjM6RGF0ZSIsY1RpbWU6IjQ6RGF0ZSJ9KQ=="
+    },
+    {
+      "name": "free-water-controller",
+      "start": 407274,
+      "end": 407664,
+      "byteLength": 390,
+      "sha256": "894009ea5d8ab553b2d347e0f94496afbc6dc0b3fb841b3b3b7fcf8e74a2da9d",
+      "base64": "ZnVuY3Rpb24odCl7Y2xhc3MgZSBleHRlbmRzIHQuQmFzZUN0cmx7Y3Rvcl9iKCl7c3VwZXIuY3Rvcl9iKCksdGhpcy5fb25TeW5jRGF0YU9yZGVyPTh9X29uU3luY0RhdGEodCl7Y29uc3QgZT10aGlzO2xldCByPXQuZnJlZVdhdGVyO3ImJmUuc2V0RGF0YShyKX1nZXQgcmVjdklkeCgpe2xldCBlPW1vLk9CSi5jbG9uZTIodGhpcy5kLnJlY3ZJZHh8fFtdKTtyZXR1cm4gdC5VVC5jYWxJc1JlZnJlc2godGhpcy5kLnJUaW1lKSYmKGU9W10pLGV9cmVjdih0LGUscil7dGhpcy5yZXF1ZXN0MigiZ3MuZnJlZVdhdGVyLnJlY3YiLHtpZHg6dH0sZSxyKX19dC5GcmVlV2F0ZXJDdHJsPWUsX19yZWZsZWN0KGUucHJvdG90eXBlLCJHLkZyZWVXYXRlckN0cmwiKSx0LkdNZ3IucmVnaXN0ZXIoZSl9"
+    },
+    {
+      "name": "free-water-config-consumer",
+      "start": 2476187,
+      "end": 2476468,
+      "byteLength": 281,
+      "sha256": "f35ac0a16ca60ab739f61dbc612cf36c0012010052f5e4e5bd44bcd25c92392c",
+      "base64": "X2luaXRDb21wcygpe2xldCBlPXRoaXMseyRmcmVlV2F0ZXJUaW1lOnQsJGZyZWVXYXRlck51bTppLCRmcmVlV2F0ZXJEbWQ6cn09ZS5fZ2FtZU1DZmc7Zm9yKGxldCBuPTA7bjwyO24rKyl7bGV0IG89ZS5maW5kRmlyc3QoIndhdGVyQ29tcF8iK24pLmdldENvbXBvbmVudChtby5DQy5XZ3QpO2lmKCFvKWNvbnRpbnVlO2xldCBzPXtyZWNlaXZlSWR4Om4saWlkOmlbMF0sdGltZVBlcmlvZDp0W25dLGZyZWVXYXRlck51bTppWzFdLGZyZWVXYXRlckRtZDpyWzFdfTtvLnNldERhdGFPbmx5KHMpfX0="
+    },
+    {
+      "name": "free-water-window-and-share13-limit",
+      "start": 2477386,
+      "end": 2477770,
+      "byteLength": 384,
+      "sha256": "9fedeb0df61170f270240f91f9b535a78489a59995edde322115d6e7c120a999",
+      "base64": "X3JlZnJlc2hCdG5TdGF0ZSgpe2xldCB0PXRoaXMse3RpbWVQZXJpb2Q6aSxyZWNlaXZlSWR4OnJ9PXQuZCxuPS0xIT1lLmZyZWVXYXRlckN0cmwucmVjdklkeC5pbmRleE9mKHIpLG89bW8uREFURS5kYXRlKCkscz10Ll9nZXREYXRlKFtpWzBdLDBdKSxsPXQuX2dldERhdGUoW2lbMV0sMF0pLGE9MDttby5EQVRFLmlzQmVmb3JlKG8sbCkmJm1vLkRBVEUuaXNBZnRlcihvLHMpJiYhbj9hPTE6IW4mJm1vLkRBVEUuaXNCZWZvcmUobCxvKSYmZS5VVC5pc0NhbkFkKDEzKT9hPTM6biYmKGE9MiksdC5zZXREYXRhT25seSh7JCRidG5TdGF0ZTphLF9sZWZ0VGltZVN0cjpudWxsfSksbW8uREFURS5pc0JlZm9yZShvLHMpJiYodC5fc3RhcnRUaW1lPXMsdC5fcmVmcmVzaFRpbWUoKSl9"
+    },
+    {
+      "name": "free-water-request-methods",
+      "start": 2478361,
+      "end": 2478553,
+      "byteLength": 192,
+      "sha256": "26b4bf6dcba70bfe03901b823e90e09cf10ec7ac20a1523b75e455cd49b01df2",
+      "base64": "X3JlY2VpdmVXYXRlcih0KXtsZXQgaT10aGlzLHtyZWNlaXZlSWR4OnJ9PWkuZDt0P2UuVVQuc2hhcmUoMTMse29wVHlwZToxLGlkOnJ9LCgpPT57bW8uZW1pdHRlci5lbWl0KCJGcmVlV2F0ZXJTdGF0ZVJlZiIpfSk6ZS5mcmVlV2F0ZXJDdHJsLnJlY3YociwoKT0+e21vLmVtaXR0ZXIuZW1pdCgiRnJlZVdhdGVyU3RhdGVSZWYiKX0saSl9"
+    },
+    {
+      "name": "free-water-day-window-selection",
+      "start": 2479384,
+      "end": 2479675,
+      "byteLength": 291,
+      "sha256": "a703d6b879999c8b752a38518c637a4cef7ee21b5608aec1711376f8d8a8bde2",
+      "base64": "X2lzSW5GcmVlVGltZSgpe2xldCB0PXRoaXMsaT1tby5ELmdldE1DZmcoImNfZ2FtZUNmZyIpLiRmcmVlV2F0ZXJUaW1lLHI9LTEsbj1tby5EQVRFLmRhdGUoKSxvPWUuZnJlZVdhdGVyQ3RybC5yZWN2SWR4O2ZvcihsZXQgZT0wO2U8aS5sZW5ndGg7ZSsrKXtsZXQgcz10LmdldERhdGUoW2lbZV1bMF0sMF0pLGw9dC5nZXREYXRlKFtpW2VdWzFdLDBdKSxhPS0xIT1vLmluZGV4T2YoZSk7aWYobW8uREFURS5pc0JlZm9yZShuLGwpJiZtby5EQVRFLmlzQWZ0ZXIobixzKSYmIWEpe3I9ZTticmVha319cmV0dXJuIHJ9"
+    },
+    {
+      "name": "free-water-share-limit",
+      "start": 378960,
+      "end": 379098,
+      "byteLength": 138,
+      "sha256": "d916f194881e224d0843e3ae0ef549f587b871ed83abc89ac79509b1a39d274b",
+      "base64": "ZnVuY3Rpb24gbyhlKXtsZXQgcj1tby5ELmdldCgiY19zaGFyZSIsZSk7aWYoIXIpcmV0dXJuITA7bGV0IHM9dC5nZXRHTWdyKCksbz1yLmxpbWl0LGk9cy5zaGFyZU1nci5nZXRNYihlKSxhPWk/aS5yZWN2Q250OjA7cmV0dXJuIG8mJmE+PW99"
+    },
+    {
+      "name": "free-water-share-open",
+      "start": 379098,
+      "end": 379209,
+      "byteLength": 111,
+      "sha256": "9233f9600f98782a2ff9695458dae4cb6dc2bbe9ef5cb0dc84dcfa41b1c58fc8",
+      "base64": "ZnVuY3Rpb24gaShlLHIpe2xldCBzPW1vLkQuZ2V0KCJjX3NoYXJlIixlKTtyZXR1cm4hKCFzfHwhcy5vcGVuSWQpJiZ0LmdldEdNZ3IoKS5zeXNPcGVuQ3RybC5pc09wZW4ocy5vcGVuSWQscil9"
+    },
+    {
+      "name": "free-water-video-availability",
+      "start": 380980,
+      "end": 381062,
+      "byteLength": 82,
+      "sha256": "424217324e41f159999962cb9555636e66aa3e7d283af117b359ea8410904df5",
+      "base64": "ZS5pc0NhbkFkPWZ1bmN0aW9uKGUpe3JldHVybiB0LmdldEdNZ3IoKS5zZGsuaXNFbmFibGVkKCJwbGF5VmlkZW8iKSYmaShlKSYmIW8oZSl9LA=="
+    },
+    {
+      "name": "free-water-day-construction",
+      "start": 2478168,
+      "end": 2478283,
+      "byteLength": 115,
+      "sha256": "a7a2edc7656edec5626f362099c0502f0a15766548db611282a7c4bcddda4714",
+      "base64": "X2dldERhdGUoZSl7bGV0IHQ9bW8uREFURS5kYXRlKCksaT1tby5EQVRFLnRoYXREYXkodCk7cmV0dXJuIG1vLkRBVEUuYWRkSG91cnMoaSxlWzBdKSxtby5EQVRFLmFkZE1pbnV0ZXMoaSxlWzFdKSxpfQ=="
+    },
+    {
+      "name": "free-water-share-manager",
+      "start": 284681,
+      "end": 285403,
+      "byteLength": 722,
+      "sha256": "a6f69353b4bc23b877343027b3d4dc7a3accbfd143da5f56af5d511cd9b5c282",
+      "base64": "ZnVuY3Rpb24odCl7Y2xhc3MgZSBleHRlbmRzIHQuQmFzZU1ncntjdG9yX2IoKXtzdXBlci5jdG9yX2IoKTt0aGlzLm1iSWRLZXlzPVsidG1wSWQiXX1nZXRNYihlKXtjb25zdCByPW1vLkQuZ2V0KCJjX3NoYXJlIixlKTtpZighcilyZXR1cm4gbnVsbDtsZXQgcz1zdXBlci5nZXRNYihlKTtzfHwocz17dG1wSWQ6ZSxzaGFyZUNudDowLHJlY3ZDbnQ6MCxyZWN2VGltZTpudWxsLHVUaW1lOm1vLkRBVEUuZGF0ZSgpfSk7Y29uc3Qgbj1zLnVUaW1lLmdldFRpbWUoKTtyZXR1cm4gdC5VVF9TSEFSRS5yZWZyZXNoRnVuY01hcFtyLmxpbWl0VHlwZV0mJnQuVVRfU0hBUkUucmVmcmVzaEZ1bmNNYXBbci5saW1pdFR5cGVdKHIscyxzLG4pLHN9bmV0U2hhcmUodCxlLHIscyxuKXt0aGlzLnJlcXVlc3QyKCJncy51c3Iuc2hhcmUiLHtzaGFyZUlkOnQsZXh0OmV9LHIscyxuKX1uZXRBZnRlclNoYXJlKHQsZSxyLHMsbil7dGhpcy5yZXF1ZXN0MigiZ3MudXNyLmFmdGVyU2hhcmUiLHtzaGFyZUlkOnQsZXh0OmV9LHIscyxuKX1fb25TeW5jRGF0YSh0KXtjb25zdCBlPXRoaXM7dC5zaGFyZVRvdCYmZS51cGRhdGVUb3QodC5zaGFyZVRvdCl9fXQuU2hhcmVNZ3I9ZSxfX3JlZmxlY3QoZS5wcm90b3R5cGUsIkcuU2hhcmVNZ3IiKSx0LkdNZ3IucmVnaXN0ZXIoZSksbW8uaWZhY2VKSE1nci5zZXQoWyJncy51c3Iuc2hhcmUiLCJncy51c3IuYWZ0ZXJTaGFyZSJdLCExKX0oR3x8KEc9e30pKSw="
+    },
+    {
+      "name": "free-water-share-daily-reset",
+      "start": 208519,
+      "end": 208755,
+      "byteLength": 236,
+      "sha256": "dbffaaab895d891f86a65ea7f2defd81d6d6a0484c1285758dc72f4186cdbc68",
+      "base64": "ZnVuY3Rpb24odCl7IWZ1bmN0aW9uKHQpe2Z1bmN0aW9uIGUoZSxyKXt0LnJlZnJlc2hGdW5jTWFwW2VdPXJ9dC5yZWZyZXNoRnVuY01hcD17fSx0LnJlZ2lzdGVyUmVmcmVzaEZ1bmM9ZSxlKDEsKHQsZSxyLHMpPT57czxtby5EQVRFLnRvZGF5KCkuZ2V0VGltZSgpJiYoci5zaGFyZUNudD1yLnJlY3ZDbnQ9MCxyLnJlY3ZUaW1lPW51bGwpfSl9KHQuVVRfU0hBUkV8fCh0LlVUX1NIQVJFPXt9KSl9KEd8fChHPXt9KSk="
+    },
+    {
+      "name": "free-water-share-schema",
+      "start": 33143,
+      "end": 33265,
+      "byteLength": 122,
+      "sha256": "8cdeca54b555249861c4953fd2c7d4c26175b00947a31806b19635cf3e429fd3",
+      "base64": "bW8uRFMuc2V0U2luZ2xlKCJHLklTaGFyZSIse3VpZDowLHRtcElkOjEsc2hhcmVDbnQ6MixyZWN2Q250OjMscmVjdlRpbWU6IjQ6RGF0ZSIsdG90Q250OjUsdVRpbWU6IjY6RGF0ZSIsY1RpbWU6Ijc6RGF0ZSJ9KSw="
+    }
+  ]
+}

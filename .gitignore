@@ -1,0 +1,28 @@
+.gradle/
+local.properties
+app/build/
+app/src/main/assets/engine.zip
+app/src/main/jniLibs/
+.runtime/
+node_modules/
+admin/dist/
+*.log
+*.db
+*.db-wal
+*.db-shm
+.qoder/
+
+# AI 工具目录（会话记忆，非项目产物）
+.workbuddy/
+
+# Private local configuration and signing inputs
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+coverage/

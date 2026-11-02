@@ -1,0 +1,43 @@
+{
+  "manifestVersion": 1,
+  "catalogId": "official-public/order-flower-480.0.46",
+  "gameVersion": "480.0.46",
+  "protocolVersion": "480.0.0",
+  "applicationCodeExecuted": false,
+  "sourceKind": "public 480.0.46 g-data tables; curated finite runtime fields",
+  "sourceRawPath": ".runtime/validation/official-public-480.0.46-resources-20261026-01/raw/g-data.480.0.46.ab27c.text",
+  "sourceRawSha256": "caf088cd9a70430b149aa270217d9aa46729bbb34e2799e974ec5cae63e61250",
+  "decoderHelperPath": ".runtime/backend-rebuild/official-jsc-static/decode_tables.py",
+  "decoderHelperSha256": "bcdeee48664017cd80d6bcae617852e9f5319a667cbed3131b9e1de4229ac259",
+  "derivedFile": "catalog-480.0.46.json",
+  "derivedFileSha256": "fd329dd26f74bddf05fd7dcf0fb1700444783b5ed73c6517bd0f156396df0041",
+  "compatibilityTo480.0.27": {
+    "baselineSourceManifestSha256": "87a98fdcfb13e966065f37780f3d12dbd0aae295a8941ae17bbcdfff7e7b417c",
+    "rawEncodedTablesCompared": [
+      "c_lvl",
+      "c_open",
+      "c_orderFlower",
+      "c_orderFlowerNpc",
+      "c_share"
+    ],
+    "comparison": "Complete encoded table objects compare equal for listed tables in the 27 and 46 public g-data sources. The runtime curated output is byte-identical to the 27 finite projection; this records field reuse, not whole-feature business equivalence.",
+    "proofRef": "official-public-480.0.46-resources-20261026-01/tables.receipt.json; read-only independent raw-source comparison reported 2026-10-26"
+  },
+  "runtimeProjection": {
+    "tables": [
+      "c_lvl",
+      "c_open",
+      "c_orderFlower",
+      "c_orderFlowerNpc",
+      "c_share"
+    ],
+    "completeSourceTablesClaimed": false,
+    "excludedAuxiliaryCapabilities": [
+      "video-order-extra",
+      "butler-stock",
+      "daily-reward",
+      "enter",
+      "share-reward"
+    ]
+  }
+}

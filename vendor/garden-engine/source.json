@@ -1,0 +1,30 @@
+{
+  "format": "trimmed-protocol-snapshot/v1",
+  "sourceProject": "我的花园世界",
+  "originalSnapshot": {
+    "sourceFiles": 306,
+    "sourceCommit": "518834935ac91d83945a1fad552edf16eacebea4",
+    "importedAt": "2026-10-18 13:42:51 +08:00",
+    "importKind": "只读源码快照，无生产数据库、凭据、memory或运行资料"
+  },
+  "retainedSourceFiles": [
+    "server/src/game/android-auth.js",
+    "server/src/game/android-login-context.js",
+    "server/src/game/client-profile.js",
+    "server/src/game/client.js",
+    "server/src/game/flower-art-catalog.js",
+    "server/src/game/human-pacing.js",
+    "server/src/game/login-error-codes.js",
+    "server/src/game/net-race.js",
+    "server/src/game/official-cfg.js",
+    "server/src/game/runtime-paths.js",
+    "server/src/game/v5-official-fields.js",
+    "server/src/schema.js"
+  ],
+  "retainedDataRoot": "server/data/ (kept unchanged for current protocol and catalog tools)",
+  "pruningManifest": "pruned-source-manifest.json",
+  "pruningManifestSha256": "a30574740d93101065fa9d323bc4875872603b59331724afed8acf6245ee5e75",
+  "removedCodeFileCount": 220,
+  "removedOverlayManifestCount": 1,
+  "retentionPolicy": "Keep only source reachable from the current Android protocol runtime and current inventory/account/catalog tools. Historical analysis and prior overlay decisions remain in project documentation; this snapshot does not claim the original whole engine remains present."
+}

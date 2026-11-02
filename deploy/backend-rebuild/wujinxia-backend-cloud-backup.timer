@@ -1,0 +1,11 @@
+[Unit]
+Description=WuJinXia rebuilt cloud daily backup schedule
+
+[Timer]
+OnCalendar=*-*-* 03:40:00
+Persistent=true
+RandomizedDelaySec=120
+Unit=wujinxia-backend-cloud-backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,261 @@
+{
+  "manifestVersion": 1,
+  "catalogId": "official-public/index-480.0.46",
+  "sourceVersion": {
+    "gameVersion": "480.0.46",
+    "worldProtocolVersion": "480.0.0",
+    "gameModuleJsc": "b453d",
+    "moModuleJsc": "f7ef4",
+    "resourceBundleVersion": "603c3"
+  },
+  "source": {
+    "indexMixSha256": "69253ccdb52ef4f215a414fc6c0c09b1b32c3c449f1a1feb64c93948f1429448",
+    "indexPlainSha256": "d7c10bf45a0481e7c67bf2102fba51faa3172fdb54504dbbe1557768478151ff",
+    "gameJscSha256": "11ead51aae82ee958f47451199b651e941cb6151aab87df17a9bfedb062d06e5",
+    "decodedGameSha256": "bf21efb47a54dca0ab5e249062da828d2ec8981388977ebfc1524c75236c9845",
+    "resourceConfigSha256": "506b322b1d89e25e59aa13541ed6e670ec15316489d29e3da2be42628fb4c598",
+    "gDataSha256": "caf088cd9a70430b149aa270217d9aa46729bbb34e2799e974ec5cae63e61250",
+    "applicationCodeExecuted": false
+  },
+  "tables": {
+    "c_item": {
+      "rows": 7446,
+      "bytes": 2930277,
+      "sha256": "2c93b367cae5771d7ede9c0797e32773cdb9ab9273677fed51af86a042e1e4d6",
+      "file": "c_item.json"
+    },
+    "c_farmLand": {
+      "rows": 65,
+      "bytes": 4307,
+      "sha256": "fdae8edc9d22b071987de1aba21ee8ebab46cbcadbe68a1ff31ef0198da8d098",
+      "file": "c_farmLand.json"
+    },
+    "c_flower": {
+      "rows": 658,
+      "bytes": 323813,
+      "sha256": "fab2310163f1f034fe688af1179c6165bdbaff4c640477b5251a42962599fbfd",
+      "file": "c_flower.json"
+    },
+    "c_flowerLvl": {
+      "rows": 6091,
+      "bytes": 954595,
+      "sha256": "cd8e64fd41f5f0a9fc320d65a202a3a3181bb1f5d669d8a7c9460d2a103f7cd2",
+      "file": "c_flowerLvl.json"
+    },
+    "c_flowerLvlCfg": {
+      "rows": 20,
+      "bytes": 2653,
+      "sha256": "88247f9e34b887fdd474f68a58f124dbe5b6bd28fd43a9b2489f70bc94bfa290",
+      "file": "c_flowerLvlCfg.json"
+    }
+  },
+  "compatibility": {
+    "claim": "land-wire-and-consumed-static-fields-identical-to-480.0.27/v1",
+    "oldDecodedGameSha256": "fc9970989021e4266301d2a167ae8e827ef71a124ad9d7f23cb922095a22aa69",
+    "sameRangesSha256": true,
+    "verifiedRecords": [
+      "G.ISyncData",
+      "G.IUsr",
+      "G.IUsrTot",
+      "G.IUsrLand",
+      "G.IUsrLandTot",
+      "G.ILand",
+      "G.ICultivate",
+      "G.ICultivateTot",
+      "G.GS.usrLandIface.IArg_plant",
+      "G.GS.usrLandIface.IArg_water",
+      "G.GS.usrLandIface.IArg_harvest",
+      "G.GS.usrLandIface.IArg_refresh"
+    ],
+    "methods": {
+      "usrLand.plant": {
+        "args": {
+          "landId": "safe-positive-int",
+          "flowerId": "safe-positive-int"
+        }
+      },
+      "usrLand.water": {
+        "args": {
+          "landId": "safe-positive-int"
+        }
+      },
+      "usrLand.harvest": {
+        "args": {
+          "landId": "safe-positive-int"
+        }
+      },
+      "usrLand.refresh": {
+        "args": {}
+      }
+    },
+    "scope": "Wire/static contract parity for land actions plus verified item-7 restoration/count behavior. This does not prove server-side eligibility, write acceptance, or side effects.",
+    "evidenceSources": {
+      "oldDecoded": {
+        "path": ".runtime/backend-rebuild/current-official-static/game.27165.480.0.27.decoded.js",
+        "sha256": "fc9970989021e4266301d2a167ae8e827ef71a124ad9d7f23cb922095a22aa69"
+      },
+      "currentDecoded": {
+        "path": ".runtime/validation/official-public-480.0.46-resources-20261026-01/game.480.0.46.decoded.js",
+        "sha256": "bf21efb47a54dca0ab5e249062da828d2ec8981388977ebfc1524c75236c9845"
+      }
+    },
+    "records": [
+      {
+        "name": "G.ISyncData",
+        "encoding": "UTF-8",
+        "offsetBytes": 64556,
+        "lengthBytes": 3262,
+        "oldSha256": "8d4c5a6d88ab4deedf91e18551ebe135deae218a6140220ff3813e3cb1258abb",
+        "currentSha256": "8d4c5a6d88ab4deedf91e18551ebe135deae218a6140220ff3813e3cb1258abb"
+      },
+      {
+        "name": "G.IUsr",
+        "encoding": "UTF-8",
+        "offsetBytes": 29563,
+        "lengthBytes": 1052,
+        "oldSha256": "ef40e4f15387be812b6599fbab3fd47cd39c3b87000b3f7b10ffa8c7003a2012",
+        "currentSha256": "ef40e4f15387be812b6599fbab3fd47cd39c3b87000b3f7b10ffa8c7003a2012"
+      },
+      {
+        "name": "G.IUsrTot",
+        "encoding": "UTF-8",
+        "offsetBytes": 49648,
+        "lengthBytes": 567,
+        "oldSha256": "f73dc2b06d3edc0a445647f6c49c0304ed022dd00f4950372dba9fe9a197cced",
+        "currentSha256": "f73dc2b06d3edc0a445647f6c49c0304ed022dd00f4950372dba9fe9a197cced"
+      },
+      {
+        "name": "G.IUsrLand",
+        "encoding": "UTF-8",
+        "offsetBytes": 115322,
+        "lengthBytes": 128,
+        "oldSha256": "a124450b508c056d0e3e463810d73337ea469ad715cf76a5b7b1b883ba807215",
+        "currentSha256": "a124450b508c056d0e3e463810d73337ea469ad715cf76a5b7b1b883ba807215"
+      },
+      {
+        "name": "G.IUsrLandTot",
+        "encoding": "UTF-8",
+        "offsetBytes": 115833,
+        "lengthBytes": 135,
+        "oldSha256": "cbbbad1e28f3e1d86a61f7a1263eafee1cf34060295486b3047313f2a441bb58",
+        "currentSha256": "cbbbad1e28f3e1d86a61f7a1263eafee1cf34060295486b3047313f2a441bb58"
+      },
+      {
+        "name": "G.ILand",
+        "encoding": "UTF-8",
+        "offsetBytes": 115622,
+        "lengthBytes": 151,
+        "oldSha256": "f46b86b033a120cba2afb5a844a13f6178cfdbc0cce1d5239de3bd4b7a9bcae9",
+        "currentSha256": "f46b86b033a120cba2afb5a844a13f6178cfdbc0cce1d5239de3bd4b7a9bcae9"
+      },
+      {
+        "name": "G.ICultivate",
+        "encoding": "UTF-8",
+        "offsetBytes": 95079,
+        "lengthBytes": 228,
+        "oldSha256": "71452dc17a8c99cb9e498c580fce393154604612252c862d15ec72f466afbc02",
+        "currentSha256": "71452dc17a8c99cb9e498c580fce393154604612252c862d15ec72f466afbc02"
+      },
+      {
+        "name": "G.ICultivateTot",
+        "encoding": "UTF-8",
+        "offsetBytes": 115969,
+        "lengthBytes": 120,
+        "oldSha256": "728a33b8316949a4c0e8b2008fd8591e77cde2e0e9b6160471fd6985c9a56c62",
+        "currentSha256": "728a33b8316949a4c0e8b2008fd8591e77cde2e0e9b6160471fd6985c9a56c62"
+      },
+      {
+        "name": "G.GS.usrLandIface.IArg_plant",
+        "encoding": "UTF-8",
+        "offsetBytes": 180032,
+        "lengthBytes": 69,
+        "oldSha256": "b84b66477f4bb025939639f7a03769417d50787f74f4ee68bb9d90b56ce45d2d",
+        "currentSha256": "b84b66477f4bb025939639f7a03769417d50787f74f4ee68bb9d90b56ce45d2d"
+      },
+      {
+        "name": "G.GS.usrLandIface.IArg_water",
+        "encoding": "UTF-8",
+        "offsetBytes": 180169,
+        "lengthBytes": 58,
+        "oldSha256": "6ab0cc440530f049b725c245508ef66d0fb8c6e74ed5ca8f6e892b8fb8138114",
+        "currentSha256": "6ab0cc440530f049b725c245508ef66d0fb8c6e74ed5ca8f6e892b8fb8138114"
+      },
+      {
+        "name": "G.GS.usrLandIface.IArg_harvest",
+        "encoding": "UTF-8",
+        "offsetBytes": 180285,
+        "lengthBytes": 60,
+        "oldSha256": "510c42f772e975abd33e43008e62c7b3adb0488ccc62c180fb3794d476d4966d",
+        "currentSha256": "510c42f772e975abd33e43008e62c7b3adb0488ccc62c180fb3794d476d4966d"
+      },
+      {
+        "name": "G.GS.usrLandIface.IArg_refresh",
+        "encoding": "UTF-8",
+        "offsetBytes": 180971,
+        "lengthBytes": 52,
+        "oldSha256": "daab40c26833b97bcc57d65320eb798ec4a1641805cba4cd1736624de310059e",
+        "currentSha256": "daab40c26833b97bcc57d65320eb798ec4a1641805cba4cd1736624de310059e"
+      }
+    ],
+    "controllerRanges": [
+      {
+        "name": "usrLand.plant",
+        "offsetBytes": 402402,
+        "lengthBytes": 79,
+        "sha256": "afd80d0f8ee3597fb6a5804edddc14046c7978875a268df1ef284c02761e9137",
+        "dispatch": "request2(\"gs.usrLand.plant\",{landId,flowerId})"
+      },
+      {
+        "name": "usrLand.water",
+        "offsetBytes": 402557,
+        "lengthBytes": 66,
+        "sha256": "2862f02142847c7d994ffb60cec1f1a65f0fd3f8e62b53f70be7e58575a7090a",
+        "dispatch": "request2(\"gs.usrLand.water\",{landId})"
+      },
+      {
+        "name": "usrLand.harvest",
+        "offsetBytes": 402747,
+        "lengthBytes": 70,
+        "sha256": "e857be0e0339bcbe7468d62c0191a20deea4ab12c18c84e3b3824f07549ff668",
+        "dispatch": "request2(\"gs.usrLand.harvest\",{landId})"
+      },
+      {
+        "name": "usrLand.refresh",
+        "offsetBytes": 402691,
+        "lengthBytes": 56,
+        "sha256": "1253db94e733af03f689402daaa18ae547434143dc2ddc4c896ba991adfb84e3",
+        "dispatch": "request2(\"gs.usrLand.refresh\",{})"
+      }
+    ],
+    "rangeConvention": "All offsets are zero-based UTF-8 byte offsets in decoded game bundle; lengths count raw UTF-8 bytes; whole decoded source SHA-256 is recorded above.",
+    "waterRule": {
+      "source": "official decoded game bundle",
+      "oldGameVersion": "480.0.27",
+      "currentGameVersion": "480.0.46",
+      "rangeConvention": "zero-based UTF-8 byte offsets",
+      "offsetBytes": 184205,
+      "lengthBytes": 1893,
+      "oldSha256": "80c9c8d04c3e41303327f1192c9078738b92144fa9c136f18f2823d171bdf50b",
+      "currentSha256": "80c9c8d04c3e41303327f1192c9078738b92144fa9c136f18f2823d171bdf50b",
+      "itemId": 7,
+      "staticRule": {
+        "reset": 65,
+        "restoreCount": 1,
+        "restorePeriodMs": 120000
+      },
+      "fieldSemantics": "65 is the reset/recovery target, not a universal cap. A positive observed limit is the hard cap; absent/zero limit means no hard cap. Preserve complete typed bag, item extension, cTime, and official clock requirements; missing fields remain unknown."
+    }
+  },
+  "safety": {
+    "sourceCodeBundled": false,
+    "accountDataIncluded": false,
+    "credentialDataIncluded": false,
+    "wholeLandMapCompletenessProven": false,
+    "landActionsEnabled": [
+      "plant",
+      "water",
+      "harvest"
+    ],
+    "landActionsHeld": []
+  }
+}

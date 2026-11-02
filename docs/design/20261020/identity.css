@@ -1,0 +1,343 @@
+/* Brand anchored in the user's unchanged blue-violet hydrangea icon. Design only. */
+body[data-identity]{
+ --page:#f4f7ff;--surface:#fff;--ink:#30375b;--muted:#737b98;--green:#7186d4;--mint:#eef2fd;
+ --line:#e8ecf8;--lavender:#f2effc;--blue:#edf4fc;--orange:#faf3ed;--danger:#bd7887;
+ --accent:var(--green);--accent-ink:#fff;--soft:#eef2fc;--edge:#dce3f4;--cool:#728fb7;
+ --notice:#faf5ec;--danger-bg:#fcf0f3;--hero:url("assets/garden-dawn.png");--serif:"SimSun","Songti SC","Noto Serif CJK SC",serif;
+ background:#eaf0fa;color:var(--ink);font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;color-scheme:light;
+}
+body[data-identity=rain]{
+ --page:#f4f9f9;--ink:#34465c;--muted:#758695;--green:#719ba7;--mint:#edf5f6;--line:#e4eeee;
+ --soft:#edf5f5;--edge:#d5e5e7;--lavender:#f0eff9;--blue:#edf4f7;--cool:#7e93ad;
+ --hero:url("assets/garden-rain.png");background:#eaf3f2;
+}
+body[data-identity=moon]{
+ --page:#f8f5fd;--ink:#493d66;--muted:#8b7c9b;--green:#9b86c4;--mint:#f2edfa;--line:#eee7f5;
+ --soft:#f2edfa;--edge:#e5dcee;--lavender:#f2ebfb;--blue:#edf1fc;--cool:#9386bc;
+ --hero:url("assets/garden-moon.png");background:#f0eaf7;
+}
+body[data-identity] button:focus-visible,body[data-identity] input:focus-visible,body[data-identity] a:focus-visible{outline-color:var(--accent)}
+.identity-toolbar{max-width:1380px;margin:auto;padding:16px 40px 0;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.identity-toolbar>span{font-size:11px;color:var(--muted);margin-right:8px}
+.identity-toolbar button{background:#ffffff80;border:1px solid var(--edge);border-radius:20px;padding:9px 17px;min-height:39px;color:var(--muted);font-size:12px}
+.identity-toolbar button>span{font-size:9px;margin-right:7px;opacity:.65}
+.identity-toolbar button[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent);box-shadow:0 4px 15px #6177ae18}
+.identity-toolbar small{margin-left:auto;font-size:10px;color:var(--muted)}.identity-toolbar a{color:var(--accent);margin-left:12px}
+body[data-identity] .device{background:#ffffffb0;border-color:#fff;box-shadow:0 20px 50px #48597e16,0 3px 9px #48597e08}
+body[data-identity] .phone{background:var(--page);color:var(--ink)}
+body[data-identity] .phone:before{content:"";position:absolute;z-index:-1;top:0;left:0;right:0;height:235px;background-image:var(--hero);background-size:cover;background-position:center 45%;opacity:.25;mask-image:linear-gradient(#000,transparent)}
+body[data-identity] .status-bar{color:var(--ink)}body[data-identity] .status-bar:after{background:var(--ink);opacity:.85}
+body[data-identity] .gesture{background:#fff}body[data-identity] .gesture:after{background:var(--ink);opacity:.75}
+body[data-identity] .brand-symbol{width:40px;height:40px;background:#fff;border-radius:13px;overflow:hidden;box-shadow:0 2px 9px #566da715}
+body[data-identity] .brand-symbol img{width:100%;height:100%;display:block;object-fit:contain}
+body[data-identity] .wordmark{font-family:var(--serif);font-weight:700;font-size:21px;letter-spacing:3px;gap:9px}
+body[data-identity] .app-toolbar{padding:10px 21px 4px}
+body[data-identity] .toolbar-status{font-size:10px;color:var(--muted)}
+body[data-identity] .dot{background:#80ada8;border-radius:50%;box-shadow:0 0 0 3px #80ada810}
+body[data-identity] .icon-button{color:var(--muted)}
+body[data-identity] .scroll-area{padding-left:20px;padding-right:20px}
+body[data-identity] .page-heading{padding:13px 0 16px}
+body[data-identity] .page-heading h1{font-size:25px;letter-spacing:0;font-weight:650}
+body[data-identity] .page-heading p{font-size:10px;color:var(--muted);margin-top:6px}
+body[data-identity] .page-heading .add{width:39px;height:39px;border-radius:14px;background:#fff;color:var(--accent);box-shadow:0 3px 12px #586eab0d;border:1px solid var(--edge)}
+/* Each version uses an illustrated garden as an environment, with readable quiet space. */
+body[data-identity] .garden-banner{height:147px;padding:22px 20px 17px;border-radius:23px;background:#eef3ff;box-shadow:0 4px 15px #5b6e9a06;border:1px solid #ffffffa0;margin-bottom:19px;isolation:isolate}
+body[data-identity] .garden-banner>img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 62%;opacity:1;mix-blend-mode:normal;mask-image:none;z-index:-2}
+body[data-identity] .garden-banner:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#f7faffee 0%,#f7faffbb 35%,#f7faff00 74%)}
+body[data-identity] .garden-banner .eyebrow{position:relative;z-index:1;font-size:8px;color:var(--accent);letter-spacing:2px;margin-bottom:11px}
+body[data-identity] .garden-banner h2{font-family:var(--serif);font-size:23px;letter-spacing:2px;font-weight:600;color:var(--ink);line-height:1.35}
+body[data-identity] .banner-slogan{position:relative;z-index:1;font-family:var(--serif);font-size:12px;color:var(--muted);letter-spacing:3px;margin-top:8px}
+body[data-identity] .garden-banner .banner-sub{color:var(--muted);font-size:9px;margin-top:13px;position:relative;z-index:1;letter-spacing:.2px}
+body[data-identity] .filters{margin-bottom:10px;gap:25px;padding-left:3px}
+body[data-identity] .filters button{color:var(--muted);font-size:11px;position:relative;min-height:28px;padding-bottom:9px;border:0}
+body[data-identity] .filters button.active{color:var(--accent);font-weight:600}
+body[data-identity] .filters button.active:after{content:"";position:absolute;bottom:0;left:0;width:17px;height:3px;border-radius:3px;background:var(--accent)}
+body[data-identity] .account-card{background:#fff;border:1px solid #ffffff;border-radius:20px;padding:15px 14px 12px;margin:0 0 12px;box-shadow:0 5px 15px #6a7ca208}
+body[data-identity] .account-card.running-card{border-color:var(--edge);padding:15px 14px 12px}
+body[data-identity] .account-top{gap:10px}
+body[data-identity] .avatar{background:var(--soft);color:var(--accent);border-radius:15px;width:42px;height:42px;font-family:var(--serif);font-size:20px;border:1px solid #ffffff}
+body[data-identity] .avatar.lilac{background:var(--lavender);color:#9b85b5}
+body[data-identity] .avatar.blue{background:var(--blue);color:#7998b9}
+body[data-identity] .account-identity h2{font-size:14px;font-weight:600;letter-spacing:.3px}
+body[data-identity] .account-identity p{font-size:9px;color:var(--muted);margin-top:5px}
+body[data-identity] .badge{font-size:9px;border-radius:8px;color:var(--muted);background:#f4f5f9;padding:5px 7px}
+body[data-identity] .badge.green{color:#689690;background:#eff7f5}
+body[data-identity] .badge.lavender{color:var(--accent);background:var(--soft)}
+body[data-identity] .account-more{color:var(--muted);width:19px}
+body[data-identity] .account-summary{font-size:10px;color:var(--muted);margin:11px 0}
+body[data-identity] .account-summary .icon{color:var(--accent)}
+body[data-identity] .account-actions{border-color:var(--line);padding-top:9px;gap:4px}
+body[data-identity] .account-actions button{font-size:10px;color:var(--muted);border-radius:10px;min-height:32px;padding:0 10px}
+body[data-identity] .account-actions button.primary-small{background:var(--soft);color:var(--accent);padding:0 16px}
+body[data-identity] .account-actions button.stop-small{color:#a47e90;background:#f8f1f5}
+body[data-identity] .bottom-nav{border-color:var(--line);background:#ffffffed;height:64px;padding:7px 12px 0}
+body[data-identity] .bottom-nav button{color:#a0a6bc;font-size:10px;gap:2px}
+body[data-identity] .bottom-nav .nav-icon{height:29px;width:45px;border-radius:14px}
+body[data-identity] .bottom-nav button.active{color:var(--accent);font-weight:600}
+body[data-identity] .bottom-nav button.active .nav-icon{background:var(--soft)}
+body[data-identity] .bottom-nav .icon{stroke-width:1.65;width:20px;height:20px}
+/* Settings continue the same soft hydrangea language. */
+body[data-identity] .top-title{padding-top:22px;padding-bottom:20px}
+body[data-identity] .top-title h1{font-size:25px;font-weight:650;letter-spacing:0}
+body[data-identity] .compact-account{background:#ffffffc9;border:1px solid var(--edge);border-radius:19px;color:var(--ink);gap:6px;font-size:11px;padding:5px 9px 5px 5px}
+body[data-identity] .compact-account .avatar{width:24px;height:24px;border-radius:50%;font-size:12px}
+body[data-identity] .compact-account .icon{color:var(--muted)}
+body[data-identity] .account-choice{background:#fff;border:1px solid var(--line);border-radius:16px}
+body[data-identity] .choice-meta{color:var(--muted)}
+body[data-identity] .tabs{background:#e9eefb99;border-radius:16px;padding:4px;gap:3px;margin-bottom:20px}
+body[data-identity] .tabs button{font-size:12px;color:var(--muted);min-height:36px;border-radius:12px}
+body[data-identity] .tabs button.active{background:#fff;color:var(--accent);box-shadow:0 2px 7px #6176a50a}
+body[data-identity] .section-label{margin:0 2px 11px}
+body[data-identity] .section-label h2{font-size:12px;color:var(--ink);font-weight:600}
+body[data-identity] .section-label span{font-size:9px;color:var(--muted)}
+body[data-identity] .setting-card{background:#ffffffed;border:1px solid #fff;border-radius:20px;padding:0 15px;margin-bottom:13px;box-shadow:0 4px 15px #6a7ca205}
+body[data-identity] .feature-icon{background:var(--soft);color:var(--accent);border-radius:13px;width:35px;height:35px}
+body[data-identity] .feature-icon.blue{background:#edf4fc;color:#8aa6c7}
+body[data-identity] .feature-icon.lilac{background:#f3eefb;color:#a08ac1}
+body[data-identity] .feature-icon.gold{background:#faf3ed;color:#b79a7e}
+body[data-identity] .feature-icon .icon{width:19px;height:19px}
+body[data-identity] .feature-copy h2,body[data-identity] .feature-copy h3{font-size:13px;color:var(--ink);font-weight:600}
+body[data-identity] .feature-copy p{font-size:10px;color:var(--muted)}
+body[data-identity] .clickable-feature>.chevron{color:#b3b9ce}
+body[data-identity] .summary-row,body[data-identity] .setting-line,body[data-identity] .setting-details{border-color:var(--line);color:var(--ink)}
+body[data-identity] .summary-row>span:last-child,body[data-identity] .setting-line .line-label,body[data-identity] .line-value{color:var(--muted)}
+body[data-identity] .toggle-track{background:#dce1ee;border:1px solid #d6ddeb;border-radius:20px;width:41px;height:24px}
+body[data-identity] .toggle-track:after{background:#fff;top:2px;left:2px;width:18px;height:18px;box-shadow:0 1px 4px #687ba927;border-radius:50%;border:0}
+body[data-identity] .toggle[aria-checked=true] .toggle-track{background:var(--accent);border-color:var(--accent)}
+body[data-identity] .toggle[aria-checked=true] .toggle-track:after{transform:translateX(17px)}
+body[data-identity] .save-dock{background:var(--page);border-color:var(--line);padding:10px 20px}
+body[data-identity] .primary{background:var(--accent);color:#fff;border-radius:14px;font-size:13px;font-weight:500;letter-spacing:.5px;box-shadow:0 4px 12px #7b88c21b}
+body[data-identity] .secondary{background:var(--soft);border:1px solid var(--edge);color:var(--accent);border-radius:14px}
+body[data-identity] .save-dock .primary[data-clean=true]{background:#ffffffb8;color:var(--muted);border:1px solid var(--edge);box-shadow:none}
+body[data-identity] .save-dock p{color:var(--muted);font-size:9px}
+body[data-identity] .advanced-link,body[data-identity] .quiet-info,body[data-identity] .reward-footnote,body[data-identity] .detail-summary{color:var(--muted)}
+body[data-identity] .order-row,body[data-identity] .video-hint{border-color:var(--line)}
+body[data-identity] .order-row .feature-copy p,body[data-identity] .reward-card .feature-copy p{color:var(--muted)}
+body[data-identity] .order-card-link>.icon:last-child,body[data-identity] .video-hint{color:var(--muted)}
+body[data-identity] .art-cover{border:1px solid #fff;border-radius:20px;background:var(--soft);height:115px;isolation:isolate}
+body[data-identity] .art-cover>img{width:100%;height:100%;inset:0;object-fit:cover;object-position:center 65%;opacity:.6;mix-blend-mode:normal;mask-image:linear-gradient(90deg,transparent,#000);z-index:-1}
+body[data-identity] .art-cover h2{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:20px;letter-spacing:1px}
+body[data-identity] .art-cover p,body[data-identity] .art-cover .tiny-steps{color:var(--muted)}
+/* Login uses the original full icon including its calligraphy, without a replacement mark. */
+body[data-identity] .login-phone{background:var(--page)}
+body[data-identity] .login-phone:before{top:35px;height:400px;opacity:.55;background-position:center 50%;mask-image:linear-gradient(transparent,#000 35%,#000 65%,transparent)}
+body[data-identity] .login-brand{justify-content:center;padding:23px 28px 0}
+body[data-identity] .login-brand .brand-symbol,body[data-identity] .login-brand h1{display:none}
+body[data-identity] .login-brand p{font-size:8px;letter-spacing:4px;color:var(--muted);font-weight:400}
+body[data-identity] .login-art{height:236px;margin:4px 0 0}
+body[data-identity] .login-art:after{display:none}
+body[data-identity] .login-art img{display:block;width:226px;height:226px;object-fit:contain;top:5px;left:50%;right:auto;transform:translateX(-50%);mix-blend-mode:multiply;mask-image:none}
+body[data-identity] .login-content{padding:0 32px}
+body[data-identity] .login-content h2{font-family:var(--serif);font-size:29px;font-weight:600;line-height:1.5;letter-spacing:4px;text-align:center;margin:0}
+body[data-identity] .login-content .intro{font-family:var(--serif);font-size:14px;letter-spacing:5px;color:var(--muted);text-align:center;margin:7px 0 28px}
+body[data-identity] .login-field{background:#ffffffdb;border:1px solid var(--edge);border-radius:16px;min-height:58px;margin-top:12px;box-shadow:0 2px 8px #536c9f04}
+body[data-identity] .login-field>.icon,body[data-identity] .login-field label>span,body[data-identity] .login-field .icon-button{color:var(--muted)}
+body[data-identity] .login-field label>span{font-size:9px}
+body[data-identity] .login-field input{font-size:12px;color:var(--ink)}
+body[data-identity] .login-field input::placeholder{color:#a7aec4}
+body[data-identity] .login-content .primary{min-height:50px;margin-top:22px}
+body[data-identity] .login-extra{color:var(--muted);font-size:10px;margin-top:16px}
+body[data-identity] .login-extra button,body[data-identity] .auth-help-link{color:var(--accent)}
+body[data-identity] .login-bottom{color:var(--muted);font-size:9px;padding-bottom:22px;letter-spacing:1px}
+body[data-identity] .login-phone .gesture{background:transparent}
+/* Sheet, dialog, picker, field and status hierarchy is shared by all 116 panels. */
+body[data-identity] .sheet-scrim{background:#3c416e38;backdrop-filter:blur(3px)}
+body[data-identity] .bottom-sheet,body[data-identity] .panel-footer{background:#fff;color:var(--ink)}
+body[data-identity] .v2-sheet{border-radius:29px 29px 0 0;box-shadow:0 -10px 40px #4f558519;border:1px solid #ffffff}
+body[data-identity] .sheet-handle{background:var(--edge);border-radius:4px;width:32px}
+body[data-identity] .v2-sheet .sheet-header{padding-top:2px}
+body[data-identity] .v2-sheet .sheet-header .icon-button{background:var(--soft);color:var(--muted);border-radius:13px}
+body[data-identity] .v2-sheet .sheet-header h2{font-size:22px;font-weight:600;color:var(--ink)}
+body[data-identity] .panel-eyebrow{font-size:9px;color:var(--accent);letter-spacing:1px}
+body[data-identity] .panel-subtitle{font-size:12px;color:var(--muted);line-height:1.85}
+body[data-identity] .panel-toggle,body[data-identity] .panel-kv>div,body[data-identity] .catalogue-row{border-color:var(--line)}
+body[data-identity] .panel-toggle.disabled{opacity:1}
+body[data-identity] .panel-toggle h3{font-size:14px;color:var(--ink)}
+body[data-identity] .panel-toggle p,body[data-identity] .field-description{font-size:12px;line-height:1.8;color:var(--muted)}
+body[data-identity] .field-caption label,body[data-identity] .field-caption strong,body[data-identity] .panel-heading{color:var(--ink)}
+body[data-identity] .required-mark{color:var(--accent)}
+body[data-identity] .panel-input,body[data-identity] .panel-select{background:#fafbff;border-color:var(--edge);border-radius:13px;color:var(--ink)}
+body[data-identity] .panel-input::placeholder{color:#a8aec2}
+body[data-identity] .panel-input:disabled,body[data-identity] .panel-select:disabled{background:var(--soft);color:var(--muted)}
+body[data-identity] .input-with-unit .unit,body[data-identity] .password-control .icon-button{color:var(--muted)}
+body[data-identity] .panel-note,body[data-identity] .panel-note.success,body[data-identity] .panel-note.info{background:var(--soft);color:var(--muted);border-radius:14px;font-size:12px;line-height:1.85;padding:12px 14px}
+body[data-identity] .panel-note strong,body[data-identity] .panel-note.success strong,body[data-identity] .panel-note.info strong{color:var(--ink);font-size:12px;font-weight:600}
+body[data-identity] .panel-note.warning{background:var(--notice);color:#978466}
+body[data-identity] .panel-note.danger{background:var(--danger-bg);color:#a37586}
+body[data-identity] .panel-note.warning strong{color:#9b805e}
+body[data-identity] .panel-note.danger strong{color:var(--danger)}
+body[data-identity] .panel-status{border-radius:17px;background:var(--soft);padding:15px}
+body[data-identity] .panel-status>.icon{color:var(--accent)}
+body[data-identity] .panel-status h3{font-size:15px;color:var(--ink)}
+body[data-identity] .panel-status p,body[data-identity] .panel-status.warning p,body[data-identity] .panel-status.danger p,body[data-identity] .panel-status.info p{font-size:12px;line-height:1.85;color:var(--muted)}
+body[data-identity] .panel-status.warning{background:var(--notice)}
+body[data-identity] .panel-status.danger{background:var(--danger-bg)}
+body[data-identity] .panel-status.info,body[data-identity] .panel-status.loading{background:var(--soft)}
+body[data-identity] .panel-status.warning>.icon{color:#b29b79}
+body[data-identity] .panel-status.danger>.icon{color:var(--danger)}
+body[data-identity] .panel-status.info>.icon{color:var(--accent)}
+body[data-identity] .panel-choice{border-radius:12px;border-color:var(--edge);color:var(--muted);background:#fcfcff}
+body[data-identity] .panel-choice:has(input:checked){border-color:var(--accent);background:var(--soft);color:var(--ink)}
+body[data-identity] .panel-choice input,body[data-identity] .catalogue-row input{accent-color:var(--accent)}
+body[data-identity] .option-copy small{font-size:11px;color:var(--muted)}
+body[data-identity] .picker-trigger{background:#fafbff;border-color:var(--edge);color:var(--ink);border-radius:13px}
+body[data-identity] .picker-count,body[data-identity] .selected-values,body[data-identity] .picker-trigger .icon{color:var(--muted)}
+body[data-identity] .panel-link{color:var(--ink);border-color:var(--line)}
+body[data-identity] .panel-link small,body[data-identity] .panel-link .icon{color:var(--muted)}
+body[data-identity] .panel-kv dt{color:var(--muted)}body[data-identity] .panel-kv dd{color:var(--ink)}
+body[data-identity] .panel-footer{border-color:var(--line)}
+body[data-identity] .panel-footer .preview-label{color:var(--muted)}
+body[data-identity] .panel-actions button{border-radius:13px}
+body[data-identity] .confirm-dialog{border-radius:26px}
+body[data-identity] .confirm-dialog .panel-footer{border-radius:0 0 26px 26px}
+body[data-identity] .danger-primary{background:var(--danger)!important;color:white!important}
+body[data-identity] .field-error,body[data-identity] .login-content .auth-error{color:var(--danger)}
+body[data-identity] .panel-input[aria-invalid=true]{background:var(--danger-bg);border-color:var(--danger)}
+body[data-identity] .design-related{border-color:var(--edge)}
+body[data-identity] .design-related>p{color:var(--muted)}
+body[data-identity] .design-related button{border-radius:9px;background:var(--soft);color:var(--muted);font-size:10px}
+body[data-identity] .picker-toolbar button{background:var(--soft);color:var(--accent);border-radius:11px}
+body[data-identity] .picker-meta,body[data-identity] .picker-meta button,body[data-identity] .catalogue-row small{color:var(--muted)}
+body[data-identity] .catalogue-row strong{color:var(--ink)}
+body[data-identity] .prototype-toast{background:#4c5279ee;color:#fff;border-radius:16px}
+body[data-identity] .field-help-button,body[data-identity] .catalogue-empty,body[data-identity] .logs-end,body[data-identity] .inline-summary{color:var(--muted)}
+body[data-identity] .field-help-content,body[data-identity] .log-count,body[data-identity] .advanced-panel{background:var(--soft);color:var(--muted);border-radius:14px}
+body[data-identity] .connection-notice{background:var(--notice);color:#9c896d;border-radius:14px}
+body[data-identity] .connection-notice button{color:#9b805e}
+body[data-identity] .state-chip{background:var(--soft);color:var(--accent);border-radius:9px}
+body[data-identity] .log-pending-detail{background:var(--notice);color:var(--ink)}
+body[data-identity] .skeleton{background:linear-gradient(100deg,var(--soft),#fff,var(--soft))}
+body[data-identity] .page-empty h2{color:var(--ink)}
+body[data-identity] .page-empty p,body[data-identity] .page-empty>.icon{color:var(--muted)}
+/* Logs and profile stay calm rather than inheriting the earlier green palette. */
+body[data-identity] .log-filters button{background:var(--soft);color:var(--muted);border-radius:10px}
+body[data-identity] .log-filters button.active{background:var(--accent);color:#fff}
+body[data-identity] .log-date,body[data-identity] .log-date span,body[data-identity] .log-time{color:var(--muted)}
+body[data-identity] .log-message{background:#fff;border-radius:17px}
+body[data-identity] .log-message h2{color:var(--ink)}
+body[data-identity] .log-message p{color:var(--muted)}
+body[data-identity] .log-message header span{background:var(--soft);color:var(--accent)}
+body[data-identity] .log-event.alert .log-message{background:#fbf7ef}
+body[data-identity] .log-event.alert .log-message p{color:#9c896d}
+body[data-identity] .log-event.alert .log-message header span{background:#f5eddf;color:#a18b65}
+body[data-identity] .timeline-rail:after{background:var(--edge)}
+body[data-identity] .timeline-rail:before{background:var(--accent);border-color:var(--page);box-shadow:0 0 0 1px var(--edge)}
+body[data-identity] .logs-pager button{background:var(--soft);color:var(--accent);border-radius:10px}
+body[data-identity] .logs-pager span{color:var(--muted)}
+body[data-identity] .profile-banner{background:var(--soft);border:1px solid #fff;border-radius:23px;color:var(--ink)}
+body[data-identity] .profile-banner .avatar{background:#fff}
+body[data-identity] .profile-banner p,body[data-identity] .profile-footnote{color:var(--muted)}
+body[data-identity] .profile-section{background:#fff;border-radius:20px}
+body[data-identity] .profile-line{color:var(--ink);border-color:var(--line)}
+body[data-identity] .profile-line>.icon:first-child,body[data-identity] .profile-line .right{color:var(--muted)}
+body[data-identity] .text-exit{color:var(--danger)}
+/* Rain: a landscape opening, rounded inset settings, and airy rows. */
+body[data-identity=rain] .phone:before{height:280px;opacity:.38}
+body[data-identity=rain] .garden-banner{height:164px;border-radius:12px 33px 12px 33px;padding:23px 20px;background:#edf6f6}
+body[data-identity=rain] .garden-banner:after{background:linear-gradient(90deg,#f6fbfae8,#f6fbfa80 45%,transparent 80%)}
+body[data-identity=rain] .garden-banner>img{object-position:63% 63%}
+body[data-identity=rain] .garden-banner .eyebrow{letter-spacing:3px}
+body[data-identity=rain] .garden-banner h2{font-size:24px}
+body[data-identity=rain] .garden-banner .banner-sub{margin-top:20px}
+body[data-identity=rain] .account-card{border-radius:12px 24px 12px 24px;box-shadow:0 4px 13px #6c93930a}
+body[data-identity=rain] .avatar{border-radius:50%}
+body[data-identity=rain] .tabs{background:#e7f0f0;padding:0;gap:8px;border-radius:0}
+body[data-identity=rain] .tabs button{border-radius:15px 15px 0 0;min-height:42px;background:#f2f7f7}
+body[data-identity=rain] .tabs button.active{background:#fff;box-shadow:none}
+body[data-identity=rain] .setting-card{border-radius:12px 23px 12px 23px}
+body[data-identity=rain] .login-art{height:224px;margin-top:9px}
+body[data-identity=rain] .login-art img{width:214px;height:214px}
+body[data-identity=rain] .login-phone:before{top:73px;opacity:.5;height:355px}
+body[data-identity=rain] .login-content h2{letter-spacing:5px}
+body[data-identity=rain] .login-field{border-radius:12px 19px 12px 19px}
+body[data-identity=rain] .primary{border-radius:12px 19px 12px 19px}
+body[data-identity=rain] .v2-sheet{border-radius:23px 38px 0 0}
+body[data-identity=rain] .confirm-dialog{border-radius:23px}
+body[data-identity=rain] .bottom-nav button.active .nav-icon{border-radius:12px 18px 12px 18px}
+/* Moon: a pale flower bower, centered invitation, pearl-like surfaces. */
+body[data-identity=moon] .phone:before{height:260px;opacity:.36}
+body[data-identity=moon] .garden-banner{height:159px;border-radius:70px 22px 70px 22px;padding:23px 28px;background:#f3edfc}
+body[data-identity=moon] .garden-banner>img{object-position:65% 61%}
+body[data-identity=moon] .garden-banner:after{background:linear-gradient(90deg,#faf5fff0,#faf5ff99 37%,transparent 80%)}
+body[data-identity=moon] .garden-banner h2{font-size:23px;letter-spacing:3px}
+body[data-identity=moon] .garden-banner .eyebrow{letter-spacing:2px}
+body[data-identity=moon] .account-card{border-radius:24px;border:1px solid #ece4f5;box-shadow:0 5px 18px #9b83b70a}
+body[data-identity=moon] .account-card.running-card{border-color:#dacdeb}
+body[data-identity=moon] .avatar{border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px var(--line)}
+body[data-identity=moon] .account-actions button.primary-small{border-radius:18px}
+body[data-identity=moon] .page-heading h1{font-family:var(--serif);font-size:26px;letter-spacing:2px}
+body[data-identity=moon] .setting-card{border-radius:24px;border:1px solid #eee7f5}
+body[data-identity=moon] .tabs{background:#eee7f8;border-radius:22px}
+body[data-identity=moon] .tabs button{border-radius:18px}
+body[data-identity=moon] .feature-icon{border-radius:50%}
+body[data-identity=moon] .primary{border-radius:24px;background:#9c85c5}
+body[data-identity=moon] .login-brand{padding-top:26px}
+body[data-identity=moon] .login-art{height:233px;margin-top:6px}
+body[data-identity=moon] .login-art img{width:229px;height:229px}
+body[data-identity=moon] .login-phone:before{top:32px;opacity:.55;height:400px}
+body[data-identity=moon] .login-content h2{font-size:30px;letter-spacing:4px}
+body[data-identity=moon] .login-content .intro{margin-bottom:26px}
+body[data-identity=moon] .login-field{border-radius:24px}
+body[data-identity=moon] .login-content .primary{box-shadow:0 5px 16px #9c85c52b}
+body[data-identity=moon] .v2-sheet{border-radius:32px 32px 0 0}
+body[data-identity=moon] .confirm-dialog{border-radius:30px}
+body[data-identity=moon] .bottom-nav button.active .nav-icon{background:var(--soft);border-radius:50% 50% 45% 45%}
+/* Design studio, contact sheets and long exports: all remain separate from production. */
+body[data-identity] .studio-brand{color:var(--ink);font-family:var(--serif);letter-spacing:3px}
+body[data-identity] .studio-brand span,body[data-identity] .studio-nav button,body[data-identity] .studio-states,body[data-identity] .studio-footer,body[data-identity] .studio-footer p,body[data-identity] .studio-states .state-note{color:var(--muted)}
+body[data-identity] .studio-nav button[aria-current=page],body[data-identity] .studio-states button{background:#ffffffb0;color:var(--accent);border-radius:13px}
+body[data-identity] .studio-states select,body[data-identity] .library-search{background:#ffffffb0;border-color:var(--edge);color:var(--ink);border-radius:12px}
+body[data-identity] .diagram-link{color:var(--accent)}
+body[data-identity] .prototype-library{color:var(--ink)}
+body[data-identity] .library-note,body[data-identity] .library-count,body[data-identity] .library-group h2{color:var(--muted)}
+body[data-identity] .library-group{border-color:var(--line)}
+body[data-identity] .library-entry{color:var(--ink);border-radius:11px}
+body[data-identity] .library-entry:hover,body[data-identity] .library-entry.active{background:#ffffffb0}
+body[data-identity] .library-entry .icon{color:var(--accent)}
+body[data-identity] .design-board{background:var(--page)}
+body[data-identity] .board-heading h1{color:var(--ink);font-family:var(--serif);font-weight:600;letter-spacing:3px}
+body[data-identity] .board-heading h1 span,body[data-identity] .board-heading p,body[data-identity] .board-screen-caption b,body[data-identity] .board-screen-caption h2,body[data-identity] .board-screen-caption p,body[data-identity] .board-bottom{color:var(--muted)}
+body[data-identity] .board-bottom{border-color:var(--edge)}
+body[data-identity] .board-swatches i{border-color:var(--edge)}
+body[data-identity] .board-swatches i:nth-child(1){background:var(--accent)}
+body[data-identity] .board-swatches i:nth-child(2){background:#c5b7ea}
+body[data-identity] .board-swatches i:nth-child(3){background:#c3dceb}
+body[data-identity] .board-swatches i:nth-child(4){background:#fff}
+body[data-identity] .panel-portrait-export .v2-sheet{border-radius:0;box-shadow:none;border:0}
+body[data-identity] .panel-portrait-export .panel-footer{border-radius:0}
+@media(max-width:740px){
+ .identity-toolbar{padding:14px 18px 0;gap:6px}.identity-toolbar>span{width:100%;font-size:10px}.identity-toolbar button{padding:8px 10px;font-size:11px}.identity-toolbar small{margin:5px 0 0;width:100%;line-height:1.8}.identity-toolbar a{margin-left:7px}
+}
+@media(max-width:410px){
+ body[data-identity] .scroll-area{padding-left:16px;padding-right:16px}
+ body[data-identity] .account-top{gap:8px}
+ body[data-identity] .account-card{padding-left:12px;padding-right:12px}
+ body[data-identity] .account-card.running-card{padding-left:12px;padding-right:12px}
+ body[data-identity] .account-identity h2{font-size:13px}
+ body[data-identity] .account-identity p{font-size:8px}
+ body[data-identity] .avatar{width:36px;height:36px;font-size:17px}
+ body[data-identity] .badge{font-size:8px;padding:4px 6px}
+ body[data-identity] .account-more{width:17px}
+ body[data-identity] .login-content{padding-left:25px;padding-right:25px}
+ body[data-identity] .login-content h2{font-size:27px}
+ body[data-identity] .garden-banner h2{font-size:22px}
+}
+
+
+/* Stronger action text contrast; the garden surfaces retain their pale palette. */
+body[data-identity]{--button:#5c70b2}
+body[data-identity=rain]{--button:#537f8c}
+body[data-identity=moon]{--button:#8064ac}
+body[data-identity] .primary,body[data-identity=moon] .primary{background:var(--button)}
+body[data-identity] .identity-toolbar button[aria-pressed=true]{background:var(--button);border-color:var(--button)}
+body[data-identity] .login-art img{border-radius:27px}
+body[data-identity] .save-dock .primary[data-clean=true]{background:#ffffffb8}
+
+
+/* The original icon sits on a pearl tile; its full artwork and lettering remain visible. */
+body[data-identity] .login-art img{mix-blend-mode:normal;background:#fff;padding:7px;border:1px solid #ffffff;border-radius:36px;box-shadow:0 5px 24px #6b7bb014}
+body[data-identity] .toolbar-status{color:var(--ink);background:#ffffffc9;border:1px solid #fff;border-radius:13px;padding:7px 9px}
+body[data-identity] .garden-banner .banner-sub{display:inline-flex;align-items:center;background:#ffffffd9;border:1px solid #fff;color:var(--ink);font-size:9px;line-height:14px;padding:2px 7px;border-radius:8px;margin-top:8px}
+body[data-identity=rain] .garden-banner .banner-sub{margin-top:14px}
+body[data-identity] .tertiary,body[data-identity] .panel-actions:has(>button:nth-child(3))>button:last-child,body[data-identity] .page-notice,body[data-identity] .micro-note,body[data-identity] .art-reward-title{color:var(--muted)}
+body[data-identity] .stepper{color:var(--accent)}body[data-identity] .stepper button{background:var(--soft)}

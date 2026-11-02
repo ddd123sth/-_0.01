@@ -1,0 +1,2689 @@
+{
+  "generatedAt": "2026-10-28T05:16:02.280Z",
+  "purpose": "Prototype settings coverage only; not APK or official-server acceptance",
+  "reference": "D:/AI/AiCode/我的花园世界",
+  "businessFunctions": 53,
+  "editableFields": 239,
+  "groups": [
+    {
+      "id": "yard",
+      "label": "种花收花",
+      "keys": [
+        "plant.water_drops.real_water_bucket_recv",
+        "plant.water_drops.real_free_water_recv",
+        "plant.land_plant.real_land_unlock",
+        "plant.land_plant.unlock_keep_gold",
+        "plant.land_plant.auto_harvest",
+        "plant.land_plant.harvest_delay_minutes",
+        "plant.land_plant.auto_water",
+        "plant.land_plant.auto_plant",
+        "plant.land_plant.use_speed_card",
+        "plant.land_plant.speed_card_keep",
+        "plant.land_plant.real_land_speedup",
+        "plant.land_plant.real_land_speedfree",
+        "plant.land_plant.keep_water",
+        "plant.land_plant.plant_mode",
+        "plant.land_plant.plant_chosen_flowers",
+        "plant.land_plant.plant_chosen_quality",
+        "plant.land_plant.plots_per_flower",
+        "plant.land_plant.plant_blacklist",
+        "plant.land_plant.restock_count"
+      ]
+    },
+    {
+      "id": "craft",
+      "label": "做花卖花",
+      "keys": [
+        "basic.shop_buy.max_buys_per_cycle",
+        "basic.shop_buy.enabled",
+        "basic.shop_buy.shop",
+        "basic.shop_buy.free_refresh",
+        "basic.shop_buy.gold_limit",
+        "basic.flower_shop.real_flower_shop_buy",
+        "basic.flower_shop.sel",
+        "basic.flower_shop.flower_coin_reserve",
+        "plant.cultivate.video_speed",
+        "plant.cultivate.yuanbao_buy_material",
+        "plant.cultivate.yuanbao_finish_cultivate",
+        "plant.cultivate.yuanbao_retain",
+        "plant.cultivate.target_level",
+        "plant.cultivate.real_cultivate_start",
+        "plant.cultivate.real_cultivate_recv",
+        "plant.cultivate.real_cultivate_upgrade",
+        "plant.cultivate.cultivate_for",
+        "plant.flower_art.real_flower_art_make",
+        "plant.flower_art.specified_arts",
+        "plant.flower_art.auto_replenish",
+        "plant.flower_art.make_batch",
+        "plant.flower_art.first_album_claim",
+        "plant.flower_art.first_share_claim",
+        "plant.flower_art.real_rack_sell",
+        "plant.flower_art.rack_specified_arts",
+        "plant.flower_art.sort_strategy",
+        "plant.flower_art.put_count",
+        "plant.flower_art.rack_auto_take_down",
+        "plant.flower_art.rack_take_down_minutes",
+        "plant.flower_art.real_rack_unlock",
+        "plant.flower_art.rack_unlock_keep_gold",
+        "plant.flower_market.enabled",
+        "plant.flower_market.real_market_recv_income",
+        "plant.flower_market.real_market_buy",
+        "plant.flower_market.shop_strategy",
+        "plant.flower_market.shop_target_flower_ids",
+        "plant.flower_market.shop_target_qualities",
+        "plant.flower_market.shop_exclude_flower_ids"
+      ]
+    },
+    {
+      "id": "order",
+      "label": "交订单",
+      "keys": [
+        "order.resident_orders.enabled",
+        "order.resident_orders.daily_finish_limit",
+        "order.resident_orders.real_order_video_share",
+        "order.satin_orders.enabled",
+        "order.satin_orders.satin_finish_limit",
+        "order.satin_orders.real_order_video_share",
+        "order.decorate_orders.enabled",
+        "order.decorate_orders.decorate_finish_limit",
+        "order.decorate_orders.real_order_video_share",
+        "order.customer_orders.enabled",
+        "order.customer_orders.flower_shop_coin_amounts",
+        "order.customer_orders.auto_reject",
+        "order.court_order.enabled",
+        "order.court_order.quality_filter",
+        "order.court_order.free_refresh_on_filtered",
+        "order.team_order.enabled",
+        "order.team_order.real_team_order_write",
+        "order.team_order.allow_free_take",
+        "order.team_order.allow_buy_again",
+        "order.team_order.buy_again_keep_yuanbao"
+      ]
+    },
+    {
+      "id": "reward",
+      "label": "领奖励",
+      "keys": [
+        "basic.daily_task.claim_task_rewards",
+        "basic.daily_task.claim_activity_box",
+        "basic.weekly_task.enabled",
+        "basic.road_grow.enabled",
+        "basic.road_grow.real_road_grow_recv",
+        "basic.road_grow.real_road_grow_box",
+        "basic.main_task.max_recv_per_cycle",
+        "basic.main_task.claim_main_rewards",
+        "basic.guide_progress.real_guide_progress",
+        "basic.story_main.real_story_main_unlock",
+        "basic.story_main.max_unlocks_per_day",
+        "basic.flower_bounty.enabled",
+        "basic.mail.enabled",
+        "basic.double_coin.enabled",
+        "basic.welfare_box.enabled",
+        "basic.anti_fraud.enabled",
+        "basic.anti_fraud.real_anti_fraud_answer",
+        "basic.anti_fraud.real_anti_fraud_recv",
+        "basic.sign_in.enabled",
+        "basic.sign_in.auto_makeup_sign",
+        "basic.sign_in.shop_cultivate",
+        "basic.giftbag_shop.enabled",
+        "basic.redeem_code.enabled",
+        "basic.redeem_code.real_redeem_use",
+        "basic.redeem_code.send_interval_min"
+      ]
+    },
+    {
+      "id": "event",
+      "label": "活动",
+      "keys": [
+        "basic.activity.enabled",
+        "basic.activity.max_claims_per_cycle",
+        "plant.spirit_token.real_elf_pass_recv",
+        "plant.flower_token.real_flower_pass_recv",
+        "activity.peddler.enabled",
+        "activity.peddler.real_peddler_claim",
+        "activity.act_flower_news.enabled",
+        "activity.act_flower_news.story_flower_reserve",
+        "activity.act_flower_news.story_score_limit",
+        "activity.act_flower_news.real_act_story_refresh",
+        "activity.act_flower_news.story_refresh_daily_budget",
+        "activity.act_fish_fun.enabled",
+        "activity.act_fish_fun.claim_box",
+        "activity.act_flower_story.enabled",
+        "activity.act_flower_story.claim_box",
+        "activity.act_cat_match.enabled",
+        "activity.act_cat_match.claim_box",
+        "activity.act_cake.enabled",
+        "activity.act_cake.claim_box",
+        "activity.act_field.enabled",
+        "activity.act_field.claim_box",
+        "activity.act_thread.enabled",
+        "activity.act_thread.claim_box"
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "小游戏",
+      "keys": [
+        "basic.random_event.enabled",
+        "basic.random_event.max_events_per_cycle",
+        "basic.pearl.enabled",
+        "basic.pearl.enable_free_pearl",
+        "basic.pearl.enable_recv",
+        "basic.pearl.enable_hire",
+        "basic.pearl.real_pearl_ad_pearl",
+        "basic.pearl.hire_source",
+        "basic.pearl.max_hires_per_cycle",
+        "basic.pearl.hire_reserve_count",
+        "basic.pearl.real_pearl_unlock_place",
+        "basic.pearl.unlock_place_keep_yuanbao",
+        "basic.pearl.hire_level_min",
+        "basic.pearl.hire_book_daily_limit",
+        "basic.zoo.enabled",
+        "basic.zoo.auto_handle_event",
+        "basic.zoo.auto_handle_event_by_video",
+        "basic.zoo.auto_recall",
+        "basic.zoo.auto_recall_by_video",
+        "basic.zoo.auto_buy_food",
+        "basic.zoo.buy_food_fill_daily",
+        "basic.zoo.real_zoo_add_food",
+        "basic.zoo.real_zoo_stroke",
+        "basic.zoo.stroke_mood_floor",
+        "basic.zoo.keep_foodstuff",
+        "basic.zoo.buy_food_gold_floor",
+        "basic.zoo_souvenir.real_zoo_souvenir_recv",
+        "basic.zoo_game_2048.real_2048_write",
+        "plant.friend_steal.real_steal_write",
+        "plant.flower_elves.auto_request_assist",
+        "plant.flower_elves.auto_recv_assist",
+        "plant.flower_elves.auto_dispatch",
+        "plant.flower_elves.dispatch_double_only",
+        "plant.flower_elves.dispatch_elves_count",
+        "plant.flower_elves.auto_recv_dispatch_reward",
+        "plant.flower_elves.real_flower_elves_write"
+      ]
+    },
+    {
+      "id": "guild",
+      "label": "公会",
+      "keys": [
+        "guild.guild_land.land_harvest",
+        "guild.guild_land.land_plant",
+        "guild.guild_land.land_auto_upgrade",
+        "guild.guild_land.land_auto_unlock",
+        "guild.guild_land.unlock_keep_coin",
+        "guild.guild_land.upgrade_keep_coin",
+        "guild.guild_land.land_flower_pick",
+        "guild.guild_land.specific_flower_ids",
+        "guild.guild_land.plant_blacklist",
+        "guild.guild_land.quality_filter",
+        "guild.guild_build.enabled",
+        "guild.guild_build.real_guild_build",
+        "guild.guild_build.build_tiers",
+        "guild.guild_build.build_gold_count",
+        "guild.guild_build.build_yuanbao_count",
+        "guild.guild_shop.enabled",
+        "guild.guild_shop.shop_coin_reserve",
+        "guild.guild_shop.shop_auto_unlock",
+        "guild.guild_shop.shop_unlock_target",
+        "guild.guild_shop.shop_refresh_mode",
+        "guild.guild_shop.shop_paid_refresh_limit",
+        "guild.guild_shop.shop_item_rules",
+        "guild.guild_share.enabled",
+        "guild.guild_share.share_auto",
+        "guild.guild_share.recv_rwd",
+        "guild.guild_share.take_others",
+        "guild.guild_share.real_guild_share_put",
+        "guild.guild_share.real_guild_share_recv",
+        "guild.guild_share.real_guild_share_take",
+        "guild.guild_share.share_mode",
+        "guild.guild_share.share_flower_ids",
+        "guild.guild_share.take_mode",
+        "guild.guild_share.take_flower_ids",
+        "guild.guild_share.take_member_targets",
+        "guild.guild_share.share_quality_filter",
+        "guild.guild_share.take_quality_filter",
+        "guild.guild_race.enabled",
+        "guild.guild_race.race_auto_take",
+        "guild.guild_race.race_relay_take",
+        "guild.guild_race.race_normal_min",
+        "guild.guild_race.race_normal_max",
+        "guild.guild_race.race_gold_min",
+        "guild.guild_race.race_gold_max",
+        "guild.guild_race.race_task_flower_allow",
+        "guild.guild_race.race_task_flower_deny",
+        "guild.guild_race.race_task_types_allow",
+        "guild.guild_race.bound_small_ids",
+        "guild.guild_race.race_take_delay",
+        "guild.guild_race.race_purchasable_items",
+        "guild.guild_race.race_auto_finish",
+        "guild.guild_race.race_auto_refresh",
+        "guild.guild_race.race_refresh_yuanbao_idx",
+        "guild.guild_race.race_refresh_take_score_min",
+        "guild.guild_race.race_refresh_yuanbao_limit",
+        "guild.guild_race.race_refresh_yuanbao_keep",
+        "guild.guild_race.race_refresh_ad_first",
+        "guild.guild_race.race_refresh_use_ad",
+        "guild.guild_race.race_refresh_ignore_warnings",
+        "guild.guild_race.race_auto_upgrade",
+        "guild.guild_race.race_upgrade_max_per_day",
+        "guild.guild_race.race_upgrade_keep_yuanbao",
+        "guild.guild_race.race_upgrade_give_up",
+        "guild.guild_race.race_box",
+        "guild.guild_race.race_auto_buy_task",
+        "guild.guild_race.race_buy_num_max",
+        "guild.guild_like.real_guild_show_like",
+        "guild.energy_forest.forest_max_types_per_cycle",
+        "guild.energy_forest.enabled"
+      ]
+    },
+    {
+      "id": "cadence",
+      "label": "账号与节奏",
+      "keys": [
+        "basic.reconnect.enabled",
+        "basic.reconnect.delay_minutes",
+        "basic.reconnect.max_attempts",
+        "basic.egress_guard.egress_minutes",
+        "basic.anti_detect.human_preset",
+        "basic.anti_detect.sdk_heartbeat",
+        "basic.anti_detect.wake_patrol_cap_minutes",
+        "basic.anti_detect.push_wake_enabled",
+        "basic.daily_task.daily_first",
+        "guild.guild_race.race_first"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "key": "plant.water_drops.real_water_bucket_recv",
+      "owner": "bucket",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1461,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.water_drops.real_free_water_recv",
+      "owner": "bucket",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1483,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.real_land_unlock",
+      "owner": "land-unlock",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1512,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.unlock_keep_gold",
+      "owner": "land-unlock",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1516,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.auto_harvest",
+      "owner": "harvest",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1517,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.harvest_delay_minutes",
+      "owner": "harvest",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1518,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.auto_water",
+      "owner": "water",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1524,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.auto_plant",
+      "owner": "plant",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1525,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.use_speed_card",
+      "owner": "land-speedup",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1562,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.speed_card_keep",
+      "owner": "land-speedup",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1573,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.real_land_speedup",
+      "owner": "land-speedup",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1580,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.real_land_speedfree",
+      "owner": "land-speedup",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1588,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.keep_water",
+      "owner": "water",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1590,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.plant_mode",
+      "owner": "plant",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1600,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.plant_chosen_flowers",
+      "owner": "plant",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1622,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "plant.land_plant.plant_chosen_quality",
+      "owner": "plant",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1629,
+        "optionSource": "qualities"
+      }
+    },
+    {
+      "key": "plant.land_plant.plots_per_flower",
+      "owner": "plant",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1639,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.land_plant.plant_blacklist",
+      "owner": "plant",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1662,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "plant.land_plant.restock_count",
+      "owner": "plant",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1682,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.shop_buy.max_buys_per_cycle",
+      "owner": "material-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1230,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.shop_buy.enabled",
+      "owner": "material-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1231,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.shop_buy.shop",
+      "owner": "material-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1232,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.shop_buy.free_refresh",
+      "owner": "material-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1232,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.shop_buy.gold_limit",
+      "owner": "material-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1234,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.flower_shop.real_flower_shop_buy",
+      "owner": "flower-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1269,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.flower_shop.sel",
+      "owner": "flower-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1280,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.flower_shop.flower_coin_reserve",
+      "owner": "flower-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1292,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.video_speed",
+      "owner": "cultivate-start",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1402,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.yuanbao_buy_material",
+      "owner": "cultivate-start",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1416,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.yuanbao_finish_cultivate",
+      "owner": "cultivate-start",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1421,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.yuanbao_retain",
+      "owner": "cultivate-start",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1424,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.target_level",
+      "owner": "cultivate-upgrade",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1431,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.real_cultivate_start",
+      "owner": "cultivate-start",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1433,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.real_cultivate_recv",
+      "owner": "cultivate-start",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1434,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.real_cultivate_upgrade",
+      "owner": "cultivate-upgrade",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1435,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.cultivate.cultivate_for",
+      "owner": "cultivate-start",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1443,
+        "optionSource": "cultivate_sources"
+      }
+    },
+    {
+      "key": "plant.flower_art.real_flower_art_make",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1789,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.specified_arts",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1795,
+        "optionSource": "flower_arts"
+      }
+    },
+    {
+      "key": "plant.flower_art.auto_replenish",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1802,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.make_batch",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1808,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.first_album_claim",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1815,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.first_share_claim",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1824,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.real_rack_sell",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1832,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.rack_specified_arts",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1838,
+        "optionSource": "flower_arts"
+      }
+    },
+    {
+      "key": "plant.flower_art.sort_strategy",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1843,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.put_count",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1848,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.rack_auto_take_down",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1852,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.rack_take_down_minutes",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1859,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.real_rack_unlock",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1863,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_art.rack_unlock_keep_gold",
+      "owner": "rack-sell",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1867,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_market.enabled",
+      "owner": "flower-market",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1897,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_market.real_market_recv_income",
+      "owner": "flower-market",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1902,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_market.real_market_buy",
+      "owner": "flower-market",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1925,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_market.shop_strategy",
+      "owner": "flower-market",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1926,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_market.shop_target_flower_ids",
+      "owner": "flower-market",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1929,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "plant.flower_market.shop_target_qualities",
+      "owner": "flower-market",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1930,
+        "optionSource": "qualities"
+      }
+    },
+    {
+      "key": "plant.flower_market.shop_exclude_flower_ids",
+      "owner": "flower-market",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1931,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "order.resident_orders.enabled",
+      "owner": "order-resident",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1951,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.resident_orders.daily_finish_limit",
+      "owner": "order-resident",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1958,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.resident_orders.real_order_video_share",
+      "owner": "order-resident",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1974,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.satin_orders.enabled",
+      "owner": "order-satin",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1989,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.satin_orders.satin_finish_limit",
+      "owner": "order-satin",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1995,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.satin_orders.real_order_video_share",
+      "owner": "order-satin",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1998,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.decorate_orders.enabled",
+      "owner": "order-decorate",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2001,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.decorate_orders.decorate_finish_limit",
+      "owner": "order-decorate",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2006,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.decorate_orders.real_order_video_share",
+      "owner": "order-decorate",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2011,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.customer_orders.enabled",
+      "owner": "order-customer",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2033,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.customer_orders.flower_shop_coin_amounts",
+      "owner": "order-customer",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2041,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.customer_orders.auto_reject",
+      "owner": "order-customer",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2055,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.court_order.enabled",
+      "owner": "order-palace",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2087,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.court_order.quality_filter",
+      "owner": "order-palace",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2087,
+        "optionSource": "qualities"
+      }
+    },
+    {
+      "key": "order.court_order.free_refresh_on_filtered",
+      "owner": "order-palace",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2088,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.team_order.enabled",
+      "owner": "order-team",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2120,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.team_order.real_team_order_write",
+      "owner": "order-team",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2126,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.team_order.allow_free_take",
+      "owner": "order-team",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2127,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.team_order.allow_buy_again",
+      "owner": "order-team",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2131,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "order.team_order.buy_again_keep_yuanbao",
+      "owner": "order-team",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2132,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.daily_task.claim_task_rewards",
+      "owner": "daily-task-rewards",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1079,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.daily_task.claim_activity_box",
+      "owner": "daily-activity-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1080,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.weekly_task.enabled",
+      "owner": "weekly-task-rewards",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1087,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.road_grow.enabled",
+      "owner": "road-grow",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1097,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.road_grow.real_road_grow_recv",
+      "owner": "road-grow",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1098,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.road_grow.real_road_grow_box",
+      "owner": "road-grow",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1099,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.main_task.max_recv_per_cycle",
+      "owner": "main-task",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1106,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.main_task.claim_main_rewards",
+      "owner": "main-task",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1108,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.guide_progress.real_guide_progress",
+      "owner": "guide-progress",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1116,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.story_main.real_story_main_unlock",
+      "owner": "story-main",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1125,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.story_main.max_unlocks_per_day",
+      "owner": "story-main",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1126,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.flower_bounty.enabled",
+      "owner": "flower-bounty",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1128,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.mail.enabled",
+      "owner": "mail",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1129,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.double_coin.enabled",
+      "owner": "double-coin",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1138,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.welfare_box.enabled",
+      "owner": "benefit-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1146,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.anti_fraud.enabled",
+      "owner": "anti-fraud",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1153,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.anti_fraud.real_anti_fraud_answer",
+      "owner": "anti-fraud",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1154,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.anti_fraud.real_anti_fraud_recv",
+      "owner": "anti-fraud",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1155,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.sign_in.enabled",
+      "owner": "daily-sign",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1174,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.sign_in.auto_makeup_sign",
+      "owner": "daily-sign",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1174,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.sign_in.shop_cultivate",
+      "owner": "daily-sign",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1175,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.giftbag_shop.enabled",
+      "owner": "giftbag-free-yuanbao",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1250,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.redeem_code.enabled",
+      "owner": "redeem-code-use",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1301,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.redeem_code.real_redeem_use",
+      "owner": "redeem-code-use",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1302,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.redeem_code.send_interval_min",
+      "owner": "redeem-code-use",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1303,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.activity.enabled",
+      "owner": "activity",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1164,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.activity.max_claims_per_cycle",
+      "owner": "activity",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1165,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.spirit_token.real_elf_pass_recv",
+      "owner": "elf-pass",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1764,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_token.real_flower_pass_recv",
+      "owner": "flower-pass",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1768,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.peddler.enabled",
+      "owner": "peddler",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2537,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.peddler.real_peddler_claim",
+      "owner": "peddler",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2538,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_flower_news.enabled",
+      "owner": "act-story",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2555,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_flower_news.story_flower_reserve",
+      "owner": "act-story",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2559,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_flower_news.story_score_limit",
+      "owner": "act-story",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2565,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_flower_news.real_act_story_refresh",
+      "owner": "act-story",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2574,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_flower_news.story_refresh_daily_budget",
+      "owner": "act-story",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2575,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_fish_fun.enabled",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2593,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_fish_fun.claim_box",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2594,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_flower_story.enabled",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2597,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_flower_story.claim_box",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2598,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_cat_match.enabled",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2601,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_cat_match.claim_box",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2604,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_cake.enabled",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2618,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_cake.claim_box",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2619,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_field.enabled",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2622,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_field.claim_box",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2623,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_thread.enabled",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2628,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "activity.act_thread.claim_box",
+      "owner": "weekly-box",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2629,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.random_event.enabled",
+      "owner": "random-event",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1170,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.random_event.max_events_per_cycle",
+      "owner": "random-event",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1171,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.enabled",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1178,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.enable_free_pearl",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1181,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.enable_recv",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1182,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.enable_hire",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1183,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.real_pearl_ad_pearl",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1190,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.hire_source",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1194,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.max_hires_per_cycle",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1199,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.hire_reserve_count",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1200,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.real_pearl_unlock_place",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1203,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.unlock_place_keep_yuanbao",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1207,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.hire_level_min",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1213,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.pearl.hire_book_daily_limit",
+      "owner": "pearl",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1217,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.enabled",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1321,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.auto_handle_event",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1322,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.auto_handle_event_by_video",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1323,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.auto_recall",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1326,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.auto_recall_by_video",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1327,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.auto_buy_food",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1330,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.buy_food_fill_daily",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1334,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.real_zoo_add_food",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1341,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.real_zoo_stroke",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1342,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.stroke_mood_floor",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1345,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.keep_foodstuff",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1346,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo.buy_food_gold_floor",
+      "owner": "zoo-pet-care",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1348,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo_souvenir.real_zoo_souvenir_recv",
+      "owner": "zoo-souvenir",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1357,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.zoo_game_2048.real_2048_write",
+      "owner": "zoo-game-2048",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1370,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.friend_steal.real_steal_write",
+      "owner": "friend-steal",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1694,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_elves.auto_request_assist",
+      "owner": "flower-elves",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1743,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_elves.auto_recv_assist",
+      "owner": "flower-elves",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1744,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_elves.auto_dispatch",
+      "owner": "flower-elves",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1747,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_elves.dispatch_double_only",
+      "owner": "flower-elves",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1748,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_elves.dispatch_elves_count",
+      "owner": "flower-elves",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1749,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_elves.auto_recv_dispatch_reward",
+      "owner": "flower-elves",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1751,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "plant.flower_elves.real_flower_elves_write",
+      "owner": "flower-elves",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1752,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.land_harvest",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2141,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.land_plant",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2142,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.land_auto_upgrade",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2145,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.land_auto_unlock",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2146,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.unlock_keep_coin",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2153,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.upgrade_keep_coin",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2154,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.land_flower_pick",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2174,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_land.specific_flower_ids",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2199,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "guild.guild_land.plant_blacklist",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2200,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "guild.guild_land.quality_filter",
+      "owner": "guild-land",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2202,
+        "optionSource": "qualities"
+      }
+    },
+    {
+      "key": "guild.guild_build.enabled",
+      "owner": "guild-build-gold",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2220,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_build.real_guild_build",
+      "owner": "guild-build-gold",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2223,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_build.build_tiers",
+      "owner": "guild-build-gold",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2224,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_build.build_gold_count",
+      "owner": "guild-build-gold",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2236,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_build.build_yuanbao_count",
+      "owner": "guild-build-gold",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2243,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_shop.enabled",
+      "owner": "guild-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2254,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_shop.shop_coin_reserve",
+      "owner": "guild-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2254,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_shop.shop_auto_unlock",
+      "owner": "guild-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2255,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_shop.shop_unlock_target",
+      "owner": "guild-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2256,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_shop.shop_refresh_mode",
+      "owner": "guild-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2257,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_shop.shop_paid_refresh_limit",
+      "owner": "guild-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2261,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_shop.shop_item_rules",
+      "owner": "guild-shop",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2262,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.enabled",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2265,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.share_auto",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2267,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.recv_rwd",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2271,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.take_others",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2274,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.real_guild_share_put",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2279,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.real_guild_share_recv",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2282,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.real_guild_share_take",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2285,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.share_mode",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2290,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.share_flower_ids",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2293,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "guild.guild_share.take_mode",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2294,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.take_flower_ids",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2297,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "guild.guild_share.take_member_targets",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2298,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_share.share_quality_filter",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2299,
+        "optionSource": "qualities"
+      }
+    },
+    {
+      "key": "guild.guild_share.take_quality_filter",
+      "owner": "guild-share",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2300,
+        "optionSource": "qualities"
+      }
+    },
+    {
+      "key": "guild.guild_race.enabled",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2308,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_auto_take",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2308,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_relay_take",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2320,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_normal_min",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2329,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_normal_max",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2330,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_gold_min",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2331,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_gold_max",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2332,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_task_flower_allow",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2337,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "guild.guild_race.race_task_flower_deny",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2342,
+        "optionSource": "flowers"
+      }
+    },
+    {
+      "key": "guild.guild_race.race_task_types_allow",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2347,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.bound_small_ids",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2358,
+        "optionSource": "accounts"
+      }
+    },
+    {
+      "key": "guild.guild_race.race_take_delay",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2365,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_purchasable_items",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2367,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_auto_finish",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2374,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_auto_refresh",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2380,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_refresh_yuanbao_idx",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2387,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_refresh_take_score_min",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2394,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_refresh_yuanbao_limit",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2400,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_refresh_yuanbao_keep",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2402,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_refresh_ad_first",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2405,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_refresh_use_ad",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2408,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_refresh_ignore_warnings",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2415,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_auto_upgrade",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2440,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_upgrade_max_per_day",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2442,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_upgrade_keep_yuanbao",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2446,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_upgrade_give_up",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2453,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_box",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2478,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_auto_buy_task",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2482,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_buy_num_max",
+      "owner": "guild-race",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2489,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_like.real_guild_show_like",
+      "owner": "guild-show-like",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2510,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.energy_forest.forest_max_types_per_cycle",
+      "owner": "energy-forest",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2517,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.energy_forest.enabled",
+      "owner": "energy-forest",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2518,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.reconnect.enabled",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 976,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.reconnect.delay_minutes",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 984,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.reconnect.max_attempts",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 989,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.egress_guard.egress_minutes",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1004,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.anti_detect.human_preset",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1020,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.anti_detect.sdk_heartbeat",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1028,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.anti_detect.wake_patrol_cap_minutes",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1032,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.anti_detect.push_wake_enabled",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1039,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "basic.daily_task.daily_first",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 1085,
+        "optionSource": null
+      }
+    },
+    {
+      "key": "guild.guild_race.race_first",
+      "owner": "cadence",
+      "source": {
+        "file": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+        "line": 2328,
+        "optionSource": null
+      }
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/Config.jsx",
+      "relativePath": "web/src/pages/Config.jsx",
+      "bytes": 36322,
+      "sha256": "e0f7c1ec86ff88e3ad2d5c0c6255124da6f36683bb64d665b5406bd3b8895b61"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/ConfigGroups.jsx",
+      "relativePath": "web/src/pages/ConfigGroups.jsx",
+      "bytes": 77430,
+      "sha256": "b848a101e4345c29c9826957b9207216bc94df002185d6de8577600a0c5b7980"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/hosting/hosting-model.js",
+      "relativePath": "web/src/hosting/hosting-model.js",
+      "bytes": 126426,
+      "sha256": "27b2f7a26d3f1b751baae385b712c3c0ba5aafc93c9038bb5bd62fa19ee2ecbd"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/hosting/format.js",
+      "relativePath": "web/src/hosting/format.js",
+      "bytes": 18973,
+      "sha256": "464f64d2416c5cc53cb916129e07d976e15fdcd6eac3bdfe7534a442b25cbbc0"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+      "relativePath": "server/src/schema.js",
+      "bytes": 304813,
+      "sha256": "84c12f4ce14e12235918c72a187a8eed2d27c98b086cab92cd4b85b971942649"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/src/game/capabilities.js",
+      "relativePath": "server/src/game/capabilities.js",
+      "bytes": 436126,
+      "sha256": "f5a03faf2c779494d6f7f57bf4e0a1987685c3214555b9636a0f91d5aa426253"
+    }
+  ],
+  "extraSources": [
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+      "bytes": 304813,
+      "sha256": "84c12f4ce14e12235918c72a187a8eed2d27c98b086cab92cd4b85b971942649"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/hosting/hosting-model.js",
+      "bytes": 126426,
+      "sha256": "27b2f7a26d3f1b751baae385b712c3c0ba5aafc93c9038bb5bd62fa19ee2ecbd"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/OtherSettings.jsx",
+      "bytes": 9826,
+      "sha256": "eb901ca34c60041cccfafaf4a9db17eb3ea55c6169caef0e5f75d6c5380e0c22"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/ConfigGroups.jsx",
+      "bytes": 77430,
+      "sha256": "b848a101e4345c29c9826957b9207216bc94df002185d6de8577600a0c5b7980"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/Accounts.jsx",
+      "bytes": 58584,
+      "sha256": "575817f13b78f54c2f16a99470c3fc1683e319705a8d9fb9b0596f4137b1d068"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/Me.jsx",
+      "bytes": 46112,
+      "sha256": "f8dc22ba715cf1bd221d6caf1fd665cd530593a7635d6767db10ce8ee0e3f6c9"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/hosting/config-share.jsx",
+      "bytes": 18625,
+      "sha256": "67b88969a36ad0390d70b9b3ff2ed43eb1244dd8a4efaa2f82d1455ff90bf9a7"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/GuildFlowers.jsx",
+      "bytes": 29184,
+      "sha256": "d4358092db2ac9871e7e92226702f6bc19904b669a16c2c90a4eeb2ea20e8c82"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/shell/Inbox.jsx",
+      "bytes": 6521,
+      "sha256": "5e31e1e4cc7236ca88d4861219b069c0227db86ac10fd87e4b5d0a8cac034097"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/Logs.jsx",
+      "bytes": 29110,
+      "sha256": "c33b34e1b7b2d6176c0f058c9246472a58d26d4ce48c6d70df0240d98088cc5f"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/api.js",
+      "bytes": 16830,
+      "sha256": "b18362f504ee6ac8d26d82157d8c014655315c8afebf25a643a35ec2d38df027"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/hosting/format.js",
+      "bytes": 18973,
+      "sha256": "464f64d2416c5cc53cb916129e07d976e15fdcd6eac3bdfe7534a442b25cbbc0"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/pages/log-filters.js",
+      "bytes": 2058,
+      "sha256": "055613df938b69d29b36d385bd3bc3fa8dd0866a63b528d6721d847bbac9d946"
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/App.jsx",
+      "bytes": 8500,
+      "sha256": "e9bdf753765fa86ba96759046429f606a7b887ab66c0d5a0b86e8d92bc72f545"
+    }
+  ],
+  "catalogSources": [
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/data/flowers.json",
+      "bytes": 54161,
+      "sha256": "4a348b5200154abc3a4c2bc4481374417fcf06ac202722d3d2eda6ee5ae4dbcf",
+      "catalogs": [
+        "flowers"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/data/recipes.json",
+      "bytes": 5117,
+      "sha256": "063a239b471519f8edf74410addf8ae65c59d26d19a281595eb4261eb960a376",
+      "catalogs": [
+        "recipes"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/data/official-cfg/c_flowerArt.json",
+      "bytes": 209692,
+      "sha256": "d068506b1cb52b494fa79cb054fe1a0049698dc5379ee5cd0c17bb5dd1929fc6",
+      "catalogs": [
+        "flower_arts"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/data/official-cfg/c_item.json",
+      "bytes": 1773055,
+      "sha256": "e1114877f2e7f5b30a03b0413bad55d59f971b3dc68fdf5cd247c062280a692e",
+      "catalogs": [
+        "flower_arts",
+        "recipes"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/data/official-cfg/c_flowerVase.json",
+      "bytes": 26781,
+      "sha256": "89961d4cd7ccb6bbd31b603be3dda64220d64092f398fb67ace835c554cb3a64",
+      "catalogs": [
+        "recipes"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/src/game/flower-art-catalog.js",
+      "bytes": 3622,
+      "sha256": "00ac7605049030a19162065437b20c018351f612ae42453096d64e98e9888738",
+      "catalogs": [
+        "flower_arts"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/src/gamedata.js",
+      "bytes": 5455,
+      "sha256": "17fd627f76a4607787ec5a8d4b80456a3c24092028a8b7f0107c72f5522912ed",
+      "catalogs": [
+        "flowers",
+        "recipes",
+        "elves",
+        "lands"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/src/schema.js",
+      "bytes": 304813,
+      "sha256": "84c12f4ce14e12235918c72a187a8eed2d27c98b086cab92cd4b85b971942649",
+      "catalogs": [
+        "qualities",
+        "cultivate_sources"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/server/src/api-user.js",
+      "bytes": 202766,
+      "sha256": "487c0c7edee92c6d57df4d5471d7f669517b5a045d0122f2dd125d0baabc3544",
+      "catalogs": [
+        "flowers",
+        "flower_arts",
+        "recipes",
+        "elves",
+        "lands",
+        "qualities",
+        "cultivate_sources"
+      ]
+    },
+    {
+      "path": "D:/AI/AiCode/我的花园世界/web/src/hosting/format.js",
+      "bytes": 18973,
+      "sha256": "464f64d2416c5cc53cb916129e07d976e15fdcd6eac3bdfe7534a442b25cbbc0",
+      "catalogs": [
+        "flowers",
+        "flower_arts",
+        "recipes",
+        "elves",
+        "lands",
+        "qualities",
+        "cultivate_sources"
+      ]
+    }
+  ],
+  "staticVisualSources": [
+    {
+      "file": "docs/design/20261020/prototype.css",
+      "sha256": "0ac66de21b199baaa973b419c7514e6a6021e37dca34494d356a535f419abbb1"
+    },
+    {
+      "file": "docs/design/20261020/details.css",
+      "sha256": "0b52ce4bf21660a10748585d0e2cb2ea177c09eded5428d75a13bbd84ad80af1"
+    },
+    {
+      "file": "docs/design/20261020/identity.css",
+      "sha256": "0801f04e1f58afda93ed9db7dbcc9db10c0a17d3524ec6c7960047798a7360ff"
+    },
+    {
+      "file": "docs/design/20261020/icons.js",
+      "sha256": "f28cfe8a683544fc87e4e93326222999c66b50b0bbc693b3e958f96e9ddcd8d4"
+    },
+    {
+      "file": "docs/design/20261020/settings-panels.js",
+      "sha256": "02c9d01cfa73ee14aff167b880283a72b5b9454c06f5b80f986e7e4a20cce3e2"
+    },
+    {
+      "file": "docs/design/20261020/account-panels.js",
+      "sha256": "5cd990de05127be2a28f25219e09e9700c7e73e97cd3620baf5655062dc1a1e4"
+    }
+  ],
+  "notes": [
+    "Reference project remains read-only. No business code, credentials, network sessions or databases copied.",
+    "Retired schema fields are retained in the source inventory, not resurrected as settings.",
+    "Every editable source key has one owner; pickers edit the owner draft only."
+  ]
+}

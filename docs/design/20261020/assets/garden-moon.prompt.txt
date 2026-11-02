@@ -1,0 +1,14 @@
+Mode: builtin image_gen (not CLI)
+Reference role: ui/brand/logo-endless-summer.webp was used only as a style and mood reference, NOT a logo edit target. Original logo is unchanged.
+Generated output: garden-moon.png
+
+Use case: illustration-story
+Asset type: decorative garden banner for the Endless Summer Chinese gardening app, landscape approximately 3:2.
+Primary request: Create a NEW supporting botanical watercolor illustration titled conceptually Moonlit Hydrangea Courtyard, with no rendered title, no words and no logos. The supplied image is a STYLE AND MOOD REFERENCE ONLY; it is NOT an edit target and its logo must not be redrawn or incorporated.
+Input image 1: the app owner's existing illustration logo; reference its delicate blue-violet and lavender hydrangea petals, luminous pearly white washes, silver fine leaf outlines, airy translucent botanical detail and sparse tiny stars.
+Scene: a tranquil small hydrangea garden at very pale lavender dusk. Beautiful clusters of periwinkle blue and soft lilac hydrangeas grow mainly on the RIGHT and lower-right edge, with intricate silver-blue branches and translucent icy pale leaves. A subtle white garden arch is faintly visible behind the flowers. Several luminous dew drops cling to petals; a very tiny softly fading crescent moon may appear high on the right. This is a tender garden, not a landscape epic.
+Composition: landscape 3:2 frame. Leave the LEFT half and center mostly clean pearly white and whisper-light lilac mist, suitable for overlaying dark Chinese UI text. Botanical details taper gently into this quiet space with no rectangular cutoffs. Layered, exquisitely fine watercolor petals have thin cool violet contour lines and soft glow, closely matching the reference illustration's craft. Flower clusters should be elegant and organic, not a repeated decorative pattern.
+Lighting/mood: magical but restrained, delicate post-rain atmosphere, airy softness, quiet warmth and calm. Keep the whole picture bright and very light despite the dusk inspiration.
+Color palette: pearly white, powder lavender, delicate pink-lilac, periwinkle blue, pale blue-gray foliage, tiny restrained cyan sparkles.
+Text: none.
+Constraints: no logo, no writing, no UI elements, no watermark, no framing border. Do not reproduce the supplied logo or its Chinese characters. No photorealism, no black or navy backdrop, no neon, no yellow-green, no saturated gradient blobs, no industrial objects, no characters, no fantasy castles. The result must feel like a cohesive additional garden illustration from the same visual world as the reference icon.

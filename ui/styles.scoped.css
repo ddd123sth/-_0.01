@@ -1,0 +1,699 @@
+/* Generated from ui/styles.css by tools/moon-legacy-scope.mjs - do not hand-edit.
+   Every selector is gated behind `body:not([data-moon])` so the legacy sheets stay in charge only on screens the moon
+   presentation layer has not taken over (fallback path, auth/loading shells). 293/312
+   selectors gated; :root/html tokens and custom-property declarations stay global. */
+/* Palette and geometry adapted from web/src/styles/tokens.css and ui.css.
+   The Android package is standalone and uses no remote font, script or image. */
+:root{/* Legacy rem geometry (paddings, radii, gaps) keeps the half scale. Text and
+     control sizes are px tokens so a 50% root no longer shrinks them to 6-7px.
+     --g-text-scale is raised by the panel from the real Android font scale. */
+  --g-ui-font-scale:44%;
+  --g-layout-width:780px;
+  --g-tap-size:40px;
+  --g-text-scale:1;
+  --g-fs-title:calc(20px * var(--g-text-scale));
+  --g-fs-h2:calc(14px * var(--g-text-scale));
+  --g-fs-h3:calc(13px * var(--g-text-scale));
+  --g-fs-input:calc(13px * var(--g-text-scale));
+  --g-fs-body:calc(12.5px * var(--g-text-scale));
+  --g-fs-label:calc(11px * var(--g-text-scale));
+  --g-fs-aux:calc(10.5px * var(--g-text-scale));
+  --g-control-h:calc(42px * var(--g-text-scale));
+  font-size:var(--g-ui-font-scale);
+  --g-page:#f6f2e9; --g-card:#fffdf8; --g-line:#e6dcc8; --g-inset:#f3ecdd;
+  --g-ink:#27352c; --g-ink-2:#4c5a4f; --g-muted:#817c6a;
+  --g-accent:#2f5a45; --g-accent-deep:#1e4133; --g-accent-soft:#e3ece5;
+  --g-gold:#c2a069; --g-danger:#a8442f; --g-danger-soft:#f7e7e2;
+  --g-warn:#8b671e; --g-warn-soft:#fbf1dd;
+  --g-shadow:0 0.0625rem 0.125rem #6b5a3a12,0 0.75rem 1.625rem -0.875rem #6b5a3a26;
+  --g-fill:linear-gradient(115deg,#cfe4d8,#fbfaf3 58%,#cfe4d8);
+  font-family:-apple-system,BlinkMacSystemFont,"HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
+  color:var(--g-ink); font-synthesis:none;}
+
+*{box-sizing:border-box}
+
+html,body{height:100%}
+
+/* html 不画背景：认证与准备态要让原生常驻背景层透出来，页面底色由 body 在业务态提供。 */
+html{background:transparent}
+
+body{margin:0;font-size:var(--g-fs-body);line-height:1.6;background:var(--g-page)}
+
+body:not([data-moon]) button,body:not([data-moon]) input,body:not([data-moon]) select{font:inherit;font-size:inherit;color:inherit}
+
+body:not([data-moon]) button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+
+body:not([data-moon]) button,body:not([data-moon]) input,body:not([data-moon]) select{min-height:var(--g-tap-size)}
+
+body:not([data-moon]) button:disabled{cursor:default;opacity:.48}
+
+body:not([data-moon]) button:focus-visible,body:not([data-moon]) input:focus-visible,body:not([data-moon]) select:focus-visible{outline:0.1875rem solid #c2a06980;outline-offset:0.125rem}
+
+body:not([data-moon]) button{touch-action:manipulation}
+
+body:not([data-moon]) h1,body:not([data-moon]) h2,body:not([data-moon]) h3,body:not([data-moon]) p{margin:0}
+
+body:not([data-moon]) svg{display:block;width:1.5rem;height:1.5rem;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+body:not([data-moon]) [hidden]{display:none!important}
+
+body:not([data-moon]) .card>.body-copy{margin:0.75rem 0 1rem}
+body:not([data-moon]) .dialog form>.small{margin-top:0.9375rem}
+
+body:not([data-moon]) .badge.pending{background:var(--g-warn-soft);color:var(--g-warn)}
+
+body:not([data-moon]) .main.settings-page{padding-top:16px;padding-bottom:12px}
+body:not([data-moon]) .settings-page .page-head{margin-bottom:16px}
+body:not([data-moon]) .settings-page .page-head h1{font-size:var(--g-fs-title)}
+body:not([data-moon]) .settings-page .page-head p:not(.eyebrow){font-size:var(--g-fs-aux)}
+body:not([data-moon]) .settings-page .account-picker{margin-bottom:12px}
+body:not([data-moon]) .account-actions .button{white-space:nowrap;min-width:0;padding-inline:10px}
+body:not([data-moon]) .account-actions .button svg{flex-shrink:0}
+
+/* One shell, three explicit layout states: loading, auth, panel. The native
+   layer owns system bars, cutout and IME, so no env() is applied a second time
+   here; the web content area is already inset by the container that holds it. */
+body:not([data-moon]) .app-shell{display:flex;flex-direction:column;width:100%;max-width:var(--g-layout-width);height:100%;height:100dvh;margin:0 auto;overflow:hidden}
+
+body:not([data-moon]) .app-header{flex:none;position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:var(--g-page);border-bottom:1px solid var(--g-line)}
+
+body:not([data-moon]) .brand{display:flex;gap:0.75rem;align-items:center;min-width:0}
+
+body:not([data-moon]) .brand-mark{display:grid;place-items:center;width:42px;height:42px;color:var(--g-accent);border:1px solid #d6bd8c;border-radius:0.9375rem;background:var(--g-fill)}
+
+body:not([data-moon]) .brand-mark svg{width:24px;height:24px}
+
+body:not([data-moon]) .brand strong{display:block;font-size:var(--g-fs-h3);font-weight:650;letter-spacing:0.03125rem}
+
+body:not([data-moon]) .brand p{font-size:var(--g-fs-aux);color:var(--g-muted);margin-top:0.125rem;letter-spacing:0.0625rem}
+
+body:not([data-moon]) .icon-button{display:grid;place-items:center;border:1px solid var(--g-line);border-radius:50%;background:var(--g-card);width:var(--g-tap-size);height:var(--g-tap-size);min-height:var(--g-tap-size);padding:0;flex-shrink:0}
+
+body:not([data-moon]) .icon-button svg{width:20px;height:20px}
+
+body:not([data-moon]) .connection{flex:none;padding:6px 16px;font-size:var(--g-fs-aux);color:var(--g-muted);display:flex;align-items:center;gap:6px;background:#f0ece2}
+
+body:not([data-moon]) .connection:before{content:"";width:0.375rem;height:0.375rem;border-radius:50%;background:var(--g-muted);flex-shrink:0}
+
+body:not([data-moon]) .connection.is-ready:before{background:var(--g-accent)}
+
+body:not([data-moon]) .connection.is-error{color:var(--g-danger);background:var(--g-danger-soft)}
+
+body:not([data-moon]) .connection.is-error:before{background:var(--g-danger)}
+
+/* The panel body is the single touch-scroll layer; scrollbar hidden, scrolling kept. */
+body:not([data-moon]) .main{flex:1;min-height:0;padding:16px 16px 24px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}
+
+body:not([data-moon]) .main::-webkit-scrollbar{width:0;height:0;display:none}
+
+body:not([data-moon]) .tabbar{flex:none;display:grid;grid-template-columns:repeat(4,1fr);padding:0.375rem 0.375rem 0.4375rem;background:var(--g-card);border-top:1px solid var(--g-line);box-shadow:0 -0.125rem 0.75rem #6b5a3a0a}
+
+body:not([data-moon]) .page-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+
+body:not([data-moon]) .page-head .eyebrow{display:none}
+
+body:not([data-moon]) .page-head>div{min-width:0;flex:1}
+
+body:not([data-moon]) .page-head h1{font-size:var(--g-fs-title);font-weight:650;letter-spacing:0.0625rem;line-height:1.3}
+
+body:not([data-moon]) .eyebrow{font-size:var(--g-fs-aux);letter-spacing:0.075rem;color:var(--g-muted);margin-bottom:0.3125rem}
+
+body:not([data-moon]) .page-head p:not(.eyebrow){font-size:var(--g-fs-aux);color:var(--g-muted);line-height:1.6;margin-top:0.375rem}
+
+body:not([data-moon]) .card{border:1px solid var(--g-line);border-radius:14px;background:var(--g-card);padding:16px;margin-bottom:12px;box-shadow:var(--g-shadow)}
+
+body:not([data-moon]) .card h2{font-size:var(--g-fs-h2);font-weight:650;line-height:1.5}
+
+body:not([data-moon]) .section-head{display:flex;justify-content:space-between;gap:0.75rem;align-items:center;margin-bottom:0.875rem}
+
+body:not([data-moon]) .section-head h2{font-size:var(--g-fs-h3)}
+
+body:not([data-moon]) .count{font-size:var(--g-fs-aux);white-space:nowrap;color:var(--g-muted)}
+
+body:not([data-moon]) .muted{color:var(--g-muted)}
+
+body:not([data-moon]) .small{font-size:var(--g-fs-aux);line-height:1.7}
+
+body:not([data-moon]) .body-copy{font-size:var(--g-fs-body);line-height:1.75}
+
+body:not([data-moon]) .button{display:inline-flex;align-items:center;justify-content:center;gap:0.4375rem;min-height:var(--g-control-h);padding:0.625rem 1.125rem;background:var(--g-fill);border:1px solid #d6bd8c;color:var(--g-accent-deep);border-radius:11px;text-decoration:none;font-size:var(--g-fs-body);font-weight:600;text-align:center;box-shadow:0 0.125rem 0.25rem #6b5a3a0c}
+
+body:not([data-moon]) .button.secondary{background:var(--g-card);border-color:var(--g-line);color:var(--g-ink-2);box-shadow:none}
+
+body:not([data-moon]) .button.danger{background:var(--g-danger-soft);border-color:#e5b8a8;color:var(--g-danger);box-shadow:none}
+
+body:not([data-moon]) .button.wide{width:100%}
+
+body:not([data-moon]) .button svg{width:18px;height:18px;flex-shrink:0}
+
+body:not([data-moon]) .text-button{background:none;border:0;color:var(--g-accent);padding:6px 10px;min-height:44px;font-size:var(--g-fs-label);text-decoration:none}
+
+body:not([data-moon]) .row{display:flex;gap:0.625rem;align-items:center;min-width:0}
+
+body:not([data-moon]) .row.spread{justify-content:space-between}
+
+body:not([data-moon]) .row>.button{flex:1;min-width:0}
+
+body:not([data-moon]) .empty{text-align:center;padding:1.75rem 1.125rem}
+
+body:not([data-moon]) .empty-symbol{display:grid;place-items:center;margin:0 auto 12px;width:44px;height:44px;border-radius:14px;background:var(--g-accent-soft);color:var(--g-accent)}
+
+body:not([data-moon]) .empty-symbol svg{width:24px;height:24px}
+
+body:not([data-moon]) .empty h2{font-size:var(--g-fs-h2);margin-bottom:0.5rem}
+
+body:not([data-moon]) .empty p{font-size:var(--g-fs-label);line-height:1.7;max-width:20rem;margin:0 auto 1.125rem;color:var(--g-muted)}
+
+body:not([data-moon]) .notice{padding:0.75rem 0.875rem;border-radius:0.8125rem;background:var(--g-inset);font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-ink-2);margin-bottom:0.875rem;overflow-wrap:anywhere}
+
+body:not([data-moon]) .notice.warning{color:var(--g-warn);background:var(--g-warn-soft)}
+
+body:not([data-moon]) .notice.error{color:var(--g-danger);background:var(--g-danger-soft)}
+
+body:not([data-moon]) .notice p+p{margin-top:0.375rem}
+
+body:not([data-moon]) .account-top{display:flex;gap:10px;align-items:flex-start;min-width:0}
+
+body:not([data-moon]) .avatar{width:36px;height:36px;display:grid;place-items:center;background:var(--g-accent-soft);border-radius:11px;color:var(--g-accent);font-size:var(--g-fs-h2);flex-shrink:0}
+
+body:not([data-moon]) .account-info{min-width:0;flex:1}
+
+body:not([data-moon]) .account-info h2{overflow-wrap:anywhere;font-size:var(--g-fs-h2);line-height:1.4}
+
+body:not([data-moon]) .account-sub{font-size:var(--g-fs-aux);color:var(--g-muted);margin-top:0.25rem;overflow-wrap:anywhere}
+
+body:not([data-moon]) .badge{display:inline-flex;align-items:center;padding:0.3125rem 0.5rem;border-radius:1.25rem;background:var(--g-inset);color:var(--g-ink-2);font-size:var(--g-fs-aux);white-space:nowrap;max-width:100%}
+
+body:not([data-moon]) .badge.running{background:var(--g-accent-soft);color:var(--g-accent)}
+
+body:not([data-moon]) .badge.failed{background:var(--g-danger-soft);color:var(--g-danger)}
+
+body:not([data-moon]) .account-note{font-size:var(--g-fs-label);line-height:1.7;color:var(--g-muted);padding:0.75rem 0;overflow-wrap:anywhere}
+
+body:not([data-moon]) .account-actions{display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--g-line);padding-top:12px}
+
+body:not([data-moon]) .account-actions .button{min-height:44px}
+
+body:not([data-moon]) .account-actions .button{flex:1 1 6rem}
+
+body:not([data-moon]) .account-remove{padding-top:0.25rem;text-align:right}
+
+body:not([data-moon]) .account-remove .text-button{color:var(--g-danger);font-size:var(--g-fs-aux)}
+
+body:not([data-moon]) .account-picker{display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;min-width:0}
+
+body:not([data-moon]) .account-picker label{font-size:var(--g-fs-label);white-space:nowrap;color:var(--g-muted)}
+
+body:not([data-moon]) .account-picker select{flex:1;min-width:0}
+
+body:not([data-moon]) input:not([type=checkbox]),body:not([data-moon]) select{width:100%;min-width:0;border:1px solid var(--g-line);border-radius:11px;background:var(--g-card);padding:10px 12px;font-size:var(--g-fs-input);outline-offset:0.0625rem}
+
+body:not([data-moon]) input:not([type=checkbox]),body:not([data-moon]) select{min-height:var(--g-control-h)}
+
+body:not([data-moon]) input::placeholder{color:#aaa28f}
+
+body:not([data-moon]) .field{display:block;margin:0 0 16px;min-width:0}
+
+body:not([data-moon]) .field>span,body:not([data-moon]) .field>label{display:block;font-size:var(--g-fs-label);font-weight:600;margin-bottom:0.4375rem}
+
+body:not([data-moon]) .field .help{font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-muted);font-weight:400;margin-top:0.5rem;margin-bottom:0}
+
+body:not([data-moon]) .field:last-child{margin-bottom:0}
+
+body:not([data-moon]) .field input:disabled,body:not([data-moon]) .field select:disabled{background:var(--g-inset)}
+
+body:not([data-moon]) .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;min-width:0}
+
+body:not([data-moon]) .switch-row{display:flex;align-items:center;justify-content:space-between;gap:0.875rem;min-height:52px}
+
+body:not([data-moon]) .switch-copy{flex:1;min-width:0}
+
+body:not([data-moon]) .switch-copy strong{display:block;font-size:var(--g-fs-h3);font-weight:600}
+
+body:not([data-moon]) .switch-copy p{font-size:var(--g-fs-aux);color:var(--g-muted);line-height:1.6;margin-top:0.25rem}
+
+body:not([data-moon]) .switch-button{min-width:48px;width:48px;height:44px;border:0;background:none;padding:0;position:relative;flex-shrink:0}
+
+body:not([data-moon]) .switch-track{display:block;width:44px;height:26px;border-radius:20px;background:#c7c9bd;position:relative;transition:background .2s}
+
+body:not([data-moon]) .switch-track:after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;background:var(--g-card);border-radius:50%;box-shadow:0 1px 3px #0002;transition:transform .2s}
+
+body:not([data-moon]) .switch-button[aria-checked=true] .switch-track{background:var(--g-accent)}
+
+body:not([data-moon]) .switch-button[aria-checked=true] .switch-track:after{transform:translateX(18px)}
+
+body:not([data-moon]) .subsettings{border-top:1px solid var(--g-line);padding-top:0.9375rem;margin-top:0.875rem}
+
+body:not([data-moon]) .subsettings.is-locked{opacity:.65}
+
+body:not([data-moon]) .search{margin:0.625rem 0}
+
+body:not([data-moon]) .flower-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:max-content;align-content:start;gap:8px;max-height:21.25rem;overflow:auto;padding:2px}
+
+body:not([data-moon]) .flower-option{display:flex;align-items:center;gap:8px;padding:10px;min-height:52px;border:1px solid var(--g-line);border-radius:10px;cursor:pointer;min-width:0}
+
+body:not([data-moon]) .flower-option.is-selected{border-color:#8eaf98;background:#eff5f0}
+
+body:not([data-moon]) .flower-option.is-disabled{opacity:.5;cursor:default}
+
+body:not([data-moon]) .flower-option input{width:18px;height:18px;min-height:0;accent-color:var(--g-accent);flex-shrink:0}
+
+body:not([data-moon]) .flower-option>span{min-width:0}
+
+body:not([data-moon]) .flower-option strong{display:block;font-size:var(--g-fs-label);font-weight:500;overflow-wrap:anywhere;line-height:1.4}
+
+body:not([data-moon]) .flower-option small{font-size:var(--g-fs-aux);display:block;color:var(--g-muted);margin-top:0.1875rem;line-height:1.5}
+
+body:not([data-moon]) .selected-summary{font-size:var(--g-fs-aux);color:var(--g-accent);line-height:1.7;margin-top:0.5rem;overflow-wrap:anywhere}
+
+/* The dock stays sticky above the tab bar because .main is the scroll container. */
+body:not([data-moon]) .save-dock{position:sticky;bottom:0;z-index:3;padding:0.625rem;border:1px solid var(--g-line);border-radius:1rem;background:var(--g-card);box-shadow:0 -0.3125rem 1.25rem #6b5a3a19;margin-top:1.125rem}
+
+body:not([data-moon]) .save-dock p{text-align:center;font-size:var(--g-fs-aux);color:var(--g-muted);margin-top:0.4375rem;line-height:1.6}
+
+body:not([data-moon]) .tab{background:none;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.1875rem;min-height:54px;color:var(--g-muted);font-size:var(--g-fs-aux);padding:0;min-width:0}
+
+body:not([data-moon]) .tab-icon{display:grid;place-items:center;width:42px;height:28px;border:1px solid transparent;border-radius:16px}
+
+body:not([data-moon]) .tab svg{width:20px;height:20px}
+
+body:not([data-moon]) .tab[aria-current=page]{color:var(--g-accent);font-weight:600}
+
+body:not([data-moon]) .tab[aria-current=page] .tab-icon{background:var(--g-accent-soft);border-color:#d6bd8c}
+
+body:not([data-moon]) .log-list{list-style:none;margin:0;padding:0}
+
+body:not([data-moon]) .log-item{padding:0.875rem 0;border-bottom:1px solid var(--g-line)}
+
+body:not([data-moon]) .log-item:first-child{padding-top:0}
+
+body:not([data-moon]) .log-item:last-child{border-bottom:0;padding-bottom:0}
+
+body:not([data-moon]) .log-meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0.375rem 0.625rem;font-size:var(--g-fs-aux);color:var(--g-muted);margin-bottom:0.375rem}
+
+body:not([data-moon]) .log-meta time{overflow-wrap:anywhere}
+
+body:not([data-moon]) .log-text{font-size:var(--g-fs-body);line-height:1.75;overflow-wrap:anywhere;white-space:pre-wrap}
+
+body:not([data-moon]) .detail-list{margin:0}
+
+body:not([data-moon]) .detail-list>div{display:flex;justify-content:space-between;align-items:flex-start;gap:0.875rem;padding:0.6875rem 0;border-bottom:1px solid var(--g-line);font-size:var(--g-fs-label);line-height:1.6}
+
+body:not([data-moon]) .detail-list>div:first-child{padding-top:0}
+
+body:not([data-moon]) .detail-list>div:last-child{border-bottom:0;padding-bottom:0}
+
+body:not([data-moon]) .detail-list dt{color:var(--g-muted);flex-shrink:0;max-width:45%}
+
+body:not([data-moon]) .detail-list dd{margin:0;text-align:right;min-width:0;flex:1;overflow-wrap:anywhere;word-break:break-word}
+
+body:not([data-moon]) .status-hero{padding:1.125rem;background:linear-gradient(130deg,#e1eadd,#fffdf8);border-color:#ccd7c5}
+
+body:not([data-moon]) .status-hero .status-title{font-size:var(--g-fs-h2);color:var(--g-accent);margin:0.375rem 0}
+
+body:not([data-moon]) .status-hero p{font-size:var(--g-fs-label);line-height:1.7;color:var(--g-ink-2)}
+
+/* Dialogs: fixed head and footer, exactly one scrolling content layer. */
+body:not([data-moon]) .dialog-overlay{position:fixed;inset:0;z-index:12;background:#18261b6b;display:flex;align-items:flex-end;justify-content:center}
+
+body:not([data-moon]) .dialog{display:flex;flex-direction:column;width:100%;max-width:540px;margin:0 auto;background:var(--g-card);border-radius:1.5rem 1.5rem 0 0;max-height:100%;max-height:100dvh;overflow:hidden;box-shadow:0 -0.5rem 2.5rem #18261b29}
+
+body:not([data-moon]) .dialog-head{flex:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px 10px}
+
+body:not([data-moon]) .dialog-head h2{font-size:var(--g-fs-h2);min-width:0;overflow-wrap:anywhere}
+
+body:not([data-moon]) .dialog-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:0 18px 16px;scrollbar-width:none}
+
+body:not([data-moon]) .dialog-body::-webkit-scrollbar{width:0;display:none}
+
+body:not([data-moon]) .dialog-body>.field:first-child{margin-top:0.5rem}
+
+body:not([data-moon]) .dialog-intro{font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-muted);margin-bottom:1rem;overflow-wrap:anywhere}
+
+body:not([data-moon]) .dialog-actions{flex:none;display:flex;gap:10px;padding:12px 18px;border-top:1px solid var(--g-line);background:var(--g-card)}
+
+body:not([data-moon]) .card>.dialog-actions{padding:12px 0 0;margin-top:12px;background:none}
+
+body:not([data-moon]) .dialog-actions .button{flex:1;min-width:0}
+
+body:not([data-moon]) .dialog-actions.stacked{flex-direction:column}
+
+body:not([data-moon]) .form-error{font-size:var(--g-fs-label);line-height:1.6;color:var(--g-danger);padding:0.625rem 0.75rem;background:var(--g-danger-soft);border-radius:0.625rem;margin-bottom:0.75rem;overflow-wrap:anywhere}
+
+body:not([data-moon]) .account-toolbar{display:flex;align-items:center;gap:0.625rem;width:100%;min-width:0}
+
+body:not([data-moon]) .egress-block{margin-bottom:1rem}
+
+body:not([data-moon]) .egress-block>label,body:not([data-moon]) .egress-form>label{display:block;font-size:var(--g-fs-label);color:var(--g-muted);margin-bottom:0.375rem}
+
+body:not([data-moon]) .egress-form{min-width:0}
+body:not([data-moon]) .egress-form{display:block}
+
+body:not([data-moon]) .egress-input-row{display:flex;align-items:center;gap:0.5rem;min-width:0;flex-wrap:wrap}
+body:not([data-moon]) .egress-input-row input{flex:1 1 8rem;min-width:0}
+body:not([data-moon]) .egress-input-row .button{flex:none;white-space:nowrap;padding-inline:0.875rem}
+
+body:not([data-moon]) .egress-status{display:block;color:var(--g-muted);font-size:var(--g-fs-aux);margin-top:0.375rem;overflow-wrap:anywhere}
+
+body:not([data-moon]) .add-account-button{flex:none;white-space:nowrap}
+
+body:not([data-moon]) .form-error,body:not([data-moon]) .log-text,body:not([data-moon]) .account-note{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
+body:not([data-moon]) .form-error p{margin:0}
+body:not([data-moon]) .form-error .text-button{margin-top:.375rem}
+
+body:not([data-moon]) .toast{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:calc(5.5rem + 0.75rem);max-width:calc(100% - 2.5rem);background:#27352cf2;color:#fffdf8;padding:0.75rem 1rem;border-radius:0.8125rem;font-size:var(--g-fs-label);line-height:1.6;box-shadow:0 0.25rem 1.25rem #0002;text-align:center;pointer-events:none}
+
+body:not([data-moon]) .skeleton{font-size:var(--g-fs-label);padding:1.25rem;text-align:center;color:var(--g-muted)}
+
+body:not([data-moon]) .inline-loading{color:var(--g-muted);font-size:var(--g-fs-aux);padding:0.875rem;text-align:center}
+
+/* Three feature cards, number/unit and multi-select rows. */
+body:not([data-moon]) .feature-card .card-head{padding-bottom:0.75rem;margin-bottom:0.9375rem;border-bottom:1px solid var(--g-line)}
+
+body:not([data-moon]) .feature-card .card-head:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0}
+
+body:not([data-moon]) .feature-card .switch-row{min-height:52px}
+
+body:not([data-moon]) .field .input-unit{display:flex;align-items:stretch;gap:0.4375rem;min-width:0}
+
+body:not([data-moon]) .input-unit input{flex:1;min-width:0}
+
+body:not([data-moon]) .input-unit .unit{display:flex;align-items:center;padding-inline:0.625rem;border:1px solid var(--g-line);border-radius:11px;background:var(--g-inset);color:var(--g-muted);font-size:var(--g-fs-aux);white-space:nowrap}
+
+body:not([data-moon]) .picker-field .picker-row{display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap}
+
+body:not([data-moon]) .picker-row .button{flex:none;padding-inline:1.125rem}
+
+body:not([data-moon]) .picker-field .help{font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-muted);margin-top:0.5rem}
+
+body:not([data-moon]) .row-note{font-size:var(--g-fs-aux);line-height:1.6;color:var(--g-warn);background:var(--g-warn-soft);border-radius:0.5rem;padding:0.5rem 0.625rem;margin-top:0.5rem;overflow-wrap:anywhere}
+
+body:not([data-moon]) .log-pager{display:flex;flex-direction:column;gap:0.5rem;margin-top:0.9375rem;padding-top:0.875rem;border-top:1px solid var(--g-line)}
+
+body:not([data-moon]) .log-filters{display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem;margin:0 0 0.9375rem}
+
+body:not([data-moon]) .log-filters label{font-size:0.875rem;color:var(--g-muted)}
+
+body:not([data-moon]) .log-filters select,body:not([data-moon]) .log-filters input{min-height:2.5rem;padding:0.25rem 0.5rem;border:1px solid var(--g-line);border-radius:0.5rem;background:var(--g-card,#fff)}
+
+body:not([data-moon]) .log-filters .button{flex:0 0 auto;min-height:2.5rem}
+
+body:not([data-moon]) .log-pager .row{justify-content:center}
+
+body:not([data-moon]) .log-pager .button{flex:0 1 8rem;min-width:0}
+
+body:not([data-moon]) .pager-note{font-size:var(--g-fs-aux);line-height:1.6;color:var(--g-muted);text-align:center}
+
+body:not([data-moon]) .log-tags{display:flex;align-items:center;gap:0.375rem;flex-wrap:wrap;justify-content:flex-end}
+
+body:not([data-moon]) .badge.log-category{background:var(--g-accent-soft);color:var(--g-accent)}
+
+body:not([data-moon]) .dialog .flower-grid{max-height:none;overflow:visible;padding:0.125rem}
+
+body:not([data-moon]) .dialog.picker-dialog .dialog-body{display:flex;flex-direction:column;overflow:hidden}
+
+body:not([data-moon]) .dialog.picker-dialog .flower-grid{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+
+body:not([data-moon]) .dialog.picker-dialog .flower-grid::-webkit-scrollbar{width:0;display:none}
+
+body:not([data-moon]) .dialog .group-title{font-size:var(--g-fs-label);font-weight:600;color:var(--g-accent);margin:0.625rem 0 0.375rem;grid-column:1/-1}
+
+body:not([data-moon]) .dialog .group-title:first-child{margin-top:0}
+
+body:not([data-moon]) .dialog .picker-count{font-size:var(--g-fs-aux);color:var(--g-muted);margin:0.375rem 0 0.625rem}
+
+/* One row shows only its name, its control and a small "?" circle; the sentence
+   behind it stays hidden until tapped. The tap pad keeps the hit area at 44px
+   without growing the visible glyph. */
+body:not([data-moon]) .field-head{display:flex;align-items:center;gap:0.375rem;margin-bottom:0.4375rem}
+
+body:not([data-moon]) .field-head .field-title{flex:1;min-width:0;font-size:var(--g-fs-label);font-weight:600;overflow-wrap:anywhere}
+
+body:not([data-moon]) .help-toggle{position:relative;flex:none;display:inline-grid;place-items:center;width:30px;height:30px;min-height:30px;padding:0;border:1px solid var(--g-line);border-radius:50%;background:var(--g-card);color:var(--g-muted);font-size:var(--g-fs-aux);font-weight:600;line-height:1}
+
+body:not([data-moon]) .help-toggle:before{content:"";position:absolute;inset:-7px;border-radius:50%}
+
+body:not([data-moon]) .help-toggle[aria-expanded=true]{background:var(--g-accent-soft);border-color:#d6bd8c;color:var(--g-accent-deep)}
+
+body:not([data-moon]) .field .help:not([hidden]){margin-top:0.5rem;padding:0.5625rem 0.6875rem;border-radius:0.625rem;background:var(--g-inset);color:var(--g-ink-2)}
+
+body:not([data-moon]) .field.note-field{margin-bottom:0.375rem}
+
+body:not([data-moon]) .field.note-field .field-head{margin-bottom:0}
+
+body:not([data-moon]) .spinner{animation:spin 1.2s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+html{min-width:0;text-size-adjust:100%;-webkit-text-size-adjust:100%}
+
+body,body:not([data-moon]) .app-shell,body:not([data-moon]) .main,body:not([data-moon]) .card,body:not([data-moon]) .page-head>div,body:not([data-moon]) .brand>div,body:not([data-moon]) .dialog{min-width:0}
+
+body:not([data-moon]) button,body:not([data-moon]) input,body:not([data-moon]) select{min-height:var(--g-tap-size)}
+
+body:not([data-moon]) button,body:not([data-moon]) input,body:not([data-moon]) select,body:not([data-moon]) textarea{max-width:100%}
+
+body:not([data-moon]) button{overflow-wrap:anywhere}
+
+body:not([data-moon]) .brand strong,body:not([data-moon]) .brand p{overflow-wrap:anywhere}
+
+body:not([data-moon]) .connection{overflow-wrap:anywhere}
+
+body:not([data-moon]) .page-head{flex-wrap:wrap}
+
+body:not([data-moon]) .section-head{flex-wrap:wrap}
+
+body:not([data-moon]) .card,body:not([data-moon]) .notice,body:not([data-moon]) .dialog,body:not([data-moon]) .detail-list dd{overflow-wrap:anywhere}
+
+body:not([data-moon]) .field-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+body:not([data-moon]) .switch-button{display:grid;place-items:center;min-width:48px;width:48px}
+
+body:not([data-moon]) .flower-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+
+body:not([data-moon]) .flower-option{min-height:52px}
+
+body:not([data-moon]) .dialog-overlay{padding-inline:0}
+
+body:not([data-moon]) .toast{width:max-content;max-width:min(calc(100% - 2.5rem),var(--g-layout-width));overflow-wrap:anywhere}
+
+@media(min-width:600px){
+  body:not([data-moon]) .main{padding-left:1.875rem;padding-right:1.875rem}
+
+  body:not([data-moon]) .app-header{padding-inline:1.875rem}
+
+  body:not([data-moon]) .connection{padding-inline:1.875rem}
+
+  body:not([data-moon]) .dialog-overlay{align-items:center;padding:1.875rem}
+
+  body:not([data-moon]) .dialog{border-radius:1.5rem;padding-bottom:0}
+
+}
+@media(min-width:480px){
+  body:not([data-moon]) .main:has(>article.card){display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+
+  body:not([data-moon]) .main:has(>article.card)>*{grid-column:1/-1;margin-bottom:0}
+
+  body:not([data-moon]) .main:has(>article.card)>article.card{grid-column:auto}
+
+}
+@media(max-width:350px){
+  body:not([data-moon]) .main{padding-inline:12px}
+
+  body:not([data-moon]) .card{padding:14px}
+
+  body:not([data-moon]) .app-header{padding-inline:0.875rem}
+
+  body:not([data-moon]) .page-head h1{font-size:calc(23px * var(--g-text-scale))}
+
+  body:not([data-moon]) .flower-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+}
+@media(max-width:279px){
+  body:not([data-moon]) .flower-grid{grid-template-columns:minmax(0,1fr)}
+
+  body:not([data-moon]) .field-grid{grid-template-columns:minmax(0,1fr)}
+
+  body:not([data-moon]) .account-top{flex-wrap:wrap}
+
+  body:not([data-moon]) .account-info{flex-basis:50%}
+
+}
+@media(max-height:360px) and (orientation:landscape){
+  body:not([data-moon]) .app-header{min-height:48px;padding-block:0.375rem}
+
+  body:not([data-moon]) .dialog-overlay{align-items:center;padding-block:.5rem}
+
+  body:not([data-moon]) .dialog{max-height:100%;border-radius:1.5rem}
+
+}
+
+/* ───────────────── 软件身份：loading / auth 两种独占屏幕的状态 ─────────────────
+   业务页头、连接条与底部导航在认证与准备态整体隐藏；main 的面板留白、最大宽度
+   和底栏占位一并清掉。背景由原生全窗层绘制一次（浏览器排版检查时由 CSS 兜底）。 */
+body{overflow:hidden}
+
+body.layout-loading,body.layout-auth{background:transparent}
+
+body.layout-loading .app-shell,body.layout-auth .app-shell{max-width:none}
+
+body.layout-loading .app-header,body.layout-auth .app-header,body.layout-loading .connection,body.layout-auth .connection,body.layout-loading .tabbar,body.layout-auth .tabbar{display:none}
+
+body.layout-loading .main,body.layout-auth .main{padding:0;max-width:none;overflow:hidden;background:transparent}
+
+html:not(.native-shell) body.layout-auth,html:not(.native-shell) body.layout-loading{background:url(brand/bg-app-mobile-ivory-quiet.webp) center/cover no-repeat}
+
+body:not([data-moon]) .auth-sheet{display:flex;flex-direction:column;width:100%;height:100%;margin:0}
+
+body:not([data-moon]) .auth-scroll{flex:1;min-height:0;display:flex;flex-direction:column;align-items:stretch;padding:24px 28px 10px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;scroll-padding-block:16px}
+
+body:not([data-moon]) .auth-scroll::-webkit-scrollbar{width:0;height:0;display:none}
+
+body:not([data-moon]) .auth-brand{display:flex;justify-content:center;flex:none;margin-top:auto}
+
+body:not([data-moon]) .auth-logo{display:block;width:104px;aspect-ratio:1;height:auto;object-fit:contain;border-radius:24px;box-shadow:0 8px 28px #43574712}
+
+body:not([data-moon]) .auth-head{flex:none;text-align:center;display:flex;flex-direction:column;gap:6px;margin:18px 0 28px}
+
+body:not([data-moon]) .auth-title{font-size:calc(24px * var(--g-text-scale));font-weight:600;letter-spacing:1px;color:#304638;line-height:1.3}
+
+body:not([data-moon]) .auth-sub{font-size:var(--g-fs-label);line-height:1.5;color:#758071}
+
+/* The screen is the form's canvas. There is no card, border or inset panel around it. */
+body:not([data-moon]) .auth-form{flex:none;display:flex;flex-direction:column;margin:0 0 auto;padding:0;border:0;background:none;box-shadow:none}
+
+body:not([data-moon]) .auth-form .field{margin:0 0 16px;display:flex;flex-direction:column;gap:7px}
+
+body:not([data-moon]) .auth-form .field>span{font-size:var(--g-fs-label);font-weight:500;line-height:1.4;margin:0;color:#425947}
+
+body:not([data-moon]) .auth-form input{width:100%;min-height:var(--g-control-h);padding:12px 14px;font-size:var(--g-fs-input);line-height:1.4;color:#304638;background:#fffdf8de;border:1px solid #ded6c3;border-radius:11px}
+
+body:not([data-moon]) .auth-form input::placeholder{font-size:calc(14px * var(--g-text-scale));color:#a19b89}
+
+body:not([data-moon]) .auth-form input:focus{outline:0;border-color:#b59660;box-shadow:0 0 0 3px #c2a0691f}
+
+/* The reveal control sits inside the same field box, so the row still reads as one input. */
+body:not([data-moon]) .auth-form .input-unit{display:flex;align-items:center;gap:0;border:1px solid #ded6c3;border-radius:11px;background:#fffdf8de;padding-right:3px}
+
+body:not([data-moon]) .auth-form .input-unit:focus-within{border-color:#b59660;box-shadow:0 0 0 3px #c2a0691f}
+
+body:not([data-moon]) .auth-form .input-unit input{flex:1;min-width:0;border:0;background:transparent;box-shadow:none}
+
+body:not([data-moon]) .auth-form .input-unit input:focus{outline:0;box-shadow:none}
+
+body:not([data-moon]) .auth-reveal{flex:none;display:grid;place-items:center;width:44px;min-height:44px;padding:0;border:0;background:none;color:#7c8a7c;border-radius:9px;touch-action:manipulation}
+
+body:not([data-moon]) .auth-reveal svg{width:20px;height:20px}
+
+body:not([data-moon]) .auth-form .primary-button{width:100%;justify-content:center;margin-top:6px;font-weight:600;letter-spacing:.5px}
+
+body:not([data-moon]) .auth-switch{align-self:center;min-height:44px;margin-top:12px;font-size:var(--g-fs-label);font-weight:500;text-decoration:none}
+
+body:not([data-moon]) .auth-help{align-self:center;min-height:40px;padding:0 12px;font-size:var(--g-fs-aux);font-weight:400;color:#7d8577;text-decoration:none}
+
+body:not([data-moon]) .auth-foot{flex:none;padding:6px 24px 16px;text-align:center;font-size:calc(12px * var(--g-text-scale));letter-spacing:.1em;line-height:1.6;color:#8a907e}
+
+body:not([data-moon]) .auth-cloud-missing{font-size:var(--g-fs-aux);line-height:1.6;color:var(--g-warn);background:var(--g-warn-soft);border-radius:0.625rem;padding:0.5rem 0.625rem}
+
+/* 键盘真实弹出（由原生 IME/可用区变化通知，不是获得焦点）：收装饰、留字段。 */
+@media(max-height:660px){
+  body:not([data-moon]) .auth-scroll{padding:16px 24px 4px}
+
+  body:not([data-moon]) .auth-logo{width:80px;border-radius:19px}
+
+  body:not([data-moon]) .auth-head{margin:14px 0 20px}
+
+  body:not([data-moon]) .auth-form .field{margin-bottom:14px}
+
+  body:not([data-moon]) .auth-switch{margin-top:8px}
+
+  body:not([data-moon]) .auth-help{min-height:36px}
+
+  body:not([data-moon]) .auth-foot{padding-bottom:10px}
+
+  body:has(#auth-error:not([hidden])) .auth-logo{width:64px;border-radius:16px}
+
+  body:has(#auth-error:not([hidden])) .auth-foot{display:none}
+
+}
+@media(max-height:440px){
+  body:not([data-moon]) .auth-brand,body:not([data-moon]) .auth-foot,body:not([data-moon]) .auth-help{display:none}
+
+  body:not([data-moon]) .auth-head{margin:0 0 16px}
+
+}
+@media(min-width:600px){
+  body:not([data-moon]) .auth-scroll{padding-inline:max(32px,calc((100vw - 420px)/2))}
+
+}
+body.keyboard-open .auth-scroll{padding-block:12px;scroll-padding-block:12px}
+
+body.keyboard-open .auth-brand,body.keyboard-open .auth-head,body.keyboard-open .auth-foot,body.keyboard-open .auth-help{display:none}
+
+body.keyboard-open .auth-form{margin:0}
+
+body.keyboard-open .auth-switch{margin-top:4px}
+
+/* Very low windows have one reachable scroll area, never a zero-height list. */
+body.keyboard-open .dialog.picker-dialog .dialog-body{display:block;overflow-y:auto}
+
+body.keyboard-open .dialog.picker-dialog .flower-grid{overflow:visible;flex:none}
+
+@media(max-height:480px){
+  body:not([data-moon]) .dialog.picker-dialog .dialog-body{display:block;overflow-y:auto}
+
+  body:not([data-moon]) .dialog.picker-dialog .flower-grid{overflow:visible;flex:none}
+
+}
+
+/* 用户最后确定的参考页按钮：浅玉绿渐变 + 香槟金细边 + 深绿字 + 顶部高光 + 轻投影。 */
+body:not([data-moon]) .primary-button{border:1px solid #c2a069;
+  border-radius:11px;
+  background:linear-gradient(115deg,#cfe4d8,#fbfaf3 58%,#cfe4d8);
+  color:#1e4133;
+  box-shadow:inset 0 1px 0 #fffdf8f0,0 2px 4px #6b5a3a1f,0 6px 14px -6px #2f5a4540;}
+
+body:not([data-moon]) .primary-button:hover:not(:disabled){border-color:#a5854c;
+  background:linear-gradient(115deg,#d7e9de,#fdfcf7 58%,#d7e9de);}
+
+body:not([data-moon]) .primary-button:active:not(:disabled){border-color:#a5854c;
+  background:linear-gradient(115deg,#c2d9cc,#f3f2ea 58%,#c2d9cc);
+  box-shadow:inset 0 2px 5px #6b5a3a26;}
+
+body:not([data-moon]) .primary-button:disabled{background:#f6f2e9;
+  border-color:#e6dcc8;
+  color:#a9a390;
+  box-shadow:none;
+  opacity:1;}
+
+/* 准备态：稳定品牌 + 真实加载状态，不先闪业务面板。 */
+body:not([data-moon]) .loading-sheet{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;height:100%;padding:24px;text-align:center}
+
+body:not([data-moon]) .loading-sheet img{width:clamp(88px,24vh,120px);height:auto;object-fit:contain}
+
+body:not([data-moon]) .loading-sheet p{font-size:var(--g-fs-label);line-height:1.7;color:#6b7468}
+
+
+/* 〔2026-10-19 订单与花艺迁移〕设置内三个分类、六张订单卡与花艺卡。
+   沿用现有卡片与开关视觉，只加分层需要的几档；不改手机版紧凑布局与安全区。 */
+body:not([data-moon]) .subtabs{display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0 8px;}
+
+body:not([data-moon]) .subtab{flex: 1 1 auto; min-width: 96px; padding: 8px 10px; border: 1px solid var(--line, #d8d2c4); border-radius: 999px;
+  background: var(--surface, #fff); color: inherit; font: inherit; font-weight: 600;}
+
+body:not([data-moon]) .subtab.is-active{background: var(--accent, #2f7d4f); color: #fff; border-color: var(--accent, #2f7d4f);}
+
+body:not([data-moon]) .build-tag{font-size: 12px; opacity: .75;}
+
+body:not([data-moon]) .order-card.is-on{border-left: 3px solid var(--accent, #2f7d4f);}
+
+body:not([data-moon]) .feature-status{margin-top: 6px; font-size: 13px;}
+
+body:not([data-moon]) .chip-row{display: flex; gap: 8px; flex-wrap: wrap;}
+
+body:not([data-moon]) .chip{display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--line, #d8d2c4);
+  border-radius: 999px; font-size: 13px; background: var(--surface, #fff);}
+
+body:not([data-moon]) .chip.is-selected{border-color: var(--accent, #2f7d4f); background: rgba(47, 125, 79, .1); font-weight: 600;}
+
+body:not([data-moon]) .chip input{margin: 0;}
+

@@ -1,0 +1,27 @@
+{
+  "schema": "official-wire-contract-baseline/v1",
+  "encoding": "decoded JavaScript UTF-8 bytes, zero-based half-open ranges",
+  "statement": "The listed protocol declarations and dispatch closure are byte-identical in the archived 480.0.27 source and the publicly fetched 480.0.46 source. Game versions are provenance only; this file does not define a version allowlist or prove server-side eligibility/effects.",
+  "sources": [
+    { "label": "archived-480.0.27", "path": ".runtime/backend-rebuild/current-official-static/game.27165.480.0.27.decoded.js", "sha256": "fc9970989021e4266301d2a167ae8e827ef71a124ad9d7f23cb922095a22aa69" },
+    { "label": "public-480.0.46", "path": ".runtime/validation/official-public-480.0.46-resources-20261026-01/game.480.0.46.decoded.js", "sha256": "bf21efb47a54dca0ab5e249062da828d2ec8981388977ebfc1524c75236c9845" }
+  ],
+  "ranges": [
+    ["ISyncData",64556,67818,"8d4c5a6d88ab4deedf91e18551ebe135deae218a6140220ff3813e3cb1258abb"],
+    ["IUsr",29563,30615,"ef40e4f15387be812b6599fbab3fd47cd39c3b87000b3f7b10ffa8c7003a2012"],
+    ["IUsrTot",49648,50215,"f73dc2b06d3edc0a445647f6c49c0304ed022dd00f4950372dba9fe9a197cced"],
+    ["ITaskTot",50216,50378,"08a8bd442056a6b3e44baf6929b8edcfbba73ef7d511719b051a63b9bbb1e3b5"],
+    ["ITaskMain",34307,34461,"909697688d6d2f94b5c926f8f0ef85832d36103448e8e0010e0645ee13bd0cce"],
+    ["ICultivateTot",115969,116089,"728a33b8316949a4c0e8b2008fd8591e77cde2e0e9b6160471fd6985c9a56c62"],
+    ["IShareTot",59251,59316,"b1f95cd89ff62bf7305235836915b29ec193844564817a29f1165d334c10418e"],
+    ["IUsrCount",30974,31082,"ade6c575683d0c131a28b2f7d69605c2bfe7daf8640275b4564229b1e829497a"],
+    ["IItemExt",46933,47015,"5bc8967755336118b4b6c8c2ea914926195c0261c25426e12c63dc2d7128e589"],
+    ["IButlerTot",133602,133746,"e38a19bd54f090ea65a667905e51130f8fc082449f53ae0c8089954ff177b92d"],
+    ["IRchgTot",48580,48812,"6ab5e05b356076035ddccf50aae77c1b36081db83d02ccb85665a2a2b9267057"],
+    ["IOrderFlower",95715,96024,"9e5d189a38d30f362afeff46b46d466ca0c026da85393b6c8b526c911a2a48d0"],
+    ["IFlowerOrder",116384,116521,"422a0c9ea6a3d627e91a17a0c87cf1d758f6af978a9e0b0badf6aeef5db5b732"],
+    ["IOrderStock",116522,116607,"bee06991301896376cfe19e6bceba066f4bd99c1c68e601571e2f7c7369581a8"],
+    ["IOrderFlowerTot",116608,116675,"59df661d10ad65e50f81701fa13c261a40c5a6075d12d4bdccff30382343ee75"],
+    ["OrderFlowerCtrl",409544,410271,"6874c407a3e3b73c26f724a42fff04dd1a032a89c10b2d02de97cd6aa81743ee"]
+  ]
+}

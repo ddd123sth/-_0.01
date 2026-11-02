@@ -1,0 +1,15 @@
+Generation mode: built-in image_gen (no CLI)
+Reference role: style and palette reference only, not an edit target
+Reference: ui/brand/logo-endless-summer.webp
+Purpose: supporting garden illustration, not a logo; supplied icon unchanged
+
+Use case: illustration-story
+Asset type: supporting watercolor garden panorama for the Chinese Android flower garden app 无尽夏, to sit behind clear native UI. Create a brand new illustration; do not reproduce or edit the reference logo.
+Input image 1: STYLE AND COLOR REFERENCE ONLY, the existing supplied app icon with delicate blue-purple hydrangea blossoms, pearly white and pale lavender/cyan glows, tiny star dew, transparent fine botanical linework. Keep the actual logo out of the generated scene.
+Primary request: a peaceful hydrangea garden at the first light of a sunny morning after rain, poetic and hopeful. A tangible layered garden with several large watercolor hydrangea bushes in sky blue, lavender and soft periwinkle, tender foliage and a restrained glimpse of white wooden garden fencing and a small pale stone planting path in the lower right. Pearly morning sky and glowing white open air in the left-center.
+Style/medium: exquisite delicate watercolor mixed with refined soft anime botanical illustration, luminous thin contours, translucent petals with fine white veins and glistening dew, painted with the same restrained magical delicacy as the reference icon. NOT photographic.
+Composition/framing: horizontal landscape approximately 3:2, no border. Broad clear milky-white and very pale cyan negative space across the left and center upper 60 percent for an app title overlaid later. Hydrangeas bloom mainly at the lower edge and right side, asymmetric naturally layered framing. The lower right path creates garden depth without a central vanishing-point tunnel. Flowers occupy no more than 45 percent. One or two little floating petals and sparse four-point dew sparkles, elegantly restrained.
+Lighting/mood: clear rain-washed summer morning, soft sunlight, serenity, cultivating flowers, endless summer; light and airy with no heavy shadows.
+Color palette: pearl white, sky blue, hydrangea lavender, delicate lilac, small blue-grey/minty foliage accents; indigo only as small flower depth.
+Text: none. No text, calligraphy, typography, letters, logo, watermark, characters, people, UI cards, buttons, fake app, photography, dark neon, industrial textures, abstract gradient-only backdrop or saturated green template.
+Constraints: this is only a supporting garden illustration, never a new logo. Match the supplied icon's floral atmosphere while keeping generous usable white space.

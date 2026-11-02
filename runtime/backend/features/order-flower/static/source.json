@@ -1,0 +1,110 @@
+{
+  "applicationCodeExecuted": false,
+  "catalogId": "official-public/order-flower-480.0.27",
+  "curatedFileSha256": "fd329dd26f74bddf05fd7dcf0fb1700444783b5ed73c6517bd0f156396df0041",
+  "decoderSourceRange": [
+    149811,
+    153602
+  ],
+  "gameDecodedSha256": "fc9970989021e4266301d2a167ae8e827ef71a124ad9d7f23cb922095a22aa69",
+  "gameVersion": "480.0.27",
+  "method": "audited metadata aliases/numeric shifts/chunk defaults/implicit row ids; static public bytes only",
+  "moDecodedSha256": "1cde77350e5472509f695090546ed311d3b0b65618ba681653daa99f0691cf3b",
+  "note": "All omitted rows/fields are outside these typed finite stock/video planning inputs; no whole-function coverage claim.",
+  "preparationOnly": true,
+  "protocolVersion": "480.0.0",
+  "runtimeReadsSourceOrReferenceDirectory": false,
+  "sourceDataSha256": "3b880790bc950d06cda0a2da4aa4234b447d0bd8d0429701a1a8ab78d12dec92",
+  "staticDecoderHelperSha256": "bcdeee48664017cd80d6bcae617852e9f5319a667cbed3131b9e1de4229ac259",
+  "tables": {
+    "c_lvl": {
+      "columnTransformCAbsent": true,
+      "selectedFields": [
+        "$max",
+        "id",
+        "orderDecorateNum",
+        "orderFlower",
+        "orderNum",
+        "orderSatinsNum"
+      ],
+      "selectedRows": 66,
+      "sourceFullDecodedSha256": "b0e72ee016f8af8c3ddc2fb08de3572f4c7a69c501c315f341f3d6169d5b031d",
+      "sourceFullRows": 66
+    },
+    "c_open": {
+      "selectedFields": [
+        "closed",
+        "cnd",
+        "ext",
+        "id",
+        "isCndOr",
+        "isOr",
+        "lvl",
+        "vip"
+      ],
+      "selectedRows": 8,
+      "sourceFullDecodedSha256": "2fb8bebd16b7344749daa58946e2acbabeb5f92998454fda700ace5c1aaee0eb"
+    },
+    "c_orderFlower": {
+      "columnTransformCAbsent": true,
+      "selectedFields": [
+        "$dailyMax",
+        "$dailyMax2",
+        "$dailyMax3",
+        "$flowerTypeNum",
+        "$flowerTypeNum2",
+        "$flowerTypeNum3",
+        "$orderCd",
+        "$orderCd2",
+        "$orderCd3",
+        "$orderMax",
+        "$videoOrder",
+        "$videoOrderEnd",
+        "$videoOrderEnd2",
+        "$videoOrderEnd3",
+        "$videoOrderStart2",
+        "$videoOrderStart3",
+        "id",
+        "unlock"
+      ],
+      "selectedRows": 7,
+      "sourceFullDecodedSha256": "c8b816361454c59ee5aad9eb18a23dcb12f61b2b8ba22da813f66336e0e3b509",
+      "sourceFullRows": 7
+    },
+    "c_orderFlowerNpc": {
+      "columnTransformCAbsent": true,
+      "selectedFields": [
+        "$advNpcId",
+        "$decorateNpcId",
+        "$guideNpcId",
+        "$guideSatinsNpcId",
+        "$npcId",
+        "$satinsNpcId",
+        "dialogNum",
+        "id",
+        "isSpokes"
+      ],
+      "selectedRows": 31,
+      "sourceFullDecodedSha256": "9e6e430f7be470ba781adce58496eda8f8f4163ad771adfbc14ae976014c11c3",
+      "sourceFullRows": 31
+    },
+    "c_share": {
+      "columnTransformCAbsent": true,
+      "selectedFields": [
+        "cd",
+        "hasShare",
+        "hasVideo",
+        "id",
+        "limit",
+        "limitType",
+        "openId",
+        "shareVideoConv"
+      ],
+      "selectedRows": 3,
+      "sourceFullDecodedSha256": "cab4e1d134be6d99252605662de213a3a74e3c4905769c35a6280287403261e8",
+      "sourceFullRows": 78
+    }
+  },
+  "version": 1,
+  "wholeTablesBundled": false
+}

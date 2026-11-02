@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-10-19",
+  "purpose": "无尽夏安卓端专用管理后台的视觉与布局出处记录",
+  "referenceRoot": "独立参考仓库（只读，2026-10-19 人工选取时读过）：D:/AI/AiCode/我的花园世界",
+  "isolation": {
+    "copiedInto": "admin/src/",
+    "buildReadsReference": false,
+    "runtimeReadsReference": false,
+    "note": "复制后即为独立版本，按本仓需求单独维护；不继承参考仓库的规则、权限、数据、菜单与线上服务，构建与运行阶段不再访问参考目录。"
+  },
+  "entries": [
+    {
+      "from": "web/src/admin/ShellFrame.jsx",
+      "selected": "后台外壳布局骨架：深玉绿侧栏 + 顶栏 + 内容区三段结构、侧栏宽 224、顶栏高 56、内容区内边距 12/18/24、侧栏底部小字、窄屏把导航折成顶栏抽屉的思路、菜单名册与页面路由一一对应（多一条都不许有）的写法。",
+      "adapted": "只留三个入口，删去原站全部业务菜单（总览、客户账号、游戏号托管、运行记录、未收口的写入、日志查询、兑换码、公告、计费中心、交易市场、客户展示、出口线路、托管节点、托管进程、操作记录、管理员账号、安全中心）与云执行控件、安全体检横幅、AntD 主题令牌；React 与 AntD 依赖不引入，改为原生 ES module + 外部 CSS，内联 style 一律去掉以满足 style-src 'self'。",
+      "copiedAt": "2026-10-19",
+      "into": ["admin/src/styles.css", "admin/src/views.mjs", "admin/src/console.mjs"]
+    },
+    {
+      "from": "web/src/admin/pages/Customers.jsx",
+      "selected": "用户表格列排布与文案口径：主列加小字副行、状态用标签、时刻列空值写「还没登录过」这类明说读不到的措辞、行内展开详情面板 + 弹窗式二次确认、分页控件放在表格下方。",
+      "adapted": "字段换成本项目契约的 id/username/enabled/createdAt/lastLoginAt/remark/latestLogAt/logCount；删去余额、计费类型、名下游戏号数量、邀请开关、手机号、来源等原站业务列与新建客户、批量调整等写操作，只保留搜索、启停（二次确认并展示会撤销其全部会话）、密码重置、备注与跳转该用户运行日志。",
+      "copiedAt": "2026-10-19",
+      "into": ["admin/src/views.mjs", "admin/src/styles.css"]
+    },
+    {
+      "from": "web/src/admin/pages/Trace.jsx",
+      "selected": "日志页结构：卡头说明「先选范围再缩小」、筛选条 wrap 排布、结果列「时间 / 结论 / 发生了什么 / 错误码 / 链路」的分栏与主次两行写法（先看懂的那句，原文小字跟在下面）、行展开、点「整条链」按链路标识二次拉取的同一次运行视图。",
+      "adapted": "筛选项改为本项目契约的 userId/stableId/nickname/serverName/from/to/level/errorCode/q/traceId；删去游戏接口名、代码位置、耗时、轮次、模块、账号选项刻面等原站执行侧字段与任何启停按钮；「整条链」改为「展开同次运行」，走 GET /api/admin/logs/runs?traceId。",
+      "copiedAt": "2026-10-19",
+      "into": ["admin/src/views.mjs", "admin/src/console.mjs"]
+    },
+    {
+      "from": "web/src/admin/pages/AuditLogs.jsx",
+      "selected": "记录浏览页的只读呈现方式：详情用「标签—值」两列描述块、长文本单独成段、分页与空态写法。",
+      "adapted": "改为运行日志行展开的脱敏诊断块，字段取本项目契约的 installId/level/category/operationId/outcome/appVersion/eventId 等；不引入原站审计接口与操作记录页（本项目后台严格只有三个入口）。",
+      "copiedAt": "2026-10-19",
+      "into": ["admin/src/views.mjs", "admin/src/styles.css"]
+    },
+    {
+      "from": "web/src/styles/tokens.css",
+      "selected": "配色与几何令牌取值：暖象牙页底 #f6f2e9、卡面 #fffdf8、暖砂选中底 #ece2cd、暖米内嵌底 #f3ecdd、描边 #e6dcc8/#f0e9da/#d7c9ab、墨绿黑 #27352c、次级墨 #4c5a4f、暖灰茶 #8b8571、淡茶 #a9a390、墨玉绿 #2f5a45、深玉绿 #1e4133、玉绿淡底 #e3ece5/#eff5f0、象牙白 #fffdf8、香槟金 #c2a069/#a5854c/#d6bd8c/#f4ebd9/#fbf7ee、松绿 #3f7d55、陶红 #a8442f、赭金 #b8862f、字体族（衬线/无衬线/等宽）与圆角 20/10/11/999、三层阴影。",
+      "adapted": "只保留本后台用到的令牌，另起独立命名空间 --adm-（不再叫 --g-*，避免与任何其他界面共享命名），删去品质档、开关档、原站兼容旧名等无关分组；令牌是本目录唯一出处。",
+      "copiedAt": "2026-10-19",
+      "into": ["admin/src/styles.css"]
+    },
+    {
+      "from": "web/src/styles/ui.css",
+      "selected": "卡片、按钮、输入控件、标签与提示条的观感写法：卡面描边加两层柔和阴影、主按钮墨玉绿实底象牙白字、次按钮淡底描边、危险按钮陶红、错误码与时刻用等宽字体、次要说明小字用淡一档墨色。",
+      "adapted": "整段重写为本后台自有的精简版（原文件 13 万字符里与本仓无关的界面样式一概不搬），类名改为 adm- 前缀，删掉所有内联尺寸与图片资源引用。",
+      "copiedAt": "2026-10-19",
+      "into": ["admin/src/styles.css"]
+    }
+  ],
+  "notBroughtOver": [
+    "参考仓库的构建工具、React/AntD 依赖与运行时",
+    "参考仓库的域名、支付网关、原站服务端文件与管理菜单",
+    "参考仓库的账号、数据、会话与线上服务连接方式"
+  ]
+}

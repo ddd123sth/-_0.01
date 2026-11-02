@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  color: #414969;
+  background: #f4f6fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 280px; }
+a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+a:focus-visible { outline: 3px solid #7688cd; outline-offset: 5px; }
+img { display: block; max-width: 100%; }
+.skip-link { position: absolute; left: 16px; top: -80px; z-index: 2; padding: 12px 18px; background: #fff; border-radius: 12px; }
+.skip-link:focus { top: 16px; }
+.share-page { max-width: 1264px; margin: 0 auto; padding: 40px 32px 24px; }
+.share-heading { text-align: center; padding: 0 0 42px; }
+.brand-logo { width: 88px; height: 88px; margin: 0 auto 17px; border-radius: 24px; box-shadow: 0 6px 24px #6e7ea10d; }
+.eyebrow { margin: 0 0 15px; color: #8a93b0; font-size: 11px; line-height: 1.6; letter-spacing: 2px; }
+h1 { margin: 0; font-family: "SimSun", "Songti SC", serif; font-size: clamp(30px, 4vw, 42px); font-weight: 600; line-height: 1.5; letter-spacing: 5px; text-indent: 5px; }
+.tagline { margin: 7px 0 0; color: #7b87ad; font-family: "SimSun", "Songti SC", serif; font-size: 20px; line-height: 1.7; letter-spacing: 5px; text-indent: 5px; }
+.heading-copy { margin: 20px 0 18px; color: #8a93ac; font-size: 13px; line-height: 1.8; }
+.scheme-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px; }
+.scheme-nav a { min-height: 38px; padding: 10px 16px; color: #707da6; font-size: 12px; line-height: 18px; border: 1px solid #e1e6f3; border-radius: 22px; background: #fff9; }
+.scheme-nav a:hover { border-color: #b9c5e7; background: #fff; }
+.schemes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 24px; }
+.scheme { --button: #5c70b2; --accent: #7186c9; --tint: #edf1fc; --swatch-2: #c5b7ea; --swatch-3: #f4f7ff; min-width: 0; padding: 25px 20px 20px; border: 1px solid #e2e7f2; border-radius: 28px; background: #fff; scroll-margin-top: 24px; }
+.scheme-rain { --button: #537f8c; --accent: #6a919c; --tint: #edf5f5; --swatch-2: #b7c4e6; --swatch-3: #f4f9f9; }
+.scheme-moon { --button: #8064ac; --accent: #9780b9; --tint: #f3eef9; --swatch-2: #d0bce8; --swatch-3: #f8f5fd; }
+.scheme-heading { text-align: center; padding-bottom: 20px; }
+.scheme-number { display: inline-block; margin: 0 0 10px; padding: 5px 12px; border-radius: 18px; color: var(--accent); background: var(--tint); font-size: 11px; line-height: 17px; letter-spacing: 1px; }
+h2 { margin: 0; color: #4d577a; font-family: "SimSun", "Songti SC", serif; font-size: 26px; line-height: 1.5; font-weight: 600; letter-spacing: 3px; text-indent: 3px; }
+.scheme-heading > p:not(.scheme-number) { margin: 11px 0 13px; color: #8992aa; font-size: 12px; line-height: 1.9; }
+.palette { display: flex; justify-content: center; gap: 6px; }
+.palette span { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 1px solid #64718e12; }
+.palette span:nth-child(2) { background: var(--swatch-2); }
+.palette span:nth-child(3) { background: var(--swatch-3); }
+.screen-link { display: block; width: 100%; max-width: 300px; margin: 0 auto; border-radius: 29px; }
+.screen-image { width: 100%; height: auto; aspect-ratio: 408 / 862; object-fit: contain; }
+.scheme-actions { margin-top: 19px; }
+.action-primary { display: flex; justify-content: center; align-items: center; gap: 10px; min-height: 45px; padding: 11px 14px; border-radius: 14px; color: #fff; background: var(--button); font-size: 13px; line-height: 22px; font-weight: 500; }
+.action-primary:hover { filter: brightness(.96); }
+.action-primary span { font-size: 17px; }
+.action-secondary-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 9px; }
+.action-secondary { display: flex; align-items: center; justify-content: center; min-height: 42px; padding: 10px 5px; border: 1px solid #e7eaf2; border-radius: 12px; color: #7a85a4; background: #fff; text-align: center; font-size: 11px; line-height: 18px; }
+.action-secondary:hover { color: var(--accent); border-color: var(--accent); }
+.viewing-note { max-width: 720px; margin: 30px auto 0; text-align: center; color: #8892ab; font-size: 12px; line-height: 1.9; }
+.viewing-note p { margin: 0; }
+.viewing-note strong { font-weight: 500; color: #6f7c9e; }
+.share-footer { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; margin-top: 28px; padding-top: 20px; border-top: 1px solid #e1e6f1; color: #939cb3; font-size: 10px; line-height: 1.8; }
+.share-footer p { margin: 0; }
+.share-footer span { flex-shrink: 0; }
+
+@media (max-width: 1020px) {
+  .share-page { padding-right: 22px; padding-left: 22px; }
+  .schemes { gap: 15px; }
+  .scheme { padding-right: 13px; padding-left: 13px; border-radius: 23px; }
+  .action-secondary-row { grid-template-columns: 1fr; gap: 7px; }
+}
+
+@media (max-width: 760px) {
+  .share-page { max-width: 490px; padding: 28px 20px 22px; }
+  .share-heading { padding-bottom: 28px; }
+  .brand-logo { width: 78px; height: 78px; border-radius: 21px; }
+  .eyebrow { font-size: 10px; }
+  .tagline { font-size: 18px; }
+  .heading-copy { margin-top: 15px; font-size: 12px; }
+  .scheme-nav { gap: 6px; }
+  .scheme-nav a { padding-right: 12px; padding-left: 12px; font-size: 11px; }
+  .schemes { grid-template-columns: 1fr; gap: 22px; }
+  .scheme { padding: 24px 20px 20px; border-radius: 26px; }
+  .scheme-heading { padding-bottom: 16px; }
+  .scheme-heading > p:not(.scheme-number) { margin-bottom: 12px; }
+  .screen-link { max-width: 300px; }
+  .action-secondary-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .action-secondary { font-size: 12px; }
+  .viewing-note { margin-top: 24px; text-align: left; }
+  .share-footer { display: block; margin-top: 23px; }
+  .share-footer span { display: block; margin-top: 9px; }
+}
+
+@media (max-width: 359px) {
+  .share-page { padding-right: 14px; padding-left: 14px; }
+  .scheme { padding-right: 14px; padding-left: 14px; }
+  .scheme-nav a { padding-right: 9px; padding-left: 9px; font-size: 10px; }
+  .heading-copy { font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

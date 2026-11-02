@@ -1,0 +1,395 @@
+/* Palette and geometry adapted from web/src/styles/tokens.css and ui.css.
+   The Android package is standalone and uses no remote font, script or image. */
+:root {
+  /* Legacy rem geometry (paddings, radii, gaps) keeps the half scale. Text and
+     control sizes are px tokens so a 50% root no longer shrinks them to 6-7px.
+     --g-text-scale is raised by the panel from the real Android font scale. */
+  --g-ui-font-scale:44%;
+  --g-layout-width:780px;
+  --g-tap-size:40px;
+  --g-text-scale:1;
+  --g-fs-title:calc(20px * var(--g-text-scale));
+  --g-fs-h2:calc(14px * var(--g-text-scale));
+  --g-fs-h3:calc(13px * var(--g-text-scale));
+  --g-fs-input:calc(13px * var(--g-text-scale));
+  --g-fs-body:calc(12.5px * var(--g-text-scale));
+  --g-fs-label:calc(11px * var(--g-text-scale));
+  --g-fs-aux:calc(10.5px * var(--g-text-scale));
+  --g-control-h:calc(42px * var(--g-text-scale));
+  font-size:var(--g-ui-font-scale);
+  --g-page:#f6f2e9; --g-card:#fffdf8; --g-line:#e6dcc8; --g-inset:#f3ecdd;
+  --g-ink:#27352c; --g-ink-2:#4c5a4f; --g-muted:#817c6a;
+  --g-accent:#2f5a45; --g-accent-deep:#1e4133; --g-accent-soft:#e3ece5;
+  --g-gold:#c2a069; --g-danger:#a8442f; --g-danger-soft:#f7e7e2;
+  --g-warn:#8b671e; --g-warn-soft:#fbf1dd;
+  --g-shadow:0 0.0625rem 0.125rem #6b5a3a12,0 0.75rem 1.625rem -0.875rem #6b5a3a26;
+  --g-fill:linear-gradient(115deg,#cfe4d8,#fbfaf3 58%,#cfe4d8);
+  font-family:-apple-system,BlinkMacSystemFont,"HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
+  color:var(--g-ink); font-synthesis:none;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+/* html 不画背景：认证与准备态要让原生常驻背景层透出来，页面底色由 body 在业务态提供。 */
+html{background:transparent}
+body{margin:0;font-size:var(--g-fs-body);line-height:1.6;background:var(--g-page)}
+button,input,select{font:inherit;font-size:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+button,input,select{min-height:var(--g-tap-size)}
+button:disabled{cursor:default;opacity:.48}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:0.1875rem solid #c2a06980;outline-offset:0.125rem}
+button{touch-action:manipulation}
+h1,h2,h3,p{margin:0}
+svg{display:block;width:1.5rem;height:1.5rem;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+[hidden]{display:none!important}
+.card>.body-copy{margin:0.75rem 0 1rem}.dialog form>.small{margin-top:0.9375rem}
+.badge.pending{background:var(--g-warn-soft);color:var(--g-warn)}
+.main.settings-page{padding-top:16px;padding-bottom:12px}.settings-page .page-head{margin-bottom:16px}.settings-page .page-head h1{font-size:var(--g-fs-title)}.settings-page .page-head p:not(.eyebrow){font-size:var(--g-fs-aux)}.settings-page .account-picker{margin-bottom:12px}.account-actions .button{white-space:nowrap;min-width:0;padding-inline:10px}.account-actions .button svg{flex-shrink:0}
+/* One shell, three explicit layout states: loading, auth, panel. The native
+   layer owns system bars, cutout and IME, so no env() is applied a second time
+   here; the web content area is already inset by the container that holds it. */
+.app-shell{display:flex;flex-direction:column;width:100%;max-width:var(--g-layout-width);height:100%;height:100dvh;margin:0 auto;overflow:hidden}
+.app-header{flex:none;position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:var(--g-page);border-bottom:1px solid var(--g-line)}
+.brand{display:flex;gap:0.75rem;align-items:center;min-width:0}
+.brand-mark{display:grid;place-items:center;width:42px;height:42px;color:var(--g-accent);border:1px solid #d6bd8c;border-radius:0.9375rem;background:var(--g-fill)}
+.brand-mark svg{width:24px;height:24px}
+.brand strong{display:block;font-size:var(--g-fs-h3);font-weight:650;letter-spacing:0.03125rem}
+.brand p{font-size:var(--g-fs-aux);color:var(--g-muted);margin-top:0.125rem;letter-spacing:0.0625rem}
+.icon-button{display:grid;place-items:center;border:1px solid var(--g-line);border-radius:50%;background:var(--g-card);width:var(--g-tap-size);height:var(--g-tap-size);min-height:var(--g-tap-size);padding:0;flex-shrink:0}
+.icon-button svg{width:20px;height:20px}
+.connection{flex:none;padding:6px 16px;font-size:var(--g-fs-aux);color:var(--g-muted);display:flex;align-items:center;gap:6px;background:#f0ece2}
+.connection:before{content:"";width:0.375rem;height:0.375rem;border-radius:50%;background:var(--g-muted);flex-shrink:0}
+.connection.is-ready:before{background:var(--g-accent)}
+.connection.is-error{color:var(--g-danger);background:var(--g-danger-soft)}
+.connection.is-error:before{background:var(--g-danger)}
+/* The panel body is the single touch-scroll layer; scrollbar hidden, scrolling kept. */
+.main{flex:1;min-height:0;padding:16px 16px 24px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}
+.main::-webkit-scrollbar{width:0;height:0;display:none}
+.tabbar{flex:none;display:grid;grid-template-columns:repeat(4,1fr);padding:0.375rem 0.375rem 0.4375rem;background:var(--g-card);border-top:1px solid var(--g-line);box-shadow:0 -0.125rem 0.75rem #6b5a3a0a}
+.page-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+.page-head .eyebrow{display:none}
+.page-head>div{min-width:0;flex:1}
+.page-head h1{font-size:var(--g-fs-title);font-weight:650;letter-spacing:0.0625rem;line-height:1.3}
+.eyebrow{font-size:var(--g-fs-aux);letter-spacing:0.075rem;color:var(--g-muted);margin-bottom:0.3125rem}
+.page-head p:not(.eyebrow){font-size:var(--g-fs-aux);color:var(--g-muted);line-height:1.6;margin-top:0.375rem}
+.card{border:1px solid var(--g-line);border-radius:14px;background:var(--g-card);padding:16px;margin-bottom:12px;box-shadow:var(--g-shadow)}
+.card h2{font-size:var(--g-fs-h2);font-weight:650;line-height:1.5}
+.section-head{display:flex;justify-content:space-between;gap:0.75rem;align-items:center;margin-bottom:0.875rem}
+.section-head h2{font-size:var(--g-fs-h3)}
+.count{font-size:var(--g-fs-aux);white-space:nowrap;color:var(--g-muted)}
+.muted{color:var(--g-muted)}
+.small{font-size:var(--g-fs-aux);line-height:1.7}
+.body-copy{font-size:var(--g-fs-body);line-height:1.75}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:0.4375rem;min-height:var(--g-control-h);padding:0.625rem 1.125rem;background:var(--g-fill);border:1px solid #d6bd8c;color:var(--g-accent-deep);border-radius:11px;text-decoration:none;font-size:var(--g-fs-body);font-weight:600;text-align:center;box-shadow:0 0.125rem 0.25rem #6b5a3a0c}
+.button.secondary{background:var(--g-card);border-color:var(--g-line);color:var(--g-ink-2);box-shadow:none}
+.button.danger{background:var(--g-danger-soft);border-color:#e5b8a8;color:var(--g-danger);box-shadow:none}
+.button.wide{width:100%}
+.button svg{width:18px;height:18px;flex-shrink:0}
+.text-button{background:none;border:0;color:var(--g-accent);padding:6px 10px;min-height:44px;font-size:var(--g-fs-label);text-decoration:none}
+.row{display:flex;gap:0.625rem;align-items:center;min-width:0}
+.row.spread{justify-content:space-between}
+.row>.button{flex:1;min-width:0}
+.empty{text-align:center;padding:1.75rem 1.125rem}
+.empty-symbol{display:grid;place-items:center;margin:0 auto 12px;width:44px;height:44px;border-radius:14px;background:var(--g-accent-soft);color:var(--g-accent)}
+.empty-symbol svg{width:24px;height:24px}
+.empty h2{font-size:var(--g-fs-h2);margin-bottom:0.5rem}
+.empty p{font-size:var(--g-fs-label);line-height:1.7;max-width:20rem;margin:0 auto 1.125rem;color:var(--g-muted)}
+.notice{padding:0.75rem 0.875rem;border-radius:0.8125rem;background:var(--g-inset);font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-ink-2);margin-bottom:0.875rem;overflow-wrap:anywhere}
+.notice.warning{color:var(--g-warn);background:var(--g-warn-soft)}
+.notice.error{color:var(--g-danger);background:var(--g-danger-soft)}
+.notice p+p{margin-top:0.375rem}
+.account-top{display:flex;gap:10px;align-items:flex-start;min-width:0}
+.avatar{width:36px;height:36px;display:grid;place-items:center;background:var(--g-accent-soft);border-radius:11px;color:var(--g-accent);font-size:var(--g-fs-h2);flex-shrink:0}
+.account-info{min-width:0;flex:1}
+.account-info h2{overflow-wrap:anywhere;font-size:var(--g-fs-h2);line-height:1.4}
+.account-sub{font-size:var(--g-fs-aux);color:var(--g-muted);margin-top:0.25rem;overflow-wrap:anywhere}
+.badge{display:inline-flex;align-items:center;padding:0.3125rem 0.5rem;border-radius:1.25rem;background:var(--g-inset);color:var(--g-ink-2);font-size:var(--g-fs-aux);white-space:nowrap;max-width:100%}
+.badge.running{background:var(--g-accent-soft);color:var(--g-accent)}
+.badge.failed{background:var(--g-danger-soft);color:var(--g-danger)}
+.account-note{font-size:var(--g-fs-label);line-height:1.7;color:var(--g-muted);padding:0.75rem 0;overflow-wrap:anywhere}
+.account-actions{display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--g-line);padding-top:12px}
+.account-actions .button{min-height:44px}
+.account-actions .button{flex:1 1 6rem}
+.account-remove{padding-top:0.25rem;text-align:right}
+.account-remove .text-button{color:var(--g-danger);font-size:var(--g-fs-aux)}
+.account-picker{display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;min-width:0}
+.account-picker label{font-size:var(--g-fs-label);white-space:nowrap;color:var(--g-muted)}
+.account-picker select{flex:1;min-width:0}
+input:not([type=checkbox]),select{width:100%;min-width:0;border:1px solid var(--g-line);border-radius:11px;background:var(--g-card);padding:10px 12px;font-size:var(--g-fs-input);outline-offset:0.0625rem}
+input:not([type=checkbox]),select{min-height:var(--g-control-h)}
+input::placeholder{color:#aaa28f}
+.field{display:block;margin:0 0 16px;min-width:0}
+.field>span,.field>label{display:block;font-size:var(--g-fs-label);font-weight:600;margin-bottom:0.4375rem}
+.field .help{font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-muted);font-weight:400;margin-top:0.5rem;margin-bottom:0}
+.field:last-child{margin-bottom:0}
+.field input:disabled,.field select:disabled{background:var(--g-inset)}
+.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;min-width:0}
+.switch-row{display:flex;align-items:center;justify-content:space-between;gap:0.875rem;min-height:52px}
+.switch-copy{flex:1;min-width:0}
+.switch-copy strong{display:block;font-size:var(--g-fs-h3);font-weight:600}
+.switch-copy p{font-size:var(--g-fs-aux);color:var(--g-muted);line-height:1.6;margin-top:0.25rem}
+.switch-button{min-width:48px;width:48px;height:44px;border:0;background:none;padding:0;position:relative;flex-shrink:0}
+.switch-track{display:block;width:44px;height:26px;border-radius:20px;background:#c7c9bd;position:relative;transition:background .2s}
+.switch-track:after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;background:var(--g-card);border-radius:50%;box-shadow:0 1px 3px #0002;transition:transform .2s}
+.switch-button[aria-checked=true] .switch-track{background:var(--g-accent)}
+.switch-button[aria-checked=true] .switch-track:after{transform:translateX(18px)}
+.subsettings{border-top:1px solid var(--g-line);padding-top:0.9375rem;margin-top:0.875rem}
+.subsettings.is-locked{opacity:.65}
+.search{margin:0.625rem 0}
+.flower-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:max-content;align-content:start;gap:8px;max-height:21.25rem;overflow:auto;padding:2px}
+.flower-option{display:flex;align-items:center;gap:8px;padding:10px;min-height:52px;border:1px solid var(--g-line);border-radius:10px;cursor:pointer;min-width:0}
+.flower-option.is-selected{border-color:#8eaf98;background:#eff5f0}
+.flower-option.is-disabled{opacity:.5;cursor:default}
+.flower-option input{width:18px;height:18px;min-height:0;accent-color:var(--g-accent);flex-shrink:0}
+.flower-option>span{min-width:0}
+.flower-option strong{display:block;font-size:var(--g-fs-label);font-weight:500;overflow-wrap:anywhere;line-height:1.4}
+.flower-option small{font-size:var(--g-fs-aux);display:block;color:var(--g-muted);margin-top:0.1875rem;line-height:1.5}
+.selected-summary{font-size:var(--g-fs-aux);color:var(--g-accent);line-height:1.7;margin-top:0.5rem;overflow-wrap:anywhere}
+/* The dock stays sticky above the tab bar because .main is the scroll container. */
+.save-dock{position:sticky;bottom:0;z-index:3;padding:0.625rem;border:1px solid var(--g-line);border-radius:1rem;background:var(--g-card);box-shadow:0 -0.3125rem 1.25rem #6b5a3a19;margin-top:1.125rem}
+.save-dock p{text-align:center;font-size:var(--g-fs-aux);color:var(--g-muted);margin-top:0.4375rem;line-height:1.6}
+.tab{background:none;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.1875rem;min-height:54px;color:var(--g-muted);font-size:var(--g-fs-aux);padding:0;min-width:0}
+.tab-icon{display:grid;place-items:center;width:42px;height:28px;border:1px solid transparent;border-radius:16px}
+.tab svg{width:20px;height:20px}
+.tab[aria-current=page]{color:var(--g-accent);font-weight:600}
+.tab[aria-current=page] .tab-icon{background:var(--g-accent-soft);border-color:#d6bd8c}
+.log-list{list-style:none;margin:0;padding:0}
+.log-item{padding:0.875rem 0;border-bottom:1px solid var(--g-line)}
+.log-item:first-child{padding-top:0}
+.log-item:last-child{border-bottom:0;padding-bottom:0}
+.log-meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0.375rem 0.625rem;font-size:var(--g-fs-aux);color:var(--g-muted);margin-bottom:0.375rem}
+.log-meta time{overflow-wrap:anywhere}
+.log-text{font-size:var(--g-fs-body);line-height:1.75;overflow-wrap:anywhere;white-space:pre-wrap}
+.detail-list{margin:0}
+.detail-list>div{display:flex;justify-content:space-between;align-items:flex-start;gap:0.875rem;padding:0.6875rem 0;border-bottom:1px solid var(--g-line);font-size:var(--g-fs-label);line-height:1.6}
+.detail-list>div:first-child{padding-top:0}
+.detail-list>div:last-child{border-bottom:0;padding-bottom:0}
+.detail-list dt{color:var(--g-muted);flex-shrink:0;max-width:45%}
+.detail-list dd{margin:0;text-align:right;min-width:0;flex:1;overflow-wrap:anywhere;word-break:break-word}
+.status-hero{padding:1.125rem;background:linear-gradient(130deg,#e1eadd,#fffdf8);border-color:#ccd7c5}
+.status-hero .status-title{font-size:var(--g-fs-h2);color:var(--g-accent);margin:0.375rem 0}
+.status-hero p{font-size:var(--g-fs-label);line-height:1.7;color:var(--g-ink-2)}
+/* Dialogs: fixed head and footer, exactly one scrolling content layer. */
+.dialog-overlay{position:fixed;inset:0;z-index:12;background:#18261b6b;display:flex;align-items:flex-end;justify-content:center}
+.dialog{display:flex;flex-direction:column;width:100%;max-width:540px;margin:0 auto;background:var(--g-card);border-radius:1.5rem 1.5rem 0 0;max-height:100%;max-height:100dvh;overflow:hidden;box-shadow:0 -0.5rem 2.5rem #18261b29}
+.dialog-head{flex:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px 10px}
+.dialog-head h2{font-size:var(--g-fs-h2);min-width:0;overflow-wrap:anywhere}
+.dialog-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:0 18px 16px;scrollbar-width:none}
+.dialog-body::-webkit-scrollbar{width:0;display:none}
+.dialog-body>.field:first-child{margin-top:0.5rem}
+.dialog-intro{font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-muted);margin-bottom:1rem;overflow-wrap:anywhere}
+.dialog-actions{flex:none;display:flex;gap:10px;padding:12px 18px;border-top:1px solid var(--g-line);background:var(--g-card)}
+.card>.dialog-actions{padding:12px 0 0;margin-top:12px;background:none}
+.dialog-actions .button{flex:1;min-width:0}
+.dialog-actions.stacked{flex-direction:column}
+.form-error{font-size:var(--g-fs-label);line-height:1.6;color:var(--g-danger);padding:0.625rem 0.75rem;background:var(--g-danger-soft);border-radius:0.625rem;margin-bottom:0.75rem;overflow-wrap:anywhere}
+.account-toolbar{display:flex;align-items:center;gap:0.625rem;width:100%;min-width:0}
+.egress-block{margin-bottom:1rem}
+.egress-block>label,.egress-form>label{display:block;font-size:var(--g-fs-label);color:var(--g-muted);margin-bottom:0.375rem}
+.egress-form{min-width:0}.egress-form{display:block}
+.egress-input-row{display:flex;align-items:center;gap:0.5rem;min-width:0;flex-wrap:wrap}.egress-input-row input{flex:1 1 8rem;min-width:0}.egress-input-row .button{flex:none;white-space:nowrap;padding-inline:0.875rem}
+.egress-status{display:block;color:var(--g-muted);font-size:var(--g-fs-aux);margin-top:0.375rem;overflow-wrap:anywhere}
+.add-account-button{flex:none;white-space:nowrap}
+.form-error,.log-text,.account-note{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}.form-error p{margin:0}.form-error .text-button{margin-top:.375rem}
+.toast{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:calc(5.5rem + 0.75rem);max-width:calc(100% - 2.5rem);background:#27352cf2;color:#fffdf8;padding:0.75rem 1rem;border-radius:0.8125rem;font-size:var(--g-fs-label);line-height:1.6;box-shadow:0 0.25rem 1.25rem #0002;text-align:center;pointer-events:none}
+.skeleton{font-size:var(--g-fs-label);padding:1.25rem;text-align:center;color:var(--g-muted)}
+.inline-loading{color:var(--g-muted);font-size:var(--g-fs-aux);padding:0.875rem;text-align:center}
+/* Three feature cards, number/unit and multi-select rows. */
+.feature-card .card-head{padding-bottom:0.75rem;margin-bottom:0.9375rem;border-bottom:1px solid var(--g-line)}
+.feature-card .card-head:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0}
+.feature-card .switch-row{min-height:52px}
+.field .input-unit{display:flex;align-items:stretch;gap:0.4375rem;min-width:0}
+.input-unit input{flex:1;min-width:0}
+.input-unit .unit{display:flex;align-items:center;padding-inline:0.625rem;border:1px solid var(--g-line);border-radius:11px;background:var(--g-inset);color:var(--g-muted);font-size:var(--g-fs-aux);white-space:nowrap}
+.picker-field .picker-row{display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap}
+.picker-row .button{flex:none;padding-inline:1.125rem}
+.picker-field .help{font-size:var(--g-fs-aux);line-height:1.7;color:var(--g-muted);margin-top:0.5rem}
+.row-note{font-size:var(--g-fs-aux);line-height:1.6;color:var(--g-warn);background:var(--g-warn-soft);border-radius:0.5rem;padding:0.5rem 0.625rem;margin-top:0.5rem;overflow-wrap:anywhere}
+.log-pager{display:flex;flex-direction:column;gap:0.5rem;margin-top:0.9375rem;padding-top:0.875rem;border-top:1px solid var(--g-line)}
+.log-filters{display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem;margin:0 0 0.9375rem}
+.log-filters label{font-size:0.875rem;color:var(--g-muted)}
+.log-filters select,.log-filters input{min-height:2.5rem;padding:0.25rem 0.5rem;border:1px solid var(--g-line);border-radius:0.5rem;background:var(--g-card,#fff)}
+.log-filters .button{flex:0 0 auto;min-height:2.5rem}
+.log-pager .row{justify-content:center}
+.log-pager .button{flex:0 1 8rem;min-width:0}
+.pager-note{font-size:var(--g-fs-aux);line-height:1.6;color:var(--g-muted);text-align:center}
+.log-tags{display:flex;align-items:center;gap:0.375rem;flex-wrap:wrap;justify-content:flex-end}
+.badge.log-category{background:var(--g-accent-soft);color:var(--g-accent)}
+.dialog .flower-grid{max-height:none;overflow:visible;padding:0.125rem}
+.dialog.picker-dialog .dialog-body{display:flex;flex-direction:column;overflow:hidden}
+.dialog.picker-dialog .flower-grid{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.dialog.picker-dialog .flower-grid::-webkit-scrollbar{width:0;display:none}
+.dialog .group-title{font-size:var(--g-fs-label);font-weight:600;color:var(--g-accent);margin:0.625rem 0 0.375rem;grid-column:1/-1}
+.dialog .group-title:first-child{margin-top:0}
+.dialog .picker-count{font-size:var(--g-fs-aux);color:var(--g-muted);margin:0.375rem 0 0.625rem}
+/* One row shows only its name, its control and a small "?" circle; the sentence
+   behind it stays hidden until tapped. The tap pad keeps the hit area at 44px
+   without growing the visible glyph. */
+.field-head{display:flex;align-items:center;gap:0.375rem;margin-bottom:0.4375rem}
+.field-head .field-title{flex:1;min-width:0;font-size:var(--g-fs-label);font-weight:600;overflow-wrap:anywhere}
+.help-toggle{position:relative;flex:none;display:inline-grid;place-items:center;width:30px;height:30px;min-height:30px;padding:0;border:1px solid var(--g-line);border-radius:50%;background:var(--g-card);color:var(--g-muted);font-size:var(--g-fs-aux);font-weight:600;line-height:1}
+.help-toggle:before{content:"";position:absolute;inset:-7px;border-radius:50%}
+.help-toggle[aria-expanded=true]{background:var(--g-accent-soft);border-color:#d6bd8c;color:var(--g-accent-deep)}
+.field .help:not([hidden]){margin-top:0.5rem;padding:0.5625rem 0.6875rem;border-radius:0.625rem;background:var(--g-inset);color:var(--g-ink-2)}
+.field.note-field{margin-bottom:0.375rem}
+.field.note-field .field-head{margin-bottom:0}
+.spinner{animation:spin 1.2s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+
+html{min-width:0;text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body,.app-shell,.main,.card,.page-head>div,.brand>div,.dialog{min-width:0}
+button,input,select{min-height:var(--g-tap-size)}
+button,input,select,textarea{max-width:100%}
+button{overflow-wrap:anywhere}
+.brand strong,.brand p{overflow-wrap:anywhere}
+.connection{overflow-wrap:anywhere}
+.page-head{flex-wrap:wrap}
+.section-head{flex-wrap:wrap}
+.card,.notice,.dialog,.detail-list dd{overflow-wrap:anywhere}
+.field-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.switch-button{display:grid;place-items:center;min-width:48px;width:48px}
+.flower-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.flower-option{min-height:52px}
+.dialog-overlay{padding-inline:0}
+.toast{width:max-content;max-width:min(calc(100% - 2.5rem),var(--g-layout-width));overflow-wrap:anywhere}
+@media(min-width:600px){
+  .main{padding-left:1.875rem;padding-right:1.875rem}
+  .app-header{padding-inline:1.875rem}
+  .connection{padding-inline:1.875rem}
+  .dialog-overlay{align-items:center;padding:1.875rem}
+  .dialog{border-radius:1.5rem;padding-bottom:0}
+}
+@media(min-width:480px){
+  .main:has(>article.card){display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+  .main:has(>article.card)>*{grid-column:1/-1;margin-bottom:0}
+  .main:has(>article.card)>article.card{grid-column:auto}
+}
+@media(max-width:350px){
+  .main{padding-inline:12px}
+  .card{padding:14px}
+  .app-header{padding-inline:0.875rem}
+  .page-head h1{font-size:calc(23px * var(--g-text-scale))}
+  .flower-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:279px){
+  .flower-grid{grid-template-columns:minmax(0,1fr)}
+  .field-grid{grid-template-columns:minmax(0,1fr)}
+  .account-top{flex-wrap:wrap}
+  .account-info{flex-basis:50%}
+}
+@media(max-height:360px) and (orientation:landscape){
+  .app-header{min-height:48px;padding-block:0.375rem}
+  .dialog-overlay{align-items:center;padding-block:.5rem}
+  .dialog{max-height:100%;border-radius:1.5rem}
+}
+
+/* ───────────────── 软件身份：loading / auth 两种独占屏幕的状态 ─────────────────
+   业务页头、连接条与底部导航在认证与准备态整体隐藏；main 的面板留白、最大宽度
+   和底栏占位一并清掉。背景由原生全窗层绘制一次（浏览器排版检查时由 CSS 兜底）。 */
+body{overflow:hidden}
+body.layout-loading,body.layout-auth{background:transparent}
+body.layout-loading .app-shell,body.layout-auth .app-shell{max-width:none}
+body.layout-loading .app-header,body.layout-auth .app-header,
+body.layout-loading .connection,body.layout-auth .connection,
+body.layout-loading .tabbar,body.layout-auth .tabbar{display:none}
+body.layout-loading .main,body.layout-auth .main{padding:0;max-width:none;overflow:hidden;background:transparent}
+html:not(.native-shell) body.layout-auth,html:not(.native-shell) body.layout-loading{background:url(brand/bg-app-mobile-ivory-quiet.webp) center/cover no-repeat}
+.auth-sheet{display:flex;flex-direction:column;width:100%;height:100%;margin:0}
+.auth-scroll{flex:1;min-height:0;display:flex;flex-direction:column;align-items:stretch;padding:24px 28px 10px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;scroll-padding-block:16px}
+.auth-scroll::-webkit-scrollbar{width:0;height:0;display:none}
+.auth-brand{display:flex;justify-content:center;flex:none;margin-top:auto}
+.auth-logo{display:block;width:104px;aspect-ratio:1;height:auto;object-fit:contain;border-radius:24px;box-shadow:0 8px 28px #43574712}
+.auth-head{flex:none;text-align:center;display:flex;flex-direction:column;gap:6px;margin:18px 0 28px}
+.auth-title{font-size:calc(24px * var(--g-text-scale));font-weight:600;letter-spacing:1px;color:#304638;line-height:1.3}
+.auth-sub{font-size:var(--g-fs-label);line-height:1.5;color:#758071}
+/* The screen is the form's canvas. There is no card, border or inset panel around it. */
+.auth-form{flex:none;display:flex;flex-direction:column;margin:0 0 auto;padding:0;border:0;background:none;box-shadow:none}
+.auth-form .field{margin:0 0 16px;display:flex;flex-direction:column;gap:7px}
+.auth-form .field>span{font-size:var(--g-fs-label);font-weight:500;line-height:1.4;margin:0;color:#425947}
+.auth-form input{width:100%;min-height:var(--g-control-h);padding:12px 14px;font-size:var(--g-fs-input);line-height:1.4;color:#304638;background:#fffdf8de;border:1px solid #ded6c3;border-radius:11px}
+.auth-form input::placeholder{font-size:calc(14px * var(--g-text-scale));color:#a19b89}
+.auth-form input:focus{outline:0;border-color:#b59660;box-shadow:0 0 0 3px #c2a0691f}
+/* The reveal control sits inside the same field box, so the row still reads as one input. */
+.auth-form .input-unit{display:flex;align-items:center;gap:0;border:1px solid #ded6c3;border-radius:11px;background:#fffdf8de;padding-right:3px}
+.auth-form .input-unit:focus-within{border-color:#b59660;box-shadow:0 0 0 3px #c2a0691f}
+.auth-form .input-unit input{flex:1;min-width:0;border:0;background:transparent;box-shadow:none}
+.auth-form .input-unit input:focus{outline:0;box-shadow:none}
+.auth-reveal{flex:none;display:grid;place-items:center;width:44px;min-height:44px;padding:0;border:0;background:none;color:#7c8a7c;border-radius:9px;touch-action:manipulation}
+.auth-reveal svg{width:20px;height:20px}
+.auth-form .primary-button{width:100%;justify-content:center;margin-top:6px;font-weight:600;letter-spacing:.5px}
+.auth-switch{align-self:center;min-height:44px;margin-top:12px;font-size:var(--g-fs-label);font-weight:500;text-decoration:none}
+.auth-help{align-self:center;min-height:40px;padding:0 12px;font-size:var(--g-fs-aux);font-weight:400;color:#7d8577;text-decoration:none}
+.auth-foot{flex:none;padding:6px 24px 16px;text-align:center;font-size:calc(12px * var(--g-text-scale));letter-spacing:.1em;line-height:1.6;color:#8a907e}
+.auth-cloud-missing{font-size:var(--g-fs-aux);line-height:1.6;color:var(--g-warn);background:var(--g-warn-soft);border-radius:0.625rem;padding:0.5rem 0.625rem}
+/* 键盘真实弹出（由原生 IME/可用区变化通知，不是获得焦点）：收装饰、留字段。 */
+@media(max-height:660px){
+  .auth-scroll{padding:16px 24px 4px}
+  .auth-logo{width:80px;border-radius:19px}
+  .auth-head{margin:14px 0 20px}
+  .auth-form .field{margin-bottom:14px}
+  .auth-switch{margin-top:8px}
+  .auth-help{min-height:36px}
+  .auth-foot{padding-bottom:10px}
+  body:has(#auth-error:not([hidden])) .auth-logo{width:64px;border-radius:16px}
+  body:has(#auth-error:not([hidden])) .auth-foot{display:none}
+}
+@media(max-height:440px){
+  .auth-brand,.auth-foot,.auth-help{display:none}
+  .auth-head{margin:0 0 16px}
+}
+@media(min-width:600px){
+  .auth-scroll{padding-inline:max(32px,calc((100vw - 420px)/2))}
+}
+body.keyboard-open .auth-scroll{padding-block:12px;scroll-padding-block:12px}
+body.keyboard-open .auth-brand,body.keyboard-open .auth-head,body.keyboard-open .auth-foot,body.keyboard-open .auth-help{display:none}
+body.keyboard-open .auth-form{margin:0}
+body.keyboard-open .auth-switch{margin-top:4px}
+/* Very low windows have one reachable scroll area, never a zero-height list. */
+body.keyboard-open .dialog.picker-dialog .dialog-body{display:block;overflow-y:auto}
+body.keyboard-open .dialog.picker-dialog .flower-grid{overflow:visible;flex:none}
+@media(max-height:480px){
+  .dialog.picker-dialog .dialog-body{display:block;overflow-y:auto}
+  .dialog.picker-dialog .flower-grid{overflow:visible;flex:none}
+}
+
+/* 用户最后确定的参考页按钮：浅玉绿渐变 + 香槟金细边 + 深绿字 + 顶部高光 + 轻投影。 */
+.primary-button{
+  border:1px solid #c2a069;
+  border-radius:11px;
+  background:linear-gradient(115deg,#cfe4d8,#fbfaf3 58%,#cfe4d8);
+  color:#1e4133;
+  box-shadow:inset 0 1px 0 #fffdf8f0,0 2px 4px #6b5a3a1f,0 6px 14px -6px #2f5a4540;
+}
+.primary-button:hover:not(:disabled){
+  border-color:#a5854c;
+  background:linear-gradient(115deg,#d7e9de,#fdfcf7 58%,#d7e9de);
+}
+.primary-button:active:not(:disabled){
+  border-color:#a5854c;
+  background:linear-gradient(115deg,#c2d9cc,#f3f2ea 58%,#c2d9cc);
+  box-shadow:inset 0 2px 5px #6b5a3a26;
+}
+.primary-button:disabled{
+  background:#f6f2e9;
+  border-color:#e6dcc8;
+  color:#a9a390;
+  box-shadow:none;
+  opacity:1;
+}
+/* 准备态：稳定品牌 + 真实加载状态，不先闪业务面板。 */
+.loading-sheet{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;height:100%;padding:24px;text-align:center}
+.loading-sheet img{width:clamp(88px,24vh,120px);height:auto;object-fit:contain}
+.loading-sheet p{font-size:var(--g-fs-label);line-height:1.7;color:#6b7468}
+
+/* 〔2026-10-19 订单与花艺迁移〕设置内三个分类、六张订单卡与花艺卡。
+   沿用现有卡片与开关视觉，只加分层需要的几档；不改手机版紧凑布局与安全区。 */
+.subtabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0 8px; }
+.subtab { flex: 1 1 auto; min-width: 96px; padding: 8px 10px; border: 1px solid var(--line, #d8d2c4); border-radius: 999px;
+  background: var(--surface, #fff); color: inherit; font: inherit; font-weight: 600; }
+.subtab.is-active { background: var(--accent, #2f7d4f); color: #fff; border-color: var(--accent, #2f7d4f); }
+.build-tag { font-size: 12px; opacity: .75; }
+.order-card.is-on { border-left: 3px solid var(--accent, #2f7d4f); }
+.feature-status { margin-top: 6px; font-size: 13px; }
+.chip-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--line, #d8d2c4);
+  border-radius: 999px; font-size: 13px; background: var(--surface, #fff); }
+.chip.is-selected { border-color: var(--accent, #2f7d4f); background: rgba(47, 125, 79, .1); font-weight: 600; }
+.chip input { margin: 0; }

@@ -1,0 +1,127 @@
+{
+  "manifestVersion": 1,
+  "catalogId": "official-public/customer-480.0.27",
+  "purpose": "Independent public static G3A customer art catalog; static metadata only, no runtime eligibility or RPC authorization",
+  "sourceVersion": {
+    "gameVersion": "480.0.27",
+    "worldProtocolVersion": "480.0.0",
+    "gameModuleVersion": "27165",
+    "moModuleVersion": "f7ef4",
+    "resourceBundleVersion": "56836",
+    "nativeCatalogVersion": "d7fc4",
+    "normalPackageHopVersionObserved": true,
+    "currentServerCatalogProven": false
+  },
+  "sourceIndex": {
+    "url": "https://hygncdn.babigame.cn/index/index-gn-mix-480.0.27.json",
+    "status": 200,
+    "bytes": 8616,
+    "sha256": "7398615295cfbc84938b2da87c69d9cb6a36c0c2529045438f16d7592e500cfb",
+    "genericIndexUrl": "https://hygncdn.babigame.cn/index/index-480.0.27.json",
+    "genericIndexSha256": "5818afa6553e643ddcf1cad5ec7b7601681bf01ac03e4711a359371711d16567",
+    "bothSelectSameGameMoAndResources": true,
+    "embeddedResourceKeyValueIncluded": false
+  },
+  "businessCodeSource": {
+    "url": "https://hygncdn.babigame.cn/src/assets/scripts/frameworks/game/bin/game.27165.jsc",
+    "jscSha256": "576e09fb11029014d833aebdb11b7a6ff1f78040cfad17edef88c1c5d6a3bc38",
+    "decodedBytes": 6065901,
+    "decodedSha256": "fc9970989021e4266301d2a167ae8e827ef71a124ad9d7f23cb922095a22aa69",
+    "applicationCodeExecuted": false
+  },
+  "catalogSource": {
+    "url": "https://hygncdn.babigame.cn/assets/resources/native/35/35fc3381-34dc-5c64-ba90-e06c2c6133a8.d7fc4.text",
+    "bytes": 4992870,
+    "sha256": "3b880790bc950d06cda0a2da4aa4234b447d0bd8d0429701a1a8ab78d12dec92",
+    "bundleConfigUrl": "https://hygncdn.babigame.cn/assets/resources/config.56836.json",
+    "bundleConfigSha256": "baf4215728dc9e1cafdbcec8141765a5672440b7a8ce6ce82183830ce74b5b3f",
+    "pathIndex": 3997,
+    "logicalResourcePath": "mo/zh/data/g-data",
+    "expandedUuid": "35fc3381-34dc-5c64-ba90-e06c2c6133a8",
+    "nativeVersion": "d7fc4"
+  },
+  "tableDecoderSource": {
+    "url": "https://hygncdn.babigame.cn/src/assets/scripts/frameworks/mo/bin/mo.f7ef4.jsc",
+    "decodedSha256": "1cde77350e5472509f695090546ed311d3b0b65618ba681653daa99f0691cf3b",
+    "auditedByteRange": [
+      149811,
+      153602
+    ],
+    "columnTransformC": "absent for c_flowerArt",
+    "decoderMode": "Independent static data translation; full table preserved; no application JavaScript executed"
+  },
+  "tables": {
+    "c_flowerArt": {
+      "file": "c_flowerArt.json",
+      "rows": 1592,
+      "positiveRows": 1591,
+      "bytes": 241727,
+      "sha256": "636220908e677377ee4902a38a7ab6adb66540f86902199e99141eaff3de66da",
+      "metadataRowMinus1Included": true,
+      "columnTransformCAbsent": true,
+      "omittedRows": [],
+      "omittedFields": []
+    }
+  },
+  "itemDependency": {
+    "catalogId": "official-public/index-480.0.27",
+    "manifestPath": "../official-land-480.0.27/manifest.json",
+    "manifestSha256": "eaa7a0c91cc605a3b212f16ba0d2bb503b6cad15263d4ef2991490abaa7d9e37",
+    "file": "../official-land-480.0.27/c_item.json",
+    "sha256": "2ad2051ffa3b330438d8d2a0243227950a9b6afc7b75e75098ff9703a82f5f58",
+    "rows": 7446
+  },
+  "ordinaryArtRule": {
+    "positiveArtRows": 1591,
+    "ordinaryArtItemIntersectionRows": 1590,
+    "itemType": 12,
+    "forbiddenStaticProperties": [
+      "reset",
+      "restore",
+      "limit"
+    ],
+    "missingItemIds": [
+      308701
+    ],
+    "missingItemsUnsupported": true,
+    "quantityRule": "Current absolute bag base, limited by current supplied positive instance limit; missing whole ext stays unknown",
+    "doesNotAddArtToFlowerPool": true
+  },
+  "rewardPolicy": {
+    "itemId": 1002,
+    "explicitCPriceArtRows": 748,
+    "metaFallbackArtRows": 843,
+    "observedUnitQuantity": 1,
+    "sourceRange": {
+      "start": 443147,
+      "end": 443841,
+      "sha256": "ee10cdec8238c6d365cd91719128d0ebfab3445bc4d07d61c4a9cfc39783c43f"
+    },
+    "onlyStaticUnitMetadata": true,
+    "doesNotProveCurrentOrderEligibilityOrActualReward": true
+  },
+  "receipts": [
+    {
+      "path": ".runtime/backend-rebuild/g3a-current-480.0.27/tables.receipt.json",
+      "bytes": 4308,
+      "sha256": "2728c7d0a571e33961c1611d83eebae8fd033708c176ad5ca6647c005eabc23c"
+    },
+    {
+      "path": ".runtime/backend-rebuild/g3a-current-480.0.27/source-spans.receipt.json",
+      "bytes": 2748,
+      "sha256": "4570cd1c9f90da608df12d49e50af1f8a7daff2e84d07aaa5d73b62a3e449412"
+    }
+  ],
+  "scope": {
+    "supportedSourcePolicy": "Existing version-bound matched index.login and land methods only; this catalog does not change source policy",
+    "additionalRpcMethods": [],
+    "customerDeliveryCoverageProven": false,
+    "doesNotAuthorizeLazySync": true
+  },
+  "safety": {
+    "accountFieldsIncluded": false,
+    "credentialOrTokenIncluded": false,
+    "sourceBusinessCodeBundled": false,
+    "fullTablePreserved": true
+  }
+}

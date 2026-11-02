@@ -1,0 +1,10 @@
+{
+  "copiedAt": "2026-10-21",
+  "sourceProject": "参考站 D:/AI/AiCode/我的花园世界（只读来源，构建与运行不访问）",
+  "files": {
+    "logo-endless-summer.webp": "web/public/logo-endless-summer.webp（完整绣球花 Logo，用于登录页与启动动效）",
+    "bg-app-mobile-ivory-quiet.webp": "web/public/bg-app-mobile-ivory-quiet.webp（旧米白花卉背景，月色主题生效后不再引用，仅留作回退资源）",
+    "garden-moon.png": "本仓 docs/design/20261020/assets/garden-moon.png（方案03「月色花庭」花庭插画，sha256 9a39611ca966）"
+  },
+  "note": "复制后在本仓独立维护；不继承参考站的规则、权限或数据。同一份素材也已随 APK 打进 app/src/main/assets/brand/ 供原生启动屏使用；garden-moon.png 两份入口与来源逐字节对平。"
+}

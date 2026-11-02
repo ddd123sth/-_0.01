@@ -1,0 +1,12 @@
+Generated with the built-in image_gen tool on 2026-10-20; transparent_background=false.
+
+Use case: photorealistic-natural
+Asset type: high-end botanical lifestyle Android app editorial hero artwork, square composition
+Primary request: a beautifully art-directed photoreal botanical still life of two freshly cut pale periwinkle-blue and lilac hydrangea flower heads on slender natural green stems with a few lush deep forest-green leaves, on an uninterrupted very pale warm cream background (#F7F8F2).
+Scene/backdrop: clean seamless cream studio environment, subtle warm surface, no visible horizon line.
+Subject: delicately clustered hydrangea petals, sophisticated muted blue-purple color variation, richly veined slightly waxy green leaves, exceptional lifelike fresh botanical detail.
+Style/medium: premium editorial botanical photography, understated modern quiet luxury, tactile realistic materials, airy, refined, natural.
+Composition/framing: square frame; the full floral arrangement occupies the lower two-thirds and center-right, flowers lush and substantial with graceful diagonal stems, generous clean breathing room in upper third and upper-left for a separate app layout; balanced organic asymmetry, close-up camera with enough detail and gentle depth of field.
+Lighting/mood: diffused natural side light from upper left, soft very subtle contact shadows, calm fresh morning, luminous but not overexposed.
+Color palette: pale cream #F7F8F2, powder hydrangea blue, muted lilac, deep fresh green; no gold.
+Constraints: botanical artwork only, no vase, no pot, no furniture, no hands, no person, no phone, no interface, no text or lettering, no logos, no watermarks, no borders. Avoid artificial plastic petals, cartoon, illustration, heavy contrast, dramatic dark backdrop, ornate patterns, antique styling, kitsch.

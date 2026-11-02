@@ -1,0 +1,14 @@
+[Unit]
+Description=WuJinXia rebuilt cloud encrypted local backup
+After=wujinxia-backend-cloud.service
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+UMask=0077
+ExecStart=/usr/bin/node /opt/wujinxia-backend-cloud/current/deploy/backend-rebuild/backup.mjs
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/wujinxia-backend-cloud /var/backups/wujinxia-backend-cloud

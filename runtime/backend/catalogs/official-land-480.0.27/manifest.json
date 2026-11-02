@@ -1,0 +1,378 @@
+{
+  "manifestVersion": 2,
+  "preparedAt": "2026-10-24T00:29:51.009505+00:00",
+  "purpose": "Independent official public static catalog for version-scoped G2 rules; not a game write or acceptance receipt",
+  "catalogId": "official-public/index-480.0.27",
+  "sourceVersion": {
+    "gameVersion": "480.0.27",
+    "worldProtocolVersion": "480.0.0",
+    "moduleJscVersions": {
+      "mo": "f7ef4",
+      "modosdk": "ff939",
+      "game": "27165",
+      "dev": "ecc26"
+    },
+    "resourceBundleVersion": "56836",
+    "nativeCatalogVersion": "d7fc4",
+    "normalPackageHopVersionObserved": true,
+    "currentVersionStaticResourcesProven": true,
+    "currentServerCatalogProven": false,
+    "landMapCompleteProven": false,
+    "wholeFileEquivalenceProven": false
+  },
+  "sourceApk": {
+    "role": "Historical official loader/decode lineage only; current catalog is downloaded CDN data, not claimed in this APK",
+    "androidPackage": "cn.lbwdhysj.gf",
+    "androidVersionName": "1.2.5",
+    "sha256": "d4f874fa40a02941cb1bd5584f6635304b087a81487b9bff295a68072f36fe39",
+    "previousCatalogId": "official-android-1.2.5/index-271.0.23",
+    "previousManifestSha256": "60ebcc22d2d5803e3216dca836a28cb38ce6c93803780aa5753f37603f59c43c"
+  },
+  "versionObservation": {
+    "source": "normal-auth-package-hop-public-config/v1",
+    "gameVersion": "480.0.27",
+    "observedAt": "2026-10-24T00:16:04.376Z",
+    "safeEvidencePath": ".runtime/backend-rebuild/evidence/g2-readonly-50a0fe786ca0cba0-1792800963692/observations-1.json",
+    "sourceFileSha256": "bb33ae2218718ff465b86517b77756a2e27d4457cd100e0247208c0aaacb253b",
+    "onlyPublicResourceProjectionCopied": true
+  },
+  "sourceIndex": {
+    "url": "https://hygncdn.babigame.cn/index/index-gn-mix-480.0.27.json",
+    "status": 200,
+    "bytes": 8616,
+    "sha256": "7398615295cfbc84938b2da87c69d9cb6a36c0c2529045438f16d7592e500cfb",
+    "genericIndexUrl": "https://hygncdn.babigame.cn/index/index-480.0.27.json",
+    "genericIndexSha256": "5818afa6553e643ddcf1cad5ec7b7601681bf01ac03e4711a359371711d16567",
+    "bothSelectSameGameMoAndResources": true,
+    "embeddedResourceKeyValueIncluded": false
+  },
+  "businessCodeSource": {
+    "url": "https://hygncdn.babigame.cn/src/assets/scripts/frameworks/game/bin/game.27165.jsc",
+    "jscBytes": 6065908,
+    "jscSha256": "576e09fb11029014d833aebdb11b7a6ff1f78040cfad17edef88c1c5d6a3bc38",
+    "decodedBytes": 6065901,
+    "decodedSha256": "fc9970989021e4266301d2a167ae8e827ef71a124ad9d7f23cb922095a22aa69",
+    "decodedByteOffsets": {
+      "itemLimit": 184205,
+      "getNum": 184294,
+      "effectiveHelper": 184477,
+      "waterInitialPredicate": 184611,
+      "waterResetNullish": 184689,
+      "waterRestoreTruthy": 184735,
+      "waterPeriodFloor": 185557,
+      "waterFinalLimit": 186066,
+      "IUsrDS": 29569,
+      "IItemExtDS": 46939,
+      "UsrCtrl": 274026,
+      "usrBagAbsolutePatch": 276874,
+      "usrTotUpdate": 277066,
+      "BaseCtrl": 229169,
+      "flowerLevelLookup": 382433
+    },
+    "applicationCodeExecuted": false
+  },
+  "tableDecoderSource": {
+    "url": "https://hygncdn.babigame.cn/src/assets/scripts/frameworks/mo/bin/mo.f7ef4.jsc",
+    "jscBytes": 516580,
+    "jscSha256": "142a049aaf0ec42540c11b64adbe4219abc526cbbb6db0a2ffcc1e0a1e23f47d",
+    "decodedBytes": 516576,
+    "decodedSha256": "1cde77350e5472509f695090546ed311d3b0b65618ba681653daa99f0691cf3b",
+    "auditedByteRange": [
+      149811,
+      153602
+    ],
+    "decodedByteOffsets": {
+      "EmitterSetData": 62905,
+      "EmitterPropertyAssignment": 63508,
+      "setDataDelegation": 64349,
+      "mergeRegistration": 65841,
+      "DyPropCtrl": 127648,
+      "BaseCtrl": 505999
+    },
+    "columnTransformC": "absent in all five selected tables",
+    "decoderMode": "Independent static data translation of metadata aliases, numeric shifts, chunk defaults and implicit row id; no application JavaScript executed",
+    "publicKeyValueIncluded": false
+  },
+  "catalogSource": {
+    "url": "https://hygncdn.babigame.cn/assets/resources/native/35/35fc3381-34dc-5c64-ba90-e06c2c6133a8.d7fc4.text",
+    "bytes": 4992870,
+    "sha256": "3b880790bc950d06cda0a2da4aa4234b447d0bd8d0429701a1a8ab78d12dec92",
+    "bundleConfigUrl": "https://hygncdn.babigame.cn/assets/resources/config.56836.json",
+    "bundleConfigSha256": "baf4215728dc9e1cafdbcec8141765a5672440b7a8ce6ce82183830ce74b5b3f",
+    "pathIndex": 3997,
+    "logicalResourcePath": "mo/zh/data/g-data",
+    "expandedUuid": "35fc3381-34dc-5c64-ba90-e06c2c6133a8",
+    "nativeVersion": "d7fc4"
+  },
+  "tables": {
+    "c_item": {
+      "rows": 7446,
+      "positiveRows": 7445,
+      "columns": 41,
+      "bytes": 2930277,
+      "sha256": "2ad2051ffa3b330438d8d2a0243227950a9b6afc7b75e75098ff9703a82f5f58",
+      "columnTransformCAbsent": true,
+      "file": "c_item.json",
+      "fieldNames": [
+        "$inits",
+        "bType",
+        "change",
+        "cls",
+        "color",
+        "dbIcon",
+        "desc",
+        "desc2",
+        "flyRegionType",
+        "getWayDetail",
+        "getWayIcon",
+        "getWayPram",
+        "getWayText",
+        "getWays",
+        "icon",
+        "id",
+        "isAutoUse",
+        "isBiIgnore",
+        "items",
+        "jumpTo",
+        "name",
+        "name1",
+        "ownNumHide",
+        "proxy",
+        "recycle",
+        "reset",
+        "restore",
+        "sTime",
+        "sType",
+        "sname",
+        "sort",
+        "sp",
+        "type",
+        "useType"
+      ],
+      "metadataRowMinus1Included": true,
+      "omittedFields": [],
+      "omittedRows": []
+    },
+    "c_farmLand": {
+      "rows": 65,
+      "positiveRows": 64,
+      "columns": 8,
+      "bytes": 4307,
+      "sha256": "fdae8edc9d22b071987de1aba21ee8ebab46cbcadbe68a1ff31ef0198da8d098",
+      "columnTransformCAbsent": true,
+      "file": "c_farmLand.json",
+      "fieldNames": [
+        "$initLand",
+        "$landMax",
+        "cost",
+        "id",
+        "openLvl",
+        "wasteland"
+      ],
+      "metadataRowMinus1Included": true,
+      "omittedFields": [],
+      "omittedRows": []
+    },
+    "c_flower": {
+      "rows": 658,
+      "positiveRows": 657,
+      "columns": 58,
+      "bytes": 323639,
+      "sha256": "7c57fbd1af83c20b4ed0c74aeca50d50a376a731a67990482215aadb76f6fc2c",
+      "columnTransformCAbsent": true,
+      "file": "c_flower.json",
+      "fieldNames": [
+        "$culMinusItem",
+        "$growItem",
+        "$reward",
+        "$sellGld",
+        "$sellMax",
+        "$sellNum",
+        "$sharingCulMax",
+        "$sharingCulMinusNum",
+        "$sharingCulTime",
+        "achExpAdd",
+        "backGround",
+        "colorType",
+        "coordinate",
+        "coordinate10",
+        "coordinate11",
+        "coordinate12",
+        "coordinate2",
+        "coordinate3",
+        "coordinate4",
+        "coordinate5",
+        "coordinate6",
+        "coordinate7",
+        "coordinate8",
+        "coordinate9",
+        "culCost",
+        "culTime",
+        "cultivate",
+        "effect",
+        "eliteId",
+        "elvesFlower",
+        "exp",
+        "flowerAlbumLand",
+        "fmlRacePoint",
+        "genusType",
+        "gld",
+        "icon",
+        "id",
+        "isBlock",
+        "isBlockPic",
+        "isHide",
+        "isZooEvent",
+        "logo",
+        "logoLogicFunc",
+        "mapflower",
+        "mapflowerLand",
+        "ratio",
+        "ratio2",
+        "ratio3",
+        "seasonType",
+        "seedId",
+        "sellRange",
+        "shareRwd",
+        "showBackGround",
+        "sort",
+        "spId",
+        "sunType",
+        "vaseCfg",
+        "viceFlower"
+      ],
+      "metadataRowMinus1Included": true,
+      "omittedFields": [],
+      "omittedRows": []
+    },
+    "c_flowerLvl": {
+      "rows": 6091,
+      "positiveRows": 6090,
+      "columns": 12,
+      "bytes": 954595,
+      "sha256": "cd8e64fd41f5f0a9fc320d65a202a3a3181bb1f5d669d8a7c9460d2a103f7cd2",
+      "columnTransformCAbsent": true,
+      "file": "c_flowerLvl.json",
+      "fieldNames": [
+        "$lvlMax",
+        "cd",
+        "cropGets",
+        "fLvl",
+        "frequencys",
+        "gldCost",
+        "harvestExp",
+        "id",
+        "left",
+        "lvlUpCost",
+        "seedGets",
+        "seedWgt"
+      ],
+      "metadataRowMinus1Included": true,
+      "omittedFields": [],
+      "omittedRows": []
+    },
+    "c_flowerLvlCfg": {
+      "rows": 20,
+      "positiveRows": 20,
+      "columns": 10,
+      "bytes": 2653,
+      "sha256": "88247f9e34b887fdd474f68a58f124dbe5b6bd28fd43a9b2489f70bc94bfa290",
+      "columnTransformCAbsent": true,
+      "file": "c_flowerLvlCfg.json",
+      "fieldNames": [
+        "cd",
+        "cropGets",
+        "frequencys",
+        "gldCost",
+        "harvestExp",
+        "id",
+        "left",
+        "lvlUpCost",
+        "seedGets",
+        "seedWgt"
+      ],
+      "metadataRowMinus1Included": false,
+      "omittedFields": [],
+      "omittedRows": []
+    }
+  },
+  "water7": {
+    "color": 2,
+    "type": 0,
+    "reset": [
+      [
+        65
+      ]
+    ],
+    "restore": [
+      [
+        1,
+        120000
+      ]
+    ],
+    "id": 7
+  },
+  "ordinaryFlowerPositiveRows": 657,
+  "ordinaryFlowerMissingItemRows": 0,
+  "ordinaryFlowersWithStaticResetRestoreOrLimit": [],
+  "scope": {
+    "bagAndItemExtProvidedAttributeReplacementProven": true,
+    "missingWholePropertyRetainsPriorValue": true,
+    "missingKeyInProvidedMapMeansNoEntryForOfficialClient": true,
+    "requiresCurrentVersionMatchedNormalSyncResponse": true,
+    "doesNotAuthorizeLandMapCompleteness": true,
+    "doesNotChangeSavedUi588Configuration": true,
+    "doesNotUnionPrevious415Catalog": true
+  },
+  "safety": {
+    "accountFieldsIncluded": false,
+    "credentialOrTokenIncluded": false,
+    "remoteUrlOrCodeValuesInFiveTables": false,
+    "prunedRows": 0,
+    "prunedFields": [],
+    "fullFiveTablesPreserved": true,
+    "sourceBusinessCodeBundled": false
+  },
+  "receipts": [
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/public-480.0.27-index-candidates.receipt.json",
+      "bytes": 1603,
+      "sha256": "0e2f59016931fe8a5488aaa7f7914b8ba573c7568cf2eba0ecc91abe70805e91"
+    },
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/cdn-480.0.27-selected.receipt.json",
+      "bytes": 1661,
+      "sha256": "f419e04d762c432f629bcaf46193863554d9232709bab5e2123b9215c40e187f"
+    },
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/g-data-480.0.27.receipt.json",
+      "bytes": 541,
+      "sha256": "024202ec2e0eb2ed7bcffd30ed14d5505d56d35fd1776aac75915908200591c9"
+    },
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/game.27165.480.0.27.decoded.js.receipt.json",
+      "bytes": 443,
+      "sha256": "15d686c0144ecbab875011802cf87fe5f19a8f847664f2e8b60bb1757ed0e413"
+    },
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/mo.f7ef4.480.0.27.decoded.js.receipt.json",
+      "bytes": 441,
+      "sha256": "e3949ad6d279be88940ba8f5c33bd0f02f0d982112c475b53349372665327cb6"
+    },
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/current-480.0.27-tables.receipt.json",
+      "bytes": 2369,
+      "sha256": "98be6675d6dc14575cdb680004c562a559cb7240ed69e45e275785271512830a"
+    },
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/current-480.0.27-table-comparison.json",
+      "bytes": 2930,
+      "sha256": "be58ee46218cbefbd798b0d5ca6577c93c270314672afae2fbf2a29c98e6b205"
+    },
+    {
+      "path": ".runtime/backend-rebuild/current-official-static/current-480.0.27-water-comparison.receipt.json",
+      "bytes": 1121,
+      "sha256": "eff0db37074af5af115f34640549bb7eb72fc67da2edb0113d51d8e932c3b11b"
+    }
+  ]
+}

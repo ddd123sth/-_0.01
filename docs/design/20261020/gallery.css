@@ -1,0 +1,172 @@
+:root {
+  font-family: "Microsoft YaHei", "Noto Sans SC", "Segoe UI", sans-serif;
+  color: #30375b;
+  background: #f4f7ff;
+  color-scheme: light;
+  --gallery-ink: #30375b;
+  --gallery-muted: #737b98;
+  --gallery-accent: #526bb8;
+  --gallery-edge: #dce3f4;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+header, nav, main, footer {
+  max-width: 1440px;
+  margin: auto;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+header {
+  position: relative;
+  isolation: isolate;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 34px 0 auto;
+  width: 360px;
+  max-width: 45%;
+  background: url("assets/garden-dawn.png") center right / cover no-repeat;
+  opacity: .25;
+  border-radius: 0 0 35px 35px;
+  mask-image: linear-gradient(90deg, transparent, #000);
+  pointer-events: none;
+}
+header p {
+  margin: 0 0 14px;
+  color: var(--gallery-accent);
+  font-size: 10px;
+  letter-spacing: 3px;
+  line-height: 1.7;
+}
+h1 {
+  margin: 0 0 14px;
+  color: var(--gallery-ink);
+  font-family: "SimSun", "Songti SC", "Noto Serif CJK SC", serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+header div { color: var(--gallery-muted); font-size: 12px; line-height: 1.9; }
+a { color: var(--gallery-accent); text-decoration: none; }
+header a {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 9px 15px;
+  border: 1px solid var(--gallery-edge);
+  border-radius: 20px;
+  background: #ffffffc9;
+  font-size: 12px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 25px;
+}
+nav input, nav select {
+  min-height: 46px;
+  padding: 11px 15px;
+  border: 1px solid var(--gallery-edge);
+  border-radius: 15px;
+  background: #ffffffeb;
+  color: var(--gallery-ink);
+  font: inherit;
+  font-size: 13px;
+  box-shadow: 0 3px 12px #566da705;
+}
+nav input { flex: 1; min-width: 160px; }
+nav input::placeholder { color: #858eaa; }
+nav select { min-width: 150px; cursor: pointer; }
+nav span {
+  color: var(--gallery-muted);
+  font-size: 11px;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 24px;
+}
+article {
+  overflow: hidden;
+  border: 1px solid #e4e9f6;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 6px 22px #566da708;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+article[hidden] { display: none; }
+article .image {
+  display: block;
+  height: 310px;
+  overflow: hidden;
+  border-bottom: 1px solid #e8ecf8;
+  background: #edf2fc;
+}
+article img { display: block; width: 100%; height: auto; }
+article > div { padding: 17px 18px 19px; }
+article small {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 7px;
+  background: #f1f3fc;
+  color: #7681aa;
+  font-size: 10px;
+  line-height: 1.5;
+}
+article h2 {
+  margin: 9px 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+article a:not(.image) {
+  display: inline-block;
+  margin-right: 14px;
+  font-size: 11px;
+  line-height: 1.9;
+}
+footer {
+  padding-top: 38px;
+  padding-bottom: 35px;
+  color: var(--gallery-muted);
+  font-size: 11px;
+  line-height: 1.9;
+}
+input:focus-visible, select:focus-visible, a:focus-visible {
+  outline: 2px solid #7186d4;
+  outline-offset: 4px;
+}
+@media (hover: hover) {
+  article:hover { border-color: #cdd8f2; box-shadow: 0 8px 24px #566da714; }
+  a:not(.image):hover { color: #425baf; text-decoration: underline; text-underline-offset: 3px; }
+}
+@media (max-width: 600px) {
+  header, nav, main, footer { padding-left: 18px; padding-right: 18px; }
+  header { padding-top: 30px; }
+  header::after { right: 18px; opacity: .15; }
+  h1 { font-size: 25px; letter-spacing: 1px; }
+  nav { gap: 9px; }
+  nav select { min-width: 140px; }
+  main { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+  article { border-radius: 17px; }
+  article .image { height: 230px; }
+  article > div { padding: 13px; }
+  article h2 { font-size: 12px; }
+  article a:not(.image) { display: block; margin-top: 7px; }
+}
+@media (max-width: 380px) {
+  nav input, nav select { width: 100%; min-width: 0; flex-basis: 100%; }
+  article .image { height: 205px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  article { transition: none; }
+}
